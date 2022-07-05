@@ -4,59 +4,33 @@
 				<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.7" data-plugin-revolution-slider
 					data-plugin-options="{'delay': 9000, 'gridwidth': 800, 'gridheight': 760, 'responsiveLevels': [4096,1200,992,500]}">
 					<ul>
-						<li data-transition="fade">
-							<img src="img/first-image.jpeg" alt="" data-bgposition="center center" data-bgfit="cover"
-								data-bgrepeat="no-repeat" class="rev-slidebg">
+					<li data-transition="fade">
 
-							<div class="tp-caption" data-x="center" data-hoffset="-150" data-y="center"
-								data-voffset="-95" data-start="1000" style="z-index: 5"
-								data-transform_in="x:[-300%];opacity:0;s:500;"><img src="img/second-image.jpg" alt="">
-							</div>
+						<img src="img/silder1.jpg" width="75%" alt="" data-bgposition="center center"
+							data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
-							<div class="tp-caption top-label" data-x="center" data-hoffset="0" data-y="center"
-								data-voffset="-95" data-start="500" style="z-index: 5"
-								data-transform_in="y:[-300%];opacity:0;s:500;">DO YOU NEED A NEW</div>
+						<div class="tp-caption featured-label" data-x="center" data-y="center" data-voffset="-45"
+							data-start="500" data-fontsize="['52','52','52','62']" style="z-index: 5"
+							data-transform_in="y:[100%];s:500;" data-transform_out="opacity:0;s:500;">WELCOME TO
+							DATAGEN</div>
 
-							<div class="tp-caption" data-x="center" data-hoffset="150" data-y="center"
-								data-voffset="-95" data-start="1000" style="z-index: 5"
-								data-transform_in="x:[300%];opacity:0;s:500;"><img
-									src="img/slides/slide-title-border.png" alt=""></div>
-
-							<div class="tp-caption main-label" data-x="center" data-hoffset="0" data-y="center"
-								data-voffset="-45" data-start="1500" data-whitespace="nowrap"
-								data-transform_in="y:[100%];s:500;" data-transform_out="opacity:0;s:500;"
-								style="z-index: 5" data-mask_in="x:0px;y:0px;">WEB DESIGN?</div>
-
-							<div class="tp-caption bottom-label" data-x="center" data-hoffset="0" data-y="center"
-								data-voffset="5" data-start="2000" data-fontsize="['20','20','20','30']"
-								style="z-index: 5" data-transform_in="y:[100%];opacity:0;s:500;">Check out our options
-								and features.</div>
-
-							<a class="tp-caption btn btn-lg btn-primary btn-slider-action" data-hash
-								data-hash-offset="85" href="#home-intro" data-x="center" data-hoffset="0"
-								data-y="center" data-voffset="80" data-start="2200" data-whitespace="nowrap"
-								data-fontsize="['22','22','22','32']" data-transform_in="y:[100%];s:500;"
-								data-transform_out="opacity:0;s:500;" style="z-index: 5" data-mask_in="x:0px;y:0px;">Get
-								Started Now!</a>
+						<div class="tp-caption bottom-label" data-x="center" data-y="center" data-voffset="5"
+							data-start="1000" data-fontsize="['23','23','23','30']" data-transform_idle="o:1;"
+							data-transform_in="y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:600;e:Power4.easeInOut;"
+							data-transform_out="opacity:0;s:500;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+							data-splitin="chars" data-splitout="none" data-responsive_offset="on"
+							style="font-size: 23px; line-height: 30px;" data-elementdelay="0.05">Offering strong customer support 24/7</div>
 
 						</li>
 						<li data-transition="fade">
 
-							<img src="img/slides/slide-bg-full-4-dark.jpg" alt="" data-bgposition="center center"
+							<img src="img/slider2.jpg" alt="" data-bgposition="center center"
 								data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+						</li>
+						<li data-transition="fade">
 
-							<div class="tp-caption featured-label" data-x="center" data-y="center" data-voffset="-45"
-								data-start="500" data-fontsize="['52','52','52','62']" style="z-index: 5"
-								data-transform_in="y:[100%];s:500;" data-transform_out="opacity:0;s:500;">WELCOME TO
-								DATAGEN</div>
-
-							<div class="tp-caption bottom-label" data-x="center" data-y="center" data-voffset="5"
-								data-start="1000" data-fontsize="['23','23','23','30']" data-transform_idle="o:1;"
-								data-transform_in="y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:600;e:Power4.easeInOut;"
-								data-transform_out="opacity:0;s:500;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-								data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-								style="font-size: 23px; line-height: 30px;" data-elementdelay="0.05">Offering strong customer support 24/7</div>
-
+						<img src="img/slider3.jpg" alt="" data-bgposition="center center"
+							data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 						</li>
 					</ul>
 				</div>
@@ -82,7 +56,7 @@
 
 				<div class="rightSec2">
 					<p
-						style=" width: 60%;margin-bottom: 10px; color: white; font-size: 1.3rem; text-transform: uppercase; opacity:0.8; text-align: left;">
+						style=" width: 60%;margin-bottom: 10px; color: white; font-size: 1.3rem; text-transform: uppercase; opacity:0.8; text-align: left; ">
 						Environment</p>
 					<h1
 						style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: left; font-weight: bold; width: 60%; font-size: 1.4rem; text-transform: uppercase ;">

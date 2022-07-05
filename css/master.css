@@ -78,8 +78,8 @@
 }
 .rightSec2 {
   transform: translate(-25px, 40px);
-  background: #f7992b;
 
+  background-image: url("../img/sliut.jpg");
   border-radius: 5px;
   box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
