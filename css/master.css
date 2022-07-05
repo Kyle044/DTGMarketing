@@ -79,7 +79,11 @@
 .rightSec2 {
   transform: translate(-25px, 40px);
 
+
   background-image: url("../img/sliut.jpg");
+
+
+
   border-radius: 5px;
   box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
@@ -91,12 +95,15 @@
 }
 
 .section4 {
-  margin-top: 2rem;
   display: grid;
-  grid-template-columns: 0.3fr 0.3fr 0.3fr;
+  max-width: 1200px;
+  margin-top: 2rem;
 
+  grid-template-columns: repeat(auto-fit, 22rem);
+  align-content: center;
   gap: 10px;
   justify-content: center;
+  margin: auto;
 }
 .section4 .serviceCard {
   position: relative;

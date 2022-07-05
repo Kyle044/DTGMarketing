@@ -21,6 +21,9 @@
 							data-splitin="chars" data-splitout="none" data-responsive_offset="on"
 							style="font-size: 23px; line-height: 30px;" data-elementdelay="0.05">Offering strong customer support 24/7</div>
 
+						
+
+
 						</li>
 						<li data-transition="fade">
 
@@ -70,7 +73,7 @@
 
 			</div>
 		
-			<section class="section section-tertiary text-center text-lg-left pb-0 pb-lg-5 pb-xl-0 mb-0 heh">
+			<section style="padding-bottom:2rem !important;" class="section section-tertiary text-center text-lg-left pb-0 pb-lg-5 pb-xl-0 mb-0 heh">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-7">

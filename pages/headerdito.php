@@ -64,6 +64,7 @@
 	<div class="body">
 
 		<header id="header"
+        style="background-color: white; position:relative"
 			class="header-narrow header-semi-transparent header-transparent-sticky-deactive header-transparent-bottom-border"
 			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}">
 
@@ -76,7 +77,7 @@
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="index.html">
-										<img alt="Porto" src="img/dtgLogo.png">
+										<img alt="Porto" src="../img/dtgLogo.png">
 									</a>
 								</div>
 							</div>
@@ -89,7 +90,7 @@
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li class="dropdown">
-													<a class="" href="index.html">
+													<a class="" href="../index.php">
 														Home
 													</a>
 
