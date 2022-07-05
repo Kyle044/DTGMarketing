@@ -32,11 +32,11 @@
 								style="z-index: 5" data-transform_in="y:[100%];opacity:0;s:500;">Check out our options
 								and features.</div>
 
-							<a class="tp-caption btn btn-lg btn-primary btn-slider-action" data-hash
+							<a  class="tp-caption btn btn-lg btn-primary btn-slider-action" data-hash
 								data-hash-offset="85" href="#home-intro" data-x="center" data-hoffset="0"
 								data-y="center" data-voffset="80" data-start="2200" data-whitespace="nowrap"
 								data-fontsize="['22','22','22','32']" data-transform_in="y:[100%];s:500;"
-								data-transform_out="opacity:0;s:500;" style="z-index: 5" data-mask_in="x:0px;y:0px;">Get
+								data-transform_out="opacity:0;s:500;" style="z-index: 5; background-color:#f7992b; border:3px solid #f7992b" data-mask_in="x:0px;y:0px;" >Get
 								Started Now!</a>
 
 						</li>
@@ -96,7 +96,7 @@
 
 			</div>
 		
-			<section class="section section-tertiary text-center text-lg-left pb-0 pb-lg-5 pb-xl-0 mb-0 heh">
+			<section style="padding-bottom:2rem !important;" class="section section-tertiary text-center text-lg-left pb-0 pb-lg-5 pb-xl-0 mb-0 heh">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-7">
