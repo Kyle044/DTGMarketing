@@ -16,9 +16,7 @@
 							Datagen Facilities, OPC has diversified services that allow us to offer customizable services for companies in the United States, Australia, New Zealand and United Kingdom. We cater to different entities regardless of the size of the company.
 							</p>
 						</div>
-						<div class="col-lg-2">
-							<a href="#" class="btn btn-lg btn-primary">Contact Us!</a>
-						</div>
+						
 					</div>
 
 					<hr>
@@ -70,155 +68,95 @@
 
 					<hr>
 
-					<div class="row pt-4">
-						<div class="col-lg-8">
-							<h2>Our <strong>Features</strong></h2>
-							<div class="row">
-								<div class="col-sm-6">
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fas fa-users"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-0">Customer Support</h4>
-											<p class="mb-4">Lorem ipsum dolor sit amet, consectetur.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fas fa-file"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-0">HTML5 / CSS3 / JS</h4>
-											<p class="mb-4">Lorem ipsum dolor sit amet,.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fab fa-google-plus-g"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-0">500+ Google Fonts</h4>
-											<p class="mb-4">Lorem ipsum dolor sit amet, consectetur.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fas fa-adjust"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-0">Colors</h4>
-											<p class="mb-4">Lorem ipsum dolor sit amet, consectetur.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fas fa-film"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-0">Sliders</h4>
-											<p class="mb-4">Lorem ipsum dolor sit amet, consectetur.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fas fa-user"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-0">Icons</h4>
-											<p class="mb-4">Lorem ipsum dolor sit amet, consectetur.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fas fa-bars"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-0">Buttons</h4>
-											<p class="mb-4">Lorem ipsum dolor sit, consectetur.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fas fa-desktop"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-0">Lightbox</h4>
-											<p class="mb-4">Lorem sit amet, consectetur.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<h2>and more...</h2>
-
-							<div class="accordion" id="accordion">
-								<div class="card card-default">
-									<div class="card-header">
-										<h4 class="card-title m-0">
-											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-												<i class="fas fa-dollar-sign"></i>
-												Pricing Tables
-											</a>
-										</h4>
-									</div>
-									<div id="collapseOne" class="collapse show">
-										<div class="card-body">
-											Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor.
-										</div>
-									</div>
-								</div>
-								<div class="card card-default">
-									<div class="card-header">
-										<h4 class="card-title m-0">
-											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-												<i class="fas fa-comment"></i>
-												Contact Forms
-											</a>
-										</h4>
-									</div>
-									<div id="collapseTwo" class="collapse">
-										<div class="card-body">
-											Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.
-										</div>
-									</div>
-								</div>
-								<div class="card card-default">
-									<div class="card-header">
-										<h4 class="card-title m-0">
-											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-												<i class="fas fa-laptop"></i>
-												Portfolio Pages
-											</a>
-										</h4>
-									</div>
-									<div id="collapseThree" class="collapse">
-										<div class="card-body">
-											Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<div class="row " style="margin-top: -3rem;">
+						
+					
 
 					<hr class="tall">
 
-					<div class="row justify-content-around mb-5">
+					<div class="row justify-content-around mb-5" id="lg">
 						<div class="col-sm-7">
-							<h2>Premium <strong>Features</strong></h2>
+							<h2>Lead<strong> Generation</strong></h2>
 							<p class="lead">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum primis in faucibus orci.
+								We have a systematic process of identifying person's interests and behavior. We generate leads through surveys and we customized our survey to draw accurate information on customer's demographics and behavior.
 							</p>
 							<p class="mt-4">
-								 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent scelerisque volutpat turpis, eu hendrerit enim scel.
+								 Lead generation activities are managed by a dedicated and experienced team, focused on producing quality output for our partners and clients.
 							</p>
 						</div>
 						<div class="col-sm-4 mt-4">
-							<img class="img-fluid mt-5" src="img/device.png" alt="">
+							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+						</div>
+					</div>
+					<div class="row justify-content-around mb-5" id="es">
+						<div class="col-sm-7">
+							<h2>Email<strong> Support</strong></h2>
+							<p class="lead">
+							We respond to customers inquiries and/or concerns promptly either through email or chat.
+							</p>
+							<p class="mt-4">
+								 We developed a messaging interface that would support customers concern and partners need.
+							</p>
+						</div>
+						<div class="col-sm-4 mt-4">
+							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+						</div>
+					</div>
+					<div class="row justify-content-around mb-5" id="ics">
+						<div class="col-sm-7">
+							<h2>Inbound Call<strong> Support</strong></h2>
+							<p class="lead">
+								We provide customer service support to clients by responding to customers inquiries or complaints. We have proprietary system in placed to ensure that customers experience is seamless.
+							</p>
+							<p class="mt-4">
+								We make sure to provide accurate information and deliver exceptional customer service throughout the entire interaction with the customers.
+								We have in-house call center and we are capable to provide 24/7 customer support.
+							</p>
+						</div>
+						<div class="col-sm-4 mt-4">
+							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+						</div>
+					</div>
+					<div class="row justify-content-around mb-5"id="ocs">
+						<div class="col-sm-7">
+							<h2>Outbound Call <strong> Support</strong></h2>
+							<p class="lead">
+								We employ proactive approach in dealing with customers to strengthen customer relationships and improving the quality of customer experience.
+							</p>
+							<p class="mt-4">
+								We maintain a consistent standard of customer service excellence.
+							</p>
+						</div>
+						<div class="col-sm-4 mt-4">
+							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+						</div>
+					</div>
+					<div class="row justify-content-around mb-5" id="ts">
+						<div class="col-sm-7">
+							<h2>Telemarketing<strong> Services</strong></h2>
+							<p class="lead">
+							We reach out to potential customers in behalf of our clients or partners to sell products or solicit donations.
+							</p>
+							<p class="mt-4">
+								We provide end-to-end support and solutions to ensure sales target are met.
+							</p>
+						</div>
+						<div class="col-sm-4 mt-4">
+							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+						</div>
+					</div>
+					<div class="row justify-content-around mb-5" id="bos">
+						<div class="col-sm-7">
+							<h2>Back Office<strong> Support</strong></h2>
+							<p class="lead">
+								It allows clients to streamline their operations and reduce operational cost.
+							</p>
+							<p class="mt-4">
+								We have upgraded our back office support capabilities to provide back office support to clients and partners.
+							</p>
+						</div>
+						<div class="col-sm-4 mt-4">
+							<img class="img-fluid mt-5" src="../img/device.png" alt="">
 						</div>
 					</div>
 

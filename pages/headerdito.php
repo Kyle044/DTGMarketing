@@ -64,7 +64,7 @@
 	<div class="body">
 
 		<header id="header"
-        style="background-color: #2a2b2c; position:relative"
+        style="background-color: white; position:relative"
 			class="header-narrow header-semi-transparent header-transparent-sticky-deactive header-transparent-bottom-border"
 			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}">
 
