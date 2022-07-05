@@ -26,7 +26,7 @@
 .section2 {
   display: flex;
   margin-top: 6rem;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 
 .section2 div {
@@ -88,6 +88,46 @@
 
 .heh {
   background: #f7992b !important;
+}
+
+.section4 {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr;
+
+  gap: 10px;
+  justify-content: center;
+}
+.section4 .serviceCard {
+  position: relative;
+  overflow-y: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.section4 .serviceCard img {
+  width: 100%;
+  height: auto;
+}
+
+.section4 .serviceCard .hoverDiv {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f7992b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(19rem);
+  transition: 250ms ease;
+}
+.section4 .serviceCard:hover .hoverDiv {
+  color: #fff;
+  transform: translateY(0rem);
 }
 
 @media (max-width: 700px) {

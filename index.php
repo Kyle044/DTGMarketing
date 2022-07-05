@@ -55,8 +55,7 @@
 								data-transform_in="y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:600;e:Power4.easeInOut;"
 								data-transform_out="opacity:0;s:500;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
 								data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-								style="font-size: 23px; line-height: 30px;" data-elementdelay="0.05">The #1 Selling HTML
-								Site Template on ThemeForest</div>
+								style="font-size: 23px; line-height: 30px;" data-elementdelay="0.05">Offering strong customer support 24/7</div>
 
 						</li>
 					</ul>
@@ -65,10 +64,10 @@
 			<div class="section2">
 				<div class="leftSec2">
 					<p
-						style=" margin-bottom: 10px; color: white; font-size: 1.3rem; text-transform: uppercase; opacity:0.8; text-align: center;">
+						style=" margin-bottom: 10px; color: white; font-size: 1.3rem; text-transform: uppercase; opacity:0.8; text-align: left; width: 60%;">
 						What we do</p>
 					<h1
-						style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+						style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: left; font-weight: bold; width: 60%; font-size: 1.4rem; text-transform: uppercase ;">
 						Committed to
 						delivering
 						exceptional service</h1>
@@ -83,10 +82,10 @@
 
 				<div class="rightSec2">
 					<p
-						style=" margin-bottom: 10px; color: white; font-size: 1.3rem; text-transform: uppercase; opacity:0.8; text-align: center;">
+						style=" width: 60%;margin-bottom: 10px; color: white; font-size: 1.3rem; text-transform: uppercase; opacity:0.8; text-align: left;">
 						Environment</p>
 					<h1
-						style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+						style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: left; font-weight: bold; width: 60%; font-size: 1.4rem; text-transform: uppercase ;">
 						Highest Standard of Work</h1>
 					<p style="  color: white; " class="cc"> We maintain highest standard of work ethics including sound
 						judgement, honesty and dependability.
@@ -96,48 +95,7 @@
 
 
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center mb-5">
-						<h2 class="mt-5">Service <strong>Brands</strong></h2>
-
-						<div class="owl-carousel owl-theme mb-0"
-							data-plugin-options="{'items': 4, 'margin': 0, 'loop': false}">
-							<div>
-								<a href="portfolio-single.html">
-									<img src="img/projects/project-9.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div>
-								<a href="portfolio-single.html">
-									<img src="img/projects/project-12.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div>
-								<a href="portfolio-single.html">
-									<img src="img/projects/project-11.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div>
-								<a href="portfolio-single.html">
-									<img src="img/projects/project-8.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div>
-								<a href="portfolio-single.html">
-									<img src="img/projects/project-9.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div>
-								<a href="portfolio-single.html">
-									<img src="img/projects/project-12.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
+		
 			<section class="section section-tertiary text-center text-lg-left pb-0 pb-lg-5 pb-xl-0 mb-0 heh">
 				<div class="container">
 					<div class="row">
@@ -157,6 +115,49 @@
 					</div>
 				</div>
 			</section>
+	<h2 style="margin-top: 4rem; text-align:center;"><strong>Services</strong> in us!</h2>
+				<div class="section4">
+					
+	<div class="serviceCard">
+		<img src="./img/cardImg.jpg" alt="">
+		<div class="hoverDiv">
+			<h3 style="color:white;">Lead Generation</h3>
+		</div>
+	</div>
+	<div class="serviceCard">
+		<img src="./img/cardImg.jpg" alt="">
+		<div class="hoverDiv">
+			<h3  style="color:white;">Email Support</h3>
+		</div>
+	</div>	
+	<div class="serviceCard">
+		<img src="./img/cardImg.jpg" alt="">
+		<div class="hoverDiv">
+			<h3  style="color:white;">Inbound Call Support</h3>
+		</div>
+	</div>	
+	<div class="serviceCard">
+		<img src="./img/cardImg.jpg" alt="">
+		<div class="hoverDiv">
+			<h3  style="color:white;">Outbound Call Support</h3>
+		</div>
+	</div>	
+	<div class="serviceCard">
+		<img src="./img/cardImg.jpg" alt="">
+		<div class="hoverDiv">
+			<h3 style="color:white;">Telemarketing Services</h3>
+		</div>
+	</div>
+		<div class="serviceCard">
+		<img src="./img/cardImg.jpg" alt="">
+		<div class="hoverDiv">
+			<h3 style="color:white;">Back Office Support</h3>
+		</div>
+			</div>
+	</div>
+
+				
+			</div>
 			<section class="section section-background section-center mt-0"
 				style="background-image: url(img/patterns/swirl_pattern.png);">
 				<div class="container">
@@ -212,37 +213,7 @@
 			</section>
 
 
-			<div class="container">
-				<div class="row text-center mt-5">
-					<div class="owl-carousel owl-theme"
-						data-plugin-options="{'items': 6, 'autoplay': true, 'autoplayTimeout': 3000}">
-						<div>
-							<img class="img-fluid" src="img/logos/logo-1.png" alt="">
-						</div>
-						<div>
-							<img class="img-fluid" src="img/logos/logo-2.png" alt="">
-						</div>
-						<div>
-							<img class="img-fluid" src="img/logos/logo-3.png" alt="">
-						</div>
-						<div>
-							<img class="img-fluid" src="img/logos/logo-4.png" alt="">
-						</div>
-						<div>
-							<img class="img-fluid" src="img/logos/logo-5.png" alt="">
-						</div>
-						<div>
-							<img class="img-fluid" src="img/logos/logo-6.png" alt="">
-						</div>
-						<div>
-							<img class="img-fluid" src="img/logos/logo-4.png" alt="">
-						</div>
-						<div>
-							<img class="img-fluid" src="img/logos/logo-2.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
+			
 		</div>
         <?php include('pages/footer.php') ?>
 
