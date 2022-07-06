@@ -64,6 +64,11 @@
                 TEAMWORK</h1>
             <p style="  color: white; " class="cc">We are working collaboratively towards one common goal
             </p>
+            <h1
+                style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+                Passion</h1>
+            <p style="  color: white; " class="cc">We give intense enthusiasm and excitement in everything we do.
+            </p>
         </div>
     </div>
     

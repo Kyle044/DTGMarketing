@@ -151,15 +151,10 @@
 													alt="">
 											</div>
 											<blockquote>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
-													risus porta, tincidunt turpis at, interdum tortor. Suspendisse
-													potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-													Sociis natoque penatibus et magnis dis parturient montes, nascetur
-													ridiculus mus. Fusce ante tellus, convallis non consectetur sed,
-													pharetra nec ex.</p>
+												<p>As a data partner for over 3 years now, My Charity Survey has helped us deliver the target results for our charity clients and grow to where we are today.</p>
 											</blockquote>
 											<div class="testimonial-author">
-												<p><strong>John Smith</strong><span>CEO & Founder - Okler</span></p>
+												<p><strong>Martyn Hartley</strong><span>CEO, WAYSPhone Pty Ltd</span></p>
 											</div>
 										</div>
 									</div>
@@ -172,13 +167,29 @@
 													alt="">
 											</div>
 											<blockquote>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
-													risus porta, tincidunt turpis at, interdum tortor. Suspendisse
-													potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												<p>We have been recommending My Charity Survey for our clients for more than two years. They have become a valued and important partner for us and our clients. The quality of leads and donor conversion levels remain constant and reliable and service is quick, flexible and attentive.
 												</p>
 											</blockquote>
 											<div class="testimonial-author">
-												<p><strong>John Smith</strong><span>CEO & Founder - Okler</span></p>
+												<p><strong>Martyn Ruane</strong><span>Director, The Prospect Shop Pty Ltd</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="col">
+										<div class="testimonial testimonial-style-2 testimonial-with-quotes mb-0">
+											<div class="testimonial-author">
+												<img src="img/clients/client-1.jpg" class="img-fluid rounded-circle"
+													alt="">
+											</div>
+											<blockquote>
+												<p>They offer the expertise that a proactive-oriented and market-opportunity seeking company needs to develop and enter into a new service distribution and new marketing segments.
+DF is not only flexible, efficient and professional but a group of people who really care about delivering results for you. 
+												</p>
+											</blockquote>
+											<div class="testimonial-author">
+												<p><strong>Md. Khurshid Alam</strong><span>Director, Precise Consumer Data Ltd.</span></p>
 											</div>
 										</div>
 									</div>
