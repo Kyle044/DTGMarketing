@@ -97,7 +97,7 @@
 
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="#">
+													<a class="dropdown-item dropdown-toggle" href="about.php">
 														About
 													</a>
 
