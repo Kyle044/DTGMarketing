@@ -79,10 +79,7 @@
 .rightSec2 {
   transform: translate(-25px, 40px);
 
-
   background-image: url("../img/sliut.jpg");
-
-
 
   border-radius: 5px;
   box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
@@ -135,6 +132,20 @@
 .section4 .serviceCard:hover .hoverDiv {
   color: #fff;
   transform: translateY(0rem);
+}
+
+.gallery {
+  margin: 10px 50px;
+}
+.gallery img {
+  height: 200px;
+  width: auto;
+  padding: 5px;
+  transition: 250ms ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 700px) {

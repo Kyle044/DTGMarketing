@@ -89,7 +89,7 @@
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li class="dropdown">
-													<a class="" href="index.html">
+													<a class="" href="index.php">
 														Home
 													</a>
 
@@ -197,7 +197,7 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="#">
+													<a class="" href="gallery.php">
 														Gallery
 													</a>
 
