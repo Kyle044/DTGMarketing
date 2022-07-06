@@ -1,4 +1,4 @@
-<?php include('header.php') ?>
+<?php include('pages/header.php')  ?>
 
 			<div role="main" class="main">
 
