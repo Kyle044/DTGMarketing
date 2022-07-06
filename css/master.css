@@ -191,7 +191,7 @@
 .aboutUsmain .texthed {
   height: 100%;
   display: flex;
-  padding: 2rem 18rem;
+  padding: 2rem 7.5rem;
   justify-content: center;
   flex-direction: column;
 }
