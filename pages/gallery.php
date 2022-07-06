@@ -27,8 +27,7 @@
 </div>
 
 <hr>
-<div class="galleryContainer">
-
+<div class="galleryContainer" style="margin-top:2rem;">
     <div class="galleryheading">
     <h3>2021</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos non blanditiis obcaecati facere nam doloremque omnis alias dolor eaque?</p>
