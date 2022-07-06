@@ -197,7 +197,7 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="gallery.php">
+													<a class="" href="pages/gallery.php">
 														Gallery
 													</a>
 
