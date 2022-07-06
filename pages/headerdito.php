@@ -132,7 +132,7 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="pages/services.php">
+													<a class="dropdown-item dropdown-toggle" href="services.php">
 														Services
 													</a>
 
