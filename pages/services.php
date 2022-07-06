@@ -4,8 +4,11 @@
 			
 
 			<div role="main" class="main">
-
 			
+			<div class="aboutUsmain">
+        
+		<img src="../img/banner_inner.jpg" alt="">
+		</div>
 				<div class="container" style="margin-top:4rem;">
 
 					<h2>Our <strong>Services</strong></h2>
@@ -18,59 +21,7 @@
 						</div>
 						
 					</div>
-
-					<hr>
-
-					<div class="featured-boxes">
-						<div class="row">
-							<div class="col-lg-3 col-sm-6">
-								<div class="featured-box featured-box-primary featured-box-effect-1 mt-0 mt-lg-5">
-									<div class="box-content">
-										<i class="icon-featured fas fa-user"></i>
-										<h4 class="text-uppercase">Loved by Customers</h4>
-										<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
-										<p><a href="/" class="lnk-primary learn-more">Learn More <i class="fas fa-angle-right"></i></a></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-6">
-								<div class="featured-box featured-box-secondary featured-box-effect-1 mt-0 mt-lg-5">
-									<div class="box-content">
-										<i class="icon-featured fas fa-book"></i>
-										<h4 class="text-uppercase">Well Documented</h4>
-										<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
-										<p><a href="/" class="lnk-secondary learn-more">Learn more <i class="fas fa-angle-right"></i></a></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-6">
-								<div class="featured-box featured-box-tertiary featured-box-effect-1 mt-0 mt-lg-5">
-									<div class="box-content">
-										<i class="icon-featured fas fa-trophy"></i>
-										<h4 class="text-uppercase">Winner</h4>
-										<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
-										<p><a href="/" class="lnk-tertiary learn-more">Learn more <i class="fas fa-angle-right"></i></a></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-sm-6">
-								<div class="featured-box featured-box-quaternary featured-box-effect-1 mt-0 mt-lg-5">
-									<div class="box-content">
-										<i class="icon-featured fas fa-cogs"></i>
-										<h4 class="text-uppercase">Customizable</h4>
-										<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus. </p>
-										<p><a href="/" class="lnk-quaternary learn-more">Learn more <i class="fas fa-angle-right"></i></a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<hr>
-
 					<div class="row " style="margin-top: -3rem;">
-						
-					
 
 					<hr class="tall">
 
@@ -85,7 +36,7 @@
 							</p>
 						</div>
 						<div class="col-sm-4 mt-4">
-							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+							<img class="img-fluid mt-5" src="../img/services1.jpg" alt="">
 						</div>
 					</div>
 					<div class="row justify-content-around mb-5" id="es">
@@ -99,7 +50,7 @@
 							</p>
 						</div>
 						<div class="col-sm-4 mt-4">
-							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+							<img class="img-fluid mt-5" src="../img/services2.jpg" alt="">
 						</div>
 					</div>
 					<div class="row justify-content-around mb-5" id="ics">
@@ -114,7 +65,7 @@
 							</p>
 						</div>
 						<div class="col-sm-4 mt-4">
-							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+							<img class="img-fluid mt-5" src="../img/services3.jpg" alt="">
 						</div>
 					</div>
 					<div class="row justify-content-around mb-5"id="ocs">
@@ -128,7 +79,7 @@
 							</p>
 						</div>
 						<div class="col-sm-4 mt-4">
-							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+							<img class="img-fluid mt-5" src="../img/services4.jpg" alt="">
 						</div>
 					</div>
 					<div class="row justify-content-around mb-5" id="ts">
@@ -142,7 +93,7 @@
 							</p>
 						</div>
 						<div class="col-sm-4 mt-4">
-							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+							<img class="img-fluid mt-5" src="../img/services6.jpg" alt="">
 						</div>
 					</div>
 					<div class="row justify-content-around mb-5" id="bos">
@@ -156,7 +107,7 @@
 							</p>
 						</div>
 						<div class="col-sm-4 mt-4">
-							<img class="img-fluid mt-5" src="../img/device.png" alt="">
+							<img class="img-fluid mt-5" src="../img/services5.jpg" alt="">
 						</div>
 					</div>
 
