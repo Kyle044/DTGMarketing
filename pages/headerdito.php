@@ -44,6 +44,7 @@
 	<link rel="stylesheet" href="../vendor/rs-plugin/css/layers.css">
 	<link rel="stylesheet" href="../vendor/rs-plugin/css/navigation.css">
 	<link rel="stylesheet" href="../css/master.css">
+	<link rel="stylesheet" href="../css/lightbox.min.css">
 
 	<!-- Demo CSS -->
 
@@ -198,7 +199,7 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="#">
+													<a class="" href="gallery.php">
 														Gallery
 													</a>
 
