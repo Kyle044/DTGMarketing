@@ -51,6 +51,7 @@
 
 	<!-- Skin CSS -->
 	<link rel="stylesheet" href="../css/skins/skin-corporate-7.css">
+		<link rel="stylesheet" href="../css/skins/default.css"> 
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="../css/custom.css">
