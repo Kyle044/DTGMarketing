@@ -82,20 +82,7 @@
 							<img class="img-fluid mt-5" src="../img/services4.jpg" alt="">
 						</div>
 					</div>
-					<div class="row justify-content-around mb-5" id="ts">
-						<div class="col-sm-7">
-							<h2>Telemarketing<strong> Services</strong></h2>
-							<p class="lead">
-							We reach out to potential customers in behalf of our clients or partners to sell products or solicit donations.
-							</p>
-							<p class="mt-4">
-								We provide end-to-end support and solutions to ensure sales target are met.
-							</p>
-						</div>
-						<div class="col-sm-4 mt-4">
-							<img class="img-fluid mt-5" src="../img/services6.jpg" alt="">
-						</div>
-					</div>
+					
 					<div class="row justify-content-around mb-5" id="bos">
 						<div class="col-sm-7">
 							<h2>Back Office<strong> Support</strong></h2>
