@@ -1,9 +1,7 @@
 <footer id="footer">
 			<div class="container">
 				<div class="row">
-					<div class="footer-ribbon">
-						<span>Get in Touch</span>
-					</div>
+				
 					<div class="col-lg-3">
 						<div class="newsletter">
 							<h4>Newsletter</h4>
@@ -47,7 +45,7 @@
 								</li>
 								<li>
 									<p><i class="far fa-envelope"></i> <strong>Email:</strong> <a
-											href="mailto:bob.quinn@qdf-phils.com">bob.quinn@qdf-phils.com</a></p>
+											href="mailto:clientservices@datagenf.com">clientservices@datagenf.com</a></p>
 								</li>
 							</ul>
 						</div>

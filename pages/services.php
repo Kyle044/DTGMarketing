@@ -106,6 +106,4 @@
 		</div>
 
 	</body>
-			
-
-			<?php include('footer.php') ?>
+			<?php include('footerdito.php') ?>
