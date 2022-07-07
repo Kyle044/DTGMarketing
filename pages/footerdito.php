@@ -1,9 +1,7 @@
 <footer id="footer">
 			<div class="container">
 				<div class="row">
-					<div class="footer-ribbon">
-						<span>Get in Touch</span>
-					</div>
+					
 					<div class="col-lg-3">
 						<div class="newsletter">
 							<h4>Newsletter</h4>
@@ -47,7 +45,7 @@
 								</li>
 								<li>
 									<p><i class="far fa-envelope"></i> <strong>Email:</strong> <a
-											href="mailto:bob.quinn@qdf-phils.com">bob.quinn@qdf-phils.com</a></p>
+											href="mailto:bob.quinn@qdf-phils.com">clientservices@datagenf.com</a></p>
 								</li>
 							</ul>
 						</div>
@@ -70,7 +68,7 @@
 					<div class="row">
 						<div class="col-lg-1">
 							<a href="index.html" class="logo">
-								<img alt="Porto Website Template" class="img-fluid" src="img/datagenLogo.png">
+								<img alt="Porto Website Template" class="img-fluid" src="../img/datagenLogo.png">
 							</a>
 						</div>
 						<div class="col-lg-7">

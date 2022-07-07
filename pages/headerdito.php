@@ -78,7 +78,7 @@
 						<div class="header-column">
 							<div class="header-row">
 								<div class="header-logo">
-									<a href="index.html">
+									<a href="../index.php">
 										<img alt="Porto" src="../img/dtgLogo.png">
 									</a>
 								</div>
