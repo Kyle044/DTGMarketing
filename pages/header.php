@@ -101,27 +101,14 @@
 
 													<ul class="dropdown-menu">
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">History</a>
+															<a class="dropdown-item" href="pages/contact.php">Contact</a>
 
 														</li>
 
-														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Facilities</a>
-
-														</li>
-														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Management Team</a>
-
-														</li>
-														<li class="dropdown-submenu">
-															<a class="dropdown-item"
-																href="#">Accreditations/Certifications</a>
-
-														</li>
-														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Data Privacy</a>
-
-														</li>
+													
+													
+													
+														
 
 
 
