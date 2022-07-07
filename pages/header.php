@@ -166,12 +166,12 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="#">
+													<a class="" href="pages/career.php">
 														Career
 													</a>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="#">
+													<a class="dropdown-item dropdown-toggle" href="pages/resources.php">
 														Resources
 													</a>
 													<ul class="dropdown-menu">
