@@ -39,7 +39,7 @@
 		</p>
 	</div>
 	<div class="serviceRight">
-		<img  src="../img/services1.jpg" alt="">
+		<img  src="../img/services2.jpg" alt="">
 	</div>
 	</div>
 		<div class="serviceCard">
@@ -54,7 +54,7 @@ We have in-house call center and we are capable to provide 24/7 customer support
 		</p>
 	</div>
 	<div class="serviceRight">
-		<img  src="../img/services1.jpg" alt="">
+		<img  src="../img/services3.jpg" alt="">
 	</div>
 	</div>
 		<div class="serviceCard">
@@ -68,7 +68,7 @@ We have in-house call center and we are capable to provide 24/7 customer support
 		</p>
 	</div>
 	<div class="serviceRight">
-		<img  src="../img/services1.jpg" alt="">
+		<img  src="../img/services4.jpg" alt="">
 	</div>
 	</div>
 	<div class="serviceCard">
@@ -82,7 +82,7 @@ We have in-house call center and we are capable to provide 24/7 customer support
 		</p>
 	</div>
 	<div class="serviceRight">
-		<img  src="../img/services1.jpg" alt="">
+		<img  src="../img/services5.jpg" alt="">
 	</div>
 	</div>
 
