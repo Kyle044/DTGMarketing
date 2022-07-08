@@ -37,13 +37,13 @@
     <div class="section2" style="margin-bottom: 3rem;">
         <div class="leftSec2">
             <h1
-                style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+                style="letter-spacing: 5px; line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
                 INTEGRITY</h1>
-            <p style="  color: white; margin-bottom:3rem;" class="bb">We maintain highest standard of work ethics including sound judgement, honesty and dependability. LOYALTY
+            <p style="  color: white; margin-bottom:3rem;" class="bb">We maintain highest standard of work ethics including sound judgement, honesty and dependability.
 
             </p>
              <h1
-                style="line-height: 1.9rem; margin-bottom: 0px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+                style="letter-spacing: 5px; line-height: 1.9rem; margin-bottom: 0px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
                 DEDICATION</h1>
             <p style="  color: white; " class="bb">We want to produce the highest quality of results that is align to the company strategy.
 
@@ -56,16 +56,16 @@
 
         <div class="rightSec2">
             <h1
-                style="line-height: 1.9rem; margin-bottom: 0px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+                style="letter-spacing: 5px;line-height: 1.9rem; margin-bottom: 0px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
                 LOYALTY</h1>
             <p style="  color: white; " class="cc"> We act in good faith and advance the interest of company and the clients</p>
 <h1
-                style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+                style="letter-spacing: 5px;line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
                 TEAMWORK</h1>
-            <p style="  color: white; " class="cc">We are working collaboratively towards one common goal
+            <p style="  color: white;     margin-bottom: 0.3rem;" class="cc">We are working collaboratively towards one common goal
             </p>
             <h1
-                style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+                style="letter-spacing: 5px;line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
                 Passion</h1>
             <p style="  color: white; " class="cc">We give intense enthusiasm and excitement in everything we do.
             </p>
@@ -84,8 +84,9 @@
 									</div>
 									<div class="featured-box">
 										<div class="box-content">
-											
-											<p>Robert Alexander Quinn as he is fondly called, is the strategic leader overseeing the entire business operations 
+                                            <h3 style="margin-bottom:10px;">Robert Alexander Quinn</h3>
+                                            <p>Chairman</p>
+											<p>Bob as he is fondly called, is the strategic leader overseeing the entire business operations 
                                             of the company. He has over 25 years of global experience in Sales in a call center industry 
                                             that allows him to establish and operate businesses in Australia, United Kingdom and 
                                             Philippines. His unparalleled expertise in Call Center and Business Process Outsourcing 
@@ -100,7 +101,8 @@
 									</div>
 									<div class="featured-box">
 										<div class="box-content">
-											
+											<h3 style="margin-bottom:10px;">Mary Mhel Erillo</h3>
+                                            <p>Vice President for Admin and Finance</p>
 											<p>Mae is a business professional with over 6 years of experience in strategic and people management she oversees the planning, development, implementation, and maintenance of the company's administrative and financial services and departments, supporting and promoting profitable goals and objectives. She has exemplary contributions in the overall success of the company.</p>
 										</div>
 									</div>
@@ -111,7 +113,8 @@
 									</div>
 									<div class="featured-box">
 										<div class="box-content">
-										
+                                            <h3 style="margin-bottom:10px;">John Lim</h3>
+                                            <p>Head of Operations</p>
 											<p>John is an experienced Operations Head with over 8 years of experience in business outsourcing industry. He has exceptional contributions to the overall operational efficiencies and infrastructure capabilities of Datagen Facilities, OPC. He build his career in operations at Datagen Facilities, OPC that allows him to manage resources effectively.</p>
 										</div>
 									</div>
