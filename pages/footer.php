@@ -66,8 +66,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-1">
-							<a href="index.html" class="logo">
-								<img alt="Porto Website Template" class="img-fluid" src="img/datagenLogo.png">
+							<a href="" class="logo">
+								<img alt="" class="img-fluid" src="img/datagenLogo.png">
 							</a>
 						</div>
 						<div class="col-lg-7">
@@ -76,9 +76,9 @@
 						<div class="col-lg-4">
 							<nav id="sub-menu">
 								<ul>
-									<li><a href="page-faq.html">Privacy</a></li>
-									<li><a href="sitemap.html">Sitemap</a></li>
-									<li><a href="contact-us.html">Contact</a></li>
+									<li><a href="">Privacy</a></li>
+									<li><a href="">Sitemap</a></li>
+									<li><a href="">Contact</a></li>
 								</ul>
 							</nav>
 						</div>
