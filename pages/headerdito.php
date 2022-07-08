@@ -12,7 +12,7 @@
 	<meta name="keywords" content="Datagen" />
 	<meta name="description" content="Datagen">
 	<meta name="author" content="okler.net">
-
+	
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="img/datagenLogo.png" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -58,12 +58,14 @@
 
 	<!-- Head Libs -->
 	<script src="../vendor/modernizr/modernizr.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 
 </head>
 
 <body>
 
-	<div class="body">
+	<div class="body ">
 
 		<header id="header"
         style="background-color: white; position:relative"
@@ -134,10 +136,7 @@
 
 														</li>
 
-														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Telemarketing Services</a>
-
-														</li>
+					
 
 														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="#">Back Office Support</a>

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 * {
   font-family: "Oswald", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -133,7 +133,6 @@
   color: #fff;
   transform: translateY(0rem);
 }
-
 .galleryContainer {
   margin: 7rem 6rem;
 }
@@ -146,6 +145,7 @@
   padding: 5px;
   transition: 250ms ease;
 }
+
 .galleryContainer .buttonGroup {
   margin-left: 2.3rem;
 }
@@ -278,6 +278,128 @@ textarea {
   transform: translateY(-4.5rem);
 }
 
+.resourcesMainContainer {
+  height: auto;
+
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-areas:
+    " col1 col2 col3 "
+    " col1 col2 col3 ";
+}
+.reCol1 {
+  grid-area: header;
+  /* background-color: rgb(192, 192, 241); */
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
+}
+.reCol1 ul {
+  /* background-color: rgb(252, 252, 252); */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  border-top: 4px solid #dd8e33;
+}
+.reCol1 ul li {
+  margin-right: 2rem;
+  color: black;
+  transition: 250ms ease;
+  cursor: pointer;
+  padding: 0.3rem 0.3rem;
+}
+.reCol1 ul li:hover {
+  background-color: #ccc;
+}
+.reCol2 {
+  grid-area: col1;
+  /* background-color: rgb(146, 146, 192); */
+}
+
+.reCol3 {
+  grid-area: col2;
+  /* background-color: rgb(68, 68, 119); */
+}
+.reCol4 {
+  grid-area: col3;
+  /* background-color: rgb(29, 29, 56); */
+}
+.cardReso {
+  padding: 25px 2rem;
+}
+
+.cardReso .titleDiv {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.cardReso .titleDiv h3 {
+  text-align: center;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.cardReso img {
+  width: 100%;
+  height: auto;
+}
+
+.servicesMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.servicesMain img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.lead {
+  color: black;
+}
+
+.serviceTo {
+  margin-top: 8rem;
+  padding: 2px 8rem;
+  background-image: url("../img/banner_inner.jpg");
+  background-repeat: no-repeat;
+  height: auto;
+}
+.serviceTo .serviceToHead {
+  margin-bottom: 4rem;
+}
+
+.serviceCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.serviceCard .serviceLeft {
+  margin-right: 2rem;
+}
+.serviceCard .serviceLeft h2 {
+  text-align: justify;
+  color: #f7992b;
+}
+.serviceCard .serviceLeft p {
+  text-align: justify;
+}
+.serviceCard .serviceRight {
+}
+.serviceCard .serviceRight img {
+  width: 24rem;
+  height: auto;
+  border-radius: 15px;
+}
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .columnzz,

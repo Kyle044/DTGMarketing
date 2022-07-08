@@ -43,6 +43,7 @@
 	<link rel="stylesheet" href="./vendor/rs-plugin/css/settings.css">
 	<link rel="stylesheet" href="./vendor/rs-plugin/css/layers.css">
 	<link rel="stylesheet" href="./vendor/rs-plugin/css/navigation.css">
+	
 	<link rel="stylesheet" href="./css/master.css">
 
 	<!-- Demo CSS -->
@@ -56,6 +57,7 @@
 
 	<!-- Head Libs -->
 	<script src="./vendor/modernizr/modernizr.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
 </head>
 
