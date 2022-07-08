@@ -78,7 +78,7 @@
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="index.php">
-										<img alt="Porto" src="img/dtgLogo.png">
+										<img alt="datagenf" src="img/dtgLogo.png" >
 									</a>
 								</div>
 							</div>
@@ -106,15 +106,6 @@
 															<a class="dropdown-item" href="pages/contact.php">Contact</a>
 
 														</li>
-
-													
-													
-													
-														
-
-
-
-
 													</ul>
 												</li>
 												<li class="dropdown">
