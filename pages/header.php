@@ -78,7 +78,8 @@
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="index.php">
-										<img alt="datagenf" src="img/dtgLogo.png" >
+										<img alt="datagenf" src="img/dtgLogo.png" style="width: 19rem;
+    height: auto;" >
 									</a>
 								</div>
 							</div>

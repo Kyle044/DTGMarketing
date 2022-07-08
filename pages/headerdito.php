@@ -81,7 +81,8 @@
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="../index.php">
-										<img alt="Porto" src="../img/dtgLogo.png">
+										<img alt="Porto" src="../img/dtgLogo.png" style="width: 19rem;
+    height: auto;">
 									</a>
 								</div>
 							</div>
