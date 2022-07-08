@@ -158,12 +158,12 @@
 													</ul>
 												</li>
 												<li class="dropdown">	
-													<a class="" href="career.php" style="font-size: 1rem;">
+													<a class="" href="#" style="font-size: 1rem;">
 														Career
 													</a>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="resources.php" style="font-size: 1rem;">
+													<a class="dropdown-item dropdown-toggle" href="#" style="font-size: 1rem;">
 														Resources
 													</a>
 													<ul class="dropdown-menu">
