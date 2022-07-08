@@ -24,32 +24,21 @@
 			</div>
 			<div class="section2">
 				<div class="leftSec2">
-					<p
-						style=" margin-bottom: 10px; color: white; font-size: 1.3rem; text-transform: uppercase; opacity:0.8; text-align: left; width: 60%;">
-						What we do</p>
+					
 					<h1
 						style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: left; font-weight: bold; width: 60%; font-size: 1.4rem; text-transform: uppercase ;">
-						Committed to
-						delivering
-						exceptional service</h1>
-					<p style="  color: white; " class="bb">Providing complete and cohesive customer experience that is
-						align to an
-						organizations purpose.
-						We uphold to our core values that makes us a partner of choice in the
-						industry.
+						 COMPANY MISSION</h1>
+					<p style="  color: white; " class="bb">Our mission is to deliver exceptional service by providing complete and cohesive customer experience that is align to an organizations purpose. We uphold to our core values that makes us a partner of choice in the industry. 
 					</p>
 				</div>
 
 
 				<div class="rightSec2">
-					<p
-						style=" width: 60%;margin-bottom: 10px; color: white; font-size: 1.3rem; text-transform: uppercase; opacity:0.8; text-align: left; ">
-						Environment</p>
 					<h1
 						style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: left; font-weight: bold; width: 60%; font-size: 1.4rem; text-transform: uppercase ;">
-						Highest Standard of Work</h1>
-					<p style="  color: white; " class="cc"> We maintain highest standard of work ethics including sound
-						judgement, honesty and dependability.
+						COMPANY VISION</h1>
+					<p style="  color: white; " class="cc"> Providing complete and cohesive customer experience that is
+						Our vision is to be the preferred Business Partner in business process outsourcing. At Datagen Facilities, OPC we believe that providing positive client experience and genuine customer care are essential in building strong client partnership.
 					</p>
 
 				</div>
@@ -76,32 +65,32 @@
 				<div class="section4">
 					
 	<div class="serviceCards" >
-		<img src="./img/cardImg.jpg" alt="">
+		<img src="./img/services1.jpg" alt="">
 		<div class="hoverDiv">
 			<h3 style="color:white;">Lead Generation</h3>
 		</div>
 	</div>
 	<div class="serviceCards">
-		<img src="./img/cardImg.jpg" alt="">
+		<img src="./img/services2.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Email Support</h3>
 		</div>
 	</div>	
 	<div class="serviceCards">
-		<img src="./img/cardImg.jpg" alt="">
+		<img src="./img/services3.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Inbound Call Support</h3>
 		</div>
 	</div>	
 	<div class="serviceCards">
-		<img src="./img/cardImg.jpg" alt="">
+		<img src="./img/services4.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Outbound Call Support</h3>
 		</div>
 	</div>	
 
 		<div class="serviceCards">
-		<img src="./img/cardImg.jpg" alt="">
+		<img src="./img/services5.jpg" alt="">
 		<div class="hoverDiv">
 			<h3 style="color:white;">Back Office Support</h3>
 		</div>
