@@ -75,37 +75,32 @@
 	<h2 style="margin-top: 4rem; text-align:center;"><strong>Services</strong> in us!</h2>
 				<div class="section4">
 					
-	<div class="serviceCard">
+	<div class="serviceCards" >
 		<img src="./img/cardImg.jpg" alt="">
 		<div class="hoverDiv">
 			<h3 style="color:white;">Lead Generation</h3>
 		</div>
 	</div>
-	<div class="serviceCard">
+	<div class="serviceCards">
 		<img src="./img/cardImg.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Email Support</h3>
 		</div>
 	</div>	
-	<div class="serviceCard">
+	<div class="serviceCards">
 		<img src="./img/cardImg.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Inbound Call Support</h3>
 		</div>
 	</div>	
-	<div class="serviceCard">
+	<div class="serviceCards">
 		<img src="./img/cardImg.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Outbound Call Support</h3>
 		</div>
 	</div>	
-	<div class="serviceCard">
-		<img src="./img/cardImg.jpg" alt="">
-		<div class="hoverDiv">
-			<h3 style="color:white;">Telemarketing Services</h3>
-		</div>
-	</div>
-		<div class="serviceCard">
+
+		<div class="serviceCards">
 		<img src="./img/cardImg.jpg" alt="">
 		<div class="hoverDiv">
 			<h3 style="color:white;">Back Office Support</h3>
@@ -116,7 +111,7 @@
 				
 			</div>
 			<section class="section section-background section-center mt-0"
-				style="background-image: url(img/patterns/swirl_pattern.png);">
+				style="background-image: url(img/patterns/swirl_pattern.png); margin-bottom:0;">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-lg-10">

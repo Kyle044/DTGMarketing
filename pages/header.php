@@ -143,10 +143,7 @@
 
 														</li>
 
-														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="pages/services.php#ts">Telemarketing Services</a>
-
-														</li>
+													
 
 														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="pages/services.php#bos">Back Office Support</a>
@@ -167,12 +164,12 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="pages/career.php" style="font-size: 1rem;">
+													<a class="" href="#" style="font-size: 1rem;">
 														Career
 													</a>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="pages/resources.php" style="font-size: 1rem;">
+													<a class="dropdown-item dropdown-toggle" href="#" style="font-size: 1rem;">
 														Resources
 													</a>
 													<ul class="dropdown-menu">
