@@ -94,13 +94,13 @@
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li class="dropdown">
-													<a class="" href="../index.php">
+													<a class="" href="../index.php" style="font-size: 1rem;">
 														Home
 													</a>
 
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="about.php">
+													<a class="dropdown-item dropdown-toggle" href="about.php" style="font-size: 1rem;">
 														About
 													</a>
 
@@ -111,7 +111,7 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="services.php">
+													<a class="dropdown-item dropdown-toggle" href="services.php" style="font-size: 1rem;">
 														Services
 													</a>
 
@@ -158,12 +158,12 @@
 													</ul>
 												</li>
 												<li class="dropdown">	
-													<a class="" href="career.php">
+													<a class="" href="career.php" style="font-size: 1rem;">
 														Career
 													</a>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="resources.php">
+													<a class="dropdown-item dropdown-toggle" href="resources.php" style="font-size: 1rem;">
 														Resources
 													</a>
 													<ul class="dropdown-menu">
@@ -176,7 +176,7 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="gallery.php">
+													<a class="" href="gallery.php" style="font-size: 1rem;">
 														Gallery
 													</a>
 

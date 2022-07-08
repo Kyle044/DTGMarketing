@@ -91,13 +91,13 @@
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li class="dropdown">
-													<a class="" href="index.php">
+													<a class="" href="index.php" style="font-size: 1rem;">
 														Home
 													</a>
 
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="pages/about.php">
+													<a class="dropdown-item dropdown-toggle" href="pages/about.php" style="font-size: 1rem;">
 														About
 													</a>
 
@@ -118,7 +118,7 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="pages/services.php">
+													<a class="dropdown-item dropdown-toggle" href="pages/services.php" style="font-size: 1rem;">
 														Services
 													</a>
 
@@ -161,19 +161,18 @@
 																		href="about-me.html">Technical Support</a></li>
 																<li><a class="dropdown-item" href="about-me.html">Search
 																		Engine Optimization</a></li>
-																<li><a class="dropdown-item"
-																		href="about-me.html">Contact Us</a></li>
+																
 															</ul>
 														</li>
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="pages/career.php">
+													<a class="" href="pages/career.php" style="font-size: 1rem;">
 														Career
 													</a>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="pages/resources.php">
+													<a class="dropdown-item dropdown-toggle" href="pages/resources.php" style="font-size: 1rem;">
 														Resources
 													</a>
 													<ul class="dropdown-menu">
@@ -186,7 +185,7 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="pages/gallery.php">
+													<a class="" href="pages/gallery.php" style="font-size: 1rem;">
 														Gallery
 													</a>
 

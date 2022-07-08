@@ -61,16 +61,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-7">
-							<h2 class="text-light"><strong>News</strong> in us!</h2>
-							<p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-								pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia. Proin
-								adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis
-								faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et
-								ultrices posuere cubilia Curae; In eu libero ligula. </p>
-							<a href="#" class="btn btn-secondary mt-4 mb-5 mb-lg-2">View More</a>
+							<h2 class="text-light">Datagen Facilities <strong>OPC</strong></h2>
+							<p class="text-light">Datagen Facilities, OPC is continuously upgrading its infrastructure and manpower resources to provide valuable end to end solutions to global market. Our innovative technology is customizable to accommodate all business back-office support. We dedicate our resources and manpower in all our endeavors to ensure customer satisfaction. </p>
+							<a href="./pages/about.php" class="btn btn-secondary mt-4 mb-5 mb-lg-2">View More</a>
 						</div>
 						<div class="col-lg-4 ml-auto my-auto">
-							<img class="img-fluid appear-animation" src="img/porto-preview-1.jpg" alt=""
+							<img class="img-fluid appear-animation" src="img/datagen.PNG" alt=""
 								data-appear-animation="fadeInUp">
 						</div>
 					</div>
