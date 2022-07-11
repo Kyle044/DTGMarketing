@@ -5,7 +5,7 @@
 <body>
 <div class="galleryContainer">
     <div class="galleryheading">
-    <h3 class="text-bold">2021</h3>
+    <h3 class="text-bold">2022</h3>
     <p>We are delighted to announce our partnership with Protec International Institute (TESDA-Accredited Institute) and Datagen Facilities OPC, signed last July 4, 2022. 
     The partnership reflects an open exchange of information and personnel between the two companies that aims to provide more opportunities for career growth and professional development. </p>
     </div>

@@ -13,9 +13,11 @@
     <div class="aboutUsmain">
          <img src="../img/banner_inner.jpg" alt="">
     <div class="texthed">
-        <h3>About Us</h3>
+    <h2 style="font-size: 2rem; color:white;
+    font-weight: bold;
+    margin-bottom: 0;">ABOUT</h2>
         <hr>
-        <p>Datagen Facilities, OPC is an inbound and outbound call center and business process outsourcing 
+        <p style="color:white; margin-bottom: 0;">Datagen Facilities, OPC is an inbound and outbound call center and business process outsourcing 
                 company in the Philippines. For over 14 years, we have been providing exceptional inbound and 
                 outbound telemarketing and lead generation services to various companies in Australia and New 
                 Zealand. Over the years, Datagen Facilities, OPC is evolving its business to now offer Non-Voice 
@@ -75,7 +77,7 @@
 <div class="row">
 						<div class="col" style="padding:0rem 14rem;">
 
-							<h3 class="heading-primary mt-5">Our <strong>Management Team</strong></h3>
+							<h3 class="heading-primary mt-5"><strong>Our Management Team</strong></h3>
 
 							<ul class="history">
 								<li class="appear-animation" data-appear-animation="fadeInUp">
@@ -84,9 +86,9 @@
 									</div>
 									<div class="featured-box">
 										<div class="box-content">
-                                            <h3 style="margin-bottom:10px;">Robert Alexander Quinn</h3>
-                                            <p>Chairman</p>
-											<p>Bob as he is fondly called, is the strategic leader overseeing the entire business operations 
+                                            <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;">Robert Alexander Quinn</h3>
+                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;">Chairman</p>
+											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;">Bob as he is fondly called, is the strategic leader overseeing the entire business operations 
                                             of the company. He has over 25 years of global experience in Sales in a call center industry 
                                             that allows him to establish and operate businesses in Australia, United Kingdom and 
                                             Philippines. His unparalleled expertise in Call Center and Business Process Outsourcing 
@@ -101,9 +103,9 @@
 									</div>
 									<div class="featured-box">
 										<div class="box-content">
-											<h3 style="margin-bottom:10px;">Mary Mhel Erillo</h3>
-                                            <p>Vice President for Admin and Finance</p>
-											<p>Mae is a business professional with over 6 years of experience in strategic and people management she oversees the planning, development, implementation, and maintenance of the company's administrative and financial services and departments, supporting and promoting profitable goals and objectives. She has exemplary contributions in the overall success of the company.</p>
+											<h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;">Mary Mhel Erillo</h3>
+                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;">Vice President for Admin and Finance</p>
+											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;">Mae is a business professional with over 6 years of experience in strategic and people management she oversees the planning, development, implementation, and maintenance of the company's administrative and financial services and departments, supporting and promoting profitable goals and objectives. She has exemplary contributions in the overall success of the company.</p>
 										</div>
 									</div>
 								</li>
@@ -113,9 +115,9 @@
 									</div>
 									<div class="featured-box">
 										<div class="box-content">
-                                            <h3 style="margin-bottom:10px;">John Lim</h3>
-                                            <p>Head of Operations</p>
-											<p>John is an experienced Operations Head with over 8 years of experience in business outsourcing industry. He has exceptional contributions to the overall operational efficiencies and infrastructure capabilities of Datagen Facilities, OPC. He build his career in operations at Datagen Facilities, OPC that allows him to manage resources effectively.</p>
+                                            <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;"">John Lim</h3>
+                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;">Head of Operations</p>
+											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;">John is an experienced Operations Head with over 8 years of experience in business outsourcing industry. He has exceptional contributions to the overall operational efficiencies and infrastructure capabilities of Datagen Facilities, OPC. He build his career in operations at Datagen Facilities, OPC that allows him to manage resources effectively.</p>
 										</div>
 									</div>
 								</li>

@@ -364,11 +364,11 @@ textarea {
 }
 
 .lead {
-  color: black;
+  color: #e26a0b;
 }
 
 .serviceTo {
-  margin-top: 12rem;
+  margin-top: 6rem;
   padding: 2px 8rem;
   background-image: url("../img/banner_inner.jpg");
   background-repeat: no-repeat;
