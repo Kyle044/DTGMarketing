@@ -37,8 +37,8 @@
 					<h1
 						style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: left; font-weight: bold; width: 60%; font-size: 1.4rem; text-transform: uppercase ;">
 						COMPANY VISION</h1>
-					<p style="  color: white; " class="cc"> Providing complete and cohesive customer experience that is
-						Our vision is to be the preferred Business Partner in business process outsourcing. At Datagen Facilities, OPC we believe that providing positive client experience and genuine customer care are essential in building strong client partnership.
+					<p style="  color: white; " class="cc"> Our vision is to be the preferred Business Partner in business process outsourcing.
+	At Datagen Facilities, OPC we believe that providing positive client experience and genuine customer care are essential in building strong client partnership. 
 					</p>
 
 				</div>

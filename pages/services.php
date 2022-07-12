@@ -4,7 +4,6 @@
 			
 
 			<div role="main" class="main">
-		
 	<div class="serviceTo">
 	<div style="margin-top: 5.5rem;" class="serviceToHead">
 	<h2 style="font-size: 2rem; color:white;
@@ -16,7 +15,7 @@
 		</p>
 	</div>
 
-	<div class="serviceCard" >
+	<div class="serviceCard" style="border:4px solid white;" >
 	<div class="serviceLeft">
 		<div style="display:flex; align-items:center; transform:translateX(-2rem);">
 		<i class="bi bi-brightness-low-fill " style="color:white; text-align:center; margin-right:15px;"></i>
@@ -35,7 +34,7 @@
 	<div class="serviceLeft">
 			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
 		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
-		<h2 style=" margin:0;color:#e26a0b;">Email Support</h2>
+		<h2 style=" margin:0;color:white;">Email Support</h2>
 		</div>
 		<p class="lead">
 		We respond to customers inquiries and/or concerns promptly either through email or chat. We develop a messaging interface that would support customers concern and partners need.
@@ -49,7 +48,7 @@
 	<div class="serviceLeft">
 			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
 		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
-		<h2 style=" margin:0;color:#e26a0b;">Inbound Call Support</h2>
+		<h2 style=" margin:0;color:white;">Inbound Call Support</h2>
 		</div>
 		<p class="lead">
 		We provide customer service support to clients by responding to customers inquiries or complaints. We have proprietary system in placed to ensure that customers experience is seamless. We make sure to provide accurate information and deliver exceptional customer service throughout the entire interaction with the customers.
@@ -64,7 +63,7 @@ We have in-house call center and we are capable to provide 24/7 customer support
 	<div class="serviceLeft">
 			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
 		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
-		<h2 style=" margin:0;color:#e26a0b;">Outbound Call Support</h2>
+		<h2 style=" margin:0;color:white;">Outbound Call Support</h2>
 		</div>
 		<p class="lead">
 		We employ proactive approach in dealing with customers to strengthen customer relationships and improving the quality of customer experience. We maintain a consistent standard of customer service excellence.
@@ -78,12 +77,12 @@ We have in-house call center and we are capable to provide 24/7 customer support
 	<div class="serviceLeft">
 				<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
 		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
-		<h2 style=" margin:0;color:#e26a0b;">Back Office Support</h2>
+		<h2 style=" margin:0;color:white;">Back Office Support</h2>
 		</div>
 		<p class="lead" style="margin-bottom:10px;">
 		It allows clients to streamline their operations and reduce operational cost. We have upgraded our back office support capabilities to provide back office support to clients and partners.
 		</p>
-		<ul style="color:#e26a0b;
+		<ul style="color:white;
     font-size: 1.25rem;
 " class="listko"><li>Medical Transcription</li>
 		<li>E-Commerce</li>

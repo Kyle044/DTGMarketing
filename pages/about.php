@@ -84,28 +84,38 @@
 									<div class="thumb">
 										<img src="../img/office/office-4.jpg" alt="" />
 									</div>
-									<div class="featured-box">
-										<div class="box-content">
-                                            <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;">Robert Alexander Quinn</h3>
-                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;">Chairman</p>
-											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;">Bob as he is fondly called, is the strategic leader overseeing the entire business operations 
+                                    <div class="featured-box">   
+										<div class="box-content" style="background-color: #2a2b2c;
+                                        border-radius: 5px;
+                                        box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -webkit-box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -moz-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
+                                        transform: translate(29px, -8px);">
+                                            <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;color:white;">Robert Alexander Quinn</h3>
+                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;color:white;">Chairman</p>
+											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;color:white;">Bob as he is fondly called, is the strategic leader overseeing the entire business operations 
                                             of the company. He has over 25 years of global experience in Sales in a call center industry 
                                             that allows him to establish and operate businesses in Australia, United Kingdom and 
                                             Philippines. His unparalleled expertise in Call Center and Business Process Outsourcing 
                                             allows him to successfully sustain the business operations of Datagen Facilities, OPC for 
                                             over 14 years.</p>
 										</div>
-									</div>
+                                    </div>
 								</li>
 								<li class="appear-animation" data-appear-animation="fadeInUp">
 									<div class="thumb">
 										<img src="../img/office/office-3.jpg" alt="" />
 									</div>
 									<div class="featured-box">
-										<div class="box-content">
-											<h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;">Mary Mhel Erillo</h3>
-                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;">Vice President for Admin and Finance</p>
-											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;">Mae is a business professional with over 6 years of experience in strategic and people management she oversees the planning, development, implementation, and maintenance of the company's administrative and financial services and departments, supporting and promoting profitable goals and objectives. She has exemplary contributions in the overall success of the company.</p>
+                                    <div class="box-content" style="background-color: #2a2b2c;
+                                        border-radius: 5px;
+                                        box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -webkit-box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -moz-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
+                                        transform: translate(29px, -8px);">
+											<h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;color:white;">Mary Mhel Erillo</h3>
+                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;color:white;">Vice President for Admin and Finance</p>
+											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;color:white;">Mae is a business professional with over 6 years of experience in strategic and people management she oversees the planning, development, implementation, and maintenance of the company's administrative and financial services and departments, supporting and promoting profitable goals and objectives. She has exemplary contributions in the overall success of the company.</p>
 										</div>
 									</div>
 								</li>
@@ -114,10 +124,15 @@
 										<img src="../img/office/office-2.jpg" alt="" />
 									</div>
 									<div class="featured-box">
-										<div class="box-content">
-                                            <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;"">John Lim</h3>
-                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;">Head of Operations</p>
-											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;">John is an experienced Operations Head with over 8 years of experience in business outsourcing industry. He has exceptional contributions to the overall operational efficiencies and infrastructure capabilities of Datagen Facilities, OPC. He build his career in operations at Datagen Facilities, OPC that allows him to manage resources effectively.</p>
+                                    <div class="box-content" style="background-color: #2a2b2c;
+                                        border-radius: 5px;
+                                        box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -webkit-box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -moz-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
+                                        transform: translate(29px, -8px);">
+                                            <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;color:white;">John Lim</h3>
+                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem; color:white;">Head of Operations</p>
+											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem; color:white;">John is an experienced Operations Head with over 8 years of experience in business outsourcing industry. He has exceptional contributions to the overall operational efficiencies and infrastructure capabilities of Datagen Facilities, OPC. He build his career in operations at Datagen Facilities, OPC that allows him to manage resources effectively.</p>
 										</div>
 									</div>
 								</li>
