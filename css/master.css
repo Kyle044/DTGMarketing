@@ -462,7 +462,6 @@ textarea {
   -moz-box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
-
 .carsec1 {
   display: flex;
   justify-content: center;
@@ -513,6 +512,10 @@ textarea {
 }
 .riright {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .carhead {
@@ -527,6 +530,7 @@ textarea {
   box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
+  padding: 2rem;
 }
 .carhead h1 {
   margin-top: 1rem !important;

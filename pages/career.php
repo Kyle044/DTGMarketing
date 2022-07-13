@@ -46,7 +46,7 @@
     <div class="carimg">
     <img src="../img/cardImg.jpg" alt="">
 </div>
-<div class="carhead" style="margin-bottom:3rem; margin-top:3rem;">
+<div class="carhead" >
     <h1>Ca-Ching. Get Paid Fast.</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque a provident
          perspiciatis? Illo fugiat obcaecati minus quae culpa earum.</p>
