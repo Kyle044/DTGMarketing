@@ -5,7 +5,7 @@
 					<div class="col-lg-3">
 						<div class="newsletter">
 							<h4>Newsletter</h4>
-							<p>Keep up on our always evolving product features and technology. Enter your e-mail and
+							<p>Keep up with our always evolving product features and technology. Enter your e-mail and
 								subscribe to our newsletter.</p>
 
 							<div class="alert alert-success d-none" id="newsletterSuccess">

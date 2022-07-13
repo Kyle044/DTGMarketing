@@ -41,13 +41,13 @@
             <h1
                 style="letter-spacing: 5px; line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
                 INTEGRITY</h1>
-            <p style="  color: white; margin-bottom:3rem;" class="bb">We maintain highest standard of work ethics including sound judgement, honesty and dependability.
+            <p style="  color: white; margin-bottom:3rem;" class="bb">We maintain the highest standard of work ethics including sound judgement, honesty and dependability.
 
             </p>
              <h1
                 style="letter-spacing: 5px; line-height: 1.9rem; margin-bottom: 0px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
                 DEDICATION</h1>
-            <p style="  color: white; " class="bb">We want to produce the highest quality of results that is align to the company strategy.
+            <p style="  color: white; " class="bb">We want to produce the highest quality of results that is aligned to the company strategy.
 
 
 
@@ -60,7 +60,7 @@
             <h1
                 style="letter-spacing: 5px;line-height: 1.9rem; margin-bottom: 0px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
                 LOYALTY</h1>
-            <p style="  color: white; " class="cc"> We act in good faith and advance the interest of company and the clients</p>
+            <p style="  color: white; " class="cc"> We act in good faith and advance the interest of the company and the clients</p>
 <h1
                 style="letter-spacing: 5px;line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
                 TEAMWORK</h1>
@@ -115,7 +115,7 @@
                                         transform: translate(29px, -8px);">
 											<h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;color:white;">Mary Mhel Erillo</h3>
                                             <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;color:white;">Vice President for Admin and Finance</p>
-											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;color:white;">Mae is a business professional with over 6 years of experience in strategic and people management she oversees the planning, development, implementation, and maintenance of the company's administrative and financial services and departments, supporting and promoting profitable goals and objectives. She has exemplary contributions in the overall success of the company.</p>
+											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;color:white;">Mae is a business professional with over 6 years of experience in strategic and people management she oversees the planning, development, implementation, and maintenance of the company's administrative and financial services, supporting and promoting profitability goals and objectives. She has an exemplary contributions to the overall success of the company.</p>
 										</div>
 									</div>
 								</li>
@@ -132,7 +132,7 @@
                                         transform: translate(29px, -8px);">
                                             <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;color:white;">John Lim</h3>
                                             <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem; color:white;">Head of Operations</p>
-											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem; color:white;">John is an experienced Operations Head with over 8 years of experience in business outsourcing industry. He has exceptional contributions to the overall operational efficiencies and infrastructure capabilities of Datagen Facilities, OPC. He build his career in operations at Datagen Facilities, OPC that allows him to manage resources effectively.</p>
+											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem; color:white;">John is an experienced Operations Head with over 8 years of experience in the business outsourcing industry. He has exceptional contributions to the overall operational efficiencies and infrastructure capabilities of Datagen Facilities, OPC. He builds his career in operations at Datagen Facilities, OPC that allows him to manage resources effectively.</p>
 										</div>
 									</div>
 								</li>
