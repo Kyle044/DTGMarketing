@@ -462,6 +462,7 @@ textarea {
   -moz-box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
+
 .carsec1 {
   display: flex;
   justify-content: center;
@@ -551,6 +552,7 @@ textarea {
   margin-top: 5rem;
   margin-bottom: 1rem;
 }
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .columnzz,

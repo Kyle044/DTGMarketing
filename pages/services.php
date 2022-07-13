@@ -23,7 +23,7 @@
 		</div>
 		
 		<p class="lead" style="color:white;">
-		We have a systematic process of identifying person's interests and behavior. We generate leads through surveys and we customized our survey to draw accurate information on customer's demographics and behavior. Lead generation activities are managed by a dedicated and experienced team, focused on producing quality output for our partners and clients.
+		We have a systematic process of identifying a person's interests and behavior. We generate leads through surveys and we customized our survey to draw accurate information on the customer's behavior and demographics. Lead generation activities are managed by a dedicated and experienced team, focused on producing quality output for our partners and clients.
 		</p>
 	</div>
 	<div class="serviceRight">
@@ -37,7 +37,7 @@
 		<h2 style=" margin:0;color:white;">Email Support</h2>
 		</div>
 		<p class="lead">
-		We respond to customers inquiries and/or concerns promptly either through email or chat. We develop a messaging interface that would support customers concern and partners need.
+		We respond to customers inquiries and/or concerns promptly either through email or chat. We develop a messaging interface that would support customer concern and partners need.
 		</p>
 	</div>
 	<div class="serviceRight">
@@ -51,8 +51,8 @@
 		<h2 style=" margin:0;color:white;">Inbound Call Support</h2>
 		</div>
 		<p class="lead">
-		We provide customer service support to clients by responding to customers inquiries or complaints. We have proprietary system in placed to ensure that customers experience is seamless. We make sure to provide accurate information and deliver exceptional customer service throughout the entire interaction with the customers.
-We have in-house call center and we are capable to provide 24/7 customer support.
+		We provide customer service support to clients by responding to customer inquiries or complaints. We have a proprietary system in placed to ensure that customers experience is seamless. We make sure to provide accurate information and deliver exceptional customer service throughout the entire interaction with the customers.
+We have an in-house call center and we are capable to provide 24/7 customer support.
 		</p>
 	</div>
 	<div class="serviceRight">
@@ -66,7 +66,7 @@ We have in-house call center and we are capable to provide 24/7 customer support
 		<h2 style=" margin:0;color:white;">Outbound Call Support</h2>
 		</div>
 		<p class="lead">
-		We employ proactive approach in dealing with customers to strengthen customer relationships and improving the quality of customer experience. We maintain a consistent standard of customer service excellence.
+		We employ a proactive approach in dealing with customers to strengthen customer relationships and improving the quality of customer experience. We maintain a consistent standard of customer service excellence.
 		</p>
 	</div>
 	<div class="serviceRight">
