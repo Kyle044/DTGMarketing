@@ -118,29 +118,29 @@
 
 													<ul class="dropdown-menu">
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Lead Generation</a>
+															<a class="dropdown-item" href="services.php#lg">Lead Generation</a>
 
 														</li>
 
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Email Support</a>
+															<a class="dropdown-item" href="services.php#es">Email Support</a>
 
 														</li>
 
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Inbound Call Support</a>
+															<a class="dropdown-item" href="services.php#ics">Inbound Call Support</a>
 
 														</li>
 
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Outbound Call Support</a>
+															<a class="dropdown-item" href="services.php#ocs">Outbound Call Support</a>
 
 														</li>
 
 					
 
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Back Office Support</a>
+															<a class="dropdown-item" href="services.php#bos">Back Office Support</a>
 															<ul class="dropdown-menu">
 																<li><a class="dropdown-item"
 																		href="">Medical Transcription</a>
@@ -159,7 +159,7 @@
 													</ul>
 												</li>
 												<li class="dropdown">	
-													<a class="" href="#" style="font-size: 1rem;">
+													<a class="" href="career.php" style="font-size: 1rem;">
 														Career
 													</a>
 												</li>

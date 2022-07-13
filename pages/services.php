@@ -15,7 +15,7 @@
 		</p>
 	</div>
 
-	<div class="serviceCard" style="border:4px solid white;" >
+	<div class="serviceCard" style="border:4px solid white;" id="lg" >
 	<div class="serviceLeft">
 		<div style="display:flex; align-items:center; transform:translateX(-2rem);">
 		<i class="bi bi-brightness-low-fill " style="color:white; text-align:center; margin-right:15px;"></i>
@@ -30,7 +30,7 @@
 		<img  src="../img/services1.jpg" alt="">
 	</div>
 	</div>
-		<div class="serviceCard">
+		<div class="serviceCard"  id="es">
 	<div class="serviceLeft">
 			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
 		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
@@ -45,7 +45,7 @@
 	</div>
 	</div>
 		<div class="serviceCard">
-	<div class="serviceLeft">
+	<div class="serviceLeft"  id="ics">
 			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
 		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
 		<h2 style=" margin:0;color:white;">Inbound Call Support</h2>
@@ -59,7 +59,7 @@ We have an in-house call center and we are capable to provide 24/7 customer supp
 		<img  src="../img/services3.jpg" alt="">
 	</div>
 	</div>
-		<div class="serviceCard">
+		<div class="serviceCard"  id="ocs">
 	<div class="serviceLeft">
 			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
 		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
@@ -73,7 +73,7 @@ We have an in-house call center and we are capable to provide 24/7 customer supp
 		<img  src="../img/services4.jpg" alt="">
 	</div>
 	</div>
-	<div class="serviceCard">
+	<div class="serviceCard"  id="bos">
 	<div class="serviceLeft">
 				<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
 		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
