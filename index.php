@@ -64,40 +64,38 @@
 	<h2 style="margin-top: 4rem; text-align:center;"><strong>Services</strong> in us!</h2>
 				<div class="section4">
 					
-	<div class="serviceCards" >
+<a class="serviceCards"  href="./pages/services.php#lg">
 		<img src="./img/services1.jpg" alt="">
 		<div class="hoverDiv">
 			<h3 style="color:white;">Lead Generation</h3>
 		</div>
-	</div>
-	<div class="serviceCards">
+</a>
+	<a class="serviceCards"  href="./pages/services.php#es">
 		<img src="./img/services2.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Email Support</h3>
 		</div>
-	</div>	
-	<div class="serviceCards">
+</a>	
+	<a class="serviceCards"  href="./pages/services.php#ics">
 		<img src="./img/services3.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Inbound Call Support</h3>
 		</div>
-	</div>	
-	<div class="serviceCards">
+</a>	
+	<a class="serviceCards"  href="./pages/services.php#ocs">
 		<img src="./img/services4.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Outbound Call Support</h3>
 		</div>
-	</div>	
+</a>	
 
-		<div class="serviceCards">
+<a class="serviceCards"  href="./pages/services.php#bos">
 		<img src="./img/services5.jpg" alt="">
 		<div class="hoverDiv">
 			<h3 style="color:white;">Back Office Support</h3>
 		</div>
-			</div>
+</a>
 	</div>
-
-				
 			</div>
 			<section class="section section-background section-center mt-0"
 				style="background-image: url(img/patterns/swirl_pattern.png); margin-bottom:0;">

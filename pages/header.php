@@ -156,7 +156,7 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="#" style="font-size: 1rem;">
+													<a class="" href="pages/career.php" style="font-size: 1rem;">
 														Career
 													</a>
 												</li>
