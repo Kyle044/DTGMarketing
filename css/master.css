@@ -135,7 +135,11 @@
   transform: translateY(0rem);
 }
 .galleryContainer {
-  margin: 7rem 6rem;
+  margin: 5rem 6rem;
+}
+.gMasterContainer {
+  background-image: url(../img/banner_inner.jpg);
+  height: 92vh;
 }
 .galleryContainer .gallery {
   margin: 1rem 2rem;
@@ -368,7 +372,7 @@ textarea {
 }
 
 .serviceTo {
-  margin-top: 12rem;
+  margin-top: 5rem;
   padding: 2px 8rem;
   background-image: url("../img/banner_inner.jpg");
   background-repeat: no-repeat;
@@ -383,16 +387,27 @@ textarea {
   justify-content: center;
   align-items: center;
   margin-bottom: 6rem;
+  background-color: #e88c43;
+  padding: 2rem 5rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
 }
+
 .serviceCard .serviceLeft {
   margin-right: 2rem;
 }
 .serviceCard .serviceLeft h2 {
   text-align: justify;
-  color: #f7992b;
+  color: white;
 }
 .serviceCard .serviceLeft p {
   text-align: justify;
+  color: white;
+}
+.serviceCard .serviceLeft i {
+  color: white !important;
 }
 .serviceCard .serviceRight {
 }
@@ -407,6 +422,46 @@ textarea {
 .listko li {
   margin-bottom: 0.5rem;
 }
+
+.specialCard {
+  display: flex;
+  padding: 1rem 3rem;
+}
+
+.specialRight img {
+  width: 64%;
+  height: auto;
+  border-radius: 10px;
+}
+.specialRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sampleForm {
+  background-image: url(../img/banner_inner.jpg);
+  height: 100vh;
+  margin-top: 5rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sampleForm .samLeft {
+}
+
+.sampleForm .samRight {
+}
+.wetete {
+  background-color: #2a2b2c;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .columnzz,
