@@ -586,7 +586,7 @@ textarea {
 .ar1Container h1 {
   align-self: flex-start;
   margin-left: 10rem;
-
+  width: 73%;
   margin-bottom: 1rem;
 }
 .ar1ComboPic p {
