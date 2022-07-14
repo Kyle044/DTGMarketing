@@ -17,7 +17,8 @@
     font-weight: bold;
     margin-bottom: 0;">ABOUT</h2>
         <hr>
-        <p style="color:white; margin-bottom: 0;">Datagen Facilities, OPC is an inbound and outbound call center and business process outsourcing 
+        <p style="color:white; margin-bottom: 0;">
+                Datagen Facilities, OPC is an inbound and outbound call center and business process outsourcing 
                 company in the Philippines. For over 14 years, we have been providing exceptional inbound and 
                 outbound telemarketing and lead generation services to various companies in Australia and New 
                 Zealand. Over the years, Datagen Facilities, OPC is evolving its business to now offer Non-Voice 
@@ -29,7 +30,7 @@
                 Currently, we have two (2) BPO sites in the Philippines. We have over 400 seats in both sites 
                 providing services to our existing clients.
                 At Datagen Facilities, OPC, we are committed to delivering exceptional service at an affordable 
-                price. </p>
+                price. </p>`
     </div>
    
     </div>
@@ -82,7 +83,7 @@
 							<ul class="history">
 								<li class="appear-animation" data-appear-animation="fadeInUp">
 									<div class="thumb">
-										<img src="../img/office/office-4.jpg" alt="" />
+										<img src="../img/bob.jpg" alt="" />
 									</div>
                                     <div class="featured-box">   
 										<div class="box-content" style="background-color: #2a2b2c;
@@ -91,9 +92,9 @@
                                         -webkit-box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
                                         -moz-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
                                         transform: translate(29px, -8px);">
-                                            <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;color:white;">Robert Alexander Quinn</h3>
-                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;color:white;">Chairman</p>
-											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;color:white;">Bob as he is fondly called, is the strategic leader overseeing the entire business operations 
+                                        <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;color:white;">Robert Alexander Quinn</h3>
+                                        <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;color:white;">Chairman</p>
+										<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;color:white;">Bob as he is fondly called, is the strategic leader overseeing the entire business operations 
                                             of the company. He has over 25 years of global experience in Sales in a call center industry 
                                             that allows him to establish and operate businesses in Australia, United Kingdom and 
                                             Philippines. His unparalleled expertise in Call Center and Business Process Outsourcing 
@@ -104,7 +105,7 @@
 								</li>
 								<li class="appear-animation" data-appear-animation="fadeInUp">
 									<div class="thumb">
-										<img src="../img/office/office-3.jpg" alt="" />
+										<img src="../img/krishna.jpg" alt="" />
 									</div>
 									<div class="featured-box">
                                     <div class="box-content" style="background-color: #2a2b2c;
@@ -121,7 +122,7 @@
 								</li>
 								<li class="appear-animation" data-appear-animation="fadeInUp">
 									<div class="thumb">
-										<img src="../img/office/office-2.jpg" alt="" />
+										<img src="../img/john.jpg" alt="" />
 									</div>
 									<div class="featured-box">
                                     <div class="box-content" style="background-color: #2a2b2c;
