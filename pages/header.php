@@ -150,14 +150,13 @@
 																		href="a">Technical Support</a></li>
 																<li><a class="dropdown-item" href="">Search
 																		Engine Optimization</a></li>
-																
 															</ul>
 														</li>
 													</ul>
 												</li>
 												<li class="dropdown">
-														<a class="" href="pages/career.php" style="font-size: 1rem;">
-													<!-- <a class="" href="#" style="font-size: 1rem;"> -->
+														<!-- <a class="" href="pages/career.php" style="font-size: 1rem;"> -->
+													<a class="" href="#" style="font-size: 1rem;">
 														Career
 													</a>
 												</li>
