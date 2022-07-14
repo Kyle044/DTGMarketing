@@ -567,6 +567,91 @@ textarea {
   margin-bottom: 1rem;
 }
 
+.ar1Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 6rem;
+
+  padding-top: 1rem;
+}
+
+.ar1ComboPic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.ar1Container h1 {
+  align-self: flex-start;
+  margin-left: 10rem;
+
+  margin-bottom: 1rem;
+}
+.ar1ComboPic p {
+  width: 45%;
+  margin-left: 1rem;
+  align-self: flex-start;
+  text-align: justify;
+
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  word-spacing: 4px;
+}
+
+.ar1ComboPic img {
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.ar2ComboPic img {
+  width: 30%;
+  height: auto;
+}
+.ar1Combo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar1Combo p {
+  width: 76%;
+  text-align: justify;
+
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  word-spacing: 4px;
+}
+.ar1Combo h1 {
+  margin-bottom: 1rem;
+}
+.ar2Container {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.ar2Container h1 {
+  margin-bottom: 0.4rem;
+  margin-left: 10rem;
+}
+.ar2ComboPic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ar2ComboPic p {
+  text-align: justify;
+  margin-right: 4rem;
+  width: 40%;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  word-spacing: 4px;
+}
+.ar2ComboPic p {
+  align-self: flex-start;
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .columnzz,

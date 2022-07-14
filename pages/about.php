@@ -105,7 +105,7 @@
 								</li>
 								<li class="appear-animation" data-appear-animation="fadeInUp">
 									<div class="thumb">
-										<img src="../img/krishna.jpg" alt="" />
+										<img src="../img/mae_new.jpg" alt="" />
 									</div>
 									<div class="featured-box">
                                     <div class="box-content" style="background-color: #2a2b2c;
@@ -122,7 +122,7 @@
 								</li>
 								<li class="appear-animation" data-appear-animation="fadeInUp">
 									<div class="thumb">
-										<img src="../img/john.jpg" alt="" />
+										<img src="../img/john new.jpg" alt="" />
 									</div>
 									<div class="featured-box">
                                     <div class="box-content" style="background-color: #2a2b2c;
