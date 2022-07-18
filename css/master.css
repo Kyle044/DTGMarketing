@@ -661,22 +661,117 @@ textarea {
 .twoCardContainer {
   display: flex;
   align-items: center;
-  margin: 6rem 1rem;
+  margin: 2rem 1rem;
   justify-content: center;
 }
-.twoCardContainer div {
+.twoCardContainer a {
   margin-right: 1rem;
   border-radius: 10px;
-  width: 40%;
-  height: 30vh;
+  width: 33%;
+  height: 22vh;
   background-color: #dd8e33;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
-.twoCardContainer div h1 {
+.twoCardContainer a:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  text-decoration: none;
+}
+.twoCardContainer a h1 {
   margin: 0;
   color: white;
+}
+
+.hero {
+  background-image: url(../img/banner_inner.jpg);
+  height: 30vh;
+  margin-top: 5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1rem 15rem;
+}
+.hero h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+.fleft {
+}
+
+.fleft h3 {
+  color: #dd8e33;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.fleft ul {
+  list-style-type: circle;
+}
+
+.fleft ul li {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: black;
+}
+.fright {
+}
+
+.fright h3 {
+  color: #dd8e33;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.fright ul {
+  list-style-type: circle;
+}
+
+.fright ul li {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.hero-edit {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero-edit h1 {
+  margin-bottom: 1rem;
+}
+
+.hero-edit p {
+  font-size: 1.4rem;
+  color: white;
+  font-size: 16px;
+  color: white;
+  line-height: 1.4rem;
+  word-spacing: 5px;
+}
+
+.hero-edit a {
+  background-color: white;
+
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+}
+.hero-edit a:hover {
+  background-color: black;
+
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
