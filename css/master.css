@@ -573,7 +573,7 @@ textarea {
   justify-content: center;
   flex-direction: column;
   margin-top: 6rem;
-
+  background-image: url(../img/banner_inner.jpg);
   padding-top: 1rem;
 }
 
@@ -588,13 +588,16 @@ textarea {
   margin-left: 10rem;
   width: 73%;
   margin-bottom: 1rem;
+  font-size: 27px;
+  color: white;
+  font-weight: bold;
 }
 .ar1ComboPic p {
   width: 45%;
   margin-left: 1rem;
   align-self: flex-start;
   text-align: justify;
-
+  color: white;
   font-size: 1.2rem;
   line-height: 1.8rem;
   word-spacing: 4px;
@@ -634,6 +637,9 @@ textarea {
 .ar2Container h1 {
   margin-bottom: 0.4rem;
   margin-left: 10rem;
+  font-size: 27px;
+  color: black;
+  font-weight: bold;
 }
 .ar2ComboPic {
   display: flex;
@@ -650,6 +656,27 @@ textarea {
 }
 .ar2ComboPic p {
   align-self: flex-start;
+}
+
+.twoCardContainer {
+  display: flex;
+  align-items: center;
+  margin: 6rem 1rem;
+  justify-content: center;
+}
+.twoCardContainer div {
+  margin-right: 1rem;
+  border-radius: 10px;
+  width: 40%;
+  height: 30vh;
+  background-color: #dd8e33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.twoCardContainer div h1 {
+  margin: 0;
+  color: white;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
