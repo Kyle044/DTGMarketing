@@ -109,6 +109,9 @@
 														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="contact.php">Contact</a>
 														</li>
+														<li class="dropdown-submenu">
+															<a class="dropdown-item" href="facilities.php">Facilities</a>
+														</li>
 													</ul>
 												</li>
 												<li class="dropdown">
