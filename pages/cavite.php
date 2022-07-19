@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <?php include('headerdito.php') ?>
 <body>
-
-
-
 <div class="hero hero-edit">
     <h1>Cavite Facility</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, odit possimus fuga fugit cupiditate deserunt quas maxime consequuntur natus mollitia dolores quae provident ipsum. Placeat veniam repudiandae repellat nisi doloribus voluptate quidem, labore illo dolorem,
@@ -23,8 +19,6 @@
         </div>
     </div>
 </section>
-
-
 <?php include('footerdito.php') ?>
 </body>
 </html>
