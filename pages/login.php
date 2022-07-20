@@ -19,8 +19,8 @@
 ">
     <i class="fa-solid fa-user"></i>
     </label>
-    <label for="">Username</label>
-    <input type="text" name="username">
+    <label for="">Email</label>
+    <input type="text" name="email">
     <label for="password">Password</label>
     <input type="password" name="password">
     <button type="submit">Submit</button>
@@ -57,6 +57,35 @@
         $("#loginForm").on("submit",(e)=>{
         e.preventDefault();
         var formData = new FormData(e.target);
+        var data =  {
+          "email": formData.get("email"),
+          "password" : formData.get("password")
+        }
+
+        if(!formData.get("email")||!formData.get("password")){
+          alert("Please Input in the fields")
+        }
+        else{
+          $.ajax({
+            type: "POST",
+            url: "../php/login.php",
+            data:data,
+            cache: false,
+          
+            success: function(res)
+                {alert(res);
+                    if(res=="Login Succesfully"){
+                      window.location.href="cms.php";
+                    }else{
+
+                    }
+                }
+            });
+        }
+
+
+
+
         
         })
 

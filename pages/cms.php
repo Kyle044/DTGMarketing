@@ -1,3 +1,15 @@
+<?php
+
+require_once("../php/config.php");
+require_once("../php/functions.php");
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,84 +80,48 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Bogart Dela Cruz</td>
-                                <td>Dev</td>
-                                <td>Department of Something</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Garrett Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
 
-                            </tr>
-                            <tr>
-                                <td>Ashton Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
+                        <?php
+                        
+                        $users = getUsers($conn);
 
-                            </tr>
-                            <tr>
-                                <td>Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
+                        if($users){
+                       foreach($users as $row){
+                        echo '<tr>
+                        <td>'.$row["usersName"].'</td>
+                        <td>'.$row["usersPosition"].'</td>
+                        <td>'.$row["usersOffice"].'</td>
+                        <td>'.$row["usersEmail"].'</td>
+                        <td>
+                            <div class="btnGrp">
+                                <a href="" class="up">Update</a><a href="" class="del">Delete</a>
+                            </div>
+                        </td>
+                    </tr>';
+                       }
+                        }else{
 
-                            </tr>
-                            <tr>
-                                <td>Airi Satou</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-
-                            </tr>
+                        }
+                        ?> 
                         </tbody>
                     </table>
                 </div>
 
                 <div class="dashLoginContainer">
                     <h3>Add User</h3>
-                    <form action="">
+                    <form action="" id="userForm">
                         <label for="">Full Name</label>
-                        <input type="text">
+                        <input type="text" name="fullname">
                         <label for="">Position</label>
-                        <input type="text">
+                        <input type="text" name="position">
                         <label for="">Office</label>
-                        <input type="text">
+                        <input type="text" name="office">
                         <label for="">Email</label>
-                        <input type="text">
+                        <input type="text" name="email">
                         <label for="">Password</label>
-                        <input type="password">
+                        <input type="password" name="password">
                         <label for="">Confirm Password</label>
-                        <input type="password">
+                        <input type="password" name="cpassword">
                         <button type="submit">Submit</button>
 
                     </form>
@@ -592,5 +568,6 @@
 <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap.min.js"></script>
 <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 <script src="../js/cms.js"></script>
+<script src="../js/cmsJquery.js"></script>
 
 </html>
