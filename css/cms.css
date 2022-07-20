@@ -263,6 +263,7 @@ section p {
   padding: 0.5rem;
   border-radius: 3px;
   color: white;
+  margin-bottom: 10px;
 }
 
 .dashLoginContainer form button:hover {

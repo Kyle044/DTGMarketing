@@ -1,10 +1,4 @@
 <?php
-
-
-
-
-
-
 function checkEmail($email){
     $result=false;
     if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
@@ -16,10 +10,6 @@ function checkEmail($email){
     return $result;
 
 }
-
-
-
-
 function uidExists($conn,$email){
 $sql = "SELECT * FROM users WHERE usersEmail = ?;";
 $stmt = mysqli_stmt_init($conn);
@@ -116,14 +106,25 @@ $resultData = mysqli_stmt_get_result($stmt);
 
 if(mysqli_num_rows($resultData)>0){
     while($row = mysqli_fetch_array($resultData)){
-        $data = array("usersId" => $row["usersId"],
-        "usersName" => $row["usersName"],
-        "usersPosition" => $row["usersPosition"],
-        "usersOffice" => $row["usersOffice"],
-        "usersEmail" => $row["usersEmail"]);
-        $users[]=$data;
+         echo '<tr>
+         <td>'.$row["usersName"].'</td>
+        <td>'.$row["usersPosition"].'</td>
+          <td>'.$row["usersOffice"].'</td>
+       <td>'.$row["usersEmail"].'</td>
+         <td>
+        <div class="btnGrp">
+          <a href="#" name ="'.$row['usersId'].'" class="up upUser" >Update</a><a href="#" name ="'.$row['usersId'].'" class="del delUser" >Delete</a>
+            </div>
+            </td>
+            </tr>';
+        // $data = array("usersId" => $row["usersId"],
+        // "usersName" => $row["usersName"],
+        // "usersPosition" => $row["usersPosition"],
+        // "usersOffice" => $row["usersOffice"],
+        // "usersEmail" => $row["usersEmail"]);
+        // $users[]=$data;
     }
-return $users;
+// return $users;
 }else{
     return false;
 }
@@ -131,4 +132,34 @@ return $users;
 
 mysqli_stmt_close($stmt);
 
+}
+
+function updateUser($conn,$fullname,$email,$office,$position,$password,$id){
+$sql = "UPDATE users SET usersName = ?, usersPosition=?, usersOffice=?,usersEmail=?,usersPassword=? WHERE usersId=?;";
+$stmt = mysqli_stmt_init($conn);
+if(!mysqli_stmt_prepare($stmt,$sql)){
+    echo"SQL Statement Failed...";
+    exit();
+}
+$hashedPwd = password_hash($password,PASSWORD_DEFAULT);
+mysqli_stmt_bind_param($stmt,"sssssi",$fullname,$position,$office,$email,$hashedPwd,$id);
+mysqli_stmt_execute($stmt);
+mysqli_stmt_close($stmt);
+echo("User Updated Successfully!");
+}
+
+
+
+
+function deleteUser($conn,$id){
+$sql = "DELETE FROM `users` WHERE usersId=?;";
+$stmt = mysqli_stmt_init($conn);
+if(!mysqli_stmt_prepare($stmt,$sql)){
+    echo"SQL Statement Failed...";
+    exit();
+}
+mysqli_stmt_bind_param($stmt,"i",$id);
+mysqli_stmt_execute($stmt);
+mysqli_stmt_close($stmt);
+echo("User Deleted Successfully!");
 }

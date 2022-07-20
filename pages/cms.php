@@ -1,13 +1,15 @@
 <?php
-
+session_start();
 require_once("../php/config.php");
 require_once("../php/functions.php");
+if(!isset($_SESSION["usersId"])){
 
+header("location: ./login.php");
 
-
+}
 ?>
 
-
+<script></script>
 
 
 <!DOCTYPE html>
@@ -31,7 +33,7 @@ require_once("../php/functions.php");
     <div class="portContainer">
         <div class="navs">
             <i class='bx bx-menu'></i>
-            <i class='bx bxs-user'></i>
+            <a href="../php/logout.php"><i class='bx bx-log-out'></i></a>
         </div>
         <div class="sides">
             <div class="logo">
@@ -61,6 +63,7 @@ require_once("../php/functions.php");
                 </li>
             </ul>
         </div>
+        <!-- USER TABLE -->
         <div class="dashboard">
 
             <div class="dashSide" id="dashSide">
@@ -68,7 +71,7 @@ require_once("../php/functions.php");
                 <div class="dashTableContainer">
                     <h3>List of Registered User</h3>
 
-                    <table id="userTbl" class="table table-striped table-bordered" style="width:100%">
+                    <table id="userTbl" class="table table-striped table-bordered" style="width:100%" id="userTbl">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -79,37 +82,14 @@ require_once("../php/functions.php");
 
                             </tr>
                         </thead>
-                        <tbody>
-
-                        <?php
-                        
-                        $users = getUsers($conn);
-
-                        if($users){
-                       foreach($users as $row){
-                        echo '<tr>
-                        <td>'.$row["usersName"].'</td>
-                        <td>'.$row["usersPosition"].'</td>
-                        <td>'.$row["usersOffice"].'</td>
-                        <td>'.$row["usersEmail"].'</td>
-                        <td>
-                            <div class="btnGrp">
-                                <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                            </div>
-                        </td>
-                    </tr>';
-                       }
-                        }else{
-
-                        }
-                        ?> 
+                        <tbody id="autoUser">
                         </tbody>
                     </table>
                 </div>
 
                 <div class="dashLoginContainer">
-                    <h3>Add User</h3>
-                    <form action="" id="userForm">
+                    <h3 id="userFormTitle">Add User</h3>
+                    <form action="" id="userForm" name="insert">
                         <label for="">Full Name</label>
                         <input type="text" name="fullname">
                         <label for="">Position</label>
@@ -122,7 +102,9 @@ require_once("../php/functions.php");
                         <input type="password" name="password">
                         <label for="">Confirm Password</label>
                         <input type="password" name="cpassword">
+                        <input type="hidden" name="id">
                         <button type="submit">Submit</button>
+                        <button type="button" id="insertUserBtn" >Add</button>
 
                     </form>
                 </div>
@@ -130,7 +112,7 @@ require_once("../php/functions.php");
 
             </div>
             <div class="serviceSide" id="serviceSide">
-
+<!-- SERVICE TABLE -->
                 <div class="dashTableContainer">
                     <h3>List of Services</h3>
 
@@ -178,7 +160,7 @@ require_once("../php/functions.php");
                 </div>
             </div>
             <div class="careerSide" id="careerSide">
-
+<!-- CAREER TABLE -->
                 <div class="dashTableContainer">
                     <h3>List of Career's</h3>
 
@@ -207,65 +189,12 @@ require_once("../php/functions.php");
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>Sample Title</td>
-                                <td>Description Text...</td>
-                                <td>Super visor name</td>
-                                <td>
-                                    Department of The Title
-                                </td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sample Title</td>
-                                <td>Description Text...</td>
-                                <td>Super visor name</td>
-                                <td>
-                                    Department of The Title
-                                </td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sample Title</td>
-                                <td>Description Text...</td>
-                                <td>Super visor name</td>
-                                <td>
-                                    Department of The Title
-                                </td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sample Title</td>
-                                <td>Description Text...</td>
-                                <td>Super visor name</td>
-                                <td>
-                                    Department of The Title
-                                </td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-
                         </tbody>
                     </table>
                 </div>
                 <div class="dashLoginContainer">
                     <h3>Add Career</h3>
-                    <form action="">
+                    <form action="" id="careerForm">
                         <label for="">Title</label>
                         <input type="text">
                         <label for="">Position</label>
@@ -274,13 +203,15 @@ require_once("../php/functions.php");
                         <input type="text">
                         <label for="">Department</label>
                         <input type="text">
+                         <input type="hidden" name="id">
                         <button type="submit">Submit</button>
+                        <button type="button" id="insertCareerBtn" >Add</button>
                     </form>
                 </div>
             </div>
 
             <div class="BlogsArticleSide" id="BlogsArticleSide">
-
+<!-- BLOG TABLE -->
                 <div class="dashTableContainer">
                     <h3>List of Blogs</h3>
 
@@ -373,6 +304,7 @@ require_once("../php/functions.php");
 
                     </form>
                 </div>
+                <!-- ARTICLE TABLE -->
                 <div class="dashTableContainer">
                     <h3>List of Articles</h3>
 
@@ -466,6 +398,7 @@ require_once("../php/functions.php");
                     </form>
                 </div>
             </div>
+            <!-- GALLERY TABLE -->
             <div class="GallerySide" id="GallerySide">
                 <div class="dashTableContainer" style="height: auto;">
                     <h3>List Post's</h3>
