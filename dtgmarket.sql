@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 20, 2022 at 06:45 AM
+-- Generation Time: Jul 21, 2022 at 10:51 AM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,60 @@ SET time_zone = "+00:00";
 --
 -- Database: `dtgmarket`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `career`
+--
+
+CREATE TABLE `career` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `supervisor` varchar(255) NOT NULL,
+  `department` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `files`
+--
+
+CREATE TABLE `files` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `directory` varchar(255) NOT NULL,
+  `size` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `files`
+--
+
+INSERT INTO `files` (`id`, `name`, `directory`, `size`) VALUES
+(17, '62d913596b3774.12576071.jpg', '../uploads/62d913596b3774.12576071.jpg', 2655584);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `service`
+--
+
+CREATE TABLE `service` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `supervisor` varchar(255) NOT NULL,
+  `file_fk` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `service`
+--
+
+INSERT INTO `service` (`id`, `title`, `description`, `supervisor`, `file_fk`) VALUES
+(25, 'Lead Generation', 'This is a sample descriptionsssss', 'Sir John', 17);
 
 -- --------------------------------------------------------
 
@@ -41,12 +95,29 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`usersId`, `usersName`, `usersPosition`, `usersOffice`, `usersEmail`, `usersPassword`) VALUES
-(2, 'bogart dela cruz', 'Web Dev', 'Datagen', 'kylegwapo04@gmail.com', '$2y$10$H80rwqkoZbFnEM8VBmX7O.r7O2Cpil7/wU2nAqHJDFVBDtdegRGNi'),
-(3, 'waeaasd', 'asdasd', 'sdasdasd', 'lala@gmail.com', '$2y$10$TphCrs7SgvfLFnxJKbgIX.ygsG8RdiP/JJWmgsHqKUsFPM34/HWGO');
+(2, 'John Kyle Razon', 'Web Dev', 'Web Dev Department', 'kylegwapo04@gmail.com', '$2y$10$DTSNqmBAMpoThDoKCz50fuoHDgHHdFpRii1NeBX47PobJVAiQYqS2');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `career`
+--
+ALTER TABLE `career`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `files`
+--
+ALTER TABLE `files`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `service`
+--
+ALTER TABLE `service`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -59,10 +130,28 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `career`
+--
+ALTER TABLE `career`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `files`
+--
+ALTER TABLE `files`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `service`
+--
+ALTER TABLE `service`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `usersId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `usersId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

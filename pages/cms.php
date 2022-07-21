@@ -65,12 +65,9 @@ header("location: ./login.php");
         </div>
         <!-- USER TABLE -->
         <div class="dashboard">
-
             <div class="dashSide" id="dashSide">
-
                 <div class="dashTableContainer">
                     <h3>List of Registered User</h3>
-
                     <table id="userTbl" class="table table-striped table-bordered" style="width:100%" id="userTbl">
                         <thead>
                             <tr>
@@ -79,7 +76,6 @@ header("location: ./login.php");
                                 <th>Office</th>
                                 <th>Email</th>
                                 <th>Action</th>
-
                             </tr>
                         </thead>
                         <tbody id="autoUser">
@@ -105,62 +101,49 @@ header("location: ./login.php");
                         <input type="hidden" name="id">
                         <button type="submit">Submit</button>
                         <button type="button" id="insertUserBtn" >Add</button>
-
                     </form>
                 </div>
 
 
             </div>
             <div class="serviceSide" id="serviceSide">
-<!-- SERVICE TABLE -->
+                    <!-- SERVICE TABLE -->
                 <div class="dashTableContainer">
                     <h3>List of Services</h3>
-
-                    <table id="userTbl" class="table table-striped table-bordered" style="width:100%">
+                    <table id="serviceTbl" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>Title</th>
                                 <th>Description</th>
                                 <th>Super Visor</th>
-
                                 <th>Action</th>
-
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Example Service</td>
-                                <td>Cras adipiscing enim eu turpis egestas. Dolor purus non enim praesent elementum
-                                    facilisis leo. A erat nam at lectus. At
-                                    lectus urna duis convallis.</td>
-                                <td>Bob</td>
-
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-
+                        <tbody id="autoService">
 
                         </tbody>
                     </table>
                 </div>
-                <div class="dashLoginContainer" style="height:36vh;">
-                    <h3>Add Services</h3>
-                    <form action="">
+                <div class="dashLoginContainer" style="height:auto;" >
+                    <h3 id="serviceFormTitle">Add Services</h3>
+                    <form action="" id="serviceForm" enctype="multipart/form-data" name="insert">
                         <label for="">Title</label>
-                        <input type="text">
+                        <input type="text" name="title">
                         <label for="">Description</label>
-                        <input type="text">
+                        <textarea name="description" id="" cols="30" rows="6"></textarea>
                         <label for="">Supervisor</label>
-                        <input type="text">
+                        <input type="text" name="supervisor">
+                        <label for="">Upload Image</label>
+                        <input type="file" name="file" id="servicePic">
+                        <input type="hidden" name="id" >
                         <button type="submit">Submit</button>
+                        <button type="button" id="insertServiceBtn">Add Service</button>
                     </form>
                 </div>
             </div>
             <div class="careerSide" id="careerSide">
-<!-- CAREER TABLE -->
+            <!-- CAREER TABLE -->
                 <div class="dashTableContainer">
                     <h3>List of Career's</h3>
 
@@ -493,6 +476,7 @@ header("location: ./login.php");
 <script>
     $(document).ready(function () {
         $('#userTbl').DataTable();
+        $('#serviceTbl').DataTable();
 
     });
 </script>

@@ -1,7 +1,7 @@
 $(document).ready(() => {
-  // hide insertUser Btn
+  // hide insert Btn
   $("#insertUserBtn").hide();
-
+  $("#insertServiceBtn").hide();
   // USER INSERT JAVASCRIPT AND UPDATE
   $("#userForm").on("submit", (e) => {
     e.preventDefault();
@@ -114,6 +114,75 @@ $(document).ready(() => {
         },
         cache: false,
         success: function (res) {
+          alert(res.msg);
+        }
+      });
+    } else {
+    }
+  });
+
+  //Service JQUERY Functions
+
+  //Insert Service & Update Service
+  $("#serviceForm").on("submit", (e) => {
+    e.preventDefault();
+
+    var file_data = $("#servicePic").prop("files")[0];
+    var formData = new FormData(e.target);
+    formData.append("file", file_data);
+    if (
+      !formData.get("title") ||
+      !formData.get("description") ||
+      !formData.get("supervisor") ||
+      !file_data
+    ) {
+      alert("There is some missing fields");
+    } else {
+      if (e.target.name == "insert") {
+        $.ajax({
+          type: "POST",
+          url: "../php/addService.php",
+          processData: false,
+          contentType: false,
+          data: formData,
+          cache: false,
+          success: function (res) {
+            alert(res);
+            $("#serviceForm")
+              .find("input[type=text], textarea,input[type=file]")
+              .val("");
+          }
+        });
+      } else {
+        $.ajax({
+          type: "POST",
+          url: "../php/updateService.php",
+          processData: false,
+          contentType: false,
+          data: formData,
+          cache: false,
+          success: function (res) {
+            alert(res);
+            $("#serviceForm")
+              .find("input[type=text], textarea,input[type=file]")
+              .val("");
+          }
+        });
+      }
+    }
+  });
+  //Delete Service
+  $(document).on("click", ".delService", (e) => {
+    var answer = window.confirm("Delete User?");
+    if (answer) {
+      $.ajax({
+        type: "POST",
+        url: "../php/deleteService.php",
+        data: {
+          id: e.target.name
+        },
+        cache: false,
+        success: function (res) {
           alert(res);
         }
       });
@@ -121,8 +190,31 @@ $(document).ready(() => {
     }
   });
 
-  //Dynamic Auto Refresh User Table
+  // Update Service
+  $(document).on("click", ".upService", (e) => {
+    var form = document.getElementById("serviceForm");
+    var tblRow = e.target.parentNode.parentNode.parentNode;
+    var id = tblRow.querySelectorAll("td")[0].innerText;
+    var title = tblRow.querySelectorAll("td")[1].innerText;
+    var description = tblRow.querySelectorAll("td")[2].innerText;
+    var supervisor = tblRow.querySelectorAll("td")[3].innerText;
+    $("#serviceForm").find("input[name=id]").val(id);
+    $("#serviceForm").find("input[name=title]").val(title);
+    $("#serviceForm").find("textarea[name=description]").val(description);
+    $("#serviceForm").find("input[name=supervisor]").val(supervisor);
+    $("#serviceFormTitle").text("Update Service");
+    form.setAttribute("name", "update");
+    $("#insertServiceBtn").show();
+    $("#insertServiceBtn").on("click", () => {
+      $("#serviceFormTitle").text("Add User");
+      form.setAttribute("name", "insert");
+    });
+  });
+
+  //Dynamic Auto Refresh Table
   setInterval(() => {
     $("#autoUser").load("../php/autoRefreshUser.php");
+    $("#autoService").load("../php/autoRefreshService.php");
+    console.log("fetching ....");
   }, 2000);
 });
