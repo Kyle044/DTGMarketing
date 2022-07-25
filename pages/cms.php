@@ -146,46 +146,39 @@ header("location: ./login.php");
             <!-- CAREER TABLE -->
                 <div class="dashTableContainer">
                     <h3>List of Career's</h3>
-
-                    <table id="userTbl" class="table table-striped table-bordered" style="width:100%">
+                    <table  class="table table-striped table-bordered" style="width:100%" id="careerTbl">
                         <thead>
                             <tr>
                                 <th>Title</th>
+                                <th>Position</th>
                                 <th>Description</th>
                                 <th>Supervisor</th>
                                 <th>Department</th>
                                 <th>Action</th>
-
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Sample Title</td>
-                                <td>Description Text...</td>
-                                <td>Super visor name</td>
-                                <td>
-                                    Department of The Title
-                                </td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
+                        <tbody id="autoCareer">
+                           
                         </tbody>
                     </table>
                 </div>
                 <div class="dashLoginContainer">
-                    <h3>Add Career</h3>
-                    <form action="" id="careerForm">
+                    <h3 id="careerFormTitle">Add Career</h3>
+                    <form action="" id="careerForm" name="insert">
                         <label for="">Title</label>
-                        <input type="text">
+                        <input type="text" name="title">
                         <label for="">Position</label>
-                        <textarea name="description" id="" cols="30" rows="6"></textarea>
+                        <input type="text" name="position"> 
                         <label for="">Supervisor</label>
-                        <input type="text">
+                        <input type="text" name="supervisor">
                         <label for="">Department</label>
-                        <input type="text">
+                        <input type="text" name="department">
+                        <label for="">Description</label>
+                        <textarea name="description" id="" cols="30" rows="6">
+
+                        </textarea>
+                        <label for="">Upload Image</label>
+                        <input type="file" name="file" id="careerPic">
                          <input type="hidden" name="id">
                         <button type="submit">Submit</button>
                         <button type="button" id="insertCareerBtn" >Add</button>
@@ -198,7 +191,7 @@ header("location: ./login.php");
                 <div class="dashTableContainer">
                     <h3>List of Blogs</h3>
 
-                    <table id="userTbl" class="table table-striped table-bordered" style="width:100%">
+                    <table id="blogTbl" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
                                 <th>Title</th>
@@ -209,89 +202,33 @@ header("location: ./login.php");
 
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Bogart Dela Cruz</td>
-                                <td>Dev</td>
-                                <td>Department of Something</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Garrett Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Ashton Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Airi Satou</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-
-                            </tr>
+                        <tbody id="autoBlog">
+                           
                         </tbody>
                     </table>
                 </div>
                 <div class="dashLoginContainer">
-                    <h3>Add Blog</h3>
-                    <form action="">
+                    <h3 id="blogFormTitle">Add Blog</h3>
+                    <form action="" id ="blogForm" name="insert">
                         <label for="">Title</label>
-                        <input type="text">
+                        <input type="text" name="title">
                         <label for="">Description</label>
                         <textarea name="description" id="" cols="30" rows="6"></textarea>
                         <label for="">Author</label>
-                        <input type="text">
+                        <input type="text" name="author">
                         <label for="">Date Published</label>
-                        <input type="date">
+                        <input type="date" name="date">
+                        <label for="">Picture Upload</label>
+                        <input type="file" name="file" id="blogPic">
+                         <input type="hidden" name="id">
                         <button type="submit">Submit</button>
-
+                        <button type="button" id="insertBlogBtn">Add Blog</button>
                     </form>
                 </div>
                 <!-- ARTICLE TABLE -->
                 <div class="dashTableContainer">
                     <h3>List of Articles</h3>
-
-                    <table id="userTbl" class="table table-striped table-bordered" style="width:100%">
+                    <table id="articleTbl" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
                                 <th>Title</th>
@@ -302,82 +239,27 @@ header("location: ./login.php");
 
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Bogart Dela Cruz</td>
-                                <td>Dev</td>
-                                <td>Department of Something</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Garrett Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Ashton Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Airi Satou</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>borgerkasaken69@gmail.com</td>
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-
-                            </tr>
+                        <tbody id="autoArticle">
+                            
                         </tbody>
                     </table>
                 </div>
                 <div class="dashLoginContainer">
-                    <h3>Add Article</h3>
-                    <form action="">
+                    <h3 id="articleFormTitle">Add Article</h3>
+                    <form action="" id="articleForm" name="insert">
                         <label for="">Title</label>
-                        <input type="text">
+                        <input type="text" name="title">
                         <label for="">Description</label>
                         <textarea name="description" id="" cols="30" rows="6"></textarea>
                         <label for="">Author</label>
-                        <input type="text">
+                        <input type="text" name="author">
                         <label for="">Date Published</label>
-                        <input type="date">
+                        <input type="date" name="date">
+                        <label for="">Picture Upload</label>
+                        <input type="file" name="file" id="articlePic">
+                        <input type="hidden" name="id">
                         <button type="submit">Submit</button>
-
+                        <button type="button" id="insertArticleBtn">Add Article</button>
                     </form>
                 </div>
             </div>
@@ -394,77 +276,25 @@ header("location: ./login.php");
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Sample Title</td>
-                                <td>Sample Description</td>
-                                <td>06-14</td>
-
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sample Title</td>
-                                <td>Sample Description</td>
-                                <td>06-14</td>
-
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sample Title</td>
-                                <td>Sample Description</td>
-                                <td>06-14</td>
-
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sample Title</td>
-                                <td>Sample Description</td>
-                                <td>06-14</td>
-
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sample Title</td>
-                                <td>Sample Description</td>
-                                <td>06-14</td>
-
-                                <td>
-                                    <div class="btnGrp">
-                                        <a href="" class="up">Update</a><a href="" class="del">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
+                        <tbody id="autoGallery">
+                           
+                            
                         </tbody>
                     </table>
                 </div>
                 <div class="dashLoginContainer">
-                    <h3>Add Post</h3>
-                    <form action="">
+                    <h3 id="galleryFormTitle">Add Post</h3>
+                    <form action="" id="galleryForm" name="insert">
                         <label for="">Title</label>
-                        <input type="text">
+                        <input type="text" name="title">
                         <label for="">Description</label>
-                        <textarea name="" id="" cols="30" rows="6"></textarea>
+                        <textarea name="description" id="" cols="30" rows="6"></textarea>
                         <label for="">Date Published</label>
-                        <input type="date">
+                        <input type="date" name="date">
                         <label for="">Upload Picture</label>
-                        <input type="file">
+                        <input type="file" name="file" id="galleryPic" multiple="multiple">
                         <button type="submit">Submit</button>
+                        <button type="button" name="insertGalleryBtn">Add Post</button>
                     </form>
                 </div>
             </div>
@@ -477,6 +307,9 @@ header("location: ./login.php");
     $(document).ready(function () {
         $('#userTbl').DataTable();
         $('#serviceTbl').DataTable();
+        $('#careerTbl').DataTable();
+        $('#blogTbl').DataTable();
+         $('#articleTbl').DataTable();
 
     });
 </script>
