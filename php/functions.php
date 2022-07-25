@@ -179,7 +179,7 @@ if(mysqli_num_rows($resultData)>0){
          echo '<tr>
          <td>'.$row["id"].'</td>
         <td>'.$row["title"].'</td>
-          <td>'.$row["description"].'</td>
+          <td ><p class="truncate">'.$row["description"].'</p></td>
        <td>'.$row["supervisor"].'</td>
          <td>
         <div class="btnGrp">
@@ -195,7 +195,39 @@ if(mysqli_num_rows($resultData)>0){
 mysqli_stmt_close($stmt);
 
 }
+function getFrontService($conn){
+$sql = "SELECT service.title,service.description,files.directory FROM service JOIN files ON service.file_fk=files.id";
+$stmt = mysqli_stmt_init($conn);
+if(!mysqli_stmt_prepare($stmt,$sql)){
+    echo"SQL Statement Failed...";
+    exit();
+}
+mysqli_stmt_execute($stmt);
+$resultData = mysqli_stmt_get_result($stmt);
+if(mysqli_num_rows($resultData)>0){
+    while($row = mysqli_fetch_array($resultData)){
+         echo '<div class="serviceCard"  >
+	<div class="serviceLeft">
+			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
+		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
+		<h2 style=" margin:0;color:white;">'.$row['title'].'</h2>
+		</div>
+		<p class="lead">
+		'.$row['description'].'
+		</p>
+	</div>
+	<div class="serviceRight">
+		<img  src="'.$row['directory'].'" alt="">
+	</div>
+	</div>';
+    }
 
+}else{
+    return false;
+}
+mysqli_stmt_close($stmt);
+
+}
 
 
 
@@ -372,6 +404,66 @@ mysqli_stmt_close($stmt);
 
 }
 
+
+function getEvenCareer($conn){
+    $sql = "SELECT career.title,career.description,files.directory FROM career JOIN files ON career.file_fk=files.id where career.id % 2 = 0";
+$stmt = mysqli_stmt_init($conn);
+if(!mysqli_stmt_prepare($stmt,$sql)){
+    echo"SQL Statement Failed...";
+    exit();
+}
+mysqli_stmt_execute($stmt);
+$resultData = mysqli_stmt_get_result($stmt);
+if(mysqli_num_rows($resultData)>0){
+    while($row = mysqli_fetch_array($resultData)){
+         echo '
+         <div class="carhead" style="background:#EC994B;">
+    <h1>'.$row['title'].'</h1>
+    <p>'.$row['description'].'</p>
+</div>
+<div class="carimg">
+    <img src="'.$row['directory'].'" alt="">
+</div>';
+    }
+
+}else{
+    return false;
+}
+mysqli_stmt_close($stmt);
+
+
+}
+function getOddCareer($conn){
+    $sql = "SELECT career.title,career.description,files.directory FROM career JOIN files ON career.file_fk=files.id where career.id % 2 = 1";
+$stmt = mysqli_stmt_init($conn);
+if(!mysqli_stmt_prepare($stmt,$sql)){
+    echo"SQL Statement Failed...";
+    exit();
+}
+mysqli_stmt_execute($stmt);
+$resultData = mysqli_stmt_get_result($stmt);
+if(mysqli_num_rows($resultData)>0){
+    while($row = mysqli_fetch_array($resultData)){
+         echo '
+         <div class="carhead" style="background:#15133C;" >
+    <h1>'.$row["title"].'</h1>
+    <p>'.$row['description'].'</p>
+</div>
+    <div class="carimg">
+    <img src="../img/'.$row['directory'].'" alt="">
+</div>
+
+
+';
+    }
+
+}else{
+    return false;
+}
+mysqli_stmt_close($stmt);
+
+
+}
 //INSERT
 function createCareer($conn,$title,$position,$supervisor,$department,$description,$file){
 $fileName = $file['name'];
