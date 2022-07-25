@@ -2,6 +2,9 @@ $(document).ready(() => {
   // hide insert Btn
   $("#insertUserBtn").hide();
   $("#insertServiceBtn").hide();
+  $("#insertCareerBtn").hide();
+  $("#insertBlogBtn").hide();
+  $("#insertArticleBtn").hide();
   // USER INSERT JAVASCRIPT AND UPDATE
   $("#userForm").on("submit", (e) => {
     e.preventDefault();
@@ -211,10 +214,366 @@ $(document).ready(() => {
     });
   });
 
+  //Insert Career
+  $("#careerForm").on("submit", (e) => {
+    e.preventDefault();
+    var file_data = $("#careerPic").prop("files")[0];
+    var formData = new FormData(e.target);
+    formData.append("file", file_data);
+    if (
+      !formData.get("title") ||
+      !formData.get("position") ||
+      !formData.get("supervisor") ||
+      !formData.get("department") ||
+      !formData.get("description") ||
+      !file_data
+    ) {
+      alert("There is some missing fields");
+    } else {
+      if (e.target.name == "insert") {
+        $.ajax({
+          type: "POST",
+          url: "../php/addCareer.php",
+          processData: false,
+          contentType: false,
+          data: formData,
+          cache: false,
+          success: function (res) {
+            alert(res);
+            $("#careerForm")
+              .find("input[type=text], textarea,input[type=file]")
+              .val("");
+          }
+        });
+      } else {
+        if (!formData.get("id")) {
+          alert("There is no id");
+        } else {
+          $.ajax({
+            type: "POST",
+            url: "../php/updateCareer.php",
+            processData: false,
+            contentType: false,
+            data: formData,
+            cache: false,
+            success: function (res) {
+              alert(res);
+              $("#serviceForm")
+                .find("input[type=text], textarea,input[type=file]")
+                .val("");
+            }
+          });
+        }
+      }
+    }
+  });
+
+  // Update Career
+  $(document).on("click", ".upCareer", (e) => {
+    var form = document.getElementById("careerForm");
+    var tblRow = e.target.parentNode.parentNode.parentNode;
+    var id = e.target.name;
+    var title = tblRow.querySelectorAll("td")[0].innerText;
+    var position = tblRow.querySelectorAll("td")[1].innerText;
+    var description = tblRow.querySelectorAll("td")[2].innerText;
+    var supervisor = tblRow.querySelectorAll("td")[3].innerText;
+    var department = tblRow.querySelectorAll("td")[4].innerText;
+    $("#careerForm").find("input[name=id]").val(id);
+    $("#careerForm").find("input[name=title]").val(title);
+    $("#careerForm").find("input[name=position]").val(position);
+    $("#careerForm").find("textarea[name=description]").val(description);
+    $("#careerForm").find("input[name=supervisor]").val(supervisor);
+    $("#careerForm").find("input[name=department]").val(department);
+    $("#careerFormTitle").text("Update Career");
+    form.setAttribute("name", "update");
+    $("#insertCareerBtn").show();
+    $("#insertCareerBtn").on("click", () => {
+      $("#careerFormTitle").text("Add Career");
+      form.setAttribute("name", "insert");
+    });
+  });
+
+  //Delete Service
+  $(document).on("click", ".delCareer", (e) => {
+    var answer = window.confirm("Delete Career?");
+    if (answer) {
+      $.ajax({
+        type: "POST",
+        url: "../php/deleteCareer.php",
+        data: {
+          id: e.target.name
+        },
+        cache: false,
+        success: function (res) {
+          alert(res);
+        }
+      });
+    } else {
+    }
+  });
+
+  //Blogs
+
+  //Insert Blogs & Update Blogs
+  $("#blogForm").on("submit", (e) => {
+    e.preventDefault();
+    var file_data = $("#blogPic").prop("files")[0];
+    var formData = new FormData(e.target);
+    formData.append("file", file_data);
+    if (
+      !formData.get("title") ||
+      !formData.get("description") ||
+      !formData.get("author") ||
+      !formData.get("date") ||
+      !file_data
+    ) {
+      alert("There is some missing fields");
+    } else {
+      if (e.target.name == "insert") {
+        $.ajax({
+          type: "POST",
+          url: "../php/addBlog.php",
+          processData: false,
+          contentType: false,
+          data: formData,
+          cache: false,
+          success: function (res) {
+            alert(res);
+            $("#blogForm")
+              .find(
+                "input[type=date],input[type=text], textarea,input[type=file]"
+              )
+              .val("");
+          }
+        });
+      } else {
+        $.ajax({
+          type: "POST",
+          url: "../php/updateBlog.php",
+          processData: false,
+          contentType: false,
+          data: formData,
+          cache: false,
+          success: function (res) {
+            alert(res);
+            $("#blogForm")
+              .find(
+                "input[type=date],input[type=text], textarea,input[type=file]"
+              )
+              .val("");
+          }
+        });
+      }
+    }
+  });
+
+  //Delete Blog
+  $(document).on("click", ".delBlog", (e) => {
+    var answer = window.confirm("Delete Blog?");
+    if (answer) {
+      $.ajax({
+        type: "POST",
+        url: "../php/deleteBlog.php",
+        data: {
+          id: e.target.name
+        },
+        cache: false,
+        success: function (res) {
+          alert(res);
+        }
+      });
+    } else {
+    }
+  });
+
+  //Update Blog
+  $(document).on("click", ".upBlog", (e) => {
+    var form = document.getElementById("blogForm");
+    var tblRow = e.target.parentNode.parentNode.parentNode;
+    var id = e.target.name;
+    var title = tblRow.querySelectorAll("td")[0].innerText;
+    var description = tblRow.querySelectorAll("td")[1].innerText;
+    var author = tblRow.querySelectorAll("td")[2].innerText;
+    var date_publish = tblRow.querySelectorAll("td")[3].innerText;
+    $("#blogForm").find("input[name=id]").val(id);
+    $("#blogForm").find("input[name=title]").val(title);
+    $("#blogForm").find("textarea[name=description]").val(description);
+    $("#blogForm").find("input[name=author]").val(author);
+    $("#blogForm").find("input[name=date]").val(date_publish);
+    $("#blogFormTitle").text("Update Blog");
+    form.setAttribute("name", "update");
+    $("#insertBlogBtn").show();
+    $("#insertBlogBtn").on("click", () => {
+      $("#blogFormTitle").text("Add Blog");
+      $("#insertBlogBtn").hide();
+      console.log("shet");
+      form.setAttribute("name", "insert");
+    });
+  });
+
+  //Article
+
+  //Insert Article & Update Article
+  $("#articleForm").on("submit", (e) => {
+    e.preventDefault();
+    var file_data = $("#articlePic").prop("files")[0];
+    var formData = new FormData(e.target);
+    formData.append("file", file_data);
+    if (
+      !formData.get("title") ||
+      !formData.get("description") ||
+      !formData.get("author") ||
+      !formData.get("date") ||
+      !file_data
+    ) {
+      alert("There is some missing fields");
+    } else {
+      if (e.target.name == "insert") {
+        $.ajax({
+          type: "POST",
+          url: "../php/addArticle.php",
+          processData: false,
+          contentType: false,
+          data: formData,
+          cache: false,
+          success: function (res) {
+            alert(res);
+            $("#blogForm")
+              .find(
+                "input[type=date],input[type=text], textarea,input[type=file]"
+              )
+              .val("");
+          }
+        });
+      } else {
+        $.ajax({
+          type: "POST",
+          url: "../php/updateArticle.php",
+          processData: false,
+          contentType: false,
+          data: formData,
+          cache: false,
+          success: function (res) {
+            alert(res);
+            $("#blogForm")
+              .find(
+                "input[type=date],input[type=text], textarea,input[type=file]"
+              )
+              .val("");
+          }
+        });
+      }
+    }
+  });
+
+  //Update Article
+  $(document).on("click", ".upArticle", (e) => {
+    var form = document.getElementById("articleForm");
+    var tblRow = e.target.parentNode.parentNode.parentNode;
+    var id = e.target.name;
+    var title = tblRow.querySelectorAll("td")[0].innerText;
+    var description = tblRow.querySelectorAll("td")[1].innerText;
+    var author = tblRow.querySelectorAll("td")[2].innerText;
+    var date_publish = tblRow.querySelectorAll("td")[3].innerText;
+    $("#articleForm").find("input[name=id]").val(id);
+    $("#articleForm").find("input[name=title]").val(title);
+    $("#articleForm").find("textarea[name=description]").val(description);
+    $("#articleForm").find("input[name=author]").val(author);
+    $("#articleForm").find("input[name=date]").val(date_publish);
+    $("#articleFormTitle").text("Update Article");
+    form.setAttribute("name", "update");
+    $("#insertArticleBtn").show();
+    $("#insertArticleBtn").on("click", () => {
+      $("#insertArticleBtn").hide();
+      $("#articleFormTitle").text("Add Article");
+      form.setAttribute("name", "insert");
+    });
+  });
+
+  //gallery
+
+  //Insert Article & Update Article
+  $("#galleryForm").on("submit", (e) => {
+    e.preventDefault();
+    var formData = new FormData(e.target);
+
+    var file_data = $("#galleryPic").prop("files");
+    for (var i = 0; i < file_data.length; ++i) {
+      formData.append("galleryfiles[]", file_data[i]);
+    }
+    if (
+      !formData.get("title") ||
+      !formData.get("description") ||
+      !formData.get("date") ||
+      !file_data
+    ) {
+      alert("There is some missing fields");
+    } else {
+      if (e.target.name == "insert") {
+        $.ajax({
+          type: "POST",
+          url: "../php/addGallery.php",
+          processData: false,
+          contentType: false,
+          data: formData,
+          cache: false,
+          success: function (res) {
+            alert(res);
+            $("#galleryForm")
+              .find(
+                "input[type=date],input[type=text], textarea,input[type=file]"
+              )
+              .val("");
+          }
+        });
+      } else {
+        $.ajax({
+          type: "POST",
+          url: "../php/updateArticle.php",
+          processData: false,
+          contentType: false,
+          data: formData,
+          cache: false,
+          success: function (res) {
+            alert(res);
+            $("#blogForm")
+              .find(
+                "input[type=date],input[type=text], textarea,input[type=file]"
+              )
+              .val("");
+          }
+        });
+      }
+    }
+  });
+
+  //Delete Gallery
+  $(document).on("click", ".delGallery", (e) => {
+    var answer = window.confirm("Delete Gallery?");
+    if (answer) {
+      $.ajax({
+        type: "POST",
+        url: "../php/deleteGallery.php",
+        data: {
+          id: e.target.name
+        },
+        cache: false,
+        success: function (res) {
+          alert(res);
+        }
+      });
+    } else {
+    }
+  });
+
   //Dynamic Auto Refresh Table
   setInterval(() => {
+    $("#autoBlog").load("../php/autoRefreshBlog.php");
+    $("#autoCareer").load("../php/autoRefreshCareer.php");
     $("#autoUser").load("../php/autoRefreshUser.php");
     $("#autoService").load("../php/autoRefreshService.php");
+    $("#autoArticle").load("../php/autoRefreshArticle.php");
+    $("#autoGallery").load("../php/autoRefreshGallery.php");
     console.log("fetching ....");
   }, 2000);
 });
