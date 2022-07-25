@@ -25,40 +25,20 @@
 
 <section class="carsec2">
 <div class="leleft">
-<div class="carhead" style="background:#EC994B;">
-    <h1>Ca-Ching. Get Paid Fast.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque a provident
-         perspiciatis? Illo fugiat obcaecati minus quae culpa earum.</p>
+<?php
+
+include("../php/getEvenCareer.php");
+
+?>
 </div>
-<div class="carimg">
-    <img src="../img/cardImg.jpg" alt="">
-</div>
-<div class="carimg">
-    <img src="../img/cardImg.jpg" alt="">
-</div>
-<div class="carhead" style="background:#73777B;">
-    <h1>Ca-Ching. Get Paid Fast.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque a provident
-         perspiciatis? Illo fugiat obcaecati minus quae culpa earum.</p>
-</div>
-</div>
+
 <div class="riright">
-    <div class="carimg">
-    <img src="../img/cardImg.jpg" alt="">
-</div>
-<div class="carhead" style="background:#15133C;" >
-    <h1>Ca-Ching. Get Paid Fast.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque a provident
-         perspiciatis? Illo fugiat obcaecati minus quae culpa earum.</p>
-</div>
-<div class="carhead">
-    <h1>Ca-Ching. Get Paid Fast.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque a provident
-         perspiciatis? Illo fugiat obcaecati minus quae culpa earum.</p>
-</div>
-    <div class="carimg">
-    <img src="../img/cardImg.jpg" alt="">
-</div>
+   <?php
+
+include("../php/getOddCareer.php");
+
+?>
+
 </div>
 
 

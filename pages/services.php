@@ -30,49 +30,10 @@
 		<img  src="../img/services1.jpg" alt="">
 	</div>
 	</div>
-		<div class="serviceCard"  id="es">
-	<div class="serviceLeft">
-			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
-		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
-		<h2 style=" margin:0;color:white;">Email Support</h2>
-		</div>
-		<p class="lead">
-		We respond to customers inquiries and/or concerns promptly either through email or chat. We develop a messaging interface that would support customer concern and partners need.
-		</p>
-	</div>
-	<div class="serviceRight">
-		<img  src="../img/services2.jpg" alt="">
-	</div>
-	</div>
-		<div class="serviceCard">
-	<div class="serviceLeft"  id="ics">
-			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
-		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
-		<h2 style=" margin:0;color:white;">Inbound Call Support</h2>
-		</div>
-		<p class="lead">
-		We provide customer service support to clients by responding to customer inquiries or complaints. We have a proprietary system in placed to ensure that customers experience is seamless. We make sure to provide accurate information and deliver exceptional customer service throughout the entire interaction with the customers.
-We have an in-house call center and we are capable to provide 24/7 customer support.
-		</p>
-	</div>
-	<div class="serviceRight">
-		<img  src="../img/services3.jpg" alt="">
-	</div>
-	</div>
-		<div class="serviceCard"  id="ocs">
-	<div class="serviceLeft">
-			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
-		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
-		<h2 style=" margin:0;color:white;">Outbound Call Support</h2>
-		</div>
-		<p class="lead">
-		We employ a proactive approach in dealing with customers to strengthen customer relationships and improving the quality of customer experience. We maintain a consistent standard of customer service excellence.
-		</p>
-	</div>
-	<div class="serviceRight">
-		<img  src="../img/services4.jpg" alt="">
-	</div>
-	</div>
+		<?php
+		include("../php/getFrontService.php");
+		?>
+		
 	<div class="serviceCard"  id="bos">
 	<div class="serviceLeft">
 				<div style="display:flex; align-items:center; transform:translateX(-2rem); ">

@@ -13,7 +13,7 @@
          <a href="contact.php"> Contact Us</a>
 </div>
 <section>
-    <div style="height: 600px;background-image: url(../img/Makati.JPEG);background-position: center;background-size: cover;">
+    <div style="height: 600px;background-image: url(../img/Makati.jpg);background-position: center;background-size: cover;">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">

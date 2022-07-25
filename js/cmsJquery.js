@@ -103,6 +103,7 @@ $(document).ready(() => {
     $("#insertUserBtn").on("click", () => {
       $("#userFormTitle").text("Add User");
       form.setAttribute("name", "insert");
+      $("#insertUserBtn").hide();
     });
   });
   //Delete User
@@ -290,6 +291,8 @@ $(document).ready(() => {
     $("#insertCareerBtn").on("click", () => {
       $("#careerFormTitle").text("Add Career");
       form.setAttribute("name", "insert");
+
+      $("#insertCareerBtn").hide();
     });
   });
 

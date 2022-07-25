@@ -54,10 +54,13 @@
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="./css/custom.css">
-
+	<link rel="stylesheet" href="./css/master.css">
 	<!-- Head Libs -->
 	<script src="./vendor/modernizr/modernizr.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	
+
+
 
 </head>
 
@@ -78,7 +81,7 @@
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="index.php">
-										<img alt="datagenf" src="img/dtgLogo.png" style="width: 19rem;
+										<img alt="datagenf" src="img/dtgLogo.png" id="navLogo" style="width: 19rem; 
     height: auto;" >
 									</a>
 								</div>
@@ -157,13 +160,13 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-														<!-- <a class="" href="pages/career.php" style="font-size: 1rem;"> -->
-													<a class="" href="#" style="font-size: 1rem;">
+														<a class="" href="pages/career.php" style="font-size: 1rem;">
+													<!-- <a class="" href="#" style="font-size: 1rem;"> -->
 														Career
 													</a>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="#" style="font-size: 1rem;">
+													<a class="dropdown-item dropdown-toggle" href="pages/facilities.php" style="font-size: 1rem;">
 														Resources
 													</a>
 													<ul class="dropdown-menu">

@@ -26,7 +26,7 @@ header("location: ./login.php");
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="../css/cms.css">
-    <title>Portfolio</title>
+    <title>Admin CMS</title>
 </head>
 
 <body>

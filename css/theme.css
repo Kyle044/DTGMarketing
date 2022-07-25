@@ -2196,6 +2196,7 @@ html:not(.sticky-header-active)
 @media (max-width: 991px) {
   #header .header-logo img {
     z-index: 1;
+    width: 12rem !important;
   }
 
   #header .header-nav {
