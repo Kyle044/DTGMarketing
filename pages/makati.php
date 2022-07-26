@@ -8,8 +8,7 @@
 
 <div class="hero hero-edit">
     <h1>Makati Facility</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, odit possimus fuga fugit cupiditate deserunt quas maxime consequuntur natus mollitia dolores quae provident ipsum. Placeat veniam repudiandae repellat nisi doloribus voluptate quidem, labore illo dolorem,
-         mollitia ab asperiores beatae distinctio, cum necessitatibus tempore? Numquam deleniti vel magnam ut, cum consequuntur.</p>
+    <p>Datagen Facility, OPC is located in Makati City the financial and central business district of the Philippines the heart of the Metro Manila. The facility has access to multitude of top local and foreign corporations, major industry players, and even promising start-up ventures. The city has the most sophisticated technology in the entire Philippines. Datagen Makati strategic location optimizes the ICT-readiness of the building and the city that allows businesses to plug in and immediately start operations. </p>
          <a href="contact.php"> Contact Us</a>
 </div>
 <section>
