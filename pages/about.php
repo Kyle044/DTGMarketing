@@ -76,7 +76,7 @@
     </div>
     
 <div class="row">
-						<div class="col" style="padding:0rem 14rem;">
+						<div class="col team"  >
 
 							<h3 class="heading-primary mt-5"><strong>Our Management Team</strong></h3>
 

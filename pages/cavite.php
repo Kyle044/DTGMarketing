@@ -4,8 +4,8 @@
 <body>
 <div class="hero hero-edit">
     <h1>Cavite Facility</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, odit possimus fuga fugit cupiditate deserunt quas maxime consequuntur natus mollitia dolores quae provident ipsum. Placeat veniam repudiandae repellat nisi doloribus voluptate quidem, labore illo dolorem,
-         mollitia ab asperiores beatae distinctio, cum necessitatibus tempore? Numquam deleniti vel magnam ut, cum consequuntur.</p>
+    <p>Datagen Facility, OPC is a 350 seats of call center operations located in Carmona Cavite. The location is accessible in terms of public transport from Metro Manila. Cavite is located in Southern part of Luzon and is one of the emerging provinces in the country in terms of industrialization and commercialization.  
+Datagen Facility, OPC, capitalizes on its access to the larger pool of candidates as residents are proficient in English language. Its IT infrastructure is also conducive for business process outsourcing, you can avoid the hustle and bustle of the Metro and you can breathe fresh air and enjoy lush greeneries. </p>
          <a href="contact.php"> Contact Us</a>
 </div>
 <section>

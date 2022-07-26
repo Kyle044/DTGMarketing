@@ -461,12 +461,13 @@ textarea {
   -webkit-box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 4px 17px 0px rgba(0, 0, 0, 0.75);
 }
-
+.team {
+  padding: 0rem 11rem;
+}
 .carsec1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
 }
 .carsec1 img {
@@ -507,6 +508,7 @@ textarea {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transform: translateY(-25rem);
   width: 100%;
 }
 .riright {
@@ -687,20 +689,20 @@ textarea {
 }
 
 .hero {
-  background-image: url(../img/banner_inner.jpg);
-  height: auto;
-  margin-top: 5rem;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 1rem 15rem;
+    background-image: url(../img/banner_inner.jpg);
+    height: auto;
+    margin-top: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem 8rem;
 }
 .hero h1 {
-  text-transform: uppercase;
-  color: white;
-  font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
 }
-
 .fleft {
 }
 
@@ -829,38 +831,110 @@ textarea {
   height: 56px;
 }
 
-@media (max-width: 466px) {
-  .serviceCard .serviceRight img {
-    width: 17rem;
-    height: auto;
-    border-radius: 15px;
+@media (max-width: 1024px) {
+  .serviceCard {
+    padding: 2rem 3rem;
   }
-  .serviceCard .serviceLeft {
-    margin-right: 0rem;
+  .aboutUsmain .texthed {
+    height: 100%;
+    display: flex;
+    padding: 2rem 3.5rem;
+    justify-content: center;
+    flex-direction: column;
   }
-  .serviceCard .serviceLeft h2 {
-    text-align: start;
-    color: white;
+  .texthed h2 {
+    margin-top: 3rem;
   }
-  .lead {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-  #navLogo {
-    width: 12rem;
-    height: auto;
-  }
-}
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .columnzz,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
+  .team {
+    padding: 0rem 5rem;
   }
 }
 
+@media (max-width: 1016px) {
+  .serviceCard {
+    flex-direction: column-reverse;
+    padding: 2rem 3rem;
+  }
+  .serviceLeft {
+    margin-top: 2rem;
+  }
+  .serviceTo {
+    padding: 2px 2rem;
+  }
+}
+@media (max-width: 808px) {
+  .aboutUsmain .texthed {
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+  }
+  .aboutUsmain img {
+    height: 100%;
+  }
+  .aboutUsmain {
+    position: relative;
+    margin-top: 6rem;
+    height: 100vh;
+  }
+  .aboutUsmain .texthed {
+    height: 100%;
+    display: flex;
+    padding: 0rem 1.2rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .texthed hr {
+    margin: 0;
+  }
+}
 @media (max-width: 700px) {
+  .twoCardContainer a{
+font-size: 0.5rem;
+}
+  .hero h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+    font-size: 1.7rem;
+}
+.hero {
+    background-image: url(../img/banner_inner.jpg);
+    height: auto;
+    margin-top: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+  .twoCardContainer a {
+    margin-right: 1rem;
+    border-radius: 10px;
+    width: 39%;
+    height: 22vh;
+    background-color: #dd8e33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+  ul.history li .featured-box {
+    text-align: left;
+    margin-left: 162px;
+    margin-bottom: 50px;
+    min-height: 115px;
+  }
+  .ul.history li .thumb {
+    background: transparent url(../img/history-thumb.png) no-repeat 0 0;
+    width: 190px;
+    height: 160px;
+    margin: 0 0 30px;
+    padding: 0;
+    float: left;
+  }
   .carsec1 .caright h1 {
     font-size: 3rem;
     text-align: left;
@@ -931,21 +1005,54 @@ textarea {
     -moz-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
   }
 }
-@media (max-width: 1024px) {
-  .serviceCard {
-    padding: 2rem 3rem;
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+ 
+  ul.history li .featured-box .box-content {
+    border-top-color: #f7992b !important;
+    transform: translate(-14rem, -8px) !important;
+    width: 100vw;
+}
+  }
+  .columnzz,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 1rem;
+    color: black;
+    line-height: 2rem;
+  }
+  .aboutUsmain img {
+    height: 100%;
   }
 }
 
-@media (max-width: 1016px) {
-  .serviceCard {
-    flex-direction: column-reverse;
-    padding: 2rem 3rem;
+@media (max-width: 466px) {
+  .serviceCard .serviceRight img {
+    width: 17rem;
+    height: auto;
+    border-radius: 15px;
   }
-  .serviceLeft {
-    margin-top: 2rem;
+  .serviceCard .serviceLeft {
+    margin-right: 0rem;
   }
-  .serviceTo {
-    padding: 2px 2rem;
+  .serviceCard .serviceLeft h2 {
+    text-align: start;
+    color: white;
+  }
+  .lead {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  #navLogo {
+    width: 12rem;
+    height: auto;
+  }
+  .aboutUsmain {
+    height: 118vh;
   }
 }
