@@ -25,6 +25,28 @@
 		<p class="lead" style="color:white;">
 		We have a systematic process of identifying a person's interests and behavior. We generate leads through surveys and we customized our survey to draw accurate information on the customer's behavior and demographics. Lead generation activities are managed by a dedicated and experienced team, focused on producing quality output for our partners and clients.
 		</p>
+		<div id="accordion">
+
+
+
+
+		<div class="card">
+			<div class="card-header" id="headingOne">
+				<h5 class="mb-0">
+					<button class="btn btn-link white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						See more
+					</button>
+				</h5>
+
+			</div>
+		</div>
+		<div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+<div class="card-body white">
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde reiciendis aperiam, quas error a doloribus impedit cupiditate, consectetur minima, maiores fugit! Magni suscipit recusandae maiores laboriosam beatae harum repellendus itaque eligendi. Voluptatibus, quidem eos est ad accusamus adipisci ipsum numquam dicta. Veniam tempora, nam nostrum illo ea voluptatum dicta.
+</div>
+		</div>
+		</div>
+	
 	</div>
 	<div class="serviceRight">
 		<img  src="../img/services1.jpg" alt="">

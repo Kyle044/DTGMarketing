@@ -53,7 +53,7 @@ header("location: ./login.php");
                 </li>
                 <li id="BaBtn">
                     <div>
-                        <i class='bx bxl-blogger'></i> Blogs & Article
+                        <i class='bx bxl-blogger'></i> Article
                     </div>
                 </li>
                 <li id="galleryBtn">
@@ -116,7 +116,7 @@ header("location: ./login.php");
                                 <th>ID</th>
                                 <th>Title</th>
                                 <th>Description</th>
-                                <th>Super Visor</th>
+                                <th>In Depth Description</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -132,7 +132,7 @@ header("location: ./login.php");
                         <input type="text" name="title">
                         <label for="">Description</label>
                         <textarea name="description" id="" cols="30" rows="6"></textarea>
-                        <label for="">Supervisor</label>
+                        <label for="">In Depth Description</label>
                         <input type="text" name="supervisor">
                         <label for="">Upload Image</label>
                         <input type="file" name="file" id="servicePic">
@@ -188,7 +188,7 @@ header("location: ./login.php");
 
             <div class="BlogsArticleSide" id="BlogsArticleSide">
 <!-- BLOG TABLE -->
-                <div class="dashTableContainer">
+                <!-- <div class="dashTableContainer">
                     <h3>List of Blogs</h3>
 
                     <table id="blogTbl" class="table table-striped table-bordered" style="width:100%">
@@ -224,7 +224,7 @@ header("location: ./login.php");
                         <button type="submit">Submit</button>
                         <button type="button" id="insertBlogBtn">Add Blog</button>
                     </form>
-                </div>
+                </div> -->
                 <!-- ARTICLE TABLE -->
                 <div class="dashTableContainer">
                     <h3>List of Articles</h3>

@@ -25,11 +25,27 @@
 
 <section class="carsec2">
 <div class="leleft">
+
 <?php
 
 include("../php/getEvenCareer.php");
 
 ?>
+<div class="carhead" style="background:#EC994B;">
+<ul><li>
+<h1>Lorem</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad excepturi voluptates laboriosam rerum perspiciatis quos dolores autem error ipsa natus!</p>
+    <h3 style="color:white">Qualification</h3>
+    <ul style="color:white">
+        <li>lorem2</li>
+        <li>lorem2</li>
+        <li>lorem2</li>
+        <li>lorem2</li>
+        <li>lorem2</li>
+    </ul>
+</li></ul>
+    
+</div>
 </div>
 
 <div class="riright">

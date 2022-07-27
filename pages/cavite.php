@@ -9,7 +9,7 @@ Datagen Facility, OPC, capitalizes on its access to the larger pool of candidate
          <a href="contact.php"> Contact Us</a>
 </div>
 <section>
-    <div style="height: 600px;background-image: url(../img/Cavite.JPEG);background-position: center;background-size: cover;">
+    <div style="height: 600px;background-image: url(../img/CB1.jpg);background-position: center;background-size: cover;">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
