@@ -731,7 +731,7 @@ textarea {
 .fleft ul li {
   margin-bottom: 2rem;
   font-size: 1.2rem;
-  color: black;
+  color: #777;
 }
 .fright {
 }
@@ -748,7 +748,7 @@ textarea {
 .fright ul li {
   margin-bottom: 2rem;
   font-size: 1.2rem;
-  color: black;
+  color: #777;
 }
 
 .hero-edit {
@@ -897,6 +897,8 @@ textarea {
   border-radius: 10px;
   width: 40vw;
   height: auto;
+}
+.cbtn {
 }
 @media (max-width: 1024px) {
   .masterCareerCard .CarCard .CareerRight img {

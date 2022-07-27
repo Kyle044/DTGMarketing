@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 27, 2022 at 03:12 AM
+-- Generation Time: Jul 27, 2022 at 08:16 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -71,6 +71,16 @@ CREATE TABLE `career` (
   `supervisor` varchar(255) NOT NULL,
   `department` varchar(255) NOT NULL,
   `description` text NOT NULL,
+  `Q1` varchar(255) NOT NULL,
+  `Q2` varchar(255) NOT NULL,
+  `Q3` varchar(255) NOT NULL,
+  `Q4` varchar(255) NOT NULL,
+  `Q5` varchar(255) NOT NULL,
+  `R1` varchar(255) NOT NULL,
+  `R2` varchar(255) NOT NULL,
+  `R3` varchar(255) NOT NULL,
+  `R4` varchar(255) NOT NULL,
+  `R5` varchar(255) NOT NULL,
   `file_fk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -78,12 +88,12 @@ CREATE TABLE `career` (
 -- Dumping data for table `career`
 --
 
-INSERT INTO `career` (`id`, `title`, `position`, `supervisor`, `department`, `description`, `file_fk`) VALUES
-(5, 'Team Leader', 'Team Leader', 'John', 'Field', 'Responsible for delivery of client satisfaction, business results and employee satisfaction in order to ensure achievement of scorecard and client goals Participate in, and support, the Quality Management (QM) Program in identifying and acting on opportunities that improve the quality, safety and value of the service we provide to our clients and our employees.', 52),
-(6, 'Compliance officer', 'Compliance officer', 'Sir John', 'Operation', 'Implement and manage an effective legal compliance program Develop and review company policies. Advise management on the company’s compliance with laws and regulations through detailed reports. Create and manage effective action plans in response to audit discoveries and compliance violations.', 50),
-(7, 'QA Analyst', 'QA Analyst', 'Sir John', 'Field', 'Identify and resolve workflow and production issues and address to higher level Ensure standards and QA handbook regulations are observed Address and discuss issues and proposed solutions with superiors Document quality assurance activities and create audit reports. Make recommendations for improvement.', 53),
-(9, 'Business Development Executive', 'Business Development Executive', 'John', 'Field', 'Identify opportunities for new business development and develop business proposals/contracts to draw in more revenue from existing and/or new clients or follow up on leads and conducting research on target clients;', 51),
-(10, 'Front End Developer', 'Front End Developer', 'Alvin', 'Web Dev', 'Front-end developer is a tech-savvy role that requires expertise in web design and involves translating company needs into interactive web applications and reporting systems. Will be responsible for ensuring that the applications are optimized both in technology and aesthetics while providing the best user experience.\r\n                        ', 46);
+INSERT INTO `career` (`id`, `title`, `position`, `supervisor`, `department`, `description`, `Q1`, `Q2`, `Q3`, `Q4`, `Q5`, `R1`, `R2`, `R3`, `R4`, `R5`, `file_fk`) VALUES
+(13, 'Compliance officer', 'Compliance officer', '', '', 'Demonstrates high level of professionalism, honesty and integrity ', 'Bachelor’s Degree in Law, Finance, Business Management or related field.', 'Preferably 1-4 years experienced employees specializing in law/legal services or equivalent.', 'Has good interpersonal skills, reliable, hardworking, and attention to details.', 'Excellent written and verbal communications', 'Strong leadership skills', 'Implement and manage an effective legal compliance program Develop and review company policies.', 'Advise management on the company’s compliance with laws and regulations through detailed reports.', 'Create and manage effective action plans in response to audit discoveries and compliance violations.', 'Ensure all employees are well aware on the latest regulations and processes by delegating every huddle', 'Resolve employee’s concern about legal compliance and must maintain confidentiality in task being performed', 60),
+(14, 'QA Analyst', 'QA Analyst', '', '', 'Preparation and implementation of Quality Assurance Policies and Procedures', 'With at least 1-4 years of BPO experience', 'Excellent written and verbal communications', 'Proficient in Microsoft office and relevant software', 'With Problem Solving and Critical Thinking skills', 'Resourceful and can multitask', 'Preparation and implementation of Quality Assurance Policies and Procedures', 'Perform routine inspections and Quality audits to agents’ call logs', 'Identify and resolve workflow and production issues and address to higher level', 'Ensure standards and QA handbook regulations are observed', 'Address and discuss issues and proposed solutions with superiors', 61),
+(15, 'Business Development Executive', 'Business Development Executive', '', '', 'Work with management to develop and implement business development strategy for a defined territory.', 'With at least 1-4 years working experience in BPO Industry', 'Has the ability to handle multiple projects simultaneously', 'Can work under pressure', 'Excellent written and verbal communications', 'Proficient in Microsoft office and relevant software', 'Identify opportunities for new business development and develop business proposals/contracts to draw in more revenue from existing and/or new clients or follow up on leads and conducting research on target clients;', 'Negotiate with clients to secure the most attractive prices for the development in the company through increased sales and customer acquisition;', 'Review clients\' feedback and implement necessary changes that meets desirability for both end;', 'Coordinate with management and clients to identify business development opportunities with existing and new clients;', 'Ability to generate revenue by identifying pain points and suggesting suitable products or services;', 62),
+(17, 'Front End Developer', 'Front End Developer', '', '', 'Review and optimize the application usage by monitoring key metrics and rectifying the issues proactively.          ', 'Confident in writing code using HTML, HTML5, CSS, CSS3, and Javascript', 'Familiar with UI layouts, SASS, Bootstrap, and the CSS GRID system', 'Experienced using Bootstrap in creating websites from scratch', 'Proficient with JavaScript frameworks such as jQuery, Angular et al', 'Experience debugging using JavaScript-based tools like Chrome Developer Console', 'Work on various projects in collaboration with multiple teams ', 'Creating and developing web applications as per the company requirements ', 'Manipulates existing themes and creates one if necessary.', 'Develops with mobile-responsive integration such as Twitter bootstrap.', 'Implement UI development principles to ensure that the product client-side serves at scale.', 65),
+(18, 'Team Leader', 'Team Leader', '', '', 'Responsible for delivery of client satisfaction, business results and employee satisfaction in order to ensure achievement of scorecard and client goals.', 'Minimum of 2 years’ experience from BPO industry as a Team Leader', 'Excellent leadership and communication skills', 'Strong coaching and people-development skills through call listening, quality feedback, etc.', 'Ability to deal with demanding customers and escalations', 'Energetic and motivating individual', 'Responsible for delivery of client satisfaction, business results and employee satisfaction in order to ensure achievement of scorecard and client goals.', 'Responsible for leading a team of up to 20-30 agents.', 'Provide supervision to both direct and indirect reports to ensure proper floor coverage and maintain a positive leadership presence at all times: “Manage By Walking Around” Responsible for daily call monitoring to provide feedback and coaching of team mem', 'Demonstrate company core values and culture.  Participate in, and support, the Quality Management (QM) Program in identifying and acting on opportunities that improve the quality, safety and value of the service we provide to our clients and our employees', 'Perform other duties as assigned by management.', 67);
 
 -- --------------------------------------------------------
 
@@ -103,15 +113,18 @@ CREATE TABLE `files` (
 --
 
 INSERT INTO `files` (`id`, `name`, `directory`, `size`) VALUES
-(46, '62de4e3d21e093.42085524.jpg', '../uploads/62de4e3d21e093.42085524.jpg', 1187188),
 (48, '62e08ba1ad1860.09991491.jpg', '../uploads/62e08ba1ad1860.09991491.jpg', 435285),
-(50, '62e08dfe7ed0a8.98027109.jpeg', '../uploads/62e08dfe7ed0a8.98027109.jpeg', 60528),
-(51, '62e08e32a52397.42569585.jpeg', '../uploads/62e08e32a52397.42569585.jpeg', 61512),
-(52, '62e08e61519405.52825698.jpeg', '../uploads/62e08e61519405.52825698.jpeg', 62348),
-(53, '62e08eb8954af8.02735667.jpeg', '../uploads/62e08eb8954af8.02735667.jpeg', 75124),
 (54, '62e08ff76a6071.29804423.jpg', '../uploads/62e08ff76a6071.29804423.jpg', 458763),
 (55, '62e0903d406ed8.20655484.jpeg', '../uploads/62e0903d406ed8.20655484.jpeg', 299115),
-(56, '62e090538d14d6.85753650.jpg', '../uploads/62e090538d14d6.85753650.jpg', 764191);
+(56, '62e090538d14d6.85753650.jpg', '../uploads/62e090538d14d6.85753650.jpg', 764191),
+(58, '62e0b3a74a8951.79510555.jpeg', '../uploads/62e0b3a74a8951.79510555.jpeg', 191180),
+(60, '62e0c78b42d913.72128597.jpeg', '../uploads/62e0c78b42d913.72128597.jpeg', 75124),
+(61, '62e0c8dbcdbdf1.76212712.jpeg', '../uploads/62e0c8dbcdbdf1.76212712.jpeg', 60528),
+(62, '62e0c96b998d08.21594382.jpeg', '../uploads/62e0c96b998d08.21594382.jpeg', 61512),
+(64, '62e0d662a6e9d6.49529350.jpg', '../uploads/62e0d662a6e9d6.49529350.jpg', 203188),
+(65, '62e0d73b268c02.27338518.jpg', '../uploads/62e0d73b268c02.27338518.jpg', 203188),
+(66, '62e0d78a6b47c5.29529537.jpg', '../uploads/62e0d78a6b47c5.29529537.jpg', 391137),
+(67, '62e0d7eb12b006.20119534.jpg', '../uploads/62e0d7eb12b006.20119534.jpg', 391137);
 
 -- --------------------------------------------------------
 
@@ -258,13 +271,13 @@ ALTER TABLE `blog`
 -- AUTO_INCREMENT for table `career`
 --
 ALTER TABLE `career`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 
 --
 -- AUTO_INCREMENT for table `gallery`
