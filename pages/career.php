@@ -15,12 +15,17 @@
 <img src="../img/agentEdit.jpg" alt="">
 <div class="caright">
 <h1>Come Join The Fun!</h1>
-<p>Datagen is the flexible platform for employees to join it combines thoughtful design with serious smarts. Our employee is build from the ground-up to have a standardize work and skills </p>
+<p style="color: #777;">Datagen Facilities OPC is an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity or expression, pregnancy, age, national origin and disability status.</p>
+<p style="color: #777;">Email : hrdepartment.dgf@gmail.com</p>
+<a class="btn btn-primary cbtn" style=" background-color: #dd8e33;
+  border-color: #dd8e33;
+  color: #ffffff;" href="mailto:hrdepartment.dgf@gmail.com" role="button">Apply Now!</a>
 </div>
+
 </section>
 
 <div class="carTitle">
-    <h1>Career's We Offer!</h1>
+    <h1 style="color: #777;">Careers We Offer!</h1>
 </div>
 
 

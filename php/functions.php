@@ -581,7 +581,7 @@ if($fileError===0){
         echo"SQL Statement Failed...";
         exit();
     }
-    mysqli_stmt_bind_param($stmt,"",$title,$position,$description,$fk,$q1,$q2,$q3,$q4,$q5,$r1,$r2,$r3,$r4,$r5,$id);
+    mysqli_stmt_bind_param($stmt,"sssissssssssssi",$title,$position,$description,$fk,$q1,$q2,$q3,$q4,$q5,$r1,$r2,$r3,$r4,$r5,$id);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     echo"Career Was Successfully Updated!";

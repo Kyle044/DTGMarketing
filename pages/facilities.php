@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col-md-6 fleft">
             <h3>Our BPO Technology</h3>
-            <ul><li>Computer-Telephone Integration</li>
+            <ul style="color: #777;"><li>Computer-Telephone Integration</li>
             <li>Flexible agent scripting</li>
             <li>Automatic call distribution</li>
             <li>Interactive Voice Response system</li>
@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-6 fright">
             <h3>Security & Business Continuity</h3>
-            <ul><li>Data security network and IT infrastructure</li>
+            <ul style="color: #777;"><li>Data security network and IT infrastructure</li>
             <li>24/7 security</li>
             <li>Business Continuity Plan</li>
             <li>Data Recovery Backup Plan.</li>
