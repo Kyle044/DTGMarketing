@@ -23,14 +23,31 @@
     <h1>Career's We Offer!</h1>
 </div>
 
-<section class="carsec2">
-<div class="leleft">
+
+
+<div class="masterCareerCard">
+
+
 
 <?php
 
-include("../php/getEvenCareer.php");
+include("../php/getCareer.php");
 
 ?>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- <section class="carsec2">
+<div class="leleft">
+
+
 <div class="carhead" style="background:#EC994B;">
 <ul><li>
 <h1>Lorem</h1>
@@ -61,7 +78,7 @@ include("../php/getOddCareer.php");
 
 
 
-</section>
+</section> -->
 
 
 <?php include('footerdito.php') ?>
