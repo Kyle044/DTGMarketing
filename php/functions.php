@@ -196,7 +196,7 @@ mysqli_stmt_close($stmt);
 
 }
 function getFrontService($conn){
-$sql = "SELECT service.title,service.description,files.directory FROM service JOIN files ON service.file_fk=files.id";
+$sql = "SELECT service.title, service.supervisor, service.id,service.description,files.directory FROM service JOIN files ON service.file_fk=files.id";
 $stmt = mysqli_stmt_init($conn);
 if(!mysqli_stmt_prepare($stmt,$sql)){
     echo"SQL Statement Failed...";
@@ -215,6 +215,27 @@ if(mysqli_num_rows($resultData)>0){
 		<p class="lead">
 		'.$row['description'].'
 		</p>
+        	<div id="accordion">
+
+
+
+
+		<div class="card">
+			<div class="card-header" id="headingOne">
+				<h5 class="mb-0">
+					<button class="btn btn-link white" data-toggle="collapse" data-target="#'.$row['id'].'" aria-expanded="true" aria-controls="collapseOne">
+						See more
+					</button>
+				</h5>
+
+			</div>
+		</div>
+		<div id="'.$row['id'].'" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+<div class="card-body white">
+	'.$row['supervisor'].'
+</div>
+		</div>
+		</div>
 	</div>
 	<div class="serviceRight">
 		<img  src="'.$row['directory'].'" alt="">
@@ -909,7 +930,39 @@ mysqli_stmt_close($stmt);
 
 
 
+function getFrontArticle($conn){
+$sql = "SELECT article.title, article.description, article.id,article.date_publish,files.directory FROM article JOIN files ON article.file_fk=files.id";
+$stmt = mysqli_stmt_init($conn);
+if(!mysqli_stmt_prepare($stmt,$sql)){
+    echo"SQL Statement Failed...";
+    exit();
+}
+mysqli_stmt_execute($stmt);
+$resultData = mysqli_stmt_get_result($stmt);
+if(mysqli_num_rows($resultData)>0){
+    while($row = mysqli_fetch_array($resultData)){
+         echo '<div class="ar2Container">
 
+    <h1>'.$row['title'].'</h1>
+
+<div class="ar2ComboPic">
+    <p>
+'.$row['description'].'
+ 
+   </p>
+        
+    <img src="'.$row['directory'].'" alt="" style="border-radius:10px;">
+</div>
+</div>
+';
+    }
+
+}else{
+    return false;
+}
+mysqli_stmt_close($stmt);
+
+}
 
 
 function updateArticle($conn,$title,$description,$author,$date,$file,$id){
@@ -1062,7 +1115,38 @@ mysqli_stmt_close($stmt);
 
 
 
+function getFrontGallery($conn){
+    $sql = "SELECT service.title,service.description,files.directory FROM service JOIN files ON service.file_fk=files.id";
+$stmt = mysqli_stmt_init($conn);
+if(!mysqli_stmt_prepare($stmt,$sql)){
+    echo"SQL Statement Failed...";
+    exit();
+}
+mysqli_stmt_execute($stmt);
+$resultData = mysqli_stmt_get_result($stmt);
+if(mysqli_num_rows($resultData)>0){
+    while($row = mysqli_fetch_array($resultData)){
+         echo '<div class="serviceCard"  >
+	<div class="serviceLeft">
+			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
+		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
+		<h2 style=" margin:0;color:white;">'.$row['title'].'</h2>
+		</div>
+		<p class="lead">
+		'.$row['description'].'
+		</p>
+	</div>
+	<div class="serviceRight">
+		<img  src="'.$row['directory'].'" alt="">
+	</div>
+	</div>';
+    }
 
+}else{
+    return false;
+}
+mysqli_stmt_close($stmt);
+}
 
 
 

@@ -172,9 +172,7 @@
 														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="article.php">Articles</a>
 														</li>
-														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Blog</a>
-														</li>
+												
 													</ul>
 												</li>
 												<li class="dropdown">

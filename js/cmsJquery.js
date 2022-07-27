@@ -493,9 +493,27 @@ $(document).ready(() => {
     });
   });
 
+  //Delete Article
+  $(document).on("click", ".delArticle", (e) => {
+    var answer = window.confirm("Delete Article?");
+    if (answer) {
+      $.ajax({
+        type: "POST",
+        url: "../php/deleteArticle.php",
+        data: {
+          id: e.target.name
+        },
+        cache: false,
+        success: function (res) {
+          alert(res);
+        }
+      });
+    } else {
+    }
+  });
   //gallery
 
-  //Insert Article & Update Article
+  //Insert Gallery & Update Gallery
   $("#galleryForm").on("submit", (e) => {
     e.preventDefault();
     var formData = new FormData(e.target);
@@ -505,10 +523,11 @@ $(document).ready(() => {
       formData.append("galleryfiles[]", file_data[i]);
     }
     if (
-      !formData.get("title") ||
-      !formData.get("description") ||
-      !formData.get("date") ||
-      !file_data
+      (!formData.get("title") ||
+        !formData.get("description") ||
+        !formData.get("date") ||
+        !file_data,
+      file_data.length == 0)
     ) {
       alert("There is some missing fields");
     } else {

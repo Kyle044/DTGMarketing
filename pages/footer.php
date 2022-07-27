@@ -106,7 +106,7 @@
 	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="vendor/vide/vide.min.js"></script>
 	<script src="../js/lightbox-plus-jquery.min.js"></script>
-
+	<script src="../js/masterJquery.js"></script>
 	<!-- Theme Base, Components and Settings -->
 	<script src="js/theme.js"></script>
 

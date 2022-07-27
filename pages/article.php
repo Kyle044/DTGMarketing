@@ -52,24 +52,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur 
 
 </div>
 
-<div class="ar2Container">
 
-    <h1>Datagen First Job Fair</h1>
-
-<div class="ar2ComboPic">
-    <p>Datagen Facilities, OPC organized its first ever Job Fair on June 4, 2022 at Zone 11, Tatic covered court Brgy. Bulihan Silang Cavite after a series of lockdown. Numerous students and local visiting candidates participated in the said event. 
-Some of the positions that were filled on that day were Business Development, Non-voice agents, Voice Agents, Quality Assurance and Front End Developer. 
-Datagen Facilities OPC is an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity or expression, pregnancy, age, national origin and disability status.
-
- 
-   </p>
-        
-    <img src="../img/fair.jpg" alt="" style="border-radius:10px;">
-</div>
-</div>
-
-
-
+<?php include('../php/getFrontArticle.php') ?>
 
 
 
