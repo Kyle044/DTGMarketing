@@ -224,9 +224,17 @@ $(document).ready(() => {
     if (
       !formData.get("title") ||
       !formData.get("position") ||
-      !formData.get("supervisor") ||
-      !formData.get("department") ||
       !formData.get("description") ||
+      !formData.get("Q1") ||
+      !formData.get("Q2") ||
+      !formData.get("Q3") ||
+      !formData.get("Q4") ||
+      !formData.get("Q5") ||
+      !formData.get("R1") ||
+      !formData.get("R2") ||
+      !formData.get("R3") ||
+      !formData.get("R4") ||
+      !formData.get("R5") ||
       !file_data
     ) {
       alert("There is some missing fields");
@@ -277,14 +285,12 @@ $(document).ready(() => {
     var title = tblRow.querySelectorAll("td")[0].innerText;
     var position = tblRow.querySelectorAll("td")[1].innerText;
     var description = tblRow.querySelectorAll("td")[2].innerText;
-    var supervisor = tblRow.querySelectorAll("td")[3].innerText;
-    var department = tblRow.querySelectorAll("td")[4].innerText;
+
     $("#careerForm").find("input[name=id]").val(id);
     $("#careerForm").find("input[name=title]").val(title);
     $("#careerForm").find("input[name=position]").val(position);
     $("#careerForm").find("textarea[name=description]").val(description);
-    $("#careerForm").find("input[name=supervisor]").val(supervisor);
-    $("#careerForm").find("input[name=department]").val(department);
+
     $("#careerFormTitle").text("Update Career");
     form.setAttribute("name", "update");
     $("#insertCareerBtn").show();

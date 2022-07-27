@@ -399,8 +399,6 @@ if(mysqli_num_rows($resultData)>0){
          <td>'.$row["title"].'</td>
        <td>'.$row["position"].'</td>
         <td>'.$row["description"].'</td>
-          <td>'.$row["supervisor"].'</td>
-       <td>'.$row["department"].'</td>
        
          <td>
         <div class="btnGrp">
@@ -426,8 +424,8 @@ mysqli_stmt_close($stmt);
 }
 
 
-function getEvenCareer($conn){
-    $sql = "SELECT career.title,career.description,files.directory FROM career JOIN files ON career.file_fk=files.id where career.id % 2 = 0";
+function getsCareer($conn){
+$sql = "SELECT career.title,career.description,files.directory,career.Q1,career.Q2,career.Q3,career.Q4,career.Q5,career.R1,career.R2,career.R3,career.R4,career.R5 FROM career JOIN files ON career.file_fk=files.id ";
 $stmt = mysqli_stmt_init($conn);
 if(!mysqli_stmt_prepare($stmt,$sql)){
     echo"SQL Statement Failed...";
@@ -438,12 +436,38 @@ $resultData = mysqli_stmt_get_result($stmt);
 if(mysqli_num_rows($resultData)>0){
     while($row = mysqli_fetch_array($resultData)){
          echo '
-         <div class="carhead" style="background:#EC994B;">
+        <div class="CarCard">
+
+<div class="CareerLeft">
     <h1>'.$row['title'].'</h1>
-    <p>'.$row['description'].'</p>
+  <ul>
+  
+    <li><h3>Qualification</h3><ul>
+    <li>'.$row['Q1'].'</li>
+    <li>'.$row['Q2'].'</li>
+    <li>'.$row['Q3'].'</li>
+    <li>'.$row['Q4'].'</li>
+    <li>'.$row['Q5'].'</li>
+</ul>
+    </li>
+
+  </ul>
+
+   <ul>
+ 
+    <li>  <h3>Responsibility</h3><ul>
+    <li>'.$row['R1'].'</li>
+    <li>'.$row['R2'].'</li>
+    <li>'.$row['R3'].'</li>
+    <li>'.$row['R4'].'</li>
+    <li>'.$row['R5'].'</li>
+</ul>
+    </li>
+  </ul>
 </div>
-<div class="carimg">
+<div class="CareerRight">
     <img src="'.$row['directory'].'" alt="">
+</div>
 </div>';
     }
 
@@ -486,7 +510,7 @@ mysqli_stmt_close($stmt);
 
 }
 //INSERT
-function createCareer($conn,$title,$position,$supervisor,$department,$description,$file){
+function createCareer($conn,$title,$position,$description,$file,$q1,$q2,$q3,$q4,$q5,$r1,$r2,$r3,$r4,$r5){
 $fileName = $file['name'];
 $fileType = $file['type'];
 $fileTmpName = $file['tmp_name'];
@@ -501,13 +525,13 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "INSERT INTO career (title,position,supervisor,department,description,file_fk) VALUES (?,?,?,?,?,?);";
+    $sql = "INSERT INTO career (title,position,description,file_fk,Q1,Q2,Q3,Q4,Q5,R1,R2,R3,R4,R5) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt,$sql)){
         echo"SQL Statement Failed...";
         exit();
     }
-    mysqli_stmt_bind_param($stmt,"sssssi",$title,$position,$supervisor,$department,$description,$fk);
+    mysqli_stmt_bind_param($stmt,"sssissssssssss",$title,$position,$description,$fk,$q1,$q2,$q3,$q4,$q5,$r1,$r2,$r3,$r4,$r5);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     echo"Career Was Successfully Added!";
@@ -525,8 +549,7 @@ else{
 }
 
 
-function updateCareer($conn,$title,$position,$supervisor,$department,$description,$file,$id){
-
+function updateCareer($conn,$title,$position,$description,$file,$id,$q1,$q2,$q3,$q4,$q5,$r1,$r2,$r3,$r4,$r5){
 $sql1 = "SELECT * FROM career WHERE id = ?;";
 $stmt1 = mysqli_stmt_init($conn);
 if(!mysqli_stmt_prepare($stmt1,$sql1)){
@@ -552,13 +575,13 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "UPDATE career SET title=?, position=?,supervisor=?,department=?,description=?,file_fk=? WHERE id=?";
+    $sql = "UPDATE career SET title=?, position=?,description=?,file_fk=? , Q1=?,Q2=?,Q3=?,Q4=?,Q5=?,R1=?,R2=?,R3=?,R4=?,R5=? WHERE id=?";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt,$sql)){
         echo"SQL Statement Failed...";
         exit();
     }
-    mysqli_stmt_bind_param($stmt,"ssssssi",$title,$position,$supervisor,$department,$description,$fk,$id);
+    mysqli_stmt_bind_param($stmt,"",$title,$position,$description,$fk,$q1,$q2,$q3,$q4,$q5,$r1,$r2,$r3,$r4,$r5,$id);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     echo"Career Was Successfully Updated!";

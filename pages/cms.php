@@ -152,8 +152,7 @@ header("location: ./login.php");
                                 <th>Title</th>
                                 <th>Position</th>
                                 <th>Description</th>
-                                <th>Supervisor</th>
-                                <th>Department</th>
+                          
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -169,14 +168,31 @@ header("location: ./login.php");
                         <input type="text" name="title">
                         <label for="">Position</label>
                         <input type="text" name="position"> 
-                        <label for="">Supervisor</label>
-                        <input type="text" name="supervisor">
-                        <label for="">Department</label>
-                        <input type="text" name="department">
+                  
                         <label for="">Description</label>
                         <textarea name="description" id="" cols="30" rows="6">
-
                         </textarea>
+                        <label for="">Qualification 1</label>
+                            <input type="text" name="Q1">
+                        <label for="">Qualification 2</label>
+                            <input type="text" name="Q2">
+                        <label for="">Qualification 3</label>
+                            <input type="text" name="Q3">
+                        <label for="">Qualification 4</label>
+                            <input type="text" name="Q4">
+                        <label for="">Qualification 5</label>
+                            <input type="text" name="Q5">
+
+                                 <label for="">Responsibility 1</label>
+                            <input type="text" name="R1">
+                        <label for="">Responsibility 2</label>
+                            <input type="text" name="R2">
+                        <label for="">Responsibility 3</label>
+                            <input type="text" name="R3">
+                        <label for="">Responsibility 4</label>
+                            <input type="text" name="R4">
+                        <label for="">Responsibility 5</label>
+                            <input type="text" name="R5">
                         <label for="">Upload Image</label>
                         <input type="file" name="file" id="careerPic">
                          <input type="hidden" name="id">
