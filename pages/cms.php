@@ -117,6 +117,8 @@ header("location: ./login.php");
                                 <th>Title</th>
                                 <th>Description</th>
                                 <th>In Depth Description</th>
+                                <th>Benefits</th>
+                                <th>Appoach</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -133,7 +135,11 @@ header("location: ./login.php");
                         <label for="">Description</label>
                         <textarea name="description" id="" cols="30" rows="6"></textarea>
                         <label for="">In Depth Description</label>
-                        <input type="text" name="supervisor">
+                        <input type="text" name="detail_desc">
+                        <label for="">Approach</label>
+                        <input type="text" name="approach">
+                        <label for="">Benefits</label>
+                        <input type="text" name="benefits">
                         <label for="">Upload Image</label>
                         <input type="file" name="file" id="servicePic">
                         <input type="hidden" name="id" >

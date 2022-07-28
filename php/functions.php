@@ -180,7 +180,9 @@ if(mysqli_num_rows($resultData)>0){
          <td>'.$row["id"].'</td>
         <td>'.$row["title"].'</td>
           <td ><p class="truncate">'.$row["description"].'</p></td>
-       <td>'.$row["supervisor"].'</td>
+       <td>'.$row["detailed_descrip"].'</td>
+       <td>'.$row["benefits"].'</td>
+       <td>'.$row["approach"].'</td>
          <td>
         <div class="btnGrp">
           <a href="#" name ="'.$row['id'].'" class="up upService" >Update</a><a href="#" name ="'.$row['id'].'" class="del delService" >Delete</a>
@@ -196,7 +198,7 @@ mysqli_stmt_close($stmt);
 
 }
 function getFrontService($conn){
-$sql = "SELECT service.title, service.supervisor, service.id,service.description,files.directory FROM service JOIN files ON service.file_fk=files.id";
+$sql = "SELECT service.title, service.id,service.description,files.directory FROM service JOIN files ON service.file_fk=files.id";
 $stmt = mysqli_stmt_init($conn);
 if(!mysqli_stmt_prepare($stmt,$sql)){
     echo"SQL Statement Failed...";
@@ -252,7 +254,7 @@ mysqli_stmt_close($stmt);
 
 
 
-function createService($conn,$title,$description,$supervisor,$file){
+function createService($conn,$title,$description,$detail_desc,$benefits,$approach,$file){
 $fileName = $file['name'];
 $fileType = $file['type'];
 $fileTmpName = $file['tmp_name'];
@@ -267,13 +269,13 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "INSERT INTO service (title,description,supervisor,file_fk) VALUES (?,?,?,?);";
+    $sql = "INSERT INTO `service`(`title`, `description`, `detailed_descrip`, `benefits`, `approach`, `file_fk`) VALUES (?,?,?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt,$sql)){
         echo"SQL Statement Failed...";
         exit();
     }
-    mysqli_stmt_bind_param($stmt,"ssss",$title,$description,$supervisor,$fk);
+    mysqli_stmt_bind_param($stmt,"sssssi",$title,$description,$detail_desc,$benefits,$approach,$fk);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     echo"Service Was Successfully Added!";
@@ -327,7 +329,7 @@ function deleteService($conn,$id){
 
 
 
-function updateService($conn,$title,$description,$supervisor,$file,$id){
+function updateService($conn,$title,$description,$detail_desc,$benefits,$approach,$file,$id){
 $sql1 = "SELECT * FROM service WHERE id = ?;";
 $stmt1 = mysqli_stmt_init($conn);
 if(!mysqli_stmt_prepare($stmt1,$sql1)){
@@ -353,13 +355,14 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "UPDATE service SET title=?, description=?,supervisor=?,file_fk=? WHERE id=?";
+    $sql = "UPDATE service SET title=?,description=?,detailed_descrip=?,benefits=?,approach=?,file_fk=? WHERE id=?";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt,$sql)){
         echo"SQL Statement Failed...";
         exit();
     }
-    mysqli_stmt_bind_param($stmt,"ssssi",$title,$description,$supervisor,$fk,$id);
+    mysqli_stmt_bind_param($stmt,"sssssss",$title,$description,$detail_desc,$benefits,$approach,$fk,$id);
+
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     echo"Service Was Successfully Updated!";
