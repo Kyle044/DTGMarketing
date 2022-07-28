@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 27, 2022 at 08:35 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 7.3.33
+-- Generation Time: Jul 28, 2022 at 02:59 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -89,8 +89,8 @@ CREATE TABLE `career` (
 --
 
 INSERT INTO `career` (`id`, `title`, `position`, `supervisor`, `department`, `description`, `Q1`, `Q2`, `Q3`, `Q4`, `Q5`, `R1`, `R2`, `R3`, `R4`, `R5`, `file_fk`) VALUES
-(13, 'Compliance Officer', 'Compliance Officer', '', '', 'Demonstrates high level of professionalism, honesty and integrity ', 'Bachelor’s Degree in Law, Finance, Business Management or related field.', 'Preferably 1-4 years experienced employees specializing in law/legal services or equivalent.', 'Has good interpersonal skills, reliable, hardworking, and attention to details.', 'Excellent written and verbal communications', 'Strong leadership skills', 'Implement and manage an effective legal compliance program Develop and review company policies.', 'Advise management on the company’s compliance with laws and regulations through detailed reports.', 'Create and manage effective action plans in response to audit discoveries and compliance violations.', 'Ensure all employees are well aware on the latest regulations and processes by delegating every huddle', 'Resolve employee’s concern about legal compliance and must maintain confidentiality in task being performed', 60),
-(14, 'QA Analyst', 'QA Analyst', '', '', 'Preparation and implementation of Quality Assurance Policies and Procedures', 'With at least 1-4 years of BPO experience', 'Excellent written and verbal communications', 'Proficient in Microsoft office and relevant software', 'With Problem Solving and Critical Thinking skills', 'Resourceful and can multitask', 'Preparation and implementation of Quality Assurance Policies and Procedures', 'Perform routine inspections and Quality audits to agents’ call logs', 'Identify and resolve workflow and production issues and address to higher level', 'Ensure standards and QA handbook regulations are observed', 'Address and discuss issues and proposed solutions with superiors', 61),
+(13, 'Compliance officer', 'Compliance officer', '', '', 'Demonstrates high level of professionalism, honesty and integrity ', 'Bachelor’s Degree in Law, Finance, Business Management or related field.', 'Preferably 1-4 years experienced employees specializing in law/legal services or equivalent.', 'Has good interpersonal skills, reliable, hardworking, and attention to details.', 'Excellent written and verbal communications', 'Strong leadership skills', 'Implement and manage an effective legal compliance program Develop and review company policies.', 'Advise management on the company’s compliance with laws and regulations through detailed reports.', 'Create and manage effective action plans in response to audit discoveries and compliance violations.', 'Ensure all employees are well aware on the latest regulations and processes by delegating every huddle', 'Resolve employee’s concern about legal compliance and must maintain confidentiality in task being performed', 60),
+(14, 'QA Analysts', 'QA Analyst', '', '', 'Preparation and implementation of Quality Assurance Policies and Procedures', 'With at least 1-4 years of BPO experience', 'Excellent written and verbal communications', 'Proficient in Microsoft office and relevant software', 'With Problem Solving and Critical Thinking skills', 'Resourceful and can multitask', 'Preparation and implementation of Quality Assurance Policies and Procedures', 'Perform routine inspections and Quality audits to agents’ call logs', 'Identify and resolve workflow and production issues and address to higher level', 'Ensure standards and QA handbook regulations are observed', 'Address and discuss issues and proposed solutions with superiors', 72),
 (15, 'Business Development Executive', 'Business Development Executive', '', '', 'Work with management to develop and implement business development strategy for a defined territory.', 'With at least 1-4 years working experience in BPO Industry', 'Has the ability to handle multiple projects simultaneously', 'Can work under pressure', 'Excellent written and verbal communications', 'Proficient in Microsoft office and relevant software', 'Identify opportunities for new business development and develop business proposals/contracts to draw in more revenue from existing and/or new clients or follow up on leads and conducting research on target clients;', 'Negotiate with clients to secure the most attractive prices for the development in the company through increased sales and customer acquisition;', 'Review clients\' feedback and implement necessary changes that meets desirability for both end;', 'Coordinate with management and clients to identify business development opportunities with existing and new clients;', 'Ability to generate revenue by identifying pain points and suggesting suitable products or services;', 62),
 (17, 'Front End Developer', 'Front End Developer', '', '', 'Review and optimize the application usage by monitoring key metrics and rectifying the issues proactively.          ', 'Confident in writing code using HTML, HTML5, CSS, CSS3, and Javascript', 'Familiar with UI layouts, SASS, Bootstrap, and the CSS GRID system', 'Experienced using Bootstrap in creating websites from scratch', 'Proficient with JavaScript frameworks such as jQuery, Angular et al', 'Experience debugging using JavaScript-based tools like Chrome Developer Console', 'Work on various projects in collaboration with multiple teams ', 'Creating and developing web applications as per the company requirements ', 'Manipulates existing themes and creates one if necessary.', 'Develops with mobile-responsive integration such as Twitter bootstrap.', 'Implement UI development principles to ensure that the product client-side serves at scale.', 65),
 (18, 'Team Leader', 'Team Leader', '', '', 'Responsible for delivery of client satisfaction, business results and employee satisfaction in order to ensure achievement of scorecard and client goals.', 'Minimum of 2 years’ experience from BPO industry as a Team Leader', 'Excellent leadership and communication skills', 'Strong coaching and people-development skills through call listening, quality feedback, etc.', 'Ability to deal with demanding customers and escalations', 'Energetic and motivating individual', 'Responsible for delivery of client satisfaction, business results and employee satisfaction in order to ensure achievement of scorecard and client goals.', 'Responsible for leading a team of up to 20-30 agents.', 'Provide supervision to both direct and indirect reports to ensure proper floor coverage and maintain a positive leadership presence at all times: “Manage By Walking Around” Responsible for daily call monitoring to provide feedback and coaching of team mem', 'Demonstrate company core values and culture.  Participate in, and support, the Quality Management (QM) Program in identifying and acting on opportunities that improve the quality, safety and value of the service we provide to our clients and our employees', 'Perform other duties as assigned by management.', 67);
@@ -114,17 +114,16 @@ CREATE TABLE `files` (
 
 INSERT INTO `files` (`id`, `name`, `directory`, `size`) VALUES
 (48, '62e08ba1ad1860.09991491.jpg', '../uploads/62e08ba1ad1860.09991491.jpg', 435285),
-(54, '62e08ff76a6071.29804423.jpg', '../uploads/62e08ff76a6071.29804423.jpg', 458763),
 (55, '62e0903d406ed8.20655484.jpeg', '../uploads/62e0903d406ed8.20655484.jpeg', 299115),
 (56, '62e090538d14d6.85753650.jpg', '../uploads/62e090538d14d6.85753650.jpg', 764191),
 (58, '62e0b3a74a8951.79510555.jpeg', '../uploads/62e0b3a74a8951.79510555.jpeg', 191180),
 (60, '62e0c78b42d913.72128597.jpeg', '../uploads/62e0c78b42d913.72128597.jpeg', 75124),
-(61, '62e0c8dbcdbdf1.76212712.jpeg', '../uploads/62e0c8dbcdbdf1.76212712.jpeg', 60528),
 (62, '62e0c96b998d08.21594382.jpeg', '../uploads/62e0c96b998d08.21594382.jpeg', 61512),
 (64, '62e0d662a6e9d6.49529350.jpg', '../uploads/62e0d662a6e9d6.49529350.jpg', 203188),
 (65, '62e0d73b268c02.27338518.jpg', '../uploads/62e0d73b268c02.27338518.jpg', 203188),
 (66, '62e0d78a6b47c5.29529537.jpg', '../uploads/62e0d78a6b47c5.29529537.jpg', 391137),
-(67, '62e0d7eb12b006.20119534.jpg', '../uploads/62e0d7eb12b006.20119534.jpg', 391137);
+(67, '62e0d7eb12b006.20119534.jpg', '../uploads/62e0d7eb12b006.20119534.jpg', 391137),
+(72, '62e0eaa12173d7.27739398.jpeg', '../uploads/62e0eaa12173d7.27739398.jpeg', 60528);
 
 -- --------------------------------------------------------
 
@@ -139,6 +138,13 @@ CREATE TABLE `gallery` (
   `date` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `gallery`
+--
+
+INSERT INTO `gallery` (`id`, `title`, `description`, `date`) VALUES
+(17, 'TESDA-Accredited Institute', 'We are delighted to announce our partnership with Protec International Institute (TESDA-Accredited Institute) and Datagen Facilities OPC, signed last July 4, 2022. The partnership reflects an open exchange of information and personnel between the two companies that aims to provide more opportunities for career growth and professional development.', '2022-07-10');
+
 -- --------------------------------------------------------
 
 --
@@ -152,6 +158,16 @@ CREATE TABLE `gallerypic` (
   `size` varchar(255) NOT NULL,
   `gallery_fk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `gallerypic`
+--
+
+INSERT INTO `gallerypic` (`id`, `title`, `directory`, `size`, `gallery_fk`) VALUES
+(44, '62e1d7a5196225.43869267.jpeg', '../uploads/62e1d7a5196225.43869267.jpeg', '186408', 17),
+(45, '62e1d7a51a86a7.16754020.jpeg', '../uploads/62e1d7a51a86a7.16754020.jpeg', '214235', 17),
+(46, '62e1d7a51ba768.21215147.jpeg', '../uploads/62e1d7a51ba768.21215147.jpeg', '234969', 17),
+(47, '62e1d7a51d0888.53271212.png', '../uploads/62e1d7a51d0888.53271212.png', '555242', 17);
 
 -- --------------------------------------------------------
 
@@ -172,7 +188,6 @@ CREATE TABLE `service` (
 --
 
 INSERT INTO `service` (`id`, `title`, `description`, `supervisor`, `file_fk`) VALUES
-(26, 'Email Support', 'We respond to customers inquiries and/or concerns promptly either through email or chat. We develop a messaging interface that would support customer concern and partners need.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde reiciendis aperiam, quas error a doloribus impedit cupiditate, consectetur minima, maiores fugit! Magni suscipit recusandae maiores laboriosam beatae harum repellendus itaque eligendi. Volu', 54),
 (27, 'Inbound Call Support', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde reiciendis aperiam, quas error a doloribus impedit cupiditate, consectetur minima, maiores fugit! Magni suscipit recusandae maiores laboriosam beatae harum repellendus itaque eligendi. Volu', 'Sir John', 55),
 (28, 'Outbound Call Support', 'We employ a proactive approach in dealing with customers to strengthen customer relationships and improving the quality of customer experience. We maintain a consistent standard of customer service excellence.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde reiciendis aperiam, quas error a doloribus impedit cupiditate, consectetur minima, maiores fugit! Magni suscipit recusandae maiores laboriosam beatae harum repellendus itaque eligendi. Volu', 56);
 
@@ -277,19 +292,19 @@ ALTER TABLE `career`
 -- AUTO_INCREMENT for table `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `gallerypic`
 --
 ALTER TABLE `gallerypic`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `service`
