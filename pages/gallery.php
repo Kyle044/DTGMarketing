@@ -19,6 +19,7 @@
           <a href="../img/gallery/10.JPG" data-lightbox="mygallery"><img src="../img/gallery/10.JPG" alt=""></a>
            <a href="../img/gallery/11.JPG" data-lightbox="mygallery"><img src="../img/gallery/11.JPG" alt=""></a>
             <a href="../img/gallery/12.JPG" data-lightbox="mygallery"><img src="../img/gallery/12.JPG" alt=""></a>
+            <a href="../img/gallery/12.JPG" data-lightbox="mygallery"><img src="../img/gallery/13.JPG" alt=""></a>
      </div> </div>
  </div>
  <?php
