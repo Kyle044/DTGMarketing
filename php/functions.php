@@ -215,27 +215,7 @@ if(mysqli_num_rows($resultData)>0){
 		<p class="lead">
 		'.$row['description'].'
 		</p>
-        	<div id="accordion">
-
-
-
-
-		<div class="card">
-			<div class="card-header" id="headingOne">
-				<h5 class="mb-0">
-					<button class="btn btn-link white" data-toggle="collapse" data-target="#'.$row['id'].'" aria-expanded="true" aria-controls="collapseOne">
-						See more
-					</button>
-				</h5>
-
-			</div>
-		</div>
-		<div id="'.$row['id'].'" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-<div class="card-body white">
-	'.$row['supervisor'].'
-</div>
-		</div>
-		</div>
+        	
 	</div>
 	<div class="serviceRight">
 		<img  src="'.$row['directory'].'" alt="">
@@ -247,7 +227,27 @@ if(mysqli_num_rows($resultData)>0){
     return false;
 }
 mysqli_stmt_close($stmt);
+// <div id="accordion">
 
+//Accordion
+
+
+// 		<div class="card">
+// 			<div class="card-header" id="headingOne">
+// 				<h5 class="mb-0">
+// 					<button class="btn btn-link white" data-toggle="collapse" data-target="#'.$row['id'].'" aria-expanded="true" aria-controls="collapseOne">
+// 						See more
+// 					</button>
+// 				</h5>
+
+// 			</div>
+// 		</div>
+// 		<div id="'.$row['id'].'" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+// <div class="card-body white">
+// 	'.$row['supervisor'].'
+// </div>
+// 		</div>
+		// </div>
 }
 
 
