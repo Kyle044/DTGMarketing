@@ -365,7 +365,7 @@ small,
 
 /* Paragraphs */
 p {
-  color: #777;
+  /*color: #777;*/
   line-height: 24px;
   margin: 0 0 20px;
 }
