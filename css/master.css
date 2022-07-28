@@ -751,7 +751,7 @@ textarea {
 .fleft ul li {
   margin-bottom: 2rem;
   font-size: 1.2rem;
-  color: black;
+  color: #777;
 }
 .fright {
 }
@@ -768,7 +768,7 @@ textarea {
 .fright ul li {
   margin-bottom: 2rem;
   font-size: 1.2rem;
-  color: black;
+  color: #777;
 }
 
 .hero-edit {
