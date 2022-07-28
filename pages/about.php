@@ -75,23 +75,7 @@
         </div>
     </div>
 
-    <div class="aboutUsmain">
-         <img src="../img/banner_inner.jpg" alt="">
-    <div class="texthed">
-    <h2 style="font-size: 2rem; color:white;
-    font-weight: bold;
-    margin-bottom: 0;">WHY US?</h2>
-        <hr>
-        
-        <p style="color:white; margin-bottom: 0;">1.	We have stringent process in selecting & hiring employees.</p>
-        <p style="color:white; margin-bottom: 0;">2.	We provide genuine customer care at a reasonable price.</p>
-        <p style="color:white; margin-bottom: 0;">3.	We provide quick and efficient solutions to client concerns.</p>
-        <p style="color:white; margin-bottom: 0;">4.	We can customize our technology to accommodate all business’ back-office support.</p>
-        <p style="color:white; margin-bottom: 0;">5.	We continuously upgrading our systems and processes to cope up with evolving market trends.</p>
- `
-    </div>
-   
-    </div>
+
     
 <div class="row">
 						<div class="col team"  >
