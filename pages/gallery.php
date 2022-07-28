@@ -40,7 +40,7 @@ if(mysqli_num_rows($resultData)>0){
     <div class="galleryContainer" style="transform:translateY(2rem)">
     <div class="galleryheading" style="margin-top:1rem;">
     <h3 class="text-bold" style="color:black;" >'.$row['title'].'</h3>
-    <p style="color:black;" >'.$row['description'].'</p>
+    <p style="color:#777;" >'.$row['description'].'</p>
     </div>
     
     
