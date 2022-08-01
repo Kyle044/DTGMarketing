@@ -1285,7 +1285,6 @@ html:not(.sticky-header-active)
   }
 
   #header .header-nav.header-nav-dark-dropdown nav > ul > li.dropdown li a {
-
   }
 
   #header
@@ -2197,6 +2196,7 @@ html:not(.sticky-header-active)
 @media (max-width: 991px) {
   #header .header-logo img {
     z-index: 1;
+    width: 12rem !important;
   }
 
   #header .header-nav {
@@ -4694,7 +4694,7 @@ strong {
   background: #0e0e0e;
   border-top: 4px solid #0e0e0e;
   font-size: 0.9em;
-  margin-top: 50px;
+
   padding: 70px 0 0;
   position: relative;
   clear: both;

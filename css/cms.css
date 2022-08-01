@@ -1,0 +1,353 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+section p {
+  margin-top: 2rem;
+  width: 50vw;
+  text-align: justify;
+}
+.section1 {
+  background-color: blanchedalmond;
+}
+
+.section2 {
+  background-color: rgb(96, 156, 116);
+}
+
+.section3 {
+  background-color: rgb(220, 205, 255);
+}
+
+.inverse {
+  background-color: rgb(54, 54, 54);
+  color: #fff;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.portContainer {
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas:
+    "side nav"
+    "side dash";
+}
+
+.sides {
+  background-color: #e88c43;
+  grid-area: side;
+}
+
+.dashboard {
+  background-color: #ffffff;
+  grid-area: dash;
+}
+.nav {
+  background-color: rgb(83, 56, 56);
+  grid-area: nav;
+  background-color: #eeeeea;
+}
+
+.logo {
+  width: 50%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 250ms ease;
+  cursor: pointer;
+}
+.logo:hover {
+  box-shadow: 6px 7px 26px 0px rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 6px 7px 26px 0px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 6px 7px 26px 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.sides ul {
+  width: 80%;
+  margin: auto;
+  list-style: none;
+  height: 70%;
+  padding: 4rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.sides ul li {
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.sides ul li:hover {
+  transform: scale(1.1);
+}
+
+.sides ul li div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sides ul li div i {
+  margin-right: 0.3rem;
+}
+.dashboard {
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.serviceSide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateX(100vw);
+  transition: 0.5s ease;
+}
+
+.careerSide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateX(200vw);
+  transition: 0.5s ease;
+}
+
+.BlogsArticleSide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateX(300vw);
+  transition: 0.5s ease;
+}
+
+.GallerySide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateX(400vw);
+  transition: 0.5s ease;
+}
+
+.navs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f3f3f3;
+}
+
+.navs i {
+  font-size: 2rem;
+}
+
+.dashSide table {
+  width: 80%;
+}
+.dashSide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 0.5s ease;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  padding: 2rem 3rem;
+  gap: 10rem;
+}
+.dashTableContainer {
+  padding: 1rem 3rem;
+  border-radius: 3px;
+  margin-left: 2rem;
+  background-color: #f3f3f3;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+.dashTableContainer table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  min-width: 400px;
+  margin: auto;
+}
+.dashTableContainer table thead tr {
+  background-color: #e88c43;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.dashTableContainer table th,
+.dashTableContainer table td {
+  padding: 12px 15px;
+}
+
+.dashTableContainer table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.dashTableContainer table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.dashTableContainer table tbody tr:last-of-type {
+  border-bottom: 2px solid #e88c43;
+}
+.dashTableContainer table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  min-width: 400px;
+  margin: auto;
+}
+
+.dashLoginContainer {
+  height: 90%;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  height: auto;
+  padding: 1rem 3rem;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.dashLoginContainer form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.dashLoginContainer form input {
+  margin-bottom: 10px;
+  padding: 0.4rem;
+  border: none;
+  border-bottom: 1px solid #e88c43;
+
+  border-radius: 6px;
+}
+
+.dashLoginContainer form label {
+  margin-bottom: 10px;
+}
+
+.dashLoginContainer form button {
+  border: none;
+  background-color: #e88c43;
+  padding: 0.5rem;
+  border-radius: 3px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.dashLoginContainer form button:hover {
+  opacity: 0.9;
+}
+
+.serviceSide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 0.5s ease;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  padding: 2rem 3rem;
+  gap: 10rem;
+}
+
+.serviceSide table {
+  width: 80%;
+}
+
+.careerSide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 0.5s ease;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  padding: 2rem 3rem;
+  gap: 10rem;
+}
+
+.careerSide table {
+  width: 80%;
+}
+
+.BlogsArticleSide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 0.5s ease;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  padding: 2rem 3rem;
+  gap: 10rem;
+}
+
+.BlogsArticleSide table {
+  width: 80%;
+}
+
+.GallerySide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 0.5s ease;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  padding: 2rem 3rem;
+  gap: 10rem;
+}
+
+.GallerySide table {
+  width: 80%;
+}
+.btnGrp {
+  margin: 10px;
+}
+
+.btnGrp a {
+  margin: 1rem 1rem;
+  color: white;
+}
+.btnGrp .up {
+  background-color: green;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.btnGrp .del {
+  background-color: red;
+  padding: 10px;
+  border-radius: 4px;
+}
+.btnGrp a:hover {
+  text-decoration: none;
+}

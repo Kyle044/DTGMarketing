@@ -24,32 +24,21 @@
 			</div>
 			<div class="section2">
 				<div class="leftSec2">
-					<p
-						style=" margin-bottom: 10px; color: white; font-size: 1.3rem; text-transform: uppercase; opacity:0.8; text-align: left; width: 60%;">
-						What we do</p>
+					
 					<h1
 						style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: left; font-weight: bold; width: 60%; font-size: 1.4rem; text-transform: uppercase ;">
-						Committed to
-						delivering
-						exceptional service</h1>
-					<p style="  color: white; " class="bb">Providing complete and cohesive customer experience that is
-						align to an
-						organizations purpose.
-						We uphold to our core values that makes us a partner of choice in the
-						industry.
+						 COMPANY MISSION</h1>
+					<p style="  color: white; " class="bb">Our mission is to deliver exceptional service by providing complete and cohesive customer experience that is aligned to our company's purpose. We uphold to our core values that makes us a partner of choice in the industry. 
 					</p>
 				</div>
 
 
 				<div class="rightSec2">
-					<p
-						style=" width: 60%;margin-bottom: 10px; color: white; font-size: 1.3rem; text-transform: uppercase; opacity:0.8; text-align: left; ">
-						Environment</p>
 					<h1
 						style="line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: left; font-weight: bold; width: 60%; font-size: 1.4rem; text-transform: uppercase ;">
-						Highest Standard of Work</h1>
-					<p style="  color: white; " class="cc"> We maintain highest standard of work ethics including sound
-						judgement, honesty and dependability.
+						COMPANY VISION</h1>
+					<p style="  color: white; " class="cc"> Our vision is to be the preferred Business Partner in business process outsourcing.
+	At Datagen Facilities, OPC we believe that providing positive client experience and genuine customer care are essential in building strong client partnership. 
 					</p>
 
 				</div>
@@ -61,16 +50,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-7">
-							<h2 class="text-light"><strong>News</strong> in us!</h2>
-							<p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-								pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia. Proin
-								adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis
-								faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et
-								ultrices posuere cubilia Curae; In eu libero ligula. </p>
-							<a href="#" class="btn btn-secondary mt-4 mb-5 mb-lg-2">View More</a>
+							<h2 class="text-light">Datagen Facilities <strong>OPC</strong></h2>
+							<p class="text-light">Datagen Facilities, OPC is continuously upgrading its infrastructure and manpower resources to provide valuable end to end solutions to global market. Our innovative technology is customizable to accommodate all business back-office support. We dedicate our resources and manpower in all our endeavors to ensure customer satisfaction. </p>
+							<a href="./pages/about.php" class="btn btn-secondary mt-4 mb-5 mb-lg-2">View More</a>
 						</div>
 						<div class="col-lg-4 ml-auto my-auto">
-							<img class="img-fluid appear-animation" src="img/porto-preview-1.jpg" alt=""
+							<img class="img-fluid appear-animation" src="img/datagen.PNG" alt=""
 								data-appear-animation="fadeInUp">
 						</div>
 					</div>
@@ -79,48 +64,41 @@
 	<h2 style="margin-top: 4rem; text-align:center;"><strong>Services</strong> in us!</h2>
 				<div class="section4">
 					
-	<div class="serviceCard">
-		<img src="./img/cardImg.jpg" alt="">
+<a class="serviceCards"  href="./pages/services.php#lg">
+		<img src="./img/services1.jpg" alt="">
 		<div class="hoverDiv">
 			<h3 style="color:white;">Lead Generation</h3>
 		</div>
-	</div>
-	<div class="serviceCard">
-		<img src="./img/cardImg.jpg" alt="">
+</a>
+	<a class="serviceCards"  href="./pages/services.php#es">
+		<img src="./img/services2.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Email Support</h3>
 		</div>
-	</div>	
-	<div class="serviceCard">
-		<img src="./img/cardImg.jpg" alt="">
+</a>	
+	<a class="serviceCards"  href="./pages/services.php#ics">
+		<img src="./img/services3.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Inbound Call Support</h3>
 		</div>
-	</div>	
-	<div class="serviceCard">
-		<img src="./img/cardImg.jpg" alt="">
+</a>	
+	<a class="serviceCards"  href="./pages/services.php#ocs">
+		<img src="./img/services4.jpg" alt="">
 		<div class="hoverDiv">
 			<h3  style="color:white;">Outbound Call Support</h3>
 		</div>
-	</div>	
-	<div class="serviceCard">
-		<img src="./img/cardImg.jpg" alt="">
-		<div class="hoverDiv">
-			<h3 style="color:white;">Telemarketing Services</h3>
-		</div>
-	</div>
-		<div class="serviceCard">
-		<img src="./img/cardImg.jpg" alt="">
+</a>	
+
+<a class="serviceCards"  href="./pages/services.php#bos">
+		<img src="./img/services5.jpg" alt="">
 		<div class="hoverDiv">
 			<h3 style="color:white;">Back Office Support</h3>
 		</div>
-			</div>
+</a>
 	</div>
-
-				
 			</div>
 			<section class="section section-background section-center mt-0"
-				style="background-image: url(img/patterns/swirl_pattern.png);">
+				style="background-image: url(img/patterns/swirl_pattern.png); margin-bottom:0;">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-lg-10">

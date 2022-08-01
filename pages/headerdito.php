@@ -12,7 +12,7 @@
 	<meta name="keywords" content="Datagen" />
 	<meta name="description" content="Datagen">
 	<meta name="author" content="okler.net">
-
+	
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="img/datagenLogo.png" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -55,15 +55,17 @@
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="../css/custom.css">
-
+	<link rel="stylesheet" href="./css/master.css">
 	<!-- Head Libs -->
 	<script src="../vendor/modernizr/modernizr.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 
 </head>
 
 <body>
 
-	<div class="body">
+	<div class="body ">
 
 		<header id="header"
         style="background-color: white; position:relative"
@@ -79,7 +81,8 @@
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="../index.php">
-										<img alt="Porto" src="../img/dtgLogo.png">
+										<img alt="DTG" id="navLogo" src="../img/dtgLogo.png" style="width: 19rem;
+    height: auto;">
 									</a>
 								</div>
 							</div>
@@ -92,13 +95,13 @@
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li class="dropdown">
-													<a class="" href="../index.php">
+													<a class="" href="../index.php" style="font-size: 1rem;">
 														Home
 													</a>
 
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="about.php">
+													<a class="dropdown-item dropdown-toggle" href="about.php" style="font-size: 1rem;">
 														About
 													</a>
 
@@ -106,78 +109,77 @@
 														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="contact.php">Contact</a>
 														</li>
+														<li class="dropdown-submenu">
+															<a class="dropdown-item" href="facilities.php">Facilities</a>
+														</li>
+																<!-- <li class="dropdown-submenu">
+															<a class="dropdown-item" href="whyus.php">Why Us</a>
+														</li> -->
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="services.php">
+													<a class="dropdown-item dropdown-toggle" href="services.php" style="font-size: 1rem;">
 														Services
 													</a>
 
 													<ul class="dropdown-menu">
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Lead Generation</a>
+															<a class="dropdown-item" href="services.php#lg">Lead Generation</a>
 
 														</li>
 
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Email Support</a>
+															<a class="dropdown-item" href="services.php#es">Email Support</a>
 
 														</li>
 
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Inbound Call Support</a>
+															<a class="dropdown-item" href="services.php#ics">Inbound Call Support</a>
 
 														</li>
 
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Outbound Call Support</a>
+															<a class="dropdown-item" href="services.php#ocs">Outbound Call Support</a>
 
 														</li>
-
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Telemarketing Services</a>
-
-														</li>
-
-														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Back Office Support</a>
+															<a class="dropdown-item" href="services.php#bos">Back Office Support</a>
 															<ul class="dropdown-menu">
 																<li><a class="dropdown-item"
-																		href="about-us.html">Medical Transcription</a>
+																		href="">Medical Transcription</a>
 																</li>
 																<li><a class="dropdown-item"
-																		href="about-us-basic.html">E-Commerce</a>
+																		href="">E-Commerce</a>
 																</li>
 																<li><a class="dropdown-item"
-																		href="about-me.html">Technical Support</a></li>
-																<li><a class="dropdown-item" href="about-me.html">Search
+																		href="">Technical Support</a></li>
+																<li><a class="dropdown-item" href="a">Search
 																		Engine Optimization</a></li>
 																<li><a class="dropdown-item"
-																		href="about-me.html">Contact Us</a></li>
+																		href="">Contact Us</a></li>
 															</ul>
 														</li>
 													</ul>
 												</li>
 												<li class="dropdown">	
-													<a class="" href="#">
+													<a class="" href="career.php" style="font-size: 1rem;">
+													<!-- <a class="" href="#" style="font-size: 1rem;"> -->
 														Career
 													</a>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="#">
+													<a class="dropdown-item dropdown-toggle" href="facilities.php" style="font-size: 1rem;">
 														Resources
 													</a>
 													<ul class="dropdown-menu">
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Articles</a>
+															<a class="dropdown-item" href="article.php">Articles</a>
 														</li>
-														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Blog</a>
-														</li>
+												
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="gallery.php">
+													<a class="" href="gallery.php" style="font-size: 1rem;">
 														Gallery
 													</a>
 

@@ -43,6 +43,7 @@
 	<link rel="stylesheet" href="./vendor/rs-plugin/css/settings.css">
 	<link rel="stylesheet" href="./vendor/rs-plugin/css/layers.css">
 	<link rel="stylesheet" href="./vendor/rs-plugin/css/navigation.css">
+	
 	<link rel="stylesheet" href="./css/master.css">
 
 	<!-- Demo CSS -->
@@ -53,9 +54,13 @@
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="./css/custom.css">
-
+	<link rel="stylesheet" href="./css/master.css">
 	<!-- Head Libs -->
 	<script src="./vendor/modernizr/modernizr.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	
+
+
 
 </head>
 
@@ -76,7 +81,8 @@
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="index.php">
-										<img alt="Porto" src="img/dtgLogo.png">
+										<img alt="datagenf" src="img/dtgLogo.png" id="navLogo" style="width: 19rem; 
+    height: auto;" >
 									</a>
 								</div>
 							</div>
@@ -89,34 +95,30 @@
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li class="dropdown">
-													<a class="" href="index.php">
+													<a class="" href="index.php" style="font-size: 1rem;">
 														Home
 													</a>
 
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="pages/about.php">
+													<a class="dropdown-item dropdown-toggle" href="pages/about.php" style="font-size: 1rem;">
 														About
 													</a>
 
 													<ul class="dropdown-menu">
 														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="pages/contact.php">Contact</a>
-
 														</li>
-
-													
-													
-													
-														
-
-
-
-
+														<li class="dropdown-submenu">
+															<a class="dropdown-item" href="pages/facilities.php">Facilities</a>
+														</li>
+														<!-- <li class="dropdown-submenu">
+															<a class="dropdown-item" href="pages/whyus.php">Why Us</a>
+														</li> -->
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="pages/services.php">
+													<a class="dropdown-item dropdown-toggle" href="pages/services.php" style="font-size: 1rem;">
 														Services
 													</a>
 
@@ -141,50 +143,44 @@
 
 														</li>
 
-														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="pages/services.php#ts">Telemarketing Services</a>
-
-														</li>
+													
 
 														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="pages/services.php#bos">Back Office Support</a>
 															<ul class="dropdown-menu">
 																<li><a class="dropdown-item"
-																		href="about-us.html">Medical Transcription</a>
+																		href="">Medical Transcription</a>
 																</li>
 																<li><a class="dropdown-item"
-																		href="about-us-basic.html">E-Commerce</a>
+																		href="">E-Commerce</a>
 																</li>
 																<li><a class="dropdown-item"
-																		href="about-me.html">Technical Support</a></li>
-																<li><a class="dropdown-item" href="about-me.html">Search
+																		href="a">Technical Support</a></li>
+																<li><a class="dropdown-item" href="">Search
 																		Engine Optimization</a></li>
-																<li><a class="dropdown-item"
-																		href="about-me.html">Contact Us</a></li>
 															</ul>
 														</li>
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="#">
+														<a class="" href="pages/career.php" style="font-size: 1rem;">
+													<!-- <a class="" href="#" style="font-size: 1rem;"> -->
 														Career
 													</a>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="#">
+													<a class="dropdown-item dropdown-toggle" href="pages/facilities.php" style="font-size: 1rem;">
 														Resources
 													</a>
 													<ul class="dropdown-menu">
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Articles</a>
+															<a class="dropdown-item" href="pages/article.php">Articles</a>
 														</li>
-														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="#">Blog</a>
-														</li>
+														
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="" href="pages/gallery.php">
+													<a class="" href="pages/gallery.php" style="font-size: 1rem;">
 														Gallery
 													</a>
 

@@ -5,7 +5,7 @@
 					<div class="col-lg-3">
 						<div class="newsletter">
 							<h4>Newsletter</h4>
-							<p>Keep up on our always evolving product features and technology. Enter your e-mail and
+							<p>Keep up with our always evolving product features and technology. Enter your e-mail and
 								subscribe to our newsletter.</p>
 
 							<div class="alert alert-success d-none" id="newsletterSuccess">
@@ -26,7 +26,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3">
-						<h4>Latest Tweets</h4>
+						<h4>Company Partners</h4>
 						<div id="tweet" class="twitter" data-plugin-tweets
 							data-plugin-options="{'username': '', 'count': 2}">
 							<p>Please wait...</p>
@@ -55,8 +55,7 @@
 						<ul class="social-icons">
 							<li class="social-icons-facebook"><a href="https://www.facebook.com/dgfopc" target="_blank"
 									title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-							<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
-									title="Twitter"><i class="fab fa-twitter"></i></a></li>
+							
 							<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank"
 									title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
 						</ul>
@@ -67,8 +66,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-1">
-							<a href="index.html" class="logo">
-								<img alt="Porto Website Template" class="img-fluid" src="img/datagenLogo.png">
+							<a href="" class="logo">
+								<img alt="" class="img-fluid" src="img/datagenLogo.png">
 							</a>
 						</div>
 						<div class="col-lg-7">
@@ -77,9 +76,9 @@
 						<div class="col-lg-4">
 							<nav id="sub-menu">
 								<ul>
-									<li><a href="page-faq.html">Privacy</a></li>
-									<li><a href="sitemap.html">Sitemap</a></li>
-									<li><a href="contact-us.html">Contact</a></li>
+									<li><a href="">Privacy</a></li>
+									<li><a href="">Sitemap</a></li>
+									<li><a href="">Contact</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -90,6 +89,7 @@
 	</div>
 
 	<!-- Vendor -->
+	
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
 	<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -106,7 +106,7 @@
 	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="vendor/vide/vide.min.js"></script>
 	<script src="../js/lightbox-plus-jquery.min.js"></script>
-
+	<script src="../js/masterJquery.js"></script>
 	<!-- Theme Base, Components and Settings -->
 	<script src="js/theme.js"></script>
 
