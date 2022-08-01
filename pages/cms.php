@@ -24,13 +24,107 @@ header("location: ./login.php");
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap.min.css">
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/cmsko.css">
 
-    <link rel="stylesheet" href="../css/cms.css">
+
+    <!--                                   EKSENA KO                                -->
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     <title>Admin CMS</title>
 </head>
 
 <body>
-    <div class="portContainer">
+<div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-img">
+            <img src="../img/dtgLogo.png" alt="Datagen Logo">
+            </div>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="" class="download">Dashboard</a>
+                </li>
+                <li>
+                    <a href="" class="article">Services</a>
+                </li>
+                <li>
+                    <a href="" class="article">Career</a>
+                </li>
+                <li>
+                    <a href="" class="article">Article</a>
+                </li>
+                <li>
+                    <a href="" class="article">Gallery</a>
+                </li>
+                <li>
+                    <a href="" class="article">Logout</a>
+                </li>
+             
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <img src="../img/dtoken.png" id="sidebarCollapse" alt="DatagenToken">
+                </div>
+            </nav>
+
+
+            <div class="dashboard">
+            <div class="dashSide" id="dashSide">
+                <div class="dashTableContainer">
+                    <h3>List of Registered User</h3>
+                    <table id="userTbl" class="table  w-auto">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Email</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="autoUser">
+                        </tbody>
+                    </table>
+                    <img src="../img/new_user.png" alt="test" s></img>
+                </div>
+
+                <!-- <div class="dashLoginContainer">
+                    <h3 id="userFormTitle">Add User</h3>
+                    <form action="" id="userForm" name="insert">
+                        <label for="">Full Name</label>
+                        <input type="text" name="fullname">
+                        <label for="">Position</label>
+                        <input type="text" name="position">
+                        <label for="">Office</label>
+                        <input type="text" name="office">
+                        <label for="">Email</label>
+                        <input type="text" name="email">
+                        <label for="">Password</label>
+                        <input type="password" name="password">
+                        <label for="">Confirm Password</label>
+                        <input type="password" name="cpassword">
+                        <input type="hidden" name="id">
+                        <button type="submit">Submit</button>
+                        <button type="button" id="insertUserBtn" >Add</button>
+                    </form>
+                </div>  -->
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- <div class="portContainer">
         <div class="navs">
             <i class='bx bx-menu'></i>
             <a href="../php/logout.php"><i class='bx bx-log-out'></i></a>
@@ -63,12 +157,12 @@ header("location: ./login.php");
                 </li>
             </ul>
         </div>
-        <!-- USER TABLE -->
+         USER TABLE 
         <div class="dashboard">
             <div class="dashSide" id="dashSide">
                 <div class="dashTableContainer">
                     <h3>List of Registered User</h3>
-                    <table id="userTbl" class="table table-striped table-bordered" style="width:100%" id="userTbl">
+                    <table id="userTbl" class="table  w-auto">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -81,6 +175,7 @@ header("location: ./login.php");
                         <tbody id="autoUser">
                         </tbody>
                     </table>
+                    <img src="../img/new_user.png" alt="test" s></img>
                 </div>
 
                 <div class="dashLoginContainer">
@@ -102,12 +197,12 @@ header("location: ./login.php");
                         <button type="submit">Submit</button>
                         <button type="button" id="insertUserBtn" >Add</button>
                     </form>
-                </div>
+                </div> 
 
 
             </div>
             <div class="serviceSide" id="serviceSide">
-                    <!-- SERVICE TABLE -->
+                    SERVICE TABLE 
                 <div class="dashTableContainer">
                     <h3>List of Services</h3>
                     <table id="serviceTbl" class="table table-striped table-bordered" style="width:100%">
@@ -143,7 +238,7 @@ header("location: ./login.php");
                 </div>
             </div>
             <div class="careerSide" id="careerSide">
-            <!-- CAREER TABLE -->
+            CAREER TABLE
                 <div class="dashTableContainer">
                     <h3>List of Career's</h3>
                     <table  class="table table-striped table-bordered" style="width:100%" id="careerTbl">
@@ -203,7 +298,7 @@ header("location: ./login.php");
             </div>
 
             <div class="BlogsArticleSide" id="BlogsArticleSide">
-<!-- BLOG TABLE -->
+            - BLOG TABLE -->
                 <!-- <div class="dashTableContainer">
                     <h3>List of Blogs</h3>
 
@@ -240,8 +335,8 @@ header("location: ./login.php");
                         <button type="submit">Submit</button>
                         <button type="button" id="insertBlogBtn">Add Blog</button>
                     </form>
-                </div> -->
-                <!-- ARTICLE TABLE -->
+                </div> 
+                 ARTICLE TABLE 
                 <div class="dashTableContainer">
                     <h3>List of Articles</h3>
                     <table id="articleTbl" class="table table-striped table-bordered" style="width:100%">
@@ -279,7 +374,7 @@ header("location: ./login.php");
                     </form>
                 </div>
             </div>
-            <!-- GALLERY TABLE -->
+             GALLERY TABLE 
             <div class="GallerySide" id="GallerySide">
                 <div class="dashTableContainer" style="height: auto;">
                     <h3>List Post's</h3>
@@ -315,7 +410,7 @@ header("location: ./login.php");
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -335,5 +430,11 @@ header("location: ./login.php");
 <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 <script src="../js/cms.js"></script>
 <script src="../js/cmsJquery.js"></script>
-
+<script>
+    $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+</script>
 </html>
