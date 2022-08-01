@@ -1,4 +1,5 @@
 <?php
+
 include("config.php");
 
 $username = $_POST["email"];
@@ -29,6 +30,7 @@ $count = $result->num_rows;
             }
         }
     ?>
+
 
 
 
