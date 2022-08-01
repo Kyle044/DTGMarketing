@@ -158,7 +158,6 @@ header("location: ./login.php");
                                 <th>Title</th>
                                 <th>Position</th>
                                 <th>Description</th>
-                          
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -174,11 +173,14 @@ header("location: ./login.php");
                         <input type="text" name="title">
                         <label for="">Position</label>
                         <input type="text" name="position"> 
-                  
                         <label for="">Description</label>
                         <textarea name="description" id="" cols="30" rows="6">
                         </textarea>
-                        <label for="">Qualification 1</label>
+                        <label for="">Qualification</label>
+                        <textarea name="qualification" id="qualification" ></textarea>
+                        <label for="">Responsibility</label>
+                        <textarea name="responsibility" id="responsibility" ></textarea>
+                        <!-- <label for="">Qualification 1</label>
                             <input type="text" name="Q1">
                         <label for="">Qualification 2</label>
                             <input type="text" name="Q2">
@@ -187,10 +189,8 @@ header("location: ./login.php");
                         <label for="">Qualification 4</label>
                             <input type="text" name="Q4">
                         <label for="">Qualification 5</label>
-                            <input type="text" name="Q5">
-
-                                 <label for="">Responsibility 1</label>
-                            <input type="text" name="R1">
+                            <input type="text" name="Q5"> -->
+                            <!-- <input type="text" name="R1">
                         <label for="">Responsibility 2</label>
                             <input type="text" name="R2">
                         <label for="">Responsibility 3</label>
@@ -198,7 +198,7 @@ header("location: ./login.php");
                         <label for="">Responsibility 4</label>
                             <input type="text" name="R4">
                         <label for="">Responsibility 5</label>
-                            <input type="text" name="R5">
+                            <input type="text" name="R5"> -->
                         <label for="">Upload Image</label>
                         <input type="file" name="file" id="careerPic">
                          <input type="hidden" name="id">
@@ -331,11 +331,29 @@ header("location: ./login.php");
         $('#serviceTbl').DataTable();
         $('#careerTbl').DataTable();
         $('#blogTbl').DataTable();
-         $('#articleTbl').DataTable();
-
+        $('#articleTbl').DataTable();
+        $('#responsibility').tinymce({ height: 200,
+        menubar: false,
+        plugins: [
+          'advlist autolink lists link image charmap print preview anchor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table paste code help wordcount'
+        ],
+        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
+          });
+        $('#qualification').tinymce({ height: 200,
+        menubar: false,
+        plugins: [
+          'advlist autolink lists link image charmap print preview anchor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table paste code help wordcount'
+        ],
+        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
+          });
     });
 </script>
-
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/jquery.tinymce.min.js" referrerpolicy="origin"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap.min.js"></script>
 <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
