@@ -231,16 +231,8 @@ $(document).ready(() => {
       !formData.get("title") ||
       !formData.get("position") ||
       !formData.get("description") ||
-      !formData.get("Q1") ||
-      !formData.get("Q2") ||
-      !formData.get("Q3") ||
-      !formData.get("Q4") ||
-      !formData.get("Q5") ||
-      !formData.get("R1") ||
-      !formData.get("R2") ||
-      !formData.get("R3") ||
-      !formData.get("R4") ||
-      !formData.get("R5") ||
+      !formData.get("qualification") ||
+      !formData.get("responsibility") ||
       !file_data
     ) {
       alert("There is some missing fields");
@@ -254,7 +246,7 @@ $(document).ready(() => {
           data: formData,
           cache: false,
           success: function (res) {
-            alert(res);
+            console.log(res);
             $("#careerForm")
               .find("input[type=text], textarea,input[type=file]")
               .val("");

@@ -87,7 +87,6 @@
 			</div>
 		</footer>
 	</div>
-
 	<!-- Vendor -->
 	
 	<script src="vendor/jquery/jquery.min.js"></script>
@@ -109,14 +108,11 @@
 	<script src="../js/masterJquery.js"></script>
 	<!-- Theme Base, Components and Settings -->
 	<script src="js/theme.js"></script>
-
 	<!-- Current Page Vendor and Views -->
 	<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 	<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
 	<!-- Theme Custom -->
 	<script src="js/custom.js"></script>
-
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
 
@@ -131,7 +127,7 @@
 			ga('send', 'pageview');
 		</script>
 		 -->
-
+	
 </body>
 
 </html>

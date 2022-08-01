@@ -39,7 +39,6 @@
   display: grid;
   max-width: 1200px;
   margin-top: 2rem;
-
   grid-template-columns: repeat(auto-fit, 22rem);
   align-content: center;
   gap: 10px;

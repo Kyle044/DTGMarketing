@@ -344,18 +344,15 @@ else{
 
 //GET
 function getCareer($conn){
-
 $sql = "SELECT * FROM career;";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
-  echo "<table><tr><th>ID</th><th>Name</th></tr>";
   // output data of each row
   while($row = $result->fetch_assoc()) {
       echo '<tr>
          <td>'.$row["title"].'</td>
        <td>'.$row["position"].'</td>
         <td>'.$row["description"].'</td>
-       
          <td>
         <div class="btnGrp">
           <a href="#" name ="'.$row['id'].'" class="up upCareer" >Update</a><a href="#" name ="'.$row['id'].'" class="del delCareer" >Delete</a>
@@ -363,7 +360,6 @@ if ($result->num_rows > 0) {
             </td>
             </tr>';
   }
-
 } else {
 return false;
 }
@@ -376,44 +372,15 @@ $conn->close();
 
 
 function getsCareer($conn){
-$sql = "SELECT career.title,career.description,files.directory,career.Q1,career.Q2,career.Q3,career.Q4,career.Q5,career.R1,career.R2,career.R3,career.R4,career.R5 FROM career JOIN files ON career.file_fk=files.id ";
+$sql = "SELECT career.title,career.description,files.directory,career.qualification,career.responsibility FROM career JOIN files ON career.file_fk=files.id ";
 $result = $conn->query($sql);
 if($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
-         echo '
-        <div class="CarCard">
-
-<div class="CareerLeft">
-    <h1>'.$row['title'].'</h1>
-  <ul>
-  
-    <li><h3>Qualification</h3><ul>
-    <li>'.$row['Q1'].'</li>
-    <li>'.$row['Q2'].'</li>
-    <li>'.$row['Q3'].'</li>
-    <li>'.$row['Q4'].'</li>
-    <li>'.$row['Q5'].'</li>
-</ul>
-    </li>
-
-  </ul>
-
-   <ul>
- 
-    <li>  <h3>Responsibility</h3><ul>
-    <li>'.$row['R1'].'</li>
-    <li>'.$row['R2'].'</li>
-    <li>'.$row['R3'].'</li>
-    <li>'.$row['R4'].'</li>
-    <li>'.$row['R5'].'</li>
-</ul>
-    </li>
-  </ul>
-</div>
-<div class="CareerRight">
-    <img src="'.$row['directory'].'" alt="">
-</div>
-</div>';
+    echo '<div class="CarCard"><div class="CareerLeft"><ul><li><h2>'.$row['title'].'</h2><h3>Qualification</h3> ';
+    echo$row['qualification'];
+    echo'</li></ul> <ul><li style="list-style:none;"><h2 style="opacity:0;">.</h2><h3>Responsibility</h3>';
+    echo$row['responsibility'];
+    echo '</li></ul></div><div class="CareerRight"><img src="'.$row['directory'].'" alt=""></div></div>';
     }
 
 }else{
@@ -425,7 +392,7 @@ $conn->close();
 }
 
 //INSERT
-function createCareer($conn,$title,$position,$description,$file,$q1,$q2,$q3,$q4,$q5,$r1,$r2,$r3,$r4,$r5){
+function createCareer($conn,$title,$position,$description,$file,$qualification,$responsibility){
 $fileName = $file['name'];
 $fileType = $file['type'];
 $fileTmpName = $file['tmp_name'];
@@ -440,7 +407,7 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = 'INSERT INTO career (title,position,description,file_fk,Q1,Q2,Q3,Q4,Q5,R1,R2,R3,R4,R5) VALUES ("'.$title.'","'.$position.'","'.$description.'",'.$fk.',"'.$q1.'","'.$q2.'","'.$q3.'","'.$q4.'","'.$q5.'","'.$r1.'","'.$r2.'","'.$r3.'","'.$r4.'","'.$r5.'")';
+    $sql = 'INSERT INTO career (title,position,description,file_fk,qualification,responsibility) VALUES ("'.$title.'","'.$position.'","'.$description.'",'.$fk.',"'.(string)$qualification.'","'.(string)$responsibility.'")';
    if ($conn->query($sql) === TRUE) {
     echo"Career Was Successfully Added!";
     } else {
