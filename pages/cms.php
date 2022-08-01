@@ -30,8 +30,15 @@ header("location: ./login.php");
     <!--                                   EKSENA KO                                -->
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <title>Admin CMS</title>
 </head>
 
@@ -67,34 +74,55 @@ header("location: ./login.php");
         </nav>
 
         <!-- Page Content  -->
-        <div id="content">
+        <div id="content" >
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <img src="../img/dtoken.png" id="sidebarCollapse" alt="DatagenToken">
                 </div>
             </nav>
+            <div class="contentDiv">
+                <h3>List of Registered User</h3>
+                <table class="table table-bordered">
+                <thead class="thead-dark" >
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="autoUser">
 
+                    </tbody>
+                </table>
+                
+            </div>
+            <!-- <button class="btn"><i class="glyphicon glyphicon-user"></i> New User</button> -->
+            <!-- <table id="userTbl" class="table table-striped table-light">
+                <h3>List of Registered User</h3>
+                    <thead class="" >
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="autoUser">
 
-            <div class="dashboard">
-            <div class="dashSide" id="dashSide">
-                <div class="dashTableContainer">
-                    <h3>List of Registered User</h3>
-                    <table id="userTbl" class="table  w-auto">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Email</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="autoUser">
-                        </tbody>
-                    </table>
-                    <img src="../img/new_user.png" alt="test" s></img>
-                </div>
+                    </tbody>
+                </table> -->
+                
+                
+
+              <!--  <div class="dashSide" id="dashSide">
+                                    
+                     <div class="dashTableContainer">
+                    </div>    
+                </div>-->          
 
                 <!-- <div class="dashLoginContainer">
                     <h3 id="userFormTitle">Add User</h3>
@@ -118,10 +146,10 @@ header("location: ./login.php");
                 </div>  -->
 
 
-            </div>
-
-
         </div>
+
+
+        
     </div>
 
     <!-- <div class="portContainer">
