@@ -199,29 +199,31 @@ header("location: ./login.php");
             </div>
         </div>
         END OF DASHBOARD -->
-        <!-- SERVICE TABLE  -->    
+
+
+        <!-- SERVICE TABLE      
 
         <div id="content">
-            <div class="contentDiv">                    
+            <div class="contentDiv" id="serviceSide">                    
                 <div class="tablewrap" >
-                            <h3>List of Services</h3>
-                            <table id="serviceTbl" class="table table-striped table-bordered" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Title</th>
-                                        <th>Description</th>
-                                        <th>In Depth Description</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="autoService">
+                    <h3>List of Services</h3>
+                        <table id="serviceTbl" class="table table-striped table-bordered" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>In Depth Description</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="autoService">
 
-                                </tbody>
-                            </table>
+                            </tbody>
+                        </table>
                 </div>
-                <div class="tablewrap" style="height:auto;" >
-                            <h3 id="serviceFormTitle">Add Services</h3>
+                <div class="tablewrap">
+                        <h3 id="serviceFormTitle">Add Services</h3>
                             <form action="" id="serviceForm" enctype="multipart/form-data" name="insert">
                                 <label for="">Title</label>
                                 <input type="text" name="title">
@@ -237,10 +239,71 @@ header("location: ./login.php");
                             </form>
                 </div>
             </div>
+        </div> 
+        -->
+
+        <!-- Career --->
+        <div id="content">
+            <div class="contentDiv" id="careerSide">
+               
+                    <div class="tablewrapper">
+                        <h3>List of Career's</h3>
+                        <table id="careerTbl" class="table table-bordered" style="width:100%" >
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Position</th>
+                                    <th>Description</th>
+                            
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="autoCareer">
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tablewrapper">
+                        <h3 id="careerFormTitle">Add Career</h3>
+                        <form action="" id="careerForm" name="insert">
+                            <label for="">Title</label>
+                            <input type="text" name="title">
+                            <label for="">Position</label>
+                            <input type="text" name="position"> 
+                    
+                            <label for="">Description</label>
+                            <textarea name="description" id="" cols="30" rows="6">
+                            </textarea>
+                            <label for="">Qualification 1</label>
+                                <input type="text" name="Q1">
+                            <label for="">Qualification 2</label>
+                                <input type="text" name="Q2">
+                            <label for="">Qualification 3</label>
+                                <input type="text" name="Q3">
+                            <label for="">Qualification 4</label>
+                                <input type="text" name="Q4">
+                            <label for="">Qualification 5</label>
+                                <input type="text" name="Q5">
+
+                                    <label for="">Responsibility 1</label>
+                                <input type="text" name="R1">
+                            <label for="">Responsibility 2</label>
+                                <input type="text" name="R2">
+                            <label for="">Responsibility 3</label>
+                                <input type="text" name="R3">
+                            <label for="">Responsibility 4</label>
+                                <input type="text" name="R4">
+                            <label for="">Responsibility 5</label>
+                                <input type="text" name="R5">
+                            <label for="">Upload Image</label>
+                            <input type="file" name="file" id="careerPic">
+                            <input type="hidden" name="id">
+                            <button type="submit">Submit</button>
+                            <button type="button" id="insertCareerBtn" >Add</button>
+                        </form>
+                    </div>
+                </div>
         </div>
-
-        
-
 
         
     </div>

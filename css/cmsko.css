@@ -182,7 +182,7 @@ img{
 .tablewrap {
   width: 100%;
   display: grid;
- 
+  grid-template-columns: 1fr 0.3fr;
   justify-content: center;
   text-align: center;
    background-color: #f7f7f7;
