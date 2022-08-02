@@ -28,6 +28,7 @@ header("location: ./login.php");
 
 
     <!--                                   EKSENA KO                                -->
+    
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -39,6 +40,9 @@ header("location: ./login.php");
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+
     <title>Admin CMS</title>
 </head>
 
@@ -51,7 +55,7 @@ header("location: ./login.php");
             </div>
 
             <ul class="list-unstyled CTAs">
-                <li>
+                <!-- <li>
                     <a href="" class="download">Dashboard</a>
                 </li>
                 <li>
@@ -66,22 +70,53 @@ header("location: ./login.php");
                 <li>
                     <a href="" class="article">Gallery</a>
                 </li>
-                <li>
-                    <a href="" class="article">Logout</a>
+                <li> -->
+                <li id="dashBtn">
+                <div class="">
+                <a href="" class="article">Dashboard&nbsp;<i class='bx bxs-dashboard'></i></a>
+                
+                </div>
+                
+                
+                </li>
+                <li id="serviceBtn">
+                    <div>
+                    <a href="" class="article">Services&nbsp;<i class='bx bxs-briefcase'></i></a>
+                    </div>
+                </li>
+                <li id="careerBtn">
+                    <div>
+                    <a href="" class="article">Career&nbsp;<i class='bx bxs-book-open'></i></a>
+                    </div>
+                </li>
+                <li id="BaBtn">
+                    <div>
+                    <a href="" class="article">Article&nbsp;<i class='bx bxl-blogger'></i></a>
+                    </div>
+                </li>
+                <li id="galleryBtn">
+                    <div>
+                    <a href="" class="article">Gallery&nbsp;<i class='bx bx-image-alt'></i></a>
+                    </div>
+                </li>
+                <a href="" class="article">Logout</a>
                 </li>
              
             </ul>
         </nav>
 
-        <!-- Page Content  -->
-        <div id="content" >
+        <!-- DASHBOARD -->
+        <!-- <div id="content"id="dashSide" >
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <img src="../img/dtoken.png" id="sidebarCollapse" alt="DatagenToken">
                 </div>
-            </nav>
+            </nav> 
+
+            
             <div class="contentDiv">
+                <div class="tablewrap">
                 <h3>List of Registered User</h3>
                 <table class="table table-bordered">
                 <thead class="thead-dark" >
@@ -97,139 +132,120 @@ header("location: ./login.php");
 
                     </tbody>
                 </table>
-                <button class="button button1"><span><i class="glyphicon glyphicon-user"></i> Add User</button>
+                <button class="button button1"data-toggle="modal" data-target="#ModalLoginForm"><span><i class="glyphicon glyphicon-user"></i> Add User</button>
+                
+                 Modal User Registration 
+                <div id="ModalLoginForm" class="modal fade">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title" id="userFormTitle">User Registration</h1>
+                            </div>
+                            <div class="modal-body">
+                                
+                                
+                                <form role="form" method="POST" action="">
+                                    <input type="hidden" name="_token" value="">
+                                    <div class="form-group">
+                                        <label class="control-label">Fullname</label>
+                                        <div>
+                                            <input type="text" class="form-control input-lg" name="name" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Position</label>
+                                        <div>
+                                            <input type="text" class="form-control input-lg" name="position" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Office</label>
+                                        <div>
+                                            <input type="text" class="form-control input-lg" name="office" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">E-Mail Address</label>
+                                        <div>
+                                            <input type="email" class="form-control input-lg" name="email" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Password</label>
+                                        <div>
+                                            <input type="password" class="form-control input-lg" name="password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Confirm Password</label>
+                                        <div>
+                                            <input type="password" class="form-control input-lg" name="cpassword">
+                                            <input type="hidden" name="id">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <button type="submit" class="btn btn-success">
+                                                Register
+                                            </button>
+                                            <button type="button" id="insertUserBtn" >Add</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> modal-content 
+                    </div>modal-dialog
+                </div>.modal 
             </div>
-            <!-- <button class="btn"><i class="glyphicon glyphicon-user"></i> New User</button> -->
-            <!-- <table id="userTbl" class="table table-striped table-light">
-                <h3>List of Registered User</h3>
-                    <thead class="" >
-                        <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Email</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody id="autoUser">
-
-                    </tbody>
-                </table> -->
-                
-                
-
-              <!--  <div class="dashSide" id="dashSide">
-                                    
-                     <div class="dashTableContainer">
-                    </div>    
-                </div>-->          
-
-                <!-- <div class="dashLoginContainer">
-                    <h3 id="userFormTitle">Add User</h3>
-                    <form action="" id="userForm" name="insert">
-                        <label for="">Full Name</label>
-                        <input type="text" name="fullname">
-                        <label for="">Position</label>
-                        <input type="text" name="position">
-                        <label for="">Office</label>
-                        <input type="text" name="office">
-                        <label for="">Email</label>
-                        <input type="text" name="email">
-                        <label for="">Password</label>
-                        <input type="password" name="password">
-                        <label for="">Confirm Password</label>
-                        <input type="password" name="cpassword">
-                        <input type="hidden" name="id">
-                        <button type="submit">Submit</button>
-                        <button type="button" id="insertUserBtn" >Add</button>
-                    </form>
-                </div>  -->
-
-
         </div>
+        END OF DASHBOARD -->
+        <!-- SERVICE TABLE  -->    
+
+        <div id="content">
+            <div class="contentDiv">                    
+                <div class="tablewrap" >
+                            <h3>List of Services</h3>
+                            <table id="serviceTbl" class="table table-striped table-bordered" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>In Depth Description</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="autoService">
+
+                                </tbody>
+                            </table>
+                </div>
+                <div class="tablewrap" style="height:auto;" >
+                            <h3 id="serviceFormTitle">Add Services</h3>
+                            <form action="" id="serviceForm" enctype="multipart/form-data" name="insert">
+                                <label for="">Title</label>
+                                <input type="text" name="title">
+                                <label for="">Description</label>
+                                <textarea name="description" id="" cols="30" rows="6"></textarea>
+                                <label for="">In Depth Description</label>
+                                <input type="text" name="supervisor">
+                                <label for="">Upload Image</label>
+                                <input type="file" name="file" id="servicePic">
+                                <input type="hidden" name="id" >
+                                <button type="submit">Submit</button>
+                                <button type="button" id="insertServiceBtn">Add Service</button>
+                            </form>
+                </div>
+            </div>
+        </div>
+
+        
 
 
         
     </div>
 
-    <!-- <div class="portContainer">
-        <div class="navs">
-            <i class='bx bx-menu'></i>
-            <a href="../php/logout.php"><i class='bx bx-log-out'></i></a>
-        </div>
-        <div class="sides">
-            <div class="logo">
-                <img src="../img/dtgLogo.png" alt="Datagen Logo">
-            </div>
-            <ul>
-                <li id="dashBtn">
-                    <div><i class='bx bxs-dashboard'></i></i>Dashboard</div>
-                </li>
-                <li id="serviceBtn">
-                    <div><i class='bx bxs-briefcase'></i>Services</div>
-                </li>
-                <li id="careerBtn">
-                    <div>
-                        <i class='bx bx-book-open'></i>Career
-                    </div>
-                </li>
-                <li id="BaBtn">
-                    <div>
-                        <i class='bx bxl-blogger'></i> Article
-                    </div>
-                </li>
-                <li id="galleryBtn">
-                    <div>
-                        <i class='bx bx-image-alt'></i>Gallery
-                    </div>
-                </li>
-            </ul>
-        </div>
-         USER TABLE 
-        <div class="dashboard">
-            <div class="dashSide" id="dashSide">
-                <div class="dashTableContainer">
-                    <h3>List of Registered User</h3>
-                    <table id="userTbl" class="table  w-auto">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Email</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="autoUser">
-                        </tbody>
-                    </table>
-                    <img src="../img/new_user.png" alt="test" s></img>
-                </div>
-
-                <div class="dashLoginContainer">
-                    <h3 id="userFormTitle">Add User</h3>
-                    <form action="" id="userForm" name="insert">
-                        <label for="">Full Name</label>
-                        <input type="text" name="fullname">
-                        <label for="">Position</label>
-                        <input type="text" name="position">
-                        <label for="">Office</label>
-                        <input type="text" name="office">
-                        <label for="">Email</label>
-                        <input type="text" name="email">
-                        <label for="">Password</label>
-                        <input type="password" name="password">
-                        <label for="">Confirm Password</label>
-                        <input type="password" name="cpassword">
-                        <input type="hidden" name="id">
-                        <button type="submit">Submit</button>
-                        <button type="button" id="insertUserBtn" >Add</button>
-                    </form>
-                </div> 
-
-
-            </div>
-            <div class="serviceSide" id="serviceSide">
+    <!--             <div class="serviceSide" id="serviceSide">
                     SERVICE TABLE 
                 <div class="dashTableContainer">
                     <h3>List of Services</h3>

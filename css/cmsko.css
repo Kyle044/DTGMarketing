@@ -129,10 +129,11 @@ ul.CTAs {
 
 ul.CTAs a {
     text-align: center;
-    font-size: 0.9em !important;
+    font-size: 2em !important;
     display: block;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 0.5em;
+
 }
 
 a.download {
@@ -159,18 +160,18 @@ img{
 
 #content 
 {
+  
     width: 100%;    
     min-height: 100vh;
     transition: all 0.3s;
     background-color: #e88c43;
-  
+    padding: 5em 3em;
+
 }
 .contentDiv
 {  
   background-color: #f7f7f7;
-  display: grid;
  
-  justify-content: center;
   text-align: center;
   padding:2em;
   margin: auto;
@@ -180,7 +181,10 @@ img{
 }
 .tablewrap {
   width: 100%;
-  
+  display: grid;
+ 
+  justify-content: center;
+  text-align: center;
    background-color: #f7f7f7;
 
 }
@@ -263,6 +267,21 @@ img{
 .dashLoginContainer form button:hover {
   opacity: 0.9;
 }
+
+.dashboard {
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.serviceSide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateX(100vw);
+  transition: 0.5s ease;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
