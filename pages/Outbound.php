@@ -71,7 +71,53 @@
 		</div>
 	</div>
 
+<div class="serviceCard"  >
+	<div class="serviceLeft">
+			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
+		<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
+		<h2 style=" margin:0;color:white;">Outbound Telemarketing</h2>
+		</div>
+		<p class="lead">
+	        It is a proactive marketing strategy wherein agent directly contact the customer to offer or sell products or services. The end-goal of this service is to boost the sales of a client.  It is considered the most effective strategy for growing business. This service is focused on generating lead, called calling, and collecting consumer data. Telemarketing is flexible as it can be used by all industries from charitable institutions to Political candidates. 
+		</p>
 
+			
+        	
+	</div>
+	<div class="serviceRight">
+		<img  src="../img/services5.jpg" alt="">
+	</div>
+	<div id="accordionsz" style="width: 100%; margin-top: 2rem;">
+		<div class="card">
+			<div class="card-header" id="headingOneTree">
+				<h5 class="mb-0">
+					<button class="btn btn-link white" data-toggle="collapse" data-target="#collapseOneTree" aria-expanded="true" aria-controls="collapseOneTree">
+						See more
+					</button>
+				</h5>
+
+			</div>
+		</div>
+		<div id="collapseOneTree" class="collapse " aria-labelledby="headingOneTree" data-parent="#accordionsz">
+				<div class="card-body white">
+				
+					<p>
+				    In the outbound initiatives three factors are crucial such as high contact rate, agent productivity and conversion rate
+					</p>
+					<h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">B2B Telemarketing and B2C telemarketing</h3>
+
+					<p>B2B refers to activity of calling businesses with the end goal of building business partnership. On the other hand, B2C deals with consumer who might show interests to products or services.</p>
+
+                    <h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">Laws on Telemarketing</h3>
+
+					<p>There are laws that govern the Do Not Call Registry for several states. In Australia for example, the Do Not Call Registry (DNCR) Act of 2006, a telemarketer is prohibited in making unsolicited telemarketing calls or sending unsolicited marketing faxes to numbers on the Do Not Call Register. </p>
+                    <p>It is imperative that in conducting telemarketing, telemarketers comply with the requirement of the state to avoid sanction.</p>
+					<h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">Our Approach to Outbound Telemarketing</h3>
+					<p>Datagen Facilities OPC is ACMA compliant company that ensures that 100% of its methodologies used in telemarketing are compliant and ethical. We have our own calling database for New Zealand and Australia. Clients who wanted to explore this service can also take advantage of our agents experienced in performing this function. </p>
+				</div>
+		</div>
+		</div>
+	</div>
 
 
 
