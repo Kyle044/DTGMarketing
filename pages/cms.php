@@ -28,9 +28,9 @@ header("location: ./login.php");
 
 
     <!--                                   EKSENA KO                                -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <meta charset="utf-8">
@@ -73,7 +73,7 @@ header("location: ./login.php");
                 <li> -->
                 <li id="dashBtn">
                 <div class="">
-                <a href="" class="article">Dashboard&nbsp;<i class='bx bxs-dashboard'></i></a>
+                <a href="" class="article">Dashboard&nbsp;<i class='fa fa-dashboard'></i></a>
                 
                 </div>
                 
@@ -81,25 +81,27 @@ header("location: ./login.php");
                 </li>
                 <li id="serviceBtn">
                     <div>
-                    <a href="" class="article">Services&nbsp;<i class='bx bxs-briefcase'></i></a>
+                    <a href="" class="article">Services&nbsp;<i class='fa fa-briefcase'></i></a>
                     </div>
                 </li>
                 <li id="careerBtn">
                     <div>
-                    <a href="" class="article">Career&nbsp;<i class='bx bxs-book-open'></i></a>
+                    <a href="" class="article">Career&nbsp;<i class='fa fa-book'></i></a>
                     </div>
                 </li>
                 <li id="BaBtn">
                     <div>
-                    <a href="" class="article">Article&nbsp;<i class='bx bxl-blogger'></i></a>
+                    <a href="" class="article">Article&nbsp;<i class='fa fa-pencil-square'></i></a>
                     </div>
                 </li>
                 <li id="galleryBtn">
                     <div>
-                    <a href="" class="article">Gallery&nbsp;<i class='bx bx-image-alt'></i></a>
+                    <a href="" class="article">Gallery&nbsp;<i class='fa fa-image'></i></a>
                     </div>
                 </li>
-                <a href="" class="article">Logout</a>
+                <div>
+                <a href="" class="article">Logout&nbsp;<i class='fa fa-sign-out'></i></a>
+                </div>
                 </li>
              
             </ul>
@@ -118,7 +120,7 @@ header("location: ./login.php");
             <div class="contentDiv">
                 <div class="tablewrap">
                 <h3>List of Registered User</h3>
-                <table class="table table-bordered">
+                <table id="userTbl" class="table table-bordered">
                 <thead class="thead-dark" >
                         <tr>
                             <th>Name</th>
@@ -201,14 +203,14 @@ header("location: ./login.php");
         END OF DASHBOARD -->
 
 
-        <!-- SERVICE TABLE      
+         <!-- SERVICE TABLE       -->
 
         <div id="content">
             <div class="contentDiv" id="serviceSide">                    
                 <div class="tablewrap" >
                     <h3>List of Services</h3>
-                        <table id="serviceTbl" class="table table-striped table-bordered" style="width:100%">
-                            <thead>
+                        <table id="serviceTbl" class="table table-bordered" style="width:100%">
+                            <thead class="thead-dark">
                                 <tr>
                                     <th>ID</th>
                                     <th>Title</th>
@@ -222,7 +224,7 @@ header("location: ./login.php");
                             </tbody>
                         </table>
                 </div>
-                <div class="tablewrap">
+                <div class="dashLoginContainer"style="width:auto;">
                         <h3 id="serviceFormTitle">Add Services</h3>
                             <form action="" id="serviceForm" enctype="multipart/form-data" name="insert">
                                 <label for="">Title</label>
@@ -240,15 +242,15 @@ header("location: ./login.php");
                 </div>
             </div>
         </div> 
-        -->
+       
 
-        <!-- Career --->
+        <!-- 
         <div id="content">
             <div class="contentDiv" id="careerSide">
                
                     <div class="tablewrapper">
                         <h3>List of Career's</h3>
-                        <table id="careerTbl" class="table table-bordered" style="width:100%" >
+                        <table id="careerSide" class="table table-bordered" style="width:100%" >
                             <thead class="thead-dark">
                                 <tr>
                                     <th>Title</th>
@@ -263,7 +265,7 @@ header("location: ./login.php");
                             </tbody>
                         </table>
                     </div>
-                    <div class="tablewrapper">
+                    <div class="dashLoginContainer" style="width:auto;">
                         <h3 id="careerFormTitle">Add Career</h3>
                         <form action="" id="careerForm" name="insert">
                             <label for="">Title</label>
@@ -304,7 +306,7 @@ header("location: ./login.php");
                     </div>
                 </div>
         </div>
-
+         Career End --->
         
     </div>
 
@@ -527,14 +529,14 @@ header("location: ./login.php");
         $('#serviceTbl').DataTable();
         $('#careerTbl').DataTable();
         $('#blogTbl').DataTable();
-         $('#articleTbl').DataTable();
+        $('#articleTbl').DataTable();
 
     });
 </script>
 
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap.min.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
 <script src="../js/cms.js"></script>
 <script src="../js/cmsJquery.js"></script>
 <script>
