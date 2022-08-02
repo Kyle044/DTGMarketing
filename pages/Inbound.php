@@ -137,25 +137,53 @@
 		<div id="collapseOneTree" class="collapse " aria-labelledby="headingOneTree" data-parent="#accordionsz">
 				<div class="card-body white">
 				
-					<p>
+					<p style="text-align: justify;
+                                color: white;
+                                line-height: 1.8rem;
+                                font-size: 1.1rem;
+                                transition: 0.01s ease;">
 					We find it important to provide different support tiers so that we can provide focus and quick solutions to customer concerns. We categorized each consumer concern into three (3) levels. 
 					</p>
-					<h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">Level 1</h3>
-					<p>
+					<h3 style=" font-weight: bolder; color:white; margin-top:1rem; margin-bottom:1rem;">Level 1</h3>
+					<p style="text-align: justify;
+                                color: white;
+                                line-height: 1.8rem;
+                                font-size: 1.1rem;
+                                transition: 0.01s ease;">
                         is the first tier of support (basic level) to solve common problems such as username, password issues, menu navigation, installation issues and set-up.
 					</p>
-					<h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">Level 2</h3>
-					<p style="margin-bottom:1rem;">this refers to in-depth analysis of the problem (moderate level) before providing solutions. </p>
+					<h3 style=" font-weight: bolder; color:white; margin-top:1rem; margin-bottom:1rem;">Level 2</h3>
+					<p style="text-align: justify;
+                                color: white;
+                                line-height: 1.8rem;
+                                font-size: 1.1rem;
+                                transition: 0.01s ease;">this refers to in-depth analysis of the problem (moderate level) before providing solutions. </p>
 				
-					<h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">Level 3</h3>
-					<p>- this requires an SME or Subject Matter Experts support (Complex/Expert Level) to solve complex IT concerns. 
+					<h3 style=" font-weight: bolder; color:white; margin-top:1rem; margin-bottom:1rem;">Level 3</h3>
+					<p style="text-align: justify;
+                                color: white;
+                                line-height: 1.8rem;
+                                font-size: 1.1rem;
+                                transition: 0.01s ease;">this requires an SME or Subject Matter Experts support (Complex/Expert Level) to solve complex IT concerns. 
 					</p>
-                    <h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">Benefits of Technical/IT Support</h3>
-                    <p>For companies that has large volume of technical calls every day, it is imperative to address all concerns real-time. Solving technical concerns are crucial in a day-to-day life of consumer. </p>
-                         <h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">Our Approach to Technical/IT Support</h3>
-                         <p>Datagen Facilities OPC we have access to elite technical manpower who are subject matter experts. You can tap us to be your outsourcing partner in providing technical solutions.</p>
-                         <h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">How Datagen can help</h3>
-                         <p>Datagen Facilities, OPC, is transparent, reliable and efficient outsourcing partner. We established systems and processes to effectively manage customer service support. We have integrated our technologies to provide excellent customer experience. We have created guidelines for quality customer interactions and established customer service  monitoring systems. We are ready to provide 24/7 chat customer support 
+                    <h3 style=" font-weight: bolder; color:white; margin-top:1rem; margin-bottom:1rem;">Benefits of Technical/IT Support</h3>
+                    <p style="text-align: justify;
+                                color: white;
+                                line-height: 1.8rem;
+                                font-size: 1.1rem;
+                                transition: 0.01s ease;">For companies that has large volume of technical calls every day, it is imperative to address all concerns real-time. Solving technical concerns are crucial in a day-to-day life of consumer. </p>
+                         <h3 style=" font-weight: bolder; color:white; margin-top:1rem; margin-bottom:1rem;">Our Approach to Technical/IT Support</h3>
+                         <p style="text-align: justify;
+                                color: white;
+                                line-height: 1.8rem;
+                                font-size: 1.1rem;
+                                transition: 0.01s ease;">Datagen Facilities OPC we have access to elite technical manpower who are subject matter experts. You can tap us to be your outsourcing partner in providing technical solutions.</p>
+                         <h3 style=" font-weight: bolder; color:white; margin-top:1rem; margin-bottom:1rem;">How Datagen can help</h3>
+                         <p style="text-align: justify;
+                                color: white;
+                                line-height: 1.8rem;
+                                font-size: 1.1rem;
+                                transition: 0.01s ease;">Datagen Facilities, OPC, is transparent, reliable and efficient outsourcing partner. We established systems and processes to effectively manage customer service support. We have integrated our technologies to provide excellent customer experience. We have created guidelines for quality customer interactions and established customer service  monitoring systems. We are ready to provide 24/7 chat customer support 
                             to regions such as Australia, New Zealand, United Kingdom and USA. </p>
 				</div>
 		</div>
