@@ -171,7 +171,7 @@ id="sidebarCollapse" alt="DatagenToken">
             </nav> -->
 
             
-            <div class="contentDiv">
+            <div class="contentDiv" id="regCard">
             <h3>List of Registered User</h3>
                 <div class="tablewrap"id="dashSide">
                 
@@ -256,15 +256,15 @@ id="sidebarCollapse" alt="DatagenToken">
                 </div>
                 
                         
-        </div>
+            </div>
 
 
 
-        <div id="content">
-            <div class="contentDiv" >          
 
-            <h3>List of Services</h3>
-                <div class="tablewrap" id="serviceSide">
+            <div class="contentDiv" id="servCard" >          
+
+                <h3>List of Services</h3>
+                <div class="tablewrap">
                     
                         <table id="serviceTbl" class="table table-bordered" style="width:100%">
                             <thead>
@@ -296,19 +296,19 @@ id="sidebarCollapse" alt="DatagenToken">
                                 <button type="submit">Submit</button>
                                 <button type="button"id="insertServiceBtn">Add Service</button>
                             </form>
+                
                 </div>
             </div>
-        </div> 
-       
+        
 
-         
+        <!-- 
         <div id="content">
             <div class="contentDiv" >
             <h3>List of Career's</h3>
                     <div class="tablewrap" id="careerSide">
                         
                         <table id="careerSide" class="table table-bordered" style="width:100%" >
-                            <thead class="thead-dark">
+                            <thead >
                                 <tr>
                                     <th>Title</th>
                                     <th>Position</th>
@@ -445,7 +445,7 @@ id="sidebarCollapse" alt="DatagenToken">
             </div>
 
 
-            <div id="content">
+             <div id="content">
             <div class="contentDiv" >
                 <div class="tablewrap"id="GallerySide" style="height: auto;">
                     <h3>List Post's</h3>
@@ -480,7 +480,7 @@ id="sidebarCollapse" alt="DatagenToken">
                     </form>
                 </div>
             </div>
-            </div>
+            </div> -->
 
         
     </div>

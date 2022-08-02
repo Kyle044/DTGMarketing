@@ -30,26 +30,33 @@ var BaBtn = document.getElementById("BaBtn");
 var galleryBtn = document.getElementById("galleryBtn");
 
 //Cards
-var dashCard = document.getElementById("dashSide");
-var serviceCard = document.getElementById("serviceSide");
+var dashCard = document.getElementById("regCard");
+var serviceCard = document.getElementById("servCard");
 var careerCard = document.getElementById("careerSide");
 var blogCard = document.getElementById("BlogsArticleSide");
 var galleryCard = document.getElementById("GallerySide");
+// serviceCard.style.visibility="hidden";
+// careerCard.style.visibility ="hidden";
+// blogCard.style.visibility ="hidden";
+// galleryCard.style.visibility ="hidden";
+
 
 dashBtn.addEventListener("click", () => {
-  dashCard.style.transform = "translateX(0vw)";
-  serviceCard.style.transform = "translateX(100vw)";
-  careerCard.style.transform = "translateX(100vw)";
-  blogCard.style.transform = "translateX(100vw)";
-  galleryCard.style.transform = "translateX(100vw)";
+  // dashCard.style.display = "block";
+  dashCard.style.visibility = "visible";
+  serviceCard.style.visibility = "hidden";
+  // careerCard.style.display = "none";
+  // blogCard.style.display = "none";
+  // galleryCard.style.display = "none";
 });
 
 serviceBtn.addEventListener("click", () => {
-  dashCard.style.transform = "translateX(100vw)";
-  serviceCard.style.transform = "translateX(0vw)";
-  careerCard.style.transform = "translateX(100vw)";
-  blogCard.style.transform = "translateX(100vw)";
-  galleryCard.style.transform = "translateX(100vw)";
+  dashCard.style.visibility = "hidden";
+  // serviceCard.stylee.visibility = "visible";
+  // serviceCard.style.display = "block";
+  // careerCard.style.display = "none";
+  // blogCard.style.display = "none";
+  // galleryCard.style.display = "none";
 });
 
 careerBtn.addEventListener("click", () => {

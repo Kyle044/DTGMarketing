@@ -176,8 +176,11 @@ img{
   padding:2em;
   margin: auto;
   border-radius:  30px 0px;
-  
   box-shadow: 7px 7px #343A40
+}
+.regCard
+{
+  display: none;
 }
 .tablewrap {
   width: auto;
@@ -229,19 +232,18 @@ img{
   background-color: #666;*/
 } 
 .dashLoginContainer {
-  margin: 2rem;    
+    
   padding: 2rem;
   background-color: #f7f7f7;    
   border-radius: 3px;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px 
-
-rgb(0 0 0 / 0.1);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
 .dashLoginContainer form {
   display: flex;
   flex-direction: column;
   height: auto;
+  width: auto;
 }
 
 .dashLoginContainer form input {
@@ -249,7 +251,6 @@ rgb(0 0 0 / 0.1);
   padding: 0.4rem;
   border: none;
   border-bottom: 1px solid #e88c43;
-
   border-radius: 6px;
 }
 
@@ -260,6 +261,7 @@ rgb(0 0 0 / 0.1);
 .dashLoginContainer form button {
   border: none;
   background-color: #e88c43;
+  width: auto;
   padding: 0.5rem;
   border-radius: 3px;
   color: white;
