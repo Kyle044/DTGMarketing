@@ -118,7 +118,8 @@
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="pages/services.php" style="font-size: 1rem;">
+													 <!-- href="pages/services.php" -->
+													<a class="dropdown-item dropdown-toggle" style="font-size: 1rem;">
 														Services
 													</a>
 
@@ -126,12 +127,12 @@
 														
 
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="Inbound.php">Inbound Call Support</a>
+															<a class="dropdown-item" href="pages/Inbound.php">Inbound Call Support</a>
 
 														</li>
 
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="Outbound.php">Outbound Call Support</a>
+															<a class="dropdown-item" href="pages/Outbound.php">Outbound Call Support</a>
 
 														</li>
 														<!-- <li class="dropdown-submenu">
