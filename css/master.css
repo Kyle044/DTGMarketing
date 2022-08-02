@@ -972,6 +972,56 @@ p {
 }
 .cbtn {
 }
+
+.privacyMaster {
+}
+
+.privacyMaster .subContPrivacy .privacyLeft {
+  color: black !important;
+}
+.privacyMaster .privacyRight p,
+h3 {
+  color: black;
+}
+
+.headPrivacyP {
+  font-weight: bold;
+  color: black !important;
+}
+.privacyLeft p {
+  color: #777;
+}
+.privacyMaster {
+  padding: 1rem 5rem;
+  margin-top: 5rem !important;
+}
+
+.privacyMaster h1 {
+  margin-bottom: 10px;
+}
+.subContPrivacy {
+  display: flex;
+  justify-content: space-between;
+}
+.privacyRight ul {
+  padding-left: 20px;
+}
+.privacyRight h3 {
+  margin-bottom: 13px;
+}
+.privacyLeft h3 {
+  margin-bottom: 13px;
+}
+.privacyLeft p {
+  text-align: justify;
+  font-size: 14px;
+}
+.headPrivacyP {
+  font-size: 16px !important;
+}
+.privacyMaster .subContPrivacy .privacyLeft {
+  width: 50%;
+}
 @media (max-width: 1024px) {
   .masterCareerCard .CarCard .CareerRight img {
     border-radius: 10px;
@@ -998,6 +1048,38 @@ p {
   }
   .team {
     padding: 0rem 5rem;
+  }
+
+  .privacyMaster {
+    padding: 1rem 5rem;
+    margin-top: 4rem !important;
+  }
+
+  .privacyMaster h1 {
+    margin-bottom: 10px;
+  }
+  .subContPrivacy {
+    display: flex;
+    justify-content: space-between;
+  }
+  .privacyRight ul {
+    padding-left: 20px;
+  }
+  .privacyRight h3 {
+    margin-bottom: 13px;
+  }
+  .privacyLeft h3 {
+    margin-bottom: 13px;
+  }
+  .privacyLeft p {
+    text-align: justify;
+    font-size: 14px;
+  }
+  .headPrivacyP {
+    font-size: 16px !important;
+  }
+  .privacyMaster .subContPrivacy .privacyLeft {
+    width: 50%;
   }
 }
 
@@ -1049,6 +1131,40 @@ p {
     margin: 0;
   }
 }
+@media (max-width: 769px) {
+  .privacyMaster {
+    padding: 1rem 5rem;
+    margin-top: 4rem !important;
+  }
+
+  .privacyMaster h1 {
+    margin-bottom: 10px;
+  }
+  .subContPrivacy {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .privacyRight ul {
+    padding-left: 20px;
+  }
+  .privacyRight h3 {
+    margin-bottom: 13px;
+  }
+  .privacyLeft h3 {
+    margin-bottom: 13px;
+  }
+  .privacyLeft p {
+    text-align: justify;
+    font-size: 14px;
+  }
+  .headPrivacyP {
+    font-size: 16px !important;
+  }
+  .privacyMaster .subContPrivacy .privacyLeft {
+    width: 100%;
+  }
+}
+
 @media (max-width: 716px) {
   .carsec1 {
     margin-bottom: 2rem;
@@ -1194,6 +1310,36 @@ p {
     height: 100%;
   }
 }
+@media (max-width: 481px) {
+  .privacyMaster {
+    padding: 1rem 2rem;
+    margin-top: 4rem !important;
+  }
+
+  .privacyMaster h1 {
+    margin-bottom: 10px;
+  }
+  .subContPrivacy {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .privacyRight ul {
+    padding-left: 20px;
+  }
+  .privacyRight h3 {
+    margin-bottom: 13px;
+  }
+  .privacyLeft h3 {
+    margin-bottom: 13px;
+  }
+  .privacyLeft p {
+    text-align: justify;
+    font-size: 14px;
+  }
+  .headPrivacyP {
+    font-size: 16px !important;
+  }
+}
 
 @media (max-width: 466px) {
   .carsec1 {
@@ -1221,5 +1367,38 @@ p {
   }
   .aboutUsmain {
     height: 118vh;
+  }
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 0.89rem;
+    color: black;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .privacyMaster {
+    padding: 1rem 2rem;
+    margin-top: 4rem !important;
+  }
+  .privacyMaster h1 {
+    margin-bottom: 10px;
+  }
+  .subContPrivacy {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .privacyRight ul {
+    padding-left: 20px;
+  }
+  .privacyRight h3 {
+    margin-bottom: 13px;
+  }
+  .privacyLeft h3 {
+    margin-bottom: 13px;
+  }
+  .privacyLeft p {
+    text-align: justify;
   }
 }
