@@ -98,22 +98,46 @@
 
 			</div>
 		</div>
-		<div id="collapseOneTree" class="collapse " aria-labelledby="headingOneTree" data-parent="#accordionsz">
+		<div id="collapseOneTree" class="collapse" aria-labelledby="headingOneTree" data-parent="#accordionsz">
 				<div class="card-body white">
 				
-					<p>
+					<p style="text-align: justify;
+    color: white;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    transition: 0.01s ease;">
 				    In the outbound initiatives three factors are crucial such as high contact rate, agent productivity and conversion rate
 					</p>
-					<h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">B2B Telemarketing and B2C telemarketing</h3>
+					<h3 style="    font-weight: bolder; color:white; margin-top:1rem; margin-bottom:1rem;">B2B Telemarketing and B2C telemarketing</h3>
 
-					<p>B2B refers to activity of calling businesses with the end goal of building business partnership. On the other hand, B2C deals with consumer who might show interests to products or services.</p>
+					<p style="text-align: justify;
+                                color: white;
+                                line-height: 1.8rem;
+                                font-size: 1.1rem;
+                                transition: 0.01s ease;"
+    >B2B refers to activity of calling businesses with the end goal of building business partnership. On the other hand, B2C deals with consumer who might show interests to products or services.</p>
 
-                    <h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">Laws on Telemarketing</h3>
+                    <h3 style="     font-weight: bolder; color:white; margin-top:1rem; margin-bottom:1rem;">Laws on Telemarketing</h3>
 
-					<p>There are laws that govern the Do Not Call Registry for several states. In Australia for example, the Do Not Call Registry (DNCR) Act of 2006, a telemarketer is prohibited in making unsolicited telemarketing calls or sending unsolicited marketing faxes to numbers on the Do Not Call Register. </p>
-                    <p>It is imperative that in conducting telemarketing, telemarketers comply with the requirement of the state to avoid sanction.</p>
-					<h3 style="color:white; margin-top:1rem; margin-bottom:1rem;">Our Approach to Outbound Telemarketing</h3>
-					<p>Datagen Facilities OPC is ACMA compliant company that ensures that 100% of its methodologies used in telemarketing are compliant and ethical. We have our own calling database for New Zealand and Australia. Clients who wanted to explore this service can also take advantage of our agents experienced in performing this function. </p>
+					<p style="text-align: justify;
+                            color: white;
+                            line-height: 1.8rem;
+                            font-size: 1.1rem;
+                            transition: 0.01s ease;
+    ">There are laws that govern the Do Not Call Registry for several states. In Australia for example, the Do Not Call Registry (DNCR) Act of 2006, a telemarketer is prohibited in making unsolicited telemarketing calls or sending unsolicited marketing faxes to numbers on the Do Not Call Register. </p>
+                    <p style="text-align: justify;
+                                color: white;
+                                line-height: 1.8rem;
+                                font-size: 1.1rem;
+                                transition: 0.01s ease;"
+    >It is imperative that in conducting telemarketing, telemarketers comply with the requirement of the state to avoid sanction.</p>
+					<h3 style="  font-weight: bolder; color:white; margin-top:1rem; margin-bottom:1rem;">Our Approach to Outbound Telemarketing</h3>
+					<p style="text-align: justify;
+                                color: white;
+                                line-height: 1.8rem;
+                                font-size: 1.1rem;
+                                transition: 0.01s ease;
+    ">Datagen Facilities OPC is ACMA compliant company that ensures that 100% of its methodologies used in telemarketing are compliant and ethical. We have our own calling database for New Zealand and Australia. Clients who wanted to explore this service can also take advantage of our agents experienced in performing this function. </p>
 				</div>
 		</div>
 		</div>
