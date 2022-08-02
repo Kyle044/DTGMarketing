@@ -27,9 +27,7 @@
 </section>
 
 <div class="carTitle">
-
-    <h1 style="color: #777;">Careers We Offer!!!!!</h1>
-
+    <h1 style="color: #777;">Careers We Offer!</h1>
 </div>
 
 

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 28, 2022 at 04:58 AM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 7.3.28
+-- Generation Time: Jul 28, 2022 at 07:49 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.3.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -123,7 +123,20 @@ INSERT INTO `files` (`id`, `name`, `directory`, `size`) VALUES
 (65, '62e0d73b268c02.27338518.jpg', '../uploads/62e0d73b268c02.27338518.jpg', 203188),
 (66, '62e0d78a6b47c5.29529537.jpg', '../uploads/62e0d78a6b47c5.29529537.jpg', 391137),
 (67, '62e0d7eb12b006.20119534.jpg', '../uploads/62e0d7eb12b006.20119534.jpg', 391137),
-(72, '62e0eaa12173d7.27739398.jpeg', '../uploads/62e0eaa12173d7.27739398.jpeg', 60528);
+(72, '62e0eaa12173d7.27739398.jpeg', '../uploads/62e0eaa12173d7.27739398.jpeg', 60528),
+(73, '62e20247da5425.62402965.jpg', '../uploads/62e20247da5425.62402965.jpg', 36263),
+(74, '62e206148bff63.95439210.jpg', '../uploads/62e206148bff63.95439210.jpg', 36263),
+(77, '62e21a0296a851.47715485.jpg', '../uploads/62e21a0296a851.47715485.jpg', 484804),
+(78, '62e21a4813e565.80444308.jpg', '../uploads/62e21a4813e565.80444308.jpg', 361009),
+(79, '62e21ade7e4ca7.94205515.jpg', '../uploads/62e21ade7e4ca7.94205515.jpg', 503521),
+(80, '62e21b22970509.06251404.jpg', '../uploads/62e21b22970509.06251404.jpg', 42407),
+(81, '62e21bc4d79277.99563267.jpg', '../uploads/62e21bc4d79277.99563267.jpg', 503521),
+(82, '62e21c0802bb13.64634229.jpg', '../uploads/62e21c0802bb13.64634229.jpg', 503521),
+(83, '62e21c50020553.13438299.jpg', '../uploads/62e21c50020553.13438299.jpg', 36263),
+(84, '62e21c88332974.00665530.jpg', '../uploads/62e21c88332974.00665530.jpg', 42407),
+(85, '62e21cb21f8ff0.16220886.jpg', '../uploads/62e21cb21f8ff0.16220886.jpg', 42407),
+(86, '62e21d20b54d72.52065317.jpg', '../uploads/62e21d20b54d72.52065317.jpg', 42407),
+(87, '62e21d6fb86f02.62875274.jpg', '../uploads/62e21d6fb86f02.62875274.jpg', 484804);
 
 -- --------------------------------------------------------
 
@@ -179,7 +192,9 @@ CREATE TABLE `service` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `description` text NOT NULL,
-  `supervisor` varchar(255) NOT NULL,
+  `detailed_descrip` text NOT NULL,
+  `benefits` text NOT NULL,
+  `approach` text NOT NULL,
   `file_fk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -187,9 +202,9 @@ CREATE TABLE `service` (
 -- Dumping data for table `service`
 --
 
-INSERT INTO `service` (`id`, `title`, `description`, `supervisor`, `file_fk`) VALUES
-(27, 'Inbound Call Support', 'We provide customer service support to clients by responding to customer inquiries or complaints. We have a proprietary system in placed to ensure that customers experience is seamless. We make sure to provide accurate information and deliver exceptional customer service throughout the entire interaction with the customers. We have an in-house call center and we are capable to provide 24/7 customer support.', 'Sir John', 55),
-(28, 'Outbound Call Support', 'We employ a proactive approach in dealing with customers to strengthen customer relationships and improving the quality of customer experience. We maintain a consistent standard of customer service excellence.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde reiciendis aperiam, quas error a doloribus impedit cupiditate, consectetur minima, maiores fugit! Magni suscipit recusandae maiores laboriosam beatae harum repellendus itaque eligendi. Volu', 56);
+INSERT INTO `service` (`id`, `title`, `description`, `detailed_descrip`, `benefits`, `approach`, `file_fk`) VALUES
+(27, 'Inbound Call Support', 'We provide customer service support to clients by responding to customer inquiries or complaints. We have a proprietary system in placed to ensure that customers experience is seamless. We make sure to provide accurate information and deliver exceptional customer service throughout the entire interaction with the customers. We have an in-house call center and we are capable to provide 24/7 customer support.', '', '', '', 55),
+(28, 'Outbound Call Support', 'We employ a proactive approach in dealing with customers to strengthen customer relationships and improving the quality of customer experience. We maintain a consistent standard of customer service excellence.', '', '', '', 56);
 
 -- --------------------------------------------------------
 
@@ -292,7 +307,7 @@ ALTER TABLE `career`
 -- AUTO_INCREMENT for table `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 
 --
 -- AUTO_INCREMENT for table `gallery`
@@ -310,7 +325,7 @@ ALTER TABLE `gallerypic`
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `users`

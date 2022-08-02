@@ -18,28 +18,78 @@ header("location: ./login.php");
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap.min.css">
+initial-scale=1.0">
 
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" 
+
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/boot
+
+strap.min.css">
+    <link rel="stylesheet" 
+
+href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstr
+
+ap.min.css">
+
+    <link 
+
+href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' 
+
+rel='stylesheet'>
     <link rel="stylesheet" href="../css/cmsko.css">
 
 
-    <!--                                   EKSENA KO                                -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--                                   EKSENA KO           
+
+                     -->
+    <link rel="stylesheet" 
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-
+
+awesome/4.7.0/css/font-awesome.min.css">
     
     
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script 
+
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery
+
+.min.js"></script>
+  <script 
+
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootst
+
+rap.min.js"></script>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-
+
+scale=1">
+  <link rel="stylesheet" 
+
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bo
+
+otstrap.min.css">
+  <script 
+
+src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.sli
+
+m.min.js"></script>
+  <script 
+
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/po
+
+pper.min.js"></script>
+  <script 
+
+src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/boot
+
+strap.bundle.min.js"></script>
+  <link rel="stylesheet" 
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-
+
+awesome/4.7.0/css/font-awesome.min.css">
 
   
 
@@ -108,20 +158,26 @@ header("location: ./login.php");
         </nav>
 
         <!-- DASHBOARD -->
-        <!-- <div id="content"id="dashSide" >
+         <div id="content" >
 
-             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+             <!-- <nav class="navbar navbar-expand-lg navbar-dark 
+
+bg-dark">
                 <div class="container-fluid">
-                    <img src="../img/dtoken.png" id="sidebarCollapse" alt="DatagenToken">
-                </div>
-            </nav> 
+                    <img src="../img/dtoken.png" 
+
+id="sidebarCollapse" alt="DatagenToken">
+                </div> 
+            </nav> -->
 
             
             <div class="contentDiv">
-                <div class="tablewrap">
-                <h3>List of Registered User</h3>
-                <table id="userTbl" class="table table-bordered">
-                <thead class="thead-dark" >
+            <h3>List of Registered User</h3>
+                <div class="tablewrap"id="dashSide">
+                
+                <table  id="userTbl" class="table table-bordered">
+                
+                <thead >
                         <tr>
                             <th>Name</th>
                             <th>Position</th>
@@ -134,17 +190,17 @@ header("location: ./login.php");
 
                     </tbody>
                 </table>
+                </div>
                 <button class="button button1"data-toggle="modal" data-target="#ModalLoginForm"><span><i class="glyphicon glyphicon-user"></i> Add User</button>
                 
-                 Modal User Registration 
+                 <!-- Modal User Registration  -->
                 <div id="ModalLoginForm" class="modal fade">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title" id="userFormTitle">User Registration</h1>
+                                <h1 class="modal-title"id="userFormTitle">User Registration</h1>
                             </div>
-                            <div class="modal-body">
-                                
+                            <div class="modal-body">                              
                                 
                                 <form role="form" method="POST" action="">
                                     <input type="hidden" name="_token" value="">
@@ -157,7 +213,7 @@ header("location: ./login.php");
                                     <div class="form-group">
                                         <label class="control-label">Position</label>
                                         <div>
-                                            <input type="text" class="form-control input-lg" name="position" value="">
+                                            <input type="text"class="form-control input-lg" name="position" value="">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -181,7 +237,7 @@ header("location: ./login.php");
                                     <div class="form-group">
                                         <label class="control-label">Confirm Password</label>
                                         <div>
-                                            <input type="password" class="form-control input-lg" name="cpassword">
+                                            <input type="password" class="form-control input-lg" name="cpassword">                                          
                                             <input type="hidden" name="id">
                                         </div>
                                     </div>
@@ -195,22 +251,23 @@ header("location: ./login.php");
                                     </div>
                                 </form>
                             </div>
-                        </div> modal-content 
-                    </div>modal-dialog
-                </div>.modal 
-            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                        
         </div>
-        END OF DASHBOARD -->
 
 
-         <!-- SERVICE TABLE       -->
 
         <div id="content">
-            <div class="contentDiv" id="serviceSide">                    
-                <div class="tablewrap" >
-                    <h3>List of Services</h3>
+            <div class="contentDiv" >          
+
+            <h3>List of Services</h3>
+                <div class="tablewrap" id="serviceSide">
+                    
                         <table id="serviceTbl" class="table table-bordered" style="width:100%">
-                            <thead class="thead-dark">
+                            <thead>
                                 <tr>
                                     <th>ID</th>
                                     <th>Title</th>
@@ -222,7 +279,7 @@ header("location: ./login.php");
                             <tbody id="autoService">
 
                             </tbody>
-                        </table>
+                    </table>
                 </div>
                 <div class="dashLoginContainer"style="width:auto;">
                         <h3 id="serviceFormTitle">Add Services</h3>
@@ -230,26 +287,26 @@ header("location: ./login.php");
                                 <label for="">Title</label>
                                 <input type="text" name="title">
                                 <label for="">Description</label>
-                                <textarea name="description" id="" cols="30" rows="6"></textarea>
+                                <textarea name="description"id="" cols="30" rows="6"></textarea>
                                 <label for="">In Depth Description</label>
                                 <input type="text" name="supervisor">
                                 <label for="">Upload Image</label>
                                 <input type="file" name="file" id="servicePic">
                                 <input type="hidden" name="id" >
                                 <button type="submit">Submit</button>
-                                <button type="button" id="insertServiceBtn">Add Service</button>
+                                <button type="button"id="insertServiceBtn">Add Service</button>
                             </form>
                 </div>
             </div>
         </div> 
        
 
-        <!-- 
+         
         <div id="content">
-            <div class="contentDiv" id="careerSide">
-               
-                    <div class="tablewrapper">
-                        <h3>List of Career's</h3>
+            <div class="contentDiv" >
+            <h3>List of Career's</h3>
+                    <div class="tablewrap" id="careerSide">
+                        
                         <table id="careerSide" class="table table-bordered" style="width:100%" >
                             <thead class="thead-dark">
                                 <tr>
@@ -306,7 +363,125 @@ header("location: ./login.php");
                     </div>
                 </div>
         </div>
-         Career End --->
+      
+        <div id="content">
+        <div class="contentDiv" >
+            <h3>List of Blogs</h3>
+                    <div class="tablewrap"id="BlogsArticleSide">
+                        
+
+                        <table id="blogTbl" class="table table-bordered" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Author</th>
+                                    <th>Date Published</th>
+                                    <th>Action</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="autoBlog">
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="dashLoginContainer">
+                        <h3 id="blogFormTitle">Add Blog</h3>
+                        <form action="" id ="blogForm" name="insert">
+                            <label for="">Title</label>
+                            <input type="text" name="title">
+                            <label for="">Description</label>
+                            <textarea name="description" id="" cols="30" rows="6"></textarea>
+                            <label for="">Author</label>
+                            <input type="text" name="author">
+                            <label for="">Date Published</label>
+                            <input type="date" name="date">
+                            <label for="">Picture Upload</label>
+                            <input type="file" name="file" id="blogPic">
+                            <input type="hidden" name="id">
+                            <button type="submit">Submit</button>
+                            <button type="button" id="insertBlogBtn">Add Blog</button>
+                        </form>
+                    </div> 
+                    ARTICLE TABLE 
+                    <div class="dashTableContainer">
+                        <h3>List of Articles</h3>
+                        <table id="articleTbl" class="table table-striped table-bordered" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Author</th>
+                                    <th>Date Published</th>
+                                    <th>Action</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="autoArticle">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="dashLoginContainer">
+                        <h3 id="articleFormTitle">Add Article</h3>
+                        <form action="" id="articleForm" name="insert">
+                            <label for="">Title</label>
+                            <input type="text" name="title">
+                            <label for="">Description</label>
+                            <textarea name="description" id="" cols="30" rows="6"></textarea>
+                            <label for="">Author</label>
+                            <input type="text" name="author">
+                            <label for="">Date Published</label>
+                            <input type="date" name="date">
+                            <label for="">Picture Upload</label>
+                            <input type="file" name="file" id="articlePic">
+                            <input type="hidden" name="id">
+                            <button type="submit">Submit</button>
+                            <button type="button" id="insertArticleBtn">Add Article</button>
+                        </form>
+                    </div>
+            </div>
+            </div>
+
+
+            <div id="content">
+            <div class="contentDiv" >
+                <div class="tablewrap"id="GallerySide" style="height: auto;">
+                    <h3>List Post's</h3>
+                    <table id="userTbl" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="autoGallery">
+                           
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dashLoginContainer">
+                    <h3 id="galleryFormTitle">Add Post</h3>
+                    <form action="" id="galleryForm" name="insert">
+                        <label for="">Title</label>
+                        <input type="text" name="title">
+                        <label for="">Description</label>
+                        <textarea name="description" id="" cols="30" rows="6"></textarea>
+                        <label for="">Date Published</label>
+                        <input type="date" name="date">
+                        <label for="">Upload Picture</label>
+                        <input type="file" name="file" id="galleryPic" multiple="multiple">
+                        <button type="submit">Submit</button>
+                        <button type="button" name="insertGalleryBtn">Add Post</button>
+                    </form>
+                </div>
+            </div>
+            </div>
+
         
     </div>
 
@@ -339,7 +514,7 @@ header("location: ./login.php");
                         <label for="">In Depth Description</label>
                         <input type="text" name="supervisor">
                         <label for="">Upload Image</label>
-                        <input type="file" name="file" id="servicePic">
+                        <input type="file" name="file"id="servicePic">
                         <input type="hidden" name="id" >
                         <button type="submit">Submit</button>
                         <button type="button" id="insertServiceBtn">Add Service</button>
@@ -355,8 +530,7 @@ header("location: ./login.php");
                             <tr>
                                 <th>Title</th>
                                 <th>Position</th>
-                                <th>Description</th>
-                          
+                                <th>Description</th>                          
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -407,8 +581,8 @@ header("location: ./login.php");
             </div>
 
             <div class="BlogsArticleSide" id="BlogsArticleSide">
-            - BLOG TABLE -->
-                <!-- <div class="dashTableContainer">
+            
+                <div class="dashTableContainer">
                     <h3>List of Blogs</h3>
 
                     <table id="blogTbl" class="table table-striped table-bordered" style="width:100%">
@@ -522,7 +696,9 @@ header("location: ./login.php");
     </div>-->
 
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/jquery-
+
+3.5.1.js"></script>
 <script>
     $(document).ready(function () {
         $('#userTbl').DataTable();
@@ -534,8 +710,16 @@ header("location: ./login.php");
     });
 </script>
 
-<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap.min.js"></script>
+<script 
+
+src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.mi
+
+n.js"></script>
+<script 
+
+src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap
+
+.min.js"></script>
 
 <script src="../js/cms.js"></script>
 <script src="../js/cmsJquery.js"></script>

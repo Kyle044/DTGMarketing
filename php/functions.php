@@ -1,5 +1,14 @@
 <?php
-
+function truncate($text, $chars) {
+    if (strlen($text) <= $chars) {
+        return $text;
+    }
+    $text = $text." ";
+    $text = substr($text,0,$chars);
+    $text = substr($text,0,strrpos($text,' '));
+    $text = $text."...";
+    return $text;
+}
 
 
 //USER FUNCTIONS
@@ -34,17 +43,15 @@ mysqli_stmt_close($stmt);
 
 
 function createUser($conn,$fullname,$email,$office,$position,$password){
-$sql = "INSERT INTO users (usersName,usersPosition,usersOffice,usersEmail,usersPassword) VALUES (?,?,?,?,?);";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
 $hashedPwd = password_hash($password,PASSWORD_DEFAULT);
-mysqli_stmt_bind_param($stmt,"sssss",$fullname,$position,$office,$email,$hashedPwd);
-mysqli_stmt_execute($stmt);
-mysqli_stmt_close($stmt);
-echo("User Added Successfully!");
+$sql = 'INSERT INTO users (usersName,usersPosition,usersOffice,usersEmail,usersPassword) VALUES ("'.$fullname.'","'.$position.'","'.$office.'","'.$email.'","'.$hashedPwd.'")';
+
+    if ($conn->query($sql) === TRUE) {
+      echo "New User created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    $conn->close();
 }
 
 function loginUser($conn,$email,$password){
@@ -89,16 +96,9 @@ mysqli_stmt_close($stmt);
 
 function getUsers($conn){
     $sql = "SELECT * FROM users ;";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
+    $result = $conn->query($sql);
+if($result->num_rows > 0){
+    while($row = $result->fetch_assoc()){
          echo '<tr>
          <td>'.$row["usersName"].'</td>
         <td>'.$row["usersPosition"].'</td>
@@ -123,42 +123,27 @@ if(mysqli_num_rows($resultData)>0){
 }
 
 
-mysqli_stmt_close($stmt);
+    $conn->close();
 
 }
-
 function updateUser($conn,$fullname,$email,$office,$position,$password,$id){
-$sql = "UPDATE users SET usersName = ?, usersPosition=?, usersOffice=?,usersEmail=?,usersPassword=? WHERE usersId=?;";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
 $hashedPwd = password_hash($password,PASSWORD_DEFAULT);
-mysqli_stmt_bind_param($stmt,"sssssi",$fullname,$position,$office,$email,$hashedPwd,$id);
-mysqli_stmt_execute($stmt);
-mysqli_stmt_close($stmt);
+$sql = "UPDATE users SET usersName = '".$fullname."', usersPosition='".$position."',usersOffice='".$office."'
+,usersEmail='".$email."',usersPassword='".$hashedPwd."' WHERE usersId='".$id."';";
+$update = $conn->query($sql);
 echo("User Updated Successfully!");
 }
 
 
-
-
 function deleteUser($conn,$id){
-$sql = "DELETE FROM `users` WHERE usersId=?;";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
+$sql = 'DELETE FROM users WHERE usersId='.$id.';';
+if ($conn->query($sql) === TRUE) {
+  echo "User deleted successfully";
+} else {
+  echo "Error deleting record: " . $conn->error;
 }
-mysqli_stmt_bind_param($stmt,"i",$id);
-mysqli_stmt_execute($stmt);
-mysqli_stmt_close($stmt);
-echo("User Deleted Successfully!");
+$conn->close();
 }
-
-
-
 
 
 //SERVICE FUNCTIONS
@@ -167,45 +152,36 @@ echo("User Deleted Successfully!");
 
 function getService($conn){
 $sql = "SELECT * FROM service ;";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
-         echo '<tr>
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+  echo "<table><tr><th>ID</th><th>Name</th></tr>";
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+     echo '<tr>
          <td>'.$row["id"].'</td>
         <td>'.$row["title"].'</td>
-          <td ><p class="truncate">'.$row["description"].'</p></td>
-       <td>'.$row["supervisor"].'</td>
+          <td ><p class="truncate">'.truncate($row["description"],20).'</p></td>
+       <td>'.$row["detailed_descrip"].'</td>
+       <td>'.$row["benefits"].'</td>
+       <td>'.$row["approach"].'</td>
          <td>
         <div class="btnGrp">
           <a href="#" name ="'.$row['id'].'" class="up upService" >Update</a><a href="#" name ="'.$row['id'].'" class="del delService" >Delete</a>
             </div>
             </td>
             </tr>';
-    }
-
-}else{
-    return false;
+  }
+  echo "</table>";
+} else {
+return false;
 }
-mysqli_stmt_close($stmt);
-
+$conn->close();
 }
 function getFrontService($conn){
-$sql = "SELECT service.title, service.supervisor, service.id,service.description,files.directory FROM service JOIN files ON service.file_fk=files.id";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
+$sql = "SELECT service.title, service.id,service.description,files.directory FROM service JOIN files ON service.file_fk=files.id";
+$result = $conn->query($sql);
+if($result->num_rows > 0){
+    while($row = $result->fetch_assoc()){
          echo '<div class="serviceCard"  >
 	<div class="serviceLeft">
 			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
@@ -226,7 +202,7 @@ if(mysqli_num_rows($resultData)>0){
 }else{
     return false;
 }
-mysqli_stmt_close($stmt);
+$conn->close();
 // <div id="accordion">
 
 //Accordion
@@ -252,7 +228,7 @@ mysqli_stmt_close($stmt);
 
 
 
-function createService($conn,$title,$description,$supervisor,$file){
+function createService($conn,$title,$description,$detail_desc,$benefits,$approach,$file){
 $fileName = $file['name'];
 $fileType = $file['type'];
 $fileTmpName = $file['tmp_name'];
@@ -267,16 +243,13 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "INSERT INTO service (title,description,supervisor,file_fk) VALUES (?,?,?,?);";
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
-        exit();
+    $sql = 'INSERT INTO service (title, description, detailed_descrip, benefits, approach, file_fk) VALUES ("'.$title.'","'.$description.'","'.$detail_desc.'","'.$benefits.'","'.$approach.'",'.$fk.')';
+    if ($conn->query($sql) === TRUE) {
+     echo"Service Was Successfully Added!";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
     }
-    mysqli_stmt_bind_param($stmt,"ssss",$title,$description,$supervisor,$fk);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
-    echo"Service Was Successfully Added!";
+
 }
 else{
     echo "There was an error uploading the image";
@@ -285,40 +258,30 @@ else{
 }else{
     echo "You cannot upload files of this type!";
 }
-
+    $conn->close();
 }
-
 function deleteService($conn,$id){
-
-    $sql = "SELECT * FROM service WHERE id = ?;";
+    $sql = 'SELECT * FROM service WHERE id = '.$id.'';
     $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
-        exit();
-    }
-    mysqli_stmt_bind_param($stmt,"s",$id);
-    mysqli_stmt_execute($stmt);
-    $resultData = mysqli_stmt_get_result($stmt);
-    if($row = mysqli_fetch_assoc($resultData)){
+     $result = $conn->query($sql);
+    if($row = $result->fetch_assoc()){
     $fk = $row['file_fk'];
+    // echo$fk;
         if(deleteFile($conn,$fk)){
-            $sql1 = "DELETE  FROM service WHERE id = ?;";
-            $stmt1 = mysqli_stmt_init($conn);
-            if(!mysqli_stmt_prepare($stmt1,$sql1)){
-                echo"SQL Statement Failed...";
-                exit();
+            $sql1 = 'DELETE  FROM service WHERE id = '.$id.'';
+        if ($conn->query($sql1) === TRUE) {
+              echo "Service deleted successfully";
+            } else {
+              echo "Error deleting record: " . $conn->error;
             }
-            mysqli_stmt_bind_param($stmt1,"s",$id);
-            mysqli_stmt_execute($stmt1);
-            echo "Service Was Deleted Successfully!";
         }else{
-            echo"There was an Error Deleting the service";
+            echo"There was an Error Deleting the service File";
         }
 
     }else{
         return false;
     }
-    mysqli_stmt_close($stmt);
+$conn->close();
 
 }
 
@@ -327,7 +290,7 @@ function deleteService($conn,$id){
 
 
 
-function updateService($conn,$title,$description,$supervisor,$file,$id){
+function updateService($conn,$title,$description,$detail_desc,$benefits,$approach,$file,$id){
 $sql1 = "SELECT * FROM service WHERE id = ?;";
 $stmt1 = mysqli_stmt_init($conn);
 if(!mysqli_stmt_prepare($stmt1,$sql1)){
@@ -353,15 +316,12 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "UPDATE service SET title=?, description=?,supervisor=?,file_fk=? WHERE id=?";
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
-        exit();
-    }
-    mysqli_stmt_bind_param($stmt,"ssssi",$title,$description,$supervisor,$fk,$id);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
+
+
+    
+    $sql = "UPDATE service SET title='".$title."',description='".$description."',detailed_descrip='".$detail_desc."',
+    benefits='".$benefits."',approach='".$approach."',file_fk='".$fk."' WHERE id='".$id."'";
+    $conn->query($sql);
     echo"Service Was Successfully Updated!";
 }
 else{
@@ -385,132 +345,54 @@ else{
 //GET
 function getCareer($conn){
 $sql = "SELECT * FROM career;";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
-         echo '<tr>
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+      echo '<tr>
          <td>'.$row["title"].'</td>
        <td>'.$row["position"].'</td>
         <td>'.$row["description"].'</td>
-       
          <td>
         <div class="btnGrp">
           <a href="#" name ="'.$row['id'].'" class="up upCareer" >Update</a><a href="#" name ="'.$row['id'].'" class="del delCareer" >Delete</a>
             </div>
             </td>
             </tr>';
-        // $data = array("usersId" => $row["usersId"],
-        // "usersName" => $row["usersName"],
-        // "usersPosition" => $row["usersPosition"],
-        // "usersOffice" => $row["usersOffice"],
-        // "usersEmail" => $row["usersEmail"]);
-        // $users[]=$data;
-    }
-// return $users;
-}else{
-    return false;
+  }
+} else {
+return false;
 }
+$conn->close();
 
 
-mysqli_stmt_close($stmt);
+
 
 }
 
 
 function getsCareer($conn){
-$sql = "SELECT career.title,career.description,files.directory,career.Q1,career.Q2,career.Q3,career.Q4,career.Q5,career.R1,career.R2,career.R3,career.R4,career.R5 FROM career JOIN files ON career.file_fk=files.id ";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
-         echo '
-        <div class="CarCard">
-
-<div class="CareerLeft">
-    <h1>'.$row['title'].'</h1>
-  <ul>
-  
-    <li><h3>Qualification</h3><ul>
-    <li>'.$row['Q1'].'</li>
-    <li>'.$row['Q2'].'</li>
-    <li>'.$row['Q3'].'</li>
-    <li>'.$row['Q4'].'</li>
-    <li>'.$row['Q5'].'</li>
-</ul>
-    </li>
-
-  </ul>
-
-   <ul>
- 
-    <li>  <h3>Responsibility</h3><ul>
-    <li>'.$row['R1'].'</li>
-    <li>'.$row['R2'].'</li>
-    <li>'.$row['R3'].'</li>
-    <li>'.$row['R4'].'</li>
-    <li>'.$row['R5'].'</li>
-</ul>
-    </li>
-  </ul>
-</div>
-<div class="CareerRight">
-    <img src="'.$row['directory'].'" alt="">
-</div>
-</div>';
+$sql = "SELECT career.title,career.description,files.directory,career.qualification,career.responsibility FROM career JOIN files ON career.file_fk=files.id ";
+$result = $conn->query($sql);
+if($result->num_rows > 0){
+    while($row = $result->fetch_assoc()){
+    echo '<div class="CarCard"><div class="CareerLeft"><ul><li><h2>'.$row['title'].'</h2><h3>Qualification</h3> ';
+    echo$row['qualification'];
+    echo'</li></ul> <ul><li style="list-style:none;"><h2 style="opacity:0;">.</h2><h3>Responsibility</h3>';
+    echo$row['responsibility'];
+    echo '</li></ul></div><div class="CareerRight"><img src="'.$row['directory'].'" alt=""></div></div>';
     }
 
 }else{
     return false;
 }
-mysqli_stmt_close($stmt);
+$conn->close();
 
 
 }
-function getOddCareer($conn){
-    $sql = "SELECT career.title,career.description,files.directory FROM career JOIN files ON career.file_fk=files.id where career.id % 2 = 1";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
-         echo '
-         <div class="carhead" style="background:#15133C;" >
-    <h1>'.$row["title"].'</h1>
-    <p>'.$row['description'].'</p>
-</div>
-    <div class="carimg">
-    <img src="../img/'.$row['directory'].'" alt="">
-</div>
 
-
-';
-    }
-
-}else{
-    return false;
-}
-mysqli_stmt_close($stmt);
-
-
-}
 //INSERT
-function createCareer($conn,$title,$position,$description,$file,$q1,$q2,$q3,$q4,$q5,$r1,$r2,$r3,$r4,$r5){
+function createCareer($conn,$title,$position,$description,$file,$qualification,$responsibility){
 $fileName = $file['name'];
 $fileType = $file['type'];
 $fileTmpName = $file['tmp_name'];
@@ -525,16 +407,14 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "INSERT INTO career (title,position,description,file_fk,Q1,Q2,Q3,Q4,Q5,R1,R2,R3,R4,R5) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
-        exit();
-    }
-    mysqli_stmt_bind_param($stmt,"sssissssssssss",$title,$position,$description,$fk,$q1,$q2,$q3,$q4,$q5,$r1,$r2,$r3,$r4,$r5);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
+    $sql = 'INSERT INTO career (title,position,description,file_fk,qualification,responsibility) VALUES ("'.$title.'","'.$position.'","'.$description.'",'.$fk.',"'.(string)$qualification.'","'.(string)$responsibility.'")';
+   if ($conn->query($sql) === TRUE) {
     echo"Career Was Successfully Added!";
+    } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+$conn->close();
+ 
 }
 else{
     echo "There was an error uploading the image";
@@ -575,15 +455,11 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "UPDATE career SET title=?, position=?,description=?,file_fk=? , Q1=?,Q2=?,Q3=?,Q4=?,Q5=?,R1=?,R2=?,R3=?,R4=?,R5=? WHERE id=?";
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
-        exit();
-    }
-    mysqli_stmt_bind_param($stmt,"sssissssssssssi",$title,$position,$description,$fk,$q1,$q2,$q3,$q4,$q5,$r1,$r2,$r3,$r4,$r5,$id);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
+    
+    $sql = "UPDATE career SET title='".$title."', position='".$position."',description='".$description."'
+    ,file_fk='".$fk."' , Q1='".$q1."',Q2='".$q2."',Q3='".$q3."',Q4='".$q4."',Q5='".$q5."',R1='".$r1."',R2='".$r2."'
+    ,R3='".$r3."',R4='".$r4."',R5='".$r5."' WHERE id='".$id."'";
+    $stmt = $conn->query($sql);
     echo"Career Was Successfully Updated!";
 }
 else{
@@ -611,28 +487,17 @@ else{
 
 
 function deleteCareer($conn,$id){
-
-    $sql = "SELECT * FROM career WHERE id = ?;";
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
-        exit();
-    }
-    mysqli_stmt_bind_param($stmt,"s",$id);
-    mysqli_stmt_execute($stmt);
-    $resultData = mysqli_stmt_get_result($stmt);
-    if($row = mysqli_fetch_assoc($resultData)){
+    $sql = 'SELECT * FROM career WHERE id = '.$id.'';
+    $result = $conn->query($sql);
+    if($row = $result->fetch_assoc()){
     $fk = $row['file_fk'];
         if(deleteFile($conn,$fk)){
-            $sql1 = "DELETE  FROM career WHERE id = ?;";
-            $stmt1 = mysqli_stmt_init($conn);
-            if(!mysqli_stmt_prepare($stmt1,$sql1)){
-                echo"SQL Statement Failed...";
-                exit();
+            $sql1 = 'DELETE  FROM career WHERE id = '.$id.'';
+         if ($conn->query($sql1) === TRUE) {
+            echo "Career deleted successfully";
+            } else {
+            echo "Error deleting record: " . $conn->error;
             }
-            mysqli_stmt_bind_param($stmt1,"s",$id);
-            mysqli_stmt_execute($stmt1);
-            echo "Career Was Deleted Successfully!";
         }else{
             echo"There was an Error Deleting the Career";
         }
@@ -640,7 +505,7 @@ function deleteCareer($conn,$id){
     }else{
         return false;
     }
-    mysqli_stmt_close($stmt);
+    $conn->close();
 
 }
 
@@ -800,15 +665,11 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "UPDATE blog SET title=?, description=?,author=?,date_publish=?,file_fk=? WHERE id=?";//TO EDIT
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
-        exit();
-    }
-    mysqli_stmt_bind_param($stmt,"sssssi",$title,$description,$author,$date,$fk,$id);//TO EDIT
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
+
+
+    $sql = "UPDATE blog SET title='".$title."', description='".$description."',author='".$author."'
+    ,date_publish='".$date."',file_fk='".$fk."' WHERE id='".$id."'";//TO EDIT
+    $conn->query($sql);
     echo"Blog Was Successfully Updated!";  //TO EDIT
 }
 else{
@@ -855,16 +716,12 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "INSERT INTO article (title,description,author,date_publish,file_fk) VALUES (?,?,?,?,?);";
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
-        exit();
+    $sql = 'INSERT INTO article (title,description,author,date_publish,file_fk) VALUES ("'.$title.'","'.$description.'","'.$author.'","'.$date.'",'.$fk.');';
+   if ($conn->query($sql) === TRUE) {
+    echo "New Article created successfully";
+    } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
     }
-    mysqli_stmt_bind_param($stmt,"ssssi",$title,$description,$author,$date,$fk);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
-    echo"Article Was Successfully Added!";
 }
 else{
     echo "There was an error uploading the image";
@@ -879,27 +736,17 @@ else{
 
 function deleteArticle($conn,$id){
 
-    $sql = "SELECT * FROM article WHERE id = ?;";
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
-        exit();
-    }
-    mysqli_stmt_bind_param($stmt,"s",$id);
-    mysqli_stmt_execute($stmt);
-    $resultData = mysqli_stmt_get_result($stmt);
-    if($row = mysqli_fetch_assoc($resultData)){
+    $sql = 'SELECT * FROM article WHERE id = '.$id.'';
+    $result = $conn->query($sql);
+    if($row = $result->fetch_assoc()){
     $fk = $row['file_fk'];
         if(deleteFile($conn,$fk)){
-            $sql1 = "DELETE  FROM article WHERE id = ?;";
-            $stmt1 = mysqli_stmt_init($conn);
-            if(!mysqli_stmt_prepare($stmt1,$sql1)){
-                echo"SQL Statement Failed...";
-                exit();
-            }
-            mysqli_stmt_bind_param($stmt1,"s",$id);
-            mysqli_stmt_execute($stmt1);
-            echo "Article Was Deleted Successfully!";
+            $sql1 = 'DELETE  FROM article WHERE id = '.$id.'';
+     if ($conn->query($sql1) === TRUE) {
+        echo "Article deleted successfully";
+        } else {
+        echo "Error deleting record: " . $conn->error;
+        }
         }else{
             echo"There was an Error Deleting the Article";
         }
@@ -907,24 +754,18 @@ function deleteArticle($conn,$id){
     }else{
         return false;
     }
-    mysqli_stmt_close($stmt);
+    $conn->close();
 
 }
 function getArticle($conn){
     $sql = "SELECT * FROM article;";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
+    $result = $conn->query($sql);
 
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
+if($result->num_rows > 0){
+    while($row = $result->fetch_assoc()){
          echo '<tr>
          <td>'.$row["title"].'</td>
-        <td>'.$row["description"].'</td>
+        <td>'.truncate($row["description"],30).'</td>
           <td>'.$row["author"].'</td>
        <td>'.$row["date_publish"].'</td>
          <td>
@@ -946,7 +787,7 @@ if(mysqli_num_rows($resultData)>0){
 }
 
 
-mysqli_stmt_close($stmt);
+$conn->close();
 
 }
 
@@ -955,15 +796,9 @@ mysqli_stmt_close($stmt);
 
 function getFrontArticle($conn){
 $sql = "SELECT article.title, article.description, article.id,article.date_publish,files.directory FROM article JOIN files ON article.file_fk=files.id";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
+$result = $conn->query($sql);
+if($result->num_rows > 0){
+    while($row = $result->fetch_assoc()){
          echo '<div class="ar2Container">
 
     <h1>'.$row['title'].'</h1>
@@ -983,7 +818,7 @@ if(mysqli_num_rows($resultData)>0){
 }else{
     return false;
 }
-mysqli_stmt_close($stmt);
+$conn->close();
 
 }
 
@@ -1014,15 +849,11 @@ if($fileError===0){
     $fileDestination = '../uploads/'.$fileNameNew;
     move_uploaded_file($fileTmpName,$fileDestination);
     $fk = getFileId($conn,$fileNameNew,$fileDestination,$fileSize);
-    $sql = "UPDATE article SET title=?, description=?,author=?,date_publish=?,file_fk=? WHERE id=?";//TO EDIT
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
-        exit();
-    }
-    mysqli_stmt_bind_param($stmt,"sssssi",$title,$description,$author,$date,$fk,$id);//TO EDIT
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
+
+    
+    $sql = "UPDATE article SET title='".$title."', description='".$description."'
+    ,author='".$author."',date_publish='".$date."',file_fk='".$fk."' WHERE id='".$id."'";//TO EDIT
+    $conn->query($sql);
     echo"Article Was Successfully Updated!";  //TO EDIT
 }
 else{
@@ -1048,41 +879,31 @@ else{
 //Gallery
 //INSERT
 function createGallery($conn,$title,$description,$date,$file){
-$sql1 = "INSERT INTO gallery (title,description,date) VALUES (?,?,?);";
-$stmt1 = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt1,$sql1)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_bind_param($stmt1,"sss",$title,$description,$date);
-mysqli_stmt_execute($stmt1);
-$last_id = mysqli_insert_id($conn);
-mysqli_stmt_close($stmt1);
-$size = count($file['name']);
-for ($x = 0; $x < $size; $x++) {
-$fileName = $file['name'][$x];
-$fileType = $file['type'][$x];
-$fileTmpName = $file['tmp_name'][$x];
-$fileSize = $file['size'][$x];
-$fileError = $file['error'][$x];
-$fileExt = explode('.',$fileName);
-$fileActualExt = strtolower(end($fileExt));
-$allowed = array('jpg','jpeg','png');
-if(in_array($fileActualExt,$allowed)){
-if($fileError===0){
-    $fileNameNew = uniqid('',true).".".$fileActualExt;
-    $fileDestination = '../uploads/'.$fileNameNew;
-    move_uploaded_file($fileTmpName,$fileDestination);
-    $sql = "INSERT INTO galleryPic (title,directory,size,gallery_fk) VALUES (?,?,?,?);";
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt,$sql)){
-        echo"SQL Statement Failed...";
+$sql1 = 'INSERT INTO gallery (title,description,date) VALUES ("'.$title.'","'.$description.'","'.$date.'")';
+if ($conn->query($sql1) === TRUE) {
+    $last_id = $conn->insert_id;
+    $size = count($file['name']);
+    for ($x = 0; $x < $size; $x++) {
+    $fileName = $file['name'][$x];
+    $fileType = $file['type'][$x];
+    $fileTmpName = $file['tmp_name'][$x];
+    $fileSize = $file['size'][$x];
+    $fileError = $file['error'][$x];
+    $fileExt = explode('.',$fileName);
+    $fileActualExt = strtolower(end($fileExt));
+    $allowed = array('jpg','jpeg','png');
+    if(in_array($fileActualExt,$allowed)){
+    if($fileError===0){
+        $fileNameNew = uniqid('',true).".".$fileActualExt;
+        $fileDestination = '../uploads/'.$fileNameNew;
+        move_uploaded_file($fileTmpName,$fileDestination);
+        $sql = 'INSERT INTO galleryPic (title,directory,size,gallery_fk) VALUES ("'.$fileNameNew.'","'.$fileDestination.'","'.$fileSize.'",'.$last_id.')';
+        if ($conn->query($sql) === TRUE) {
+        } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
         exit();
-    }
-    mysqli_stmt_bind_param($stmt,"sssi",$fileNameNew,$fileDestination,$fileSize,$last_id);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
-  
+        }
+    
 }
 else{
     echo "There was an error uploading the image";
@@ -1091,22 +912,21 @@ else{
     echo "You cannot upload files of this type!";
 }
 }
+
+} else {
+  echo "Error: " . $sql1 . "<br>" . $conn->error;
+}
+
   echo"Gallery Was Successfully Added!";
+  $conn->close();
 }
 
 
 function getGallery($conn){
     $sql = "SELECT * FROM gallery;";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
+    $result = $conn->query($sql);
+if($result->num_rows > 0){
+    while($row = $result->fetch_assoc()){
          echo '<tr>
          <td>'.$row["title"].'</td>
         <td>'.$row["description"].'</td>
@@ -1131,8 +951,7 @@ if(mysqli_num_rows($resultData)>0){
 }
 
 
-mysqli_stmt_close($stmt);
-
+$conn->close();
 }
 
 
@@ -1140,15 +959,9 @@ mysqli_stmt_close($stmt);
 
 function getFrontGallery($conn){
     $sql = "SELECT service.title,service.description,files.directory FROM service JOIN files ON service.file_fk=files.id";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
+$result = $conn->query($sql);
+if($result->num_rows > 0){
+    while($row = $result->fetch_assoc()){
          echo '<div class="serviceCard"  >
 	<div class="serviceLeft">
 			<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
@@ -1168,76 +981,31 @@ if(mysqli_num_rows($resultData)>0){
 }else{
     return false;
 }
-mysqli_stmt_close($stmt);
+$conn->close();
 }
-
-
-
-
 
 //Delete
 function deleteGallery($conn,$id){
-
- $sql = "SELECT gallery.id,gallery.title, gallerypic.directory FROM `gallery` JOIN gallerypic ON gallery.id=gallerypic.gallery_fk WHERE gallery.id= ?;";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}  
-  mysqli_stmt_bind_param($stmt,"i",$id);
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-
-if(mysqli_num_rows($resultData)>0){
-    while($row = mysqli_fetch_array($resultData)){
+$sql = 'SELECT gallery.id,gallery.title, gallerypic.directory FROM gallery JOIN gallerypic ON gallery.id=gallerypic.gallery_fk WHERE gallery.id= '.$id.'';
+$result = $conn->query($sql);
+if($result->num_rows > 0){
+    while($row = $result->fetch_assoc()){
 if (!unlink($row["directory"])) {
     echo ("cannot be deleted due to an error");
 }
 else {
-
-
 }
     }
-
 }else{
     echo"SQL FETCH Failed...";
     exit();
 }
-$sql1 = "DELETE FROM gallerypic WHERE gallery_fk =?";
-$stmt1 = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt1,$sql1)){
-    echo"SQL Statement Failed...";
-}
-mysqli_stmt_bind_param($stmt1,"i",$id);
-mysqli_stmt_execute($stmt1);
-
-
-$sql2 = "DELETE FROM gallery WHERE id =?";
-$stmt2 = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt2,$sql2)){
-    echo"SQL Statement Failed...";
-
-}
-mysqli_stmt_bind_param($stmt2,"i",$id);
-mysqli_stmt_execute($stmt2);
-mysqli_stmt_close($stmt2);
-
-
-
-
-
-
-
-mysqli_stmt_close($stmt1);
-
-mysqli_stmt_close($stmt);
-
-
-
-
-
-
-
+$sql1 = 'DELETE FROM gallerypic WHERE gallery_fk ='.$id.'';
+$conn->query($sql1);
+$sql2 = 'DELETE FROM gallery WHERE id ='.$id.'';
+$conn->query($sql2);
+$conn->close();
+echo"A Post Sucessfully Deleted";
 }
 
 
@@ -1271,52 +1039,47 @@ mysqli_stmt_close($stmt);
 
 //Create a file and returns its id
 function getFileId($conn,$name,$directory,$size){
-$sql = "INSERT INTO files (name,directory,size) VALUES (?,?,?);";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
+$sql = 'INSERT INTO files (name,directory,size) VALUES ("'.$name.'","'.$directory.'","'.$size.'")';
+if ($conn->query($sql) === TRUE) {
+  $last_id = $conn->insert_id;
+
+    return $last_id;
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
 }
-mysqli_stmt_bind_param($stmt,"sss",$name,$directory,$size);
-mysqli_stmt_execute($stmt);
-$last_id = mysqli_insert_id($conn);
-mysqli_stmt_close($stmt);
-return $last_id;
+
+
 }
 
 //Will Delete the file from the directory and Delete the data in the database at the same time
 //Will need the id of the file in file table
 function deleteFile($conn,$id){
-$sql = "SELECT * FROM files WHERE id = ?;";
-$stmt = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt,$sql)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_bind_param($stmt,"s",$id);
-mysqli_stmt_execute($stmt);
-$resultData = mysqli_stmt_get_result($stmt);
-if($row = mysqli_fetch_assoc($resultData)){
+
+
+
+$sql = 'SELECT * FROM files WHERE id = '.$id.'';
+$result = $conn->query($sql);
+if($row = $result->fetch_assoc()){
 $file_pointer = $row['directory'];
+
 if (!unlink($file_pointer)) {
     echo ("$file_pointer cannot be deleted due to an error");
 }
 else {
-$sql1 = "DELETE FROM files WHERE id =?";
-$stmt1 = mysqli_stmt_init($conn);
-if(!mysqli_stmt_prepare($stmt1,$sql1)){
-    echo"SQL Statement Failed...";
-    exit();
-}
-mysqli_stmt_bind_param($stmt1,"i",$id);
-mysqli_stmt_execute($stmt1);
-mysqli_stmt_close($stmt1);
+$sql1 = 'DELETE FROM files WHERE id ='.$id.'';
+if ($conn->query($sql1) === TRUE) {
   return true;
-}
-}else{
+} else {
+    echo"di gumana yung query";
     return false;
 }
-mysqli_stmt_close($stmt);
+
+}
+}else{
+    echo"di nag fetch";
+    return false;
+}
+
 }
 
 

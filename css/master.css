@@ -923,11 +923,30 @@ textarea {
   background-color: #dd8e33;
   border-radius: 10px;
   padding: 2rem 1rem;
+  flex-direction: column-reverse;
+  background-image: url(../img/bd.png);
 }
 .masterCareerCard .CarCard .CareerLeft {
   width: auto;
+  color: white;
+  display: flex;
+  background: #2a2b2c;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  width: 100%;
 }
+.masterCareerCard .CarCard .CareerLeft h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: white;
+}
+
 .masterCareerCard .CarCard .CareerLeft ul {
+  width: 100%;
   color: white;
 }
 .masterCareerCard .CarCard .CareerLeft ul li {
@@ -995,6 +1014,15 @@ textarea {
   }
 }
 @media (max-width: 808px) {
+  .masterCareerCard .CarCard .CareerLeft {
+    flex-direction: column;
+  }
+  .masterCareerCard .CarCard .CareerLeft h2 {
+    margin: 0;
+  }
+  .masterCareerCard .CarCard .CareerLeft h3 {
+    margin-top: 1rem;
+  }
   .aboutUsmain .texthed {
     height: 100%;
     display: flex;
@@ -1019,6 +1047,11 @@ textarea {
   }
   .texthed hr {
     margin: 0;
+  }
+}
+@media (max-width: 716px) {
+  .carsec1 {
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 700px) {
@@ -1086,6 +1119,7 @@ textarea {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    margin-bottom: 14rem;
   }
   .carsec2 {
     display: flex;
@@ -1162,6 +1196,9 @@ textarea {
 }
 
 @media (max-width: 466px) {
+  .carsec1 {
+    margin-bottom: 13rem;
+  }
   .serviceCard .serviceRight img {
     width: 17rem;
     height: auto;

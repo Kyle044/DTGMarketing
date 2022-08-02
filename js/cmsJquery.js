@@ -137,7 +137,9 @@ $(document).ready(() => {
     if (
       !formData.get("title") ||
       !formData.get("description") ||
-      !formData.get("supervisor") ||
+      !formData.get("detail_desc") ||
+      !formData.get("approach") ||
+      !formData.get("benefits") ||
       !file_data
     ) {
       alert("There is some missing fields");
@@ -177,7 +179,7 @@ $(document).ready(() => {
   });
   //Delete Service
   $(document).on("click", ".delService", (e) => {
-    var answer = window.confirm("Delete User?");
+    var answer = window.confirm("Delete Service?");
     if (answer) {
       $.ajax({
         type: "POST",
@@ -201,11 +203,15 @@ $(document).ready(() => {
     var id = tblRow.querySelectorAll("td")[0].innerText;
     var title = tblRow.querySelectorAll("td")[1].innerText;
     var description = tblRow.querySelectorAll("td")[2].innerText;
-    var supervisor = tblRow.querySelectorAll("td")[3].innerText;
+    var detail_desc = tblRow.querySelectorAll("td")[3].innerText;
+    var benefits = tblRow.querySelectorAll("td")[4].innerText;
+    var approach = tblRow.querySelectorAll("td")[5].innerText;
     $("#serviceForm").find("input[name=id]").val(id);
     $("#serviceForm").find("input[name=title]").val(title);
     $("#serviceForm").find("textarea[name=description]").val(description);
-    $("#serviceForm").find("input[name=supervisor]").val(supervisor);
+    $("#serviceForm").find("input[name=detail_desc]").val(detail_desc);
+    $("#serviceForm").find("input[name=benefits]").val(benefits);
+    $("#serviceForm").find("input[name=approach]").val(approach);
     $("#serviceFormTitle").text("Update Service");
     form.setAttribute("name", "update");
     $("#insertServiceBtn").show();
@@ -225,16 +231,8 @@ $(document).ready(() => {
       !formData.get("title") ||
       !formData.get("position") ||
       !formData.get("description") ||
-      !formData.get("Q1") ||
-      !formData.get("Q2") ||
-      !formData.get("Q3") ||
-      !formData.get("Q4") ||
-      !formData.get("Q5") ||
-      !formData.get("R1") ||
-      !formData.get("R2") ||
-      !formData.get("R3") ||
-      !formData.get("R4") ||
-      !formData.get("R5") ||
+      !formData.get("qualification") ||
+      !formData.get("responsibility") ||
       !file_data
     ) {
       alert("There is some missing fields");
@@ -248,7 +246,7 @@ $(document).ready(() => {
           data: formData,
           cache: false,
           success: function (res) {
-            alert(res);
+            console.log(res);
             $("#careerForm")
               .find("input[type=text], textarea,input[type=file]")
               .val("");

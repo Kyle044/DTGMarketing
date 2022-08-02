@@ -9,6 +9,8 @@
 }
 
 .whyusheader img {
+  height: 100vh;
+
 }
 .whyusheader .texthed {
   position: absolute;
@@ -33,24 +35,17 @@
   line-height: 2rem;
 }
 
-.whyusheader .texthed h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2px;
-}   
-
-.container {
+.whyuscontainer {
   display: grid;
   max-width: 1200px;
   margin-top: 2rem;
-
   grid-template-columns: repeat(auto-fit, 22rem);
   align-content: center;
   gap: 10px;
   justify-content: center;
   margin: auto;
 }
-.container .whyus {
+.whyuscontainer .whyus {
   position: relative;
   overflow-y: hidden;
   cursor: pointer;
@@ -58,12 +53,12 @@
   margin-bottom: 1rem;
 }
 
-.container .whyus img {
+.whyuscontainer .whyus img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
-.container .whyus .hoverDiv {
+.whyuscontainer .whyus .whyushover {
   z-index: 99;
   position: absolute;
   top: 0;
@@ -78,7 +73,7 @@
   transform: translateY(19rem);
   transition: 250ms ease;
 }
-.container .whyus:hover .hoverDiv {
+.whyuscontainer .whyus:hover .whyushover {
   color: #fff;
   transform: translateY(0rem);
   text-align: center;
@@ -95,49 +90,48 @@
 <div role="main" class="main">
 
     <div class="whyusheader">
-         <img src="../img/banner_inner_orig.jpg" alt="">
+         <img src="../img/banner_inner.jpg" alt="">
     <div class="texthed">
-    <h2 style="font-size: 2rem; color:black;
-    font-weight: bold;
-    margin-bottom: 0;">WHY US?</h2>
-    </div>
-    </div>
 
 <!-- why us? --> 
-<div class="container">
+<div class="whyuscontainer">
 					
 <a class="whyus"  href="">
 		<img src="../img/whyus1.jpg" alt="">
-		<div class="hoverDiv">
+		<div class="whyushover">
 			<h3 style="color:white;">We have stringent process in selecting & hiring employees.</h3>
 		</div>
 </a>
 	<a class="whyus"  href="">
 		<img src="../img/whyus2.jpg" alt="">
-		<div class="hoverDiv">
+		<div class="whyushover">
 			<h3  style="color:white;">We provide genuine customer care at a reasonable price.</h3>
 		</div>
 </a>	
 	<a class="whyus"  href="">
 		<img src="../img/whyus3.jpg" alt="">
-		<div class="hoverDiv">
+		<div class="whyushover">
 			<h3  style="color:white;">We provide quick and efficient solutions to client concerns.</h3>
 		</div>
 </a>	
 	<a class="whyus"  href="">
 		<img src="../img/whyus4.jpg" alt="">
-		<div class="hoverDiv">
+		<div class="whyushover">
 			<h3  style="color:white;">We can customize our technology to accommodate all business’ back-office support.</h3>
 		</div>
 </a>	
 <a class="whyus"  href="">
 		<img src="../img/whyus5.jpg" alt="">
-		<div class="hoverDiv">
+		<div class="whyushover">
 			<h3 style="color:white;">We continuously upgrading our systems and processes to cope up with evolving market trends.</h3>
 		</div>
 </a>
 	</div>
 			</div>
+      </div>
+			</div>
+    
+      
  
 
 

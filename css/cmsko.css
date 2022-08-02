@@ -171,16 +171,16 @@ img{
 .contentDiv
 {  
   background-color: #f7f7f7;
- 
+  width: 100%;
   text-align: center;
   padding:2em;
   margin: auto;
   border-radius:  30px 0px;
-  width: fit-content;
+  
   box-shadow: 7px 7px #343A40
 }
 .tablewrap {
-  width: 100%;
+  width: auto;
   display: grid;
   grid-template-columns: 1fr 0.3fr;
   justify-content: center;
@@ -233,7 +233,9 @@ img{
   padding: 2rem;
   background-color: #f7f7f7;    
   border-radius: 3px;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px 
+
+rgb(0 0 0 / 0.1);
 }
 
 .dashLoginContainer form {
@@ -366,8 +368,12 @@ img{
   }
   .logo:hover {
     box-shadow: 6px 7px 26px 0px rgba(0, 0, 0, 0.5) inset;
-    -webkit-box-shadow: 6px 7px 26px 0px rgba(0, 0, 0, 0.5) inset;
-    -moz-box-shadow: 6px 7px 26px 0px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 6px 7px 26px 0px rgba(0, 0, 0, 0.5) 
+
+inset;
+    -moz-box-shadow: 6px 7px 26px 0px rgba(0, 0, 0, 0.5) 
+
+inset;
   }
   
   .logo img {
@@ -495,7 +501,9 @@ img{
     border-radius: 3px; 
     
     background-color: #f7f7f7;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px 
+
+rgb(0 0 0 / 0.1);
   }
   .dashTableContainer table {
     border-collapse: collapse;
@@ -536,7 +544,9 @@ img{
     padding: 2rem;
     background-color: #f7f7f7;    
     border-radius: 3px;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px 
+
+rgb(0 0 0 / 0.1);
   }
   
   .dashLoginContainer form {
