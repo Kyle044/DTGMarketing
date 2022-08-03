@@ -54,35 +54,34 @@
 			</div>
 		</div>
 	</section>
-	<h2 style="margin-top: 4rem; text-align:center;"><strong>Services</strong> in us!</h2>
+	<h2 style="margin-top: 4rem; text-align:center;"><strong>Services</strong></h2>
 	<div class="section4">
-
-		<a class="serviceCards" href="./pages/services.php#lg">
+		<a class="serviceCards" href="./pages/Outbound.php#lg">
 			<img src="./img/services1.jpg" alt="">
 			<div class="hoverDiv">
 				<h3 style="color:white;">Lead Generation</h3>
 			</div>
 		</a>
-		<a class="serviceCards" href="./pages/services.php#es">
+		<a class="serviceCards" href="./pages/Inbound.php#es">
 			<img src="./img/services2.jpg" alt="">
 			<div class="hoverDiv">
 				<h3 style="color:white;">Email Support</h3>
 			</div>
 		</a>
-		<a class="serviceCards" href="./pages/services.php#ics">
+		<a class="serviceCards" href="./pages/Inbound.php">
 			<img src="./img/services3.jpg" alt="">
 			<div class="hoverDiv">
 				<h3 style="color:white;">Inbound Call Support</h3>
 			</div>
 		</a>
-		<a class="serviceCards" href="./pages/services.php#ocs">
+		<a class="serviceCards" href="./pages/Outbound.php">
 			<img src="./img/services4.jpg" alt="">
 			<div class="hoverDiv">
 				<h3 style="color:white;">Outbound Call Support</h3>
 			</div>
 		</a>
 
-		<a class="serviceCards" href="./pages/services.php#bos">
+		<a class="serviceCards" href="./pages/backoffice.php#bos">
 			<img src="./img/services5.jpg" alt="">
 			<div class="hoverDiv">
 				<h3 style="color:white;">Back Office Support</h3>
@@ -118,7 +117,8 @@
 									<img src="img/clients/client-1.jpg" class="img-fluid rounded-circle" alt="">
 								</div>
 								<blockquote>
-									<p>We have been recommending My Charity Survey for our clients for more than two years. They have become a valued and important partner for us and our clients. The quality of leads and donor conversion levels remain constant and reliable and service is quick, flexible and attentive.
+									<p>We have been recommending My Charity Survey for our clients for more than two years.
+										They have become a valued and important partner for us and our clients. The quality of leads and donor conversion levels remain constant and reliable and service is quick, flexible and attentive.
 									</p>
 								</blockquote>
 								<div class="testimonial-author">

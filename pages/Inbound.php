@@ -57,7 +57,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="serviceCard">
+				<div class="serviceCard" id="es">
 					<div class="serviceLeft">
 						<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
 							<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
