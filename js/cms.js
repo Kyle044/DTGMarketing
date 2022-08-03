@@ -7,6 +7,9 @@ const options = {
   threshold: 0.25,
   rootMargin: "0px"
 };
+const sideBtn = document.querySelectorAll(".sideBtn");
+
+
 
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
   entries.forEach((entry) => {
@@ -35,50 +38,52 @@ var serviceCard = document.getElementById("servCard");
 var careerCard = document.getElementById("careerSide");
 var blogCard = document.getElementById("BlogsArticleSide");
 var galleryCard = document.getElementById("GallerySide");
-// serviceCard.style.visibility="hidden";
-// careerCard.style.visibility ="hidden";
-// blogCard.style.visibility ="hidden";
-// galleryCard.style.visibility ="hidden";
 
+
+dashCard.style.display = "block";
+serviceCard.style.display ="none";
+careerCard.style.display ="none";
+blogCard.style.display = "none";
+galleryCard.style.display = "none";
 
 dashBtn.addEventListener("click", () => {
-  // dashCard.style.display = "block";
-  dashCard.style.visibility = "visible";
-  serviceCard.style.visibility = "hidden";
-  // careerCard.style.display = "none";
-  // blogCard.style.display = "none";
-  // galleryCard.style.display = "none";
+  SideBarButton(dashCard,serviceCard,careerCard,blogCard,galleryCard) 
 });
 
 serviceBtn.addEventListener("click", () => {
-  dashCard.style.visibility = "hidden";
-  // serviceCard.stylee.visibility = "visible";
-  // serviceCard.style.display = "block";
-  // careerCard.style.display = "none";
-  // blogCard.style.display = "none";
-  // galleryCard.style.display = "none";
+  SideBarButton(serviceCard,dashCard,careerCard,blogCard,galleryCard)  
 });
 
+
 careerBtn.addEventListener("click", () => {
-  dashCard.style.transform = "translateX(100vw)";
-  serviceCard.style.transform = "translateX(100vw)";
-  careerCard.style.transform = "translateX(0vw)";
-  blogCard.style.transform = "translateX(100vw)";
-  galleryCard.style.transform = "translateX(100vw)";
+  SideBarButton(careerCard,dashCard,serviceCard,blogCard,galleryCard)  
 });
 
 BaBtn.addEventListener("click", () => {
-  dashCard.style.transform = "translateX(100vw)";
-  serviceCard.style.transform = "translateX(100vw)";
-  careerCard.style.transform = "translateX(100vw)";
-  blogCard.style.transform = "translateX(0vw)";
-  galleryCard.style.transform = "translateX(100vw)";
+  SideBarButton(blogCard,dashCard,serviceCard,careerCard,galleryCard)  
 });
 
 galleryBtn.addEventListener("click", () => {
-  dashCard.style.transform = "translateX(100vw)";
-  serviceCard.style.transform = "translateX(100vw)";
-  careerCard.style.transform = "translateX(100vw)";
-  blogCard.style.transform = "translateX(100vw)";
-  galleryCard.style.transform = "translateX(0vw)";
+  SideBarButton(galleryCard,dashCard,serviceCard,careerCard,blogCard,)  
 });
+
+
+function SideBarButton (opencard, closecard2,closecard3,closecard4,closecard5) {
+  
+    this.opencard = opencard;    
+    this.closecard2 = closecard2;
+    this.closecard3 = closecard3;
+    this.closecard4 = closecard4;
+    this.closecard4 = closecard5;
+   if (opencard.style.display === "none") {
+    opencard.style.display = "block";    
+    closecard2.style.display = "none";
+    closecard3.style.display = "none";
+    closecard4.style.display = "none";
+    closecard5.style.display = "none"
+   
+  } else {
+    // opencard.style.display = "none";
+    
+  }
+}

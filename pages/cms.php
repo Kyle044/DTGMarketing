@@ -18,78 +18,26 @@ header("location: ./login.php");
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap.min.css">
 
-    <link rel="stylesheet" 
-
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/boot
-
-strap.min.css">
-    <link rel="stylesheet" 
-
-href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstr
-
-ap.min.css">
-
-    <link 
-
-href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' 
-
-rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/cmsko.css">
 
 
-    <!--                                   EKSENA KO           
-
-                     -->
-    <link rel="stylesheet" 
-
-href="https://cdnjs.cloudflare.com/ajax/libs/font-
-
-awesome/4.7.0/css/font-awesome.min.css">
+    <!--                                   EKSENA KO                            -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     
-    
-  <script 
-
-src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery
-
-.min.js"></script>
-  <script 
-
-src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootst
-
-rap.min.js"></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-
-
-scale=1">
-  <link rel="stylesheet" 
-
-href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bo
-
-otstrap.min.css">
-  <script 
-
-src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.sli
-
-m.min.js"></script>
-  <script 
-
-src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/po
-
-pper.min.js"></script>
-  <script 
-
-src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/boot
-
-strap.bundle.min.js"></script>
-  <link rel="stylesheet" 
-
-href="https://cdnjs.cloudflare.com/ajax/libs/font-
-
-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   
 
@@ -105,75 +53,58 @@ awesome/4.7.0/css/font-awesome.min.css">
             </div>
 
             <ul class="list-unstyled CTAs">
-                <!-- <li>
-                    <a href="" class="download">Dashboard</a>
-                </li>
-                <li>
-                    <a href="" class="article">Services</a>
-                </li>
-                <li>
-                    <a href="" class="article">Career</a>
-                </li>
-                <li>
-                    <a href="" class="article">Article</a>
-                </li>
-                <li>
-                    <a href="" class="article">Gallery</a>
-                </li>
-                <li> -->
-                <li id="dashBtn">
+                
+                <li id="dashBtn" class="sideBtn">
+                <p>Dashboard&nbsp;<i class='fa fa-dashboard'></i></p>
                 <div class="">
-                <a href="" class="article">Dashboard&nbsp;<i class='fa fa-dashboard'></i></a>
                 
                 </div>
                 
                 
                 </li>
-                <li id="serviceBtn">
+                <li id="serviceBtn" class="sideBtn">
                     <div>
-                    <a href="" class="article">Services&nbsp;<i class='fa fa-briefcase'></i></a>
+                    <p>Services&nbsp;<i class='fa fa-briefcase'></i></p>
                     </div>
                 </li>
-                <li id="careerBtn">
+                <li id="careerBtn" class="sideBtn">
                     <div>
-                    <a href="" class="article">Career&nbsp;<i class='fa fa-book'></i></a>
+                    <p>Career&nbsp;<i class='fa fa-book'></i></p>
                     </div>
                 </li>
-                <li id="BaBtn">
+                <li id="BaBtn" class="sideBtn">
                     <div>
-                    <a href="" class="article">Article&nbsp;<i class='fa fa-pencil-square'></i></a>
+                    <p>Article&nbsp;<i class='fa fa-pencil-square'></i></p>
                     </div>
                 </li>
-                <li id="galleryBtn">
+                <li id="galleryBtn" class="sideBtn">
                     <div>
-                    <a href="" class="article">Gallery&nbsp;<i class='fa fa-image'></i></a>
+                    <p>Gallery&nbsp;<i class='fa fa-image'></i></p>
                     </div>
                 </li>
+                <li class="sideBtn">
                 <div>
-                <a href="" class="article">Logout&nbsp;<i class='fa fa-sign-out'></i></a>
+                <p>Logout&nbsp;<i class='fa fa-sign-out'></i></p>
                 </div>
                 </li>
              
             </ul>
         </nav>
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <img src="../img/dtoken.png" id="sidebarCollapse" alt="DatagenToken">
+                </div> 
+            </nav> -->
 
         <!-- DASHBOARD -->
          <div id="content" >
 
-             <!-- <nav class="navbar navbar-expand-lg navbar-dark 
-
-bg-dark">
-                <div class="container-fluid">
-                    <img src="../img/dtoken.png" 
-
-id="sidebarCollapse" alt="DatagenToken">
-                </div> 
-            </nav> -->
+             
 
             
             <div class="contentDiv" id="regCard">
             <h3>List of Registered User</h3>
-                <div class="tablewrap"id="dashSide">
+                <div class="tablewrap">
                 
                 <table  id="userTbl" class="table table-bordered">
                 
@@ -301,11 +232,11 @@ id="sidebarCollapse" alt="DatagenToken">
             </div>
         
 
-        <!-- 
-        <div id="content">
-            <div class="contentDiv" >
+        
+        
+            <div class="contentDiv"  id="careerSide" >
             <h3>List of Career's</h3>
-                    <div class="tablewrap" id="careerSide">
+                    <div class="tablewrap">
                         
                         <table id="careerSide" class="table table-bordered" style="width:100%" >
                             <thead >
@@ -362,12 +293,11 @@ id="sidebarCollapse" alt="DatagenToken">
                         </form>
                     </div>
                 </div>
-        </div>
+        
       
-        <div id="content">
-        <div class="contentDiv" >
+        <div class="contentDiv" id="BlogsArticleSide" >
             <h3>List of Blogs</h3>
-                    <div class="tablewrap"id="BlogsArticleSide">
+                    <div class="tablewrap">
                         
 
                         <table id="blogTbl" class="table table-bordered" style="width:100%">
@@ -442,12 +372,12 @@ id="sidebarCollapse" alt="DatagenToken">
                         </form>
                     </div>
             </div>
-            </div>
+            
 
 
-             <div id="content">
-            <div class="contentDiv" >
-                <div class="tablewrap"id="GallerySide" style="height: auto;">
+             
+            <div class="contentDiv" id="GallerySide">
+                <div class="tablewrap" style="height: auto;">
                     <h3>List Post's</h3>
                     <table id="userTbl" class="table table-striped table-bordered" style="width:100%">
                         <thead>
@@ -480,7 +410,7 @@ id="sidebarCollapse" alt="DatagenToken">
                     </form>
                 </div>
             </div>
-            </div> -->
+          
 
         
     </div>

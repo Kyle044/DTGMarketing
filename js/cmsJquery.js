@@ -594,12 +594,12 @@ $(document).ready(() => {
 
   //Dynamic Auto Refresh Table
   setInterval(() => {
-    // $("#autoBlog").load("../php/autoRefreshBlog.php");
-    // $("#autoCareer").load("../php/autoRefreshCareer.php");
-    // $("#autoUser").load("../php/autoRefreshUser.php");
-    // $("#autoService").load("../php/autoRefreshService.php");
-    // $("#autoArticle").load("../php/autoRefreshArticle.php");
-    // $("#autoGallery").load("../php/autoRefreshGallery.php");
-    // console.log("fetching ....");
+    $("#autoBlog").load("../php/autoRefreshBlog.php");
+    $("#autoCareer").load("../php/autoRefreshCareer.php");
+    $("#autoUser").load("../php/autoRefreshUser.php");
+    $("#autoService").load("../php/autoRefreshService.php");
+    $("#autoArticle").load("../php/autoRefreshArticle.php");
+    $("#autoGallery").load("../php/autoRefreshGallery.php");
+    console.log("fetching ....");
   }, 2000);
 });
