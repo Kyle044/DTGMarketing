@@ -12,7 +12,7 @@
 	<meta name="keywords" content="Datagen" />
 	<meta name="description" content="Datagen">
 	<meta name="author" content="okler.net">
-	
+
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="img/datagenLogo.png" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -21,8 +21,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
 	<!-- Web Fonts  -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light"
-		rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
 	<!-- Vendor CSS -->
 	<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
@@ -51,7 +50,7 @@
 
 	<!-- Skin CSS -->
 	<link rel="stylesheet" href="../css/skins/skin-corporate-7.css">
-		<link rel="stylesheet" href="../css/skins/default.css"> 
+	<link rel="stylesheet" href="../css/skins/default.css">
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="../css/custom.css">
@@ -67,10 +66,7 @@
 
 	<div class="body ">
 
-		<header id="header"
-        style="background-color: white; position:relative"
-			class="header-narrow header-semi-transparent header-transparent-sticky-deactive header-transparent-bottom-border"
-			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}">
+		<header id="header" style="background-color: white; position:relative" class="header-narrow header-semi-transparent header-transparent-sticky-deactive header-transparent-bottom-border" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}">
 
 			<div class="header-body">
 
@@ -90,8 +86,7 @@
 						<div class="header-column justify-content-end">
 							<div class="header-row">
 								<div class="header-nav header-nav-dark-dropdown">
-									<div
-										class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+									<div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li class="dropdown">
@@ -112,19 +107,19 @@
 														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="facilities.php">Facilities</a>
 														</li>
-																<!-- <li class="dropdown-submenu">
+														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="whyus.php">Why Us</a>
-														</li> -->
+														</li>
 													</ul>
 												</li>
 												<li class="dropdown">
-													 <!-- href="services.php" -->
+													<!-- href="services.php" -->
 													<a class="dropdown-item dropdown-toggle" style="font-size: 1rem;">
 														Services
 													</a>
 
 													<ul class="dropdown-menu">
-									
+
 
 														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="Inbound.php">Inbound Call Support</a>
@@ -135,6 +130,12 @@
 															<a class="dropdown-item" href="Outbound.php">Outbound Call Support</a>
 
 														</li>
+
+														<li class="dropdown-submenu">
+															<a class="dropdown-item" href="backoffice.php">Back office Support</a>
+
+														</li>
+
 														<!-- <li class="dropdown-submenu">
 															<a class="dropdown-item" href="services.php#bos">Back Office Support</a>
 															<ul class="dropdown-menu">
@@ -154,9 +155,9 @@
 														</li> -->
 													</ul>
 												</li>
-												<li class="dropdown">	
+												<li class="dropdown">
 													<a class="" href="career.php" style="font-size: 1rem;">
-													<!-- <a class="" href="#" style="font-size: 1rem;"> -->
+														<!-- <a class="" href="#" style="font-size: 1rem;"> -->
 														Career
 													</a>
 												</li>
@@ -168,7 +169,7 @@
 														<li class="dropdown-submenu">
 															<a class="dropdown-item" href="article.php">Articles</a>
 														</li>
-												
+
 													</ul>
 												</li>
 												<li class="dropdown">
@@ -180,8 +181,7 @@
 											</ul>
 										</nav>
 									</div>
-									<button class="btn header-btn-collapse-nav" data-toggle="collapse"
-										data-target=".header-nav-main nav">
+									<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
 										<i class="fas fa-bars"></i>
 									</button>
 								</div>

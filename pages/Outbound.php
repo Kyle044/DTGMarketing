@@ -106,7 +106,7 @@
     line-height: 1.8rem;
     font-size: 1.1rem;
     transition: 0.01s ease;">
-				    In the outbound initiatives three factors are crucial such as high contact rate, agent productivity and conversion rate
+				    In the outbound initiatives three factors are crucial such as high contact rate, agent productivity and conversion rate.
 					</p>
 					<h3 style="    font-weight: bolder; color:white; margin-top:1rem; margin-bottom:1rem;">B2B Telemarketing and B2C telemarketing</h3>
 
@@ -124,7 +124,7 @@
                             line-height: 1.8rem;
                             font-size: 1.1rem;
                             transition: 0.01s ease;
-    ">There are laws that govern the Do Not Call Registry for several states. In Australia for example, the Do Not Call Registry (DNCR) Act of 2006, a telemarketer is prohibited in making unsolicited telemarketing calls or sending unsolicited marketing faxes to numbers on the Do Not Call Register. </p>
+    ">There are laws that govern the Do Not Call Registry for several states. In Australia for example, the Do Not Call Registry (DNCR) Act of 2006, prohibits a telemarketer in making unsolicited telemarketing calls or sending unsolicited marketing faxes to numbers on the Do Not Call Register. </p>
                     <p style="text-align: justify;
                                 color: white;
                                 line-height: 1.8rem;
