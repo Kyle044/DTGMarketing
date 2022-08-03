@@ -15,9 +15,9 @@
 						We provide customer service support to clients by responding to customer inquiries or complaints. We have a proprietary system in placed to ensure that customers experience is seamless. We make sure to provide accurate information and deliver exceptional customer service throughout the entire interaction with the customers. We have an in-house call center and we are capable to provide 24/7 customer support.
 					</p>
 				</div>
-				<div class="serviceCard" style="border:4px solid white;" id="lg">
+				<div class="serviceCard towerbg" style="border:4px solid white;" id="lg">
 					<div class="serviceLeft">
-						<div style="display:flex; align-items:center; transform:translateX(-2rem);">
+						<div style="" class="hdser">
 							<i class="bi bi-brightness-low-fill " style="color:white; text-align:center; margin-right:15px;"></i>
 							<h2 style=" margin:0; color:white;">Customer service</h2>
 						</div>
@@ -33,7 +33,7 @@
 					</div>
 
 					<div id="accordion">
-						<div class="card">
+						<div class="card acrod">
 							<div class="card-header" id="headingOne">
 								<h5 class="mb-0">
 									<button class="btn btn-link white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -57,9 +57,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="serviceCard" id="es">
+				<div class="serviceCard towerbg" id="es">
 					<div class="serviceLeft">
-						<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
+						<div class="hdser">
 							<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
 							<h2 style=" margin:0;color:white;">Email Support</h2>
 						</div>
@@ -74,7 +74,7 @@
 						<img src="../uploads/62e0903d406ed8.20655484.jpeg" alt="">
 					</div>
 					<div id="accordions" style="width: 100%; margin-top: 2rem;">
-						<div class="card">
+						<div class="card acrod">
 							<div class="card-header" id="headingOneTwo">
 								<h5 class="mb-0">
 									<button class="btn btn-link white" data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="true" aria-controls="collapseOneTwo">
@@ -108,9 +108,9 @@
 
 
 
-				<div class="serviceCard">
+				<div class="serviceCard towerbg">
 					<div class="serviceLeft">
-						<div style="display:flex; align-items:center; transform:translateX(-2rem); ">
+						<div class="hdser">
 							<i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
 							<h2 style=" margin:0;color:white;">Technical Support or IT Support</h2>
 						</div>
@@ -124,8 +124,8 @@
 					<div class="serviceRight">
 						<img src="../img/services5.jpg" alt="">
 					</div>
-					<div id="accordionsz" style="width: 100%; margin-top: 2rem;">
-						<div class="card">
+					<div id="accordionsz" style="width: 100%; margin-top: 2rem; align-self:flex-end;">
+						<div class="card acrod">
 							<div class="card-header" id="headingOneTree">
 								<h5 class="mb-0">
 									<button class="btn btn-link white" data-toggle="collapse" data-target="#collapseOneTree" aria-expanded="true" aria-controls="collapseOneTree">

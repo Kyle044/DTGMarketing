@@ -1060,6 +1060,25 @@ h3 {
 .popPrivacyContainer p {
   color: #fff;
 }
+.towerbg {
+  background-image: url(../img/ST1.png);
+}
+.crcl {
+  background-image: url(../img/ST4.png);
+}
+
+.scrw {
+  background-image: url(../img/ST5.png);
+}
+.acrod {
+  width: 80%;
+  margin: auto;
+}
+.hdser {
+  display: flex;
+  align-items: center;
+  transform: translateX(-2rem);
+}
 @media (max-width: 1024px) {
   .masterCareerCard .CarCard .CareerRight img {
     border-radius: 10px;
@@ -1123,8 +1142,8 @@ h3 {
 
 @media (max-width: 1016px) {
   .serviceCard {
-    flex-direction: column-reverse;
-    padding: 2rem 3rem;
+    flex-direction: column;
+    padding: 2rem 0rem;
   }
   .serviceLeft {
     margin-top: 2rem;
@@ -1134,6 +1153,10 @@ h3 {
   }
 }
 @media (max-width: 808px) {
+  .serviceCard .serviceLeft {
+    margin-right: 2rem;
+    width: 80%;
+  }
   .masterCareerCard .CarCard .CareerLeft {
     flex-direction: column;
   }
@@ -1327,6 +1350,15 @@ h3 {
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+  .hdser {
+    display: flex;
+    align-items: center;
+    transform: translateX(0rem);
+  }
+  .serviceCard .serviceLeft h2 {
+    text-align: left;
+    color: white;
+  }
   ul.history li .featured-box .box-content {
     border-top-color: #f7992b !important;
     transform: translate(-14rem, -8px) !important;
@@ -1380,6 +1412,9 @@ h3 {
 }
 
 @media (max-width: 466px) {
+  .hdser h2 {
+    font-size: 1.6rem;
+  }
   .carsec1 {
     margin-bottom: 13rem;
   }
@@ -1413,9 +1448,20 @@ h3 {
     color: black;
     line-height: 2rem;
   }
+  .galleryContainer {
+    margin: 5rem 0rem;
+  }
 }
 
 @media (max-width: 320px) {
+  .serviceCard .serviceRight img {
+    width: 14rem;
+    height: auto;
+    border-radius: 15px;
+  }
+  .galleryContainer {
+    margin: 5rem 0rem;
+  }
   .privacyMaster {
     padding: 1rem 2rem;
     margin-top: 4rem !important;
