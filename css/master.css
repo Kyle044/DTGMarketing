@@ -716,6 +716,7 @@ textarea {
   align-items: center;
 }
 .ar2ComboPic p {
+  color: black;
   text-align: justify;
   margin-right: 4rem;
   width: 40%;
@@ -975,21 +976,37 @@ p {
 
 .privacyMaster {
 }
-
+.privacyRight {
+  height: fit-content;
+  background: #2a2b2c;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.privacyRight ul a {
+  height: fit-content;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
 .privacyMaster .subContPrivacy .privacyLeft {
   color: black !important;
 }
 .privacyMaster .privacyRight p,
 h3 {
-  color: black;
+  color: white;
 }
 
 .headPrivacyP {
   font-weight: bold;
-  color: black !important;
+  color: white !important;
+}
+.privacyLeft {
+  background-color: #dd8e33;
+  padding: 1rem;
+  border-radius: 5px;
 }
 .privacyLeft p {
-  color: #777;
+  color: white;
 }
 .privacyMaster {
   padding: 1rem 5rem;
@@ -998,6 +1015,8 @@ h3 {
 
 .privacyMaster h1 {
   margin-bottom: 10px;
+  color: white;
+  font-weight: bolder;
 }
 .subContPrivacy {
   display: flex;
@@ -1021,6 +1040,25 @@ h3 {
 }
 .privacyMaster .subContPrivacy .privacyLeft {
   width: 50%;
+}
+.popPrivacyContainer {
+  background-color: #2a2b2c;
+  color: #fff;
+  padding: 2rem 6rem;
+  position: fixed;
+  bottom: -16rem;
+  left: 0;
+  transition: 0.5s ease;
+}
+.popShow {
+  bottom: 0;
+}
+.popPrivacyContainer h3 {
+  color: #fff;
+  font-weight: bolder;
+}
+.popPrivacyContainer p {
+  color: #fff;
 }
 @media (max-width: 1024px) {
   .masterCareerCard .CarCard .CareerRight img {
