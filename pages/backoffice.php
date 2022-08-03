@@ -19,7 +19,7 @@
                         Back office roles are often behind the scene tasks. However it provides businesses access to valuable knowledge and skill set that are not dependent on their in-house resources. Partnering with a BPO company such as Datagen Facilities, OPC, business operational expenses is reduced without compromising the quality of service.
                     </p>
                 </div>
-                <div class="serviceCard" style="border:4px solid white;" id="lg">
+                <div class="serviceCard scrw" style="border:4px solid white;" id="lg">
                     <div class="serviceLeft">
                         <div style="display:flex; align-items:center; transform:translateX(-2rem);">
                             <i class="bi bi-brightness-low-fill " style="color:white; text-align:center; margin-right:15px;"></i>
@@ -36,9 +36,9 @@
                         <img src="../img/admin.jpg" alt="">
                     </div>
                 </div>
-                <div class="serviceCard">
+                <div class="serviceCard scrw">
                     <div class="serviceLeft">
-                        <div style="display:flex; align-items:center; transform:translateX(-2rem); ">
+                        <div class="hdser">
                             <i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
                             <h2 style=" margin:0;color:white;">E-commerce Support </h2>
                         </div>
@@ -52,9 +52,9 @@
                     </div>
 
                 </div>
-                <div class="serviceCard">
+                <div class="serviceCard scrw">
                     <div class="serviceLeft">
-                        <div style="display:flex; align-items:center; transform:translateX(-2rem); ">
+                        <div class="hdser">
                             <i class="bi bi-brightness-low-fill " style="color:#e26a0b; text-align:center; margin-right:15px;"></i>
                             <h2 style=" margin:0;color:white;">Ticket Reservation Management</h2>
                         </div>
