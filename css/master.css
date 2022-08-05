@@ -1421,6 +1421,12 @@ h3 {
   }
 }
 @media (max-width: 481px) {
+  .leftSec2 p {
+    width: 85%;
+    text-align: auto;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
   .serviceTo {
     padding: 1px 8px;
     background-size: 100% 38rem;
