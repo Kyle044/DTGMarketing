@@ -141,6 +141,98 @@
         </div>
 
 
+        <div class="rightSec2">
+            <h1
+                style="letter-spacing: 5px;line-height: 1.9rem; margin-bottom: 0px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+                LOYALTY</h1>
+            <p style="  color: white; " class="cc"> We act in good faith and advance the interest of the company and the clients</p>
+<h1
+                style="letter-spacing: 5px;line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+                TEAMWORK</h1>
+            <p style="  color: white;     margin-bottom: 0.3rem;" class="cc">We are working collaboratively towards one common goal
+            </p>
+            <h1
+                style="letter-spacing: 5px;line-height: 1.9rem; margin-bottom: 10px; color: white; text-align: center; font-weight: bold; width: 50%; font-size: 1.4rem; text-transform: uppercase ;">
+                Passion</h1>
+            <p style="  color: white; " class="cc">We give intense enthusiasm and excitement in everything we do.
+            </p>
+        </div>
+    </div>
+
+
+    
+<div class="row">
+						<div class="col team"  >
+
+							<h3 class="heading-primary mt-5"><strong>Our Management Team</strong></h3>
+
+							<ul class="history">
+								<li class="appear-animation" data-appear-animation="fadeInUp">
+									<div class="thumb">
+										<img src="../img/bob.jpg" alt="" />
+									</div>
+                                    <div class="featured-box">   
+										<div class="box-content" style="background-color: #2a2b2c;
+                                        border-radius: 5px;
+                                        box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -webkit-box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -moz-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
+                                        transform: translate(29px, -8px);">
+                                        <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;color:white;">Robert Alexander Quinn</h3>
+                                        <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;color:white;">Chairman</p>
+										<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;color:white;">Bob as he is fondly called, is the strategic leader overseeing the entire business operations 
+                                            of the company. He has over 25 years of global experience in Sales in a call center industry 
+                                            that allows him to establish and operate businesses in Australia, United Kingdom and 
+                                            Philippines. His unparalleled expertise in Call Center and Business Process Outsourcing 
+                                            allows him to successfully sustain the business operations of Datagen Facilities, OPC for 
+                                            over 14 years.</p>
+										</div>
+                                    </div>
+								</li>
+								<li class="appear-animation" data-appear-animation="fadeInUp">
+									<div class="thumb">
+										<img src="../img/mae_new.jpg" alt="" />
+									</div>
+									<div class="featured-box">
+                                    <div class="box-content" style="background-color: #2a2b2c;
+                                        border-radius: 5px;
+                                        box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -webkit-box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -moz-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
+                                        transform: translate(29px, -8px);">
+											<h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;color:white;">Mary Mhel Erillo</h3>
+                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem;color:white;">Vice President for Admin and Finance</p>
+											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem;color:white;">Mae is a business professional with over 6 years of experience in strategic and people management she oversees the planning, development, implementation, and maintenance of the company's administrative and financial services, supporting and promoting profitability goals and objectives. She has an exemplary contributions to the overall success of the company.</p>
+										</div>
+									</div>
+								</li>
+								<li class="appear-animation" data-appear-animation="fadeInUp">
+									<div class="thumb">
+										<img src="../img/john new.jpg" alt="" />
+									</div>
+									<div class="featured-box">
+                                    <div class="box-content" style="background-color: #2a2b2c;
+                                        border-radius: 5px;
+                                        box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -webkit-box-shadow: 7px 6px 24px -6px rgb(0 0 0 / 75%);
+                                        -moz-box-shadow: 7px 6px 24px -6px rgba(0, 0, 0, 0.75);
+                                        transform: translate(29px, -8px);">
+                                            <h3 style="margin-bottom:10px; color:#e26a0b; font-weight:600;color:white;">John Lim</h3>
+                                            <p style="margin-bottom:10px; color:#e26a0b; font-size:1.3rem; color:white;">Head of Operations</p>
+											<p style="margin-bottom:10px; color:#e26a0b; font-size:1rem; color:white;">John is an experienced Operations Head with over 8 years of experience in the business outsourcing industry. He has exceptional contributions to the overall operational efficiencies and infrastructure capabilities of Datagen Facilities, OPC. He builds his career in operations at Datagen Facilities, OPC that allows him to manage resources effectively.</p>
+										</div>
+									</div>
+								</li>
+							
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+    
+
+    
 
 
 
