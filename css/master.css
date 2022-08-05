@@ -1408,6 +1408,51 @@ h3 {
   }
 }
 @media (max-width: 481px) {
+
+  .leftSec2 p {
+    width: 85%;
+    text-align: auto;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  .serviceTo {
+    padding: 1px 8px;
+    background-size: 100% 38rem;
+  }
+  .section2 div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rm;
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+  }
+  .carousel {
+    margin-top: 5rem;
+  }
+  .popPrivacyContainer {
+    background-color: #2a2b2c;
+    color: #fff;
+    padding: 2rem 1rem;
+    position: fixed;
+    bottom: -1rem;
+    left: 0;
+    transition: 0.5s ease;
+  }
+  .section2 {
+    display: flex;
+    margin-top: 6rem;
+    margin-bottom: 0rem;
+  }
+  .ft-img {
+    width: 18%;
+  }
+  .popShow {
+    bottom: -30rem;
+  }
+
   .privacyMaster {
     padding: 1rem 2rem;
     margin-top: 4rem !important;

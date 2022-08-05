@@ -8,6 +8,7 @@ $(document).ready(() => {
   // USER INSERT JAVASCRIPT AND UPDATE
   $("#userForm").on("submit", (e) => {
     e.preventDefault();
+
     if (e.target.name == "insert") {
       var formData = new FormData(e.target);
       if (
@@ -226,24 +227,14 @@ $(document).ready(() => {
     var file_data = $("#careerPic").prop("files")[0];
     var formData = new FormData(e.target);
     formData.append("file", file_data);
-
-    console.log(formData.get("title"));
-    console.log(formData.get("position"));
-    console.log(formData.get("description"));
-    console.log(formData.get("qualification"));
-    console.log(formData.get("responsibility"));
-    console.log(file_data);
-    
     if (
       !formData.get("title") ||
       !formData.get("position") ||
-      !formData.get("description") ||      
+      !formData.get("description") ||
       !formData.get("qualification") ||
       !formData.get("responsibility") ||
       !file_data
-      
-    ) 
-    {
+    ) {
       alert("There is some missing fields");
     } else {
       if (e.target.name == "insert") {
