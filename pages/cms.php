@@ -107,7 +107,7 @@ header("location: ./login.php");
         <div id="content" >        
             <div class="contentDiv" id="regCard">
                 <h3>List of Registered User</h3>
-                <table  id="userTbl" class="display" style="width:100;">                
+                <table  id="userTbl" class="display" style="width:100%;">                
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -174,31 +174,12 @@ header("location: ./login.php");
                     </div>
             </div>             
                  
-            <div class="contentDiv" id="BlogsArticleSide" >   
-                <h3>List of Blogs</h3>
-                <div class="table-responsive">
-                    <table id="blogTbl" class="table nowrap" style="width:auto;">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Title</th>
-                                <th>Description</th>
-                                <th>Author</th>
-                                <th>Date Published</th>
-                                <th>Action</th>
-
-                            </tr>
-                        </thead>
-                        <tbody id="autoBlog">
-                        
-                        </tbody>
-                    </table>
-                </div>
-                <button class="button button1"data-toggle="modal" data-target="#blogForm"><i class="fa fa-pencil-square"></i> Add Blog</button><br><br>
+            <div class="contentDiv" id="BlogsArticleSide" >                  
                     
                     <h3>List of Articles</h3>
-                    <div class="table-responsive">
-                        <table id="articleTbl" class="table nowrap" style="width:auto;">
-                            <thead class="thead-dark">
+                    
+                        <table id="articleTbl" class="display" style="width:100%;">
+                            <thead>
                                 <tr>
                                     <th>Title</th>
                                     <th>Description</th>
@@ -210,8 +191,10 @@ header("location: ./login.php");
                             <tbody id="autoArticle">                                
                             </tbody>
                         </table> 
-                    </div>                       
-                    <button class="button button1"data-toggle="modal" data-target="#articleForm"><i class="fa fa-pencil-square"></i> Add Article</button>    
+                                <div class="tablewrap">
+                                    <button class="button button1"data-toggle="modal" data-target="#articleForm"><i class="fa fa-pencil-square"></i> Add Article</button>    
+                                </div>         
+                    
             </div>    
 
              <!---  GALLERY CARD  --->
