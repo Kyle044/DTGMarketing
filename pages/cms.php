@@ -40,6 +40,10 @@ header("location: ./login.php");
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- DATATABLES -->
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
+
+
     <title>Admin CMS</title>
 </head>
 
@@ -191,31 +195,31 @@ header("location: ./login.php");
                             <tbody id="autoArticle">                                
                             </tbody>
                         </table> 
-                                <div class="tablewrap">
-                                    <button class="button button1"data-toggle="modal" data-target="#articleForm"><i class="fa fa-pencil-square"></i> Add Article</button>    
-                                </div>         
+                        <div class="tablewrap">
+                            <button class="button button1"data-toggle="modal" data-target="#articleForm"><i class="fa fa-pencil-square"></i> Add Article</button>    
+                        </div>         
                     
             </div>    
 
              <!---  GALLERY CARD  --->
             <div class="contentDiv" id="GallerySide">
-            <h3>List Post's</h3>
-            <div class="table-responsive"></div>
-                        <table id="userTbl" class="table nowrap" style="width:auto;">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>Title</th>
-                                    <th>Description</th>
-                                    <th>Date</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody id="autoGallery">                                             
-                            </tbody>
-                        </table>
-                        <button class="button button1"data-toggle="modal" data-target="#galleryForm"><i class="fa fa-image"></i> Add Gallery</button>  
-           
-            </div>  
+                <h3>List Post's</h3>            
+                <table id="userTbl" class="display" style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="autoGallery">                                             
+                    </tbody>
+                </table>               
+                <div class="tablewrap">
+                    <button class="button button1"data-toggle="modal" data-target="#galleryForm"><i class="fa fa-image"></i> Add Gallery</button>  
+                </div>     
+            </div>
 
             <!--- MODALS -->
             <!-- Modal User Registration  -->
@@ -515,62 +519,43 @@ header("location: ./login.php");
                     </div>
                 </div>
             </div>
+</div>
+
+            
 
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script>
-    $(document).ready(function () {
-        $('#userTbl').DataTable();        
-        $('#serviceTbl').DataTable();
-        $('#careerTbl').DataTable();
-        $('#blogTbl').DataTable();
-        $('#articleTbl').DataTable();
-        $('#responsibility').tinymce({ height: 200,
-        menubar: false,
-        plugins: [
-          'advlist autolink lists link image charmap print preview anchor',
-          'searchreplace visualblocks code fullscreen',
-          'insertdatetime media table paste code help wordcount'
-        ],
-        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
-          });
-        $('#qualification').tinymce({ height: 200,
-        menubar: false,
-        plugins: [
-          'advlist autolink lists link image charmap print preview anchor',
-          'searchreplace visualblocks code fullscreen',
-          'insertdatetime media table paste code help wordcount'
-        ],
-        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
-          });
-        scrollY: '50vh',
-        // scrollX: 'true',
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#userTbl').DataTable({scrollY: '50vh',
         scrollCollapse: true,
         paging: false,
-    });
-</script>
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/jquery.tinymce.min.js" referrerpolicy="origin"></script>
-<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap.min.js"></script>
 
-<script src="../js/cms.js"></script>
-<script src="../js/cmsJquery.js"></script>
-<script>
-    $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
             });
+            $('#serviceTbl').DataTable();
+            $('#careerTbl').DataTable();
+            $('#blogTbl').DataTable();
+            $('#articleTbl').DataTable();
+            
         });
-</script>
-<!-- <script>
-    $(document).ready(function() {
-    var table = $('#serviceTbl').DataTable( {
-        responsive: true
-    } );
- 
-    new $.fn.dataTable.FixedHeader( table );
-} );
-</script> -->
+    </script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/jquery.tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap.min.js"></script>
 
+    <script src="../js/cms.js"></script>
+    <script src="../js/cmsJquery.js"></script>
+    <script>
+        $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+    </script>
 </html>
+
+<!-- scrollY: '50vh',           
+             scrollCollapse: true,            
+             paging: false -->
