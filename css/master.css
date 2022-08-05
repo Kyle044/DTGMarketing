@@ -395,7 +395,7 @@ textarea {
 
 .serviceTo {
   margin-top: 5rem;
-  padding: 2px 3rem;
+  padding: 2px 8rem;
   background-image: url("../img/banner_inner.jpg");
   background-repeat: no-repeat;
   height: auto;
@@ -645,13 +645,6 @@ textarea {
   background-image: url(../img/banner_inner.jpg);
   padding-top: 1rem;
 }
-
-.ar1ComboPic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 4rem;
-}
 .ar1Container h1 {
   align-self: flex-start;
   margin-left: 10rem;
@@ -661,25 +654,31 @@ textarea {
   color: white;
   font-weight: bold;
 }
+.ar1ComboPic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
 .ar1ComboPic p {
   width: 45%;
   margin-left: 1rem;
   align-self: flex-start;
-  text-align: justify;
+  text-align: left;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.8rem;
-  word-spacing: 4px;
+  word-spacing: 2px;
 }
 
 .ar1ComboPic img {
-  width: 30%;
+  width: 50%;
   height: auto;
   border-radius: 5px;
 }
 
 .ar2ComboPic img {
-  width: 30%;
+  width: 50%;
   height: auto;
 }
 .ar1Combo {
@@ -694,7 +693,7 @@ textarea {
 
   font-size: 1.2rem;
   line-height: 1.8rem;
-  word-spacing: 4px;
+  word-spacing: 2px;
 }
 .ar1Combo h1 {
   margin-bottom: 1rem;
@@ -717,12 +716,12 @@ textarea {
 }
 .ar2ComboPic p {
   color: black;
-  text-align: justify;
+  text-align: left;
   margin-right: 4rem;
   width: 40%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.8rem;
-  word-spacing: 4px;
+  word-spacing: 2px;
 }
 .ar2ComboPic p {
   align-self: flex-start;
@@ -1071,7 +1070,7 @@ h3 {
   background-image: url(../img/ST5.png);
 }
 .acrod {
-  width: 100%;
+  width: 80%;
   margin: auto;
 }
 .hdser {
@@ -1196,39 +1195,6 @@ h3 {
   }
 }
 @media (max-width: 769px) {
-  .section2 div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3rm;
-    padding-bottom: 3rem;
-    margin-bottom: 1rem;
-  }
-  .carousel {
-    margin-top: 5rem;
-  }
-  .popPrivacyContainer {
-    background-color: #2a2b2c;
-    color: #fff;
-    padding: 2rem 1rem;
-    position: fixed;
-    bottom: -1rem;
-    left: 0;
-    transition: 0.5s ease;
-  }
-  .section2 {
-    display: flex;
-    margin-top: 6rem;
-    margin-bottom: 0rem;
-  }
-  .ft-img {
-    width: 18%;
-  }
-  .popShow {
-    bottom: -30rem;
-  }
   .privacyMaster {
     padding: 1rem 5rem;
     margin-top: 4rem !important;
@@ -1417,39 +1383,6 @@ h3 {
   }
 }
 @media (max-width: 481px) {
-  .section2 div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3rm;
-    padding-bottom: 3rem;
-    margin-bottom: 1rem;
-  }
-  .carousel {
-    margin-top: 5rem;
-  }
-  .popPrivacyContainer {
-    background-color: #2a2b2c;
-    color: #fff;
-    padding: 2rem 1rem;
-    position: fixed;
-    bottom: -1rem;
-    left: 0;
-    transition: 0.5s ease;
-  }
-  .section2 {
-    display: flex;
-    margin-top: 6rem;
-    margin-bottom: 0rem;
-  }
-  .ft-img {
-    width: 18%;
-  }
-  .popShow {
-    bottom: -30rem;
-  }
   .privacyMaster {
     padding: 1rem 2rem;
     margin-top: 4rem !important;
@@ -1523,14 +1456,6 @@ h3 {
 }
 
 @media (max-width: 320px) {
-  .serviceCard .serviceLeft {
-    margin-right: 0rem;
-    width: 90%;
-  }
-  .serviceTo {
-    padding: 1px 8px;
-    background-size: 100% 38rem;
-  }
   .serviceCard .serviceRight img {
     width: 14rem;
     height: auto;
@@ -1562,48 +1487,10 @@ h3 {
   .privacyLeft p {
     text-align: justify;
   }
-  .popPrivacyContainer {
-    background-color: #2a2b2c;
-    color: #fff;
-    padding: 2rem 1rem;
-    position: fixed;
-    bottom: -1rem;
-    left: 0;
-    transition: 0.5s ease;
-  }
-  .popShow {
-    bottom: -30rem;
-  }
-  .section2 div {
-    display: flex;
-    flex-direction: column;
+}
+@media screen and (max-width: 320px) {
+  .ar1ComboPic, .ar2ComboPic {   
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3rm;
-    padding-bottom: 3rem;
-    margin-bottom: 1rem;
-  }
-  .section2 {
-    display: flex;
-    margin-top: 6rem;
-    margin-bottom: 0rem;
-  }
-  .ft-img {
-    width: 18%;
-  }
-  .leftSec2 p {
-    width: 90%;
-    text-align: justify;
-    font-size: 1.1rem;
-  }
-  .rightSec2 p {
-    width: 92%;
-    text-align: auto;
-    text-align: justify;
-    font-size: 1.1rem;
-  }
-  .carousel {
-    margin-top: 5rem;
+    padding: 0;
   }
 }
