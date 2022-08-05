@@ -1520,6 +1520,13 @@ h3 {
   .galleryContainer {
     margin: 5rem 0rem;
   }
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 0.89rem;
+    color: black;
+    line-height: 1.4rem;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1605,5 +1612,12 @@ h3 {
   }
   .carousel {
     margin-top: 5rem;
+  }
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 0.89rem;
+    color: black;
+    line-height: 1.4rem;
   }
 }
