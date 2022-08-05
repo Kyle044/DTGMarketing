@@ -79,6 +79,21 @@
 
 
     <?php include('footerdito.php') ?>
+    <!-- <div class="gallery">
+    <a href="../img/gallery/4.JPG" data-lightbox="mygallery"><img src="../img/gallery/4.JPG" alt=""></a>
+     <a href="../img/gallery/5.JPG" data-lightbox="mygallery"><img src="../img/gallery/5.JPG" alt=""></a>
+      <a href="../img/gallery/6.JPG" data-lightbox="mygallery"><img src="../img/gallery/6.JPG" alt=""></a>
+       <a href="../img/gallery/7.JPG" data-lightbox="mygallery"><img src="../img/gallery/7.JPG" alt=""></a>
+        <a href="../img/gallery/8.JPG" data-lightbox="mygallery"><img src="../img/gallery/8.JPG" alt=""></a>
+         <a href="../img/gallery/9.JPG" data-lightbox="mygallery"><img src="../img/gallery/9.JPG" alt=""></a>
+          <a href="../img/gallery/10.JPG" data-lightbox="mygallery"><img src="../img/gallery/10.JPG" alt=""></a>
+           <a href="../img/gallery/11.JPG" data-lightbox="mygallery"><img src="../img/gallery/11.JPG" alt=""></a>
+            <a href="../img/gallery/12.JPG" data-lightbox="mygallery"><img src="../img/gallery/12.JPG" alt=""></a>
+     </div> </div>
+ </div>-> -->
+
+
+
 
 </body>
 
