@@ -62,7 +62,7 @@
 			<div class="row">
 				<div class="col-lg-1">
 					<a href="" class="logo">
-						<img alt="" class="img-fluid" src="img/datagenLogo.png">
+						<img alt="" class="img-fluid ft-img" src="img/datagenLogo.png">
 					</a>
 				</div>
 				<div class="col-lg-7">
