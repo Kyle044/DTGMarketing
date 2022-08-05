@@ -395,7 +395,7 @@ textarea {
 
 .serviceTo {
   margin-top: 5rem;
-  padding: 2px 8rem;
+  padding: 2px 3rem;
   background-image: url("../img/banner_inner.jpg");
   background-repeat: no-repeat;
   height: auto;
@@ -1071,7 +1071,7 @@ h3 {
   background-image: url(../img/ST5.png);
 }
 .acrod {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 .hdser {
@@ -1487,5 +1487,27 @@ h3 {
   }
   .privacyLeft p {
     text-align: justify;
+  }
+  .popPrivacyContainer {
+    background-color: #2a2b2c;
+    color: #fff;
+    padding: 2rem 1rem;
+    position: fixed;
+    bottom: -1rem;
+    left: 0;
+    transition: 0.5s ease;
+  }
+  .popShow {
+    bottom: -30rem;
+  }
+  .section2 div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rm;
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 }
