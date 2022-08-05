@@ -40,17 +40,6 @@ header("location: ./login.php");
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.4/css/fixedHeader.bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap4.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css">
-
     <title>Admin CMS</title>
 </head>
 
@@ -118,7 +107,7 @@ header("location: ./login.php");
         <div id="content" >        
             <div class="contentDiv" id="regCard">
                 <h3>List of Registered User</h3>
-                <table  id="userTbl" class="uk-table uk-table-hover uk-table-striped">                
+                <table  id="userTbl" class="display" style="width:100;">                
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -132,8 +121,10 @@ header("location: ./login.php");
 
                 </tbody>
                 </table>
-                                    
-                <button class="button button1"data-toggle="modal" data-target="#ModalLoginForm"><span><i class="glyphicon glyphicon-user"></i> Add User</button>
+                <div class="tablewrap">
+                    <button class="button button1"data-toggle="modal" data-target="#ModalLoginForm"><span><i class="glyphicon glyphicon-user"></i> Add User</button>
+                </div>           
+                
             </div>
 
             <div class="contentDiv"  id="servCard" >
