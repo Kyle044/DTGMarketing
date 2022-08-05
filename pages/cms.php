@@ -114,123 +114,88 @@ header("location: ./login.php");
             </nav> -->
 
         <!-- DASHBOARD -->
-        <div id="content" >            
-
+        <div id="content" >        
             <div class="contentDiv" id="regCard">
                 <h3>List of Registered User</h3>
-                            <div class="table-responsive">
-                            <table  id="userTbl" class="table nowrap" style="width:auto;">                
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Email</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                            <tbody id="autoUser">
+                <table  id="userTbl" class="uk-table uk-table-hover uk-table-striped">                
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                <tbody id="autoUser">
 
-                            </tbody>
-                            </table>
-                        </div>                
-                    <button class="button button1"data-toggle="modal" data-target="#ModalLoginForm"><span><i class="glyphicon glyphicon-user"></i> Add User</button>
-                    <!-- <div class="tablewrap">  
-                    
-                                 
-                    </div> -->
+                </tbody>
+                </table>
+                                    
+                <button class="button button1"data-toggle="modal" data-target="#ModalLoginForm"><span><i class="glyphicon glyphicon-user"></i> Add User</button>
             </div>
 
-            <div class="contentDiv" id="servCard">         
-            <h3>List of Services</h3>
-                    
-                        <table id="serviceTbl" class="uk-table uk-table-hover uk-table-striped"style="width:auto">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Title</th>
-                                    <th>Description</th>
-                                    <th>In Depth Description</th>
-                                    <th>Approach</th>
-                                    <th>Benefits</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody id="autoService">
+            <div class="contentDiv"  id="servCard" >
+                <h3>List of Services</h3>
+                    <table id="serviceTbl" class="uk-table uk-table-hover uk-table-striped" style="width:auto; height:auto;">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>In Depth Description</th>
+                                <th>Approach</th>
+                                <th>Benefits</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="autoService">
+                        
+                        </tbody>                        
+                    </table>   
+                    <button class="button button1"data-toggle="modal" data-target="#serviceForm"><i class="glyphicon glyphicon-cog"></i> Add Service</button>
+            </div>  
+            <!-- <div class="contentDiv" id="servCard">         
+                <h3>List of Services</h3>                    
+                    <table id="serviceTbl" class="uk-table uk-table-hover uk-table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>In Depth Description</th>
+                                <th>Approach</th>
+                                <th>Benefits</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="autoService">
 
-                            </tbody>
-                        </table>
-                    
-                    <button class="button button1"data-toggle="modal" data-target="#ServiceForm"><i class="glyphicon glyphicon-cog"></i> Add Service</button>
-                <!-- <div class="tablewrap">
-                
-                </div> -->
-                
-                    
-            </div>     
+                        </tbody>
+                    </table>                
+                    &nbsp;<button class="button button1"data-toggle="modal" data-target="#ServiceForm"><i class="glyphicon glyphicon-cog"></i> Add Service</button>                    
+            </div>      -->
         
             <div class="contentDiv"  id="careerSide" >
                 <h3>List of Career's</h3>
-                            <table id="careerTbl" class="uk-table uk-table-hover uk-table-striped" style="width:auto">
-                                <thead>
-                                    <tr>
-                                        <th>Title</th>
-                                        <th>Position</th>
-                                        <th>Description</th>                                
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="autoCareer">
-                                
-                                </tbody>
-                            </table>
-                    
-                    <!-- <div class="table-responsive">                
-                           
-                    </div> -->
+                    <table id="careerTbl" class="uk-table uk-table-hover uk-table-striped" style="width:auto; height:auto;">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Position</th>
+                                <th>Description</th>                                
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="autoCareer">
+                        
+                        </tbody>                        
+                    </table>   
                     <button class="button button1"data-toggle="modal" data-target="#careerForm"><i class="glyphicon glyphicon-folder-open"></i> Add Career</button>
-                <!-- <div class="tablewrap">  
-                    
-                </div>                        -->
             </div>             
-                        <!-- <form action="" id="careerForm" name="insert">
-                            <label for="">Title</label>
-                            <input type="text" name="title">
-                            <label for="">Position</label>
-                            <input type="text" name="position"> 
-                    
-                            <label for="">Description</label>
-                            <textarea name="description" id="" cols="30" rows="6">
-                            </textarea>
-                            <label for="">Qualification 1</label>
-                                <input type="text" name="Q1">
-                            <label for="">Qualification 2</label>
-                                <input type="text" name="Q2">
-                            <label for="">Qualification 3</label>
-                                <input type="text" name="Q3">
-                            <label for="">Qualification 4</label>
-                                <input type="text" name="Q4">
-                            <label for="">Qualification 5</label>
-                                <input type="text" name="Q5">
-
-                                    <label for="">Responsibility 1</label>
-                                <input type="text" name="R1">
-                            <label for="">Responsibility 2</label>
-                                <input type="text" name="R2">
-                            <label for="">Responsibility 3</label>
-                                <input type="text" name="R3">
-                            <label for="">Responsibility 4</label>
-                                <input type="text" name="R4">
-                            <label for="">Responsibility 5</label>
-                                <input type="text" name="R5">
-                            <label for="">Upload Image</label>
-                            <input type="file" name="file" id="careerPic">
-                            <input type="hidden" name="id">
-                            <button type="submit">Submit</button>
-                            <button type="button" id="insertCareerBtn" >Add</button>
-                        </form> -->
+                 
             <div class="contentDiv" id="BlogsArticleSide" >   
-            <h3>List of Blogs</h3>
+                <h3>List of Blogs</h3>
                 <div class="table-responsive">
                     <table id="blogTbl" class="table nowrap" style="width:auto;">
                         <thead class="thead-dark">
@@ -266,14 +231,9 @@ header("location: ./login.php");
                             </tbody>
                         </table> 
                     </div>                       
-                    <button class="button button1"data-toggle="modal" data-target="#articleForm"><i class="fa fa-pencil-square"></i> Add Article</button>      
-            
-                <!-- <div class="tablewrap"style="height: auto;">                       
-                    
-                    
-                </div> -->
-                
+                    <button class="button button1"data-toggle="modal" data-target="#articleForm"><i class="fa fa-pencil-square"></i> Add Article</button>    
             </div>    
+
              <!---  GALLERY CARD  --->
             <div class="contentDiv" id="GallerySide">
             <h3>List Post's</h3>
@@ -291,10 +251,7 @@ header("location: ./login.php");
                             </tbody>
                         </table>
                         <button class="button button1"data-toggle="modal" data-target="#galleryForm"><i class="fa fa-image"></i> Add Gallery</button>  
-                <!-- <div class="tablewrap" style="height: auto;">
-                    
-                </div> -->
-                
+           
             </div>  
 
             <!--- MODALS -->
@@ -833,7 +790,10 @@ header("location: ./login.php");
         $('#careerTbl').DataTable();
         $('#blogTbl').DataTable();
         $('#articleTbl').DataTable();
-        responsive true;
+        scrollY: '50vh',
+        scrollX: 'true',
+        scrollCollapse: true,
+        paging: false,
     });
 </script>
 

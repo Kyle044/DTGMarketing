@@ -467,6 +467,25 @@ img{
       display: none;
     } */
     }
+    @media(min-width: 760px)
+    {
+      #sidebar {
+        padding-top: 1em;
+        min-width: 250px;
+        max-width: 250px;
+        background: #343A40;
+        color: #fff;
+        transition: all 0.3s;
+        margin-left: -190;
+    }
+    #content {
+      width: 100%;
+      min-height: 100vh;
+      transition: all 0.3s;
+      background-color: #e88c43;
+      padding: 3.5em 2em;
+    }
+    }
 
     /* Large devices (desktops, 992px and up) */
     @media (min-width: 992px) {
