@@ -59,6 +59,7 @@ a:focus {
 }
 
 #sidebar {
+    padding-top: 1em;
     min-width: 250px;
     max-width: 250px;
     background: #343A40;
@@ -91,19 +92,19 @@ a:focus {
     border-radius: 5px;
 }
 
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
+#sidebar ul li p {
+    
+    
     display: block;
 }
 
-#sidebar ul li a:hover {
+#sidebar ul li p:hover {
     color: #e88c43;
     background: #fff;
 }
 
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
+#sidebar ul li.active>p,a[aria-expanded="true"] 
+{
     color: #fff;
     background: #e88c43;
 }
@@ -120,22 +121,22 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 
-ul ul a {
+ul ul p {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #e88c43;
 }
 
 ul.CTAs {
-    padding: 20px;
+    padding: 0.7em;
 }
 
-ul.CTAs a {
+ul.CTAs p {
     text-align: center;
-    font-size: 2em !important;
-    display: block;
+    font-size: 1.6em !important;
+    
     border-radius: 5px;
-    margin-bottom: 0.5em;
+    
 
 }
 
@@ -168,26 +169,26 @@ img{
     min-height: 100vh;
     transition: all 0.3s;
     background-color: #e88c43;
-    padding: 5em 3em;
+    padding: 5.7em 3em;
 
 }
 .contentDiv
 {  
   background-color: #f7f7f7;
-  width: 100%;
+  width: auto;
   text-align: center;
-  padding:2em;
-  margin: auto;
+  padding:0.5em 2em;
+ 
   border-radius:  30px 0px;
   box-shadow: 7px 7px #343A40
 }
 
 .tablewrap {
   width: auto;
-  display: flex ;
-  grid-template-columns: 1fr 0.3fr;
-  justify-content: center;
-  text-align: center;
+  /* display: grid ; */
+  /* grid-template-columns: 1fr 0.3fr;  */
+  /* justify-content: center;
+  text-align: center; */
    background-color: #f7f7f7;
 
 }
@@ -286,21 +287,206 @@ img{
   transition: 0.5s ease;
 }
 
+
+/*!
+// CSS only Responsive Tables
+// http://dbushell.com/2016/03/04/css-only-responsive-tables/
+// by David Bushell
+*/
+
+.rtable {
+  /*!
+  // IE needs inline-block to position scrolling shadows otherwise use:
+  // display: block;
+  // max-width: min-content;
+  */
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  
+  overflow-x: auto;
+  
+  /* // optional - looks better for small cell values */
+  white-space: nowrap;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.rtable,
+.rtable--flip tbody {
+  /* // optional - enable iOS momentum scrolling */
+  -webkit-overflow-scrolling: touch;
+  
+  /* // scrolling shadows */
+  background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+              radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+
+/* // change these gradients from white to your background colour if it differs
+// gradient on the first cells to hide the left shadow */
+.rtable td:first-child,
+.rtable--flip tbody tr:first-child {
+  background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+/* // gradient on the last cells to hide the right shadow */
+.rtable td:last-child,
+.rtable--flip tbody tr:last-child {
+  background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
+}
+
+.rtable th {
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+  background: #f2f0e6;
+}
+
+.rtable th,
+.rtable td {
+  padding: 6px 12px;
+  border: 1px solid #d9d7ce;
+}
+
+.rtable--flip {
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+
+.rtable--flip thead {
+  display: flex;
+  flex-shrink: 0;
+  min-width: min-content;
+}
+
+.rtable--flip tbody {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.rtable--flip tr {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+
+.rtable--flip td,
+.rtable--flip th {
+  display: block;
+}
+
+.rtable--flip td {
+  background-image: none !important;
+   /* border-collapse is no longer active */
+  border-left: 0;
+}
+
+/* // border-collapse is no longer active */
+.rtable--flip th:not(:last-child),
+.rtable--flip td:not(:last-child) {
+  border-bottom: 0;
+}
+
+
+
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
+
+    /* Medium devices (tablets, 768px and up) */
+    /* @media (min-width: 768px) {
+      #sidebar {
+        margin-left: -200px;
     }
-    #sidebar.active {
-        margin-left: 0;
+    #content {
+      
+      padding: 5em 2.5em;
+      margin-right: 4em;
     }
-    #sidebarCollapse span {
+    #sidebar img {
+      display: none;
+      }
+      #sidebar ul li p {        
         display: none;
     }
+    } */
+    
+     /* Medium devices (tablets, 768px and up) */
+    /* @media (min-width: 768px) {
+      #sidebar ul li p {
+        display: none;
+    }
+    #sidebar {
+      padding-top: 1em;
+      min-width: 250px;
+      
+      background: #343A40;
+      color: #fff;
+      transition: all 0.3s;
+      margin-left: -180px;
+  }
+  #content {
+    width: auto;
+    min-height: 100vh;
+    transition: all 0.3s;
+    background-color: #e88c43;
+    padding: 5.7em 1em;
 }
+
+
+    } */
+
+    @media (min-width: 375px)    
+    {
+      /* #sidebar {
+        padding-top: 1em;
+        min-width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: #343A40;
+        color: #fff;
+        transition: all 0.3s;
+    }  
+    #sidebar img {
+      width: 100%;
+      display: none;
+    } */
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+    
+    }
+    
+    /* X-Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+
+    }
+    
+    /* XX-Large devices (larger desktops, 1400px and up) */
+    @media (min-width: 1400px) {
+
+    }
+    /* XX-Large devices (larger desktops, 1400px and up) */
+    @media (min-width: 1600px) {
+    
+    }
+
 
 
 

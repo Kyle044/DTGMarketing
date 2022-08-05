@@ -83,7 +83,6 @@ function SideBarButton (opencard, closecard2,closecard3,closecard4,closecard5) {
     closecard5.style.display = "none"
    
   } else {
-    // opencard.style.display = "none";
-    
+    // opencard.style.display = "none";    
   }
 }
