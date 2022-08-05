@@ -9,14 +9,12 @@
 
         <!-- body -->
         <div role="main" class="main">
-
             <div class="aboutUsmain">
                 <img src="../img/banner_inner.jpg" alt="">
                 <div class="texthed">
                     <h2 style="font-size: 2rem; color:white;
     font-weight: bold;
     margin-bottom: 0;    margin-top: 1rem;">ABOUT</h2>
-
                     <p style="color:white; margin-bottom: 0;">
                         Datagen Facilities, OPC is an inbound and outbound call center and business process outsourcing
                         company in the Philippines. For over 14 years, we have been providing exceptional inbound and
