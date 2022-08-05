@@ -1527,6 +1527,13 @@ h3 {
     margin-right: 0rem;
     width: 90%;
   }
+  .galleryContainer {
+    margin: 5rem 3.5rem;
+    padding-bottom: 5rem;
+}
+.galleryheading {
+  margin-left: 1.2rem;
+}
   .serviceTo {
     padding: 1px 8px;
     background-size: 100% 38rem;

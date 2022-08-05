@@ -467,15 +467,19 @@ img{
       display: none;
     } */
     }
-    @media(min-width: 760px)
+    @media (max-width:600px)
+    {
+      .contentDiv {
+       
+        padding: 0.5em 0.5em;
+        
+    }
+   
+    }
+    @media(max-width: 760px)
     {
       #sidebar {
-        padding-top: 1em;
-        min-width: 250px;
-        max-width: 250px;
-        background: #343A40;
-        color: #fff;
-        transition: all 0.3s;
+        
         margin-left: -190;
     }
     #content {
@@ -489,12 +493,16 @@ img{
 
     /* Large devices (desktops, 992px and up) */
     @media (min-width: 992px) {
-    
+      #sidebar {
+        margin-left:0;
+    }
     }
     
     /* X-Large devices (large desktops, 1200px and up) */
     @media (min-width: 1200px) {
-
+      #sidebar {
+        margin-left:0;
+    }
     }
     
     /* XX-Large devices (larger desktops, 1400px and up) */

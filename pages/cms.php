@@ -48,8 +48,9 @@ header("location: ./login.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap4.min.css">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css">
+
     <title>Admin CMS</title>
 </head>
 
@@ -137,7 +138,7 @@ header("location: ./login.php");
 
             <div class="contentDiv"  id="servCard" >
                 <h3>List of Services</h3>
-                    <table id="serviceTbl" class="uk-table uk-table-hover uk-table-striped" style="width:auto; height:auto;">
+                    <table id="serviceTbl" class="display" style="width:100%;">
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -152,33 +153,18 @@ header("location: ./login.php");
                         <tbody id="autoService">
                         
                         </tbody>                        
-                    </table>   
+                    </table>
+                    <div class="tablewrap"><br>
                     <button class="button button1"data-toggle="modal" data-target="#serviceForm"><i class="glyphicon glyphicon-cog"></i> Add Service</button>
+                    </div>   
+                    
             </div>  
-            <!-- <div class="contentDiv" id="servCard">         
-                <h3>List of Services</h3>                    
-                    <table id="serviceTbl" class="uk-table uk-table-hover uk-table-striped">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Title</th>
-                                <th>Description</th>
-                                <th>In Depth Description</th>
-                                <th>Approach</th>
-                                <th>Benefits</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="autoService">
-
-                        </tbody>
-                    </table>                
-                    &nbsp;<button class="button button1"data-toggle="modal" data-target="#ServiceForm"><i class="glyphicon glyphicon-cog"></i> Add Service</button>                    
-            </div>      -->
+            
         
             <div class="contentDiv"  id="careerSide" >
+                
                 <h3>List of Career's</h3>
-                    <table id="careerTbl" class="uk-table uk-table-hover uk-table-striped" style="width:auto; height:auto;">
+                    <table id="careerTbl" class="display" style="width:100%;">
                         <thead>
                             <tr>
                                 <th>Title</th>
@@ -189,9 +175,12 @@ header("location: ./login.php");
                         </thead>
                         <tbody id="autoCareer">
                         
-                        </tbody>                        
+                        </tbody>     
+                        
                     </table>   
-                    <button class="button button1"data-toggle="modal" data-target="#careerForm"><i class="glyphicon glyphicon-folder-open"></i> Add Career</button>
+                    <div class="tablewrap"><br>
+                    <button class="button button1"data-toggle="modal" data-target="#careerForm"><i class="glyphicon glyphicon-folder-open"></i> Add Career</button>                   
+                    </div>
             </div>             
                  
             <div class="contentDiv" id="BlogsArticleSide" >   
@@ -552,242 +541,6 @@ header("location: ./login.php");
                     </div>
                 </div>
             </div>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--             <div class="serviceSide" id="serviceSide">
-                    SERVICE TABLE 
-                <div class="dashTableContainer">
-                    <h3>List of Services</h3>
-                    <table id="serviceTbl" class="table table-striped table-bordered" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Title</th>
-                                <th>Description</th>
-                                <th>In Depth Description</th>
-                                <th>Benefits</th>
-                                <th>Appoach</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="autoService">
-
-                        </tbody>
-                    </table>
-                </div>
-                <div class="dashLoginContainer" style="height:auto;" >
-                    <h3 id="serviceFormTitle">Add Services</h3>
-                    <form action="" id="serviceForm" enctype="multipart/form-data" name="insert">
-                        <label for="">Title</label>
-                        <input type="text" name="title">
-                        <label for="">Description</label>
-                        <textarea name="description" id="" cols="30" rows="6"></textarea>
-                        <label for="">In Depth Description</label>
-                        <input type="text" name="detail_desc">
-                        <label for="">Approach</label>
-                        <input type="text" name="approach">
-                        <label for="">Benefits</label>
-                        <input type="text" name="benefits">
-                        <label for="">Upload Image</label>
-                        <input type="file" name="file"id="servicePic">
-                        <input type="hidden" name="id" >
-                        <button type="submit">Submit</button>
-                        <button type="button" id="insertServiceBtn">Add Service</button>
-                    </form>
-                </div>
-            </div>
-            <div class="careerSide" id="careerSide">
-            CAREER TABLE
-                <div class="dashTableContainer">
-                    <h3>List of Career's</h3>
-                    <table  class="table table-striped table-bordered" style="width:100%" id="careerTbl">
-                        <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Position</th>
-                                <th>Description</th>
-                                <th>Description</th>                          
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="autoCareer">
-                           
-                        </tbody>
-                    </table>
-                </div>
-                <div class="dashLoginContainer">
-                    <h3 id="careerFormTitle">Add Career</h3>
-                    <form action="" id="careerForm" name="insert">
-                        <label for="">Title</label>
-                        <input type="text" name="title">
-                        <label for="">Position</label>
-                        <input type="text" name="position"> 
-                        <label for="">Description</label>
-                        <textarea name="description" id="" cols="30" rows="6">
-                        </textarea>
-                        <label for="">Qualification</label>
-                        <textarea name="qualification" id="qualification" ></textarea>
-                        <label for="">Responsibility</label>
-                        <textarea name="responsibility" id="responsibility" ></textarea>
-                        <!-- <label for="">Qualification 1</label>
-                            <input type="text" name="Q1">
-                        <label for="">Qualification 2</label>
-                            <input type="text" name="Q2">
-                        <label for="">Qualification 3</label>
-                            <input type="text" name="Q3">
-                        <label for="">Qualification 4</label>
-                            <input type="text" name="Q4">
-                        <label for="">Qualification 5</label>
-                            <input type="text" name="Q5"> -->
-                            <!-- <input type="text" name="R1">
-                        <label for="">Responsibility 2</label>
-                            <input type="text" name="R2">
-                        <label for="">Responsibility 3</label>
-                            <input type="text" name="R3">
-                        <label for="">Responsibility 4</label>
-                            <input type="text" name="R4">
-                        <label for="">Responsibility 5</label>
-                            <input type="text" name="R5"> -->
-                        <label for="">Upload Image</label>
-                        <input type="file" name="file" id="careerPic">
-                         <input type="hidden" name="id">
-                        <button type="submit">Submit</button>
-                        <button type="button" id="insertCareerBtn" >Add</button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="BlogsArticleSide" id="BlogsArticleSide">
-            
-                <div class="dashTableContainer">
-                    <h3>List of Blogs</h3>
-
-                    <table id="blogTbl" class="table table-striped table-bordered" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Description</th>
-                                <th>Author</th>
-                                <th>Date Published</th>
-                                <th>Action</th>
-
-                            </tr>
-                        </thead>
-                        <tbody id="autoBlog">
-                           
-                        </tbody>
-                    </table>
-                </div>
-                <div class="dashLoginContainer">
-                    <h3 id="blogFormTitle">Add Blog</h3>
-                    <form action="" id ="blogForm" name="insert">
-                        <label for="">Title</label>
-                        <input type="text" name="title">
-                        <label for="">Description</label>
-                        <textarea name="description" id="" cols="30" rows="6"></textarea>
-                        <label for="">Author</label>
-                        <input type="text" name="author">
-                        <label for="">Date Published</label>
-                        <input type="date" name="date">
-                        <label for="">Picture Upload</label>
-                        <input type="file" name="file" id="blogPic">
-                         <input type="hidden" name="id">
-                        <button type="submit">Submit</button>
-                        <button type="button" id="insertBlogBtn">Add Blog</button>
-                    </form>
-                </div> 
-                 ARTICLE TABLE 
-                <div class="dashTableContainer">
-                    <h3>List of Articles</h3>
-                    <table id="articleTbl" class="table table-striped table-bordered" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Description</th>
-                                <th>Author</th>
-                                <th>Date Published</th>
-                                <th>Action</th>
-
-                            </tr>
-                        </thead>
-                        <tbody id="autoArticle">
-                            
-                        </tbody>
-                    </table>
-                </div>
-                <div class="dashLoginContainer">
-                    <h3 id="articleFormTitle">Add Article</h3>
-                    <form action="" id="articleForm" name="insert">
-                        <label for="">Title</label>
-                        <input type="text" name="title">
-                        <label for="">Description</label>
-                        <textarea name="description" id="" cols="30" rows="6"></textarea>
-                        <label for="">Author</label>
-                        <input type="text" name="author">
-                        <label for="">Date Published</label>
-                        <input type="date" name="date">
-                        <label for="">Picture Upload</label>
-                        <input type="file" name="file" id="articlePic">
-                        <input type="hidden" name="id">
-                        <button type="submit">Submit</button>
-                        <button type="button" id="insertArticleBtn">Add Article</button>
-                    </form>
-                </div>
-            </div>
-             GALLERY TABLE 
-            <div class="GallerySide" id="GallerySide">
-                <div class="dashTableContainer" style="height: auto;">
-                    <h3>List Post's</h3>
-                    <table id="userTbl" class="table table-striped table-bordered" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Description</th>
-                                <th>Date</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="autoGallery">
-                           
-                            
-                        </tbody>
-                    </table>
-                </div>
-                <div class="dashLoginContainer">
-                    <h3 id="galleryFormTitle">Add Post</h3>
-                    <form action="" id="galleryForm" name="insert">
-                        <label for="">Title</label>
-                        <input type="text" name="title">
-                        <label for="">Description</label>
-                        <textarea name="description" id="" cols="30" rows="6"></textarea>
-                        <label for="">Date Published</label>
-                        <input type="date" name="date">
-                        <label for="">Upload Picture</label>
-                        <input type="file" name="file" id="galleryPic" multiple="multiple">
-                        <button type="submit">Submit</button>
-                        <button type="button" name="insertGalleryBtn">Add Post</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>-->
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -817,7 +570,7 @@ header("location: ./login.php");
         toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
           });
         scrollY: '50vh',
-        scrollX: 'true',
+        // scrollX: 'true',
         scrollCollapse: true,
         paging: false,
     });
