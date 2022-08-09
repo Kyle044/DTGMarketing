@@ -2,6 +2,7 @@
 <html>
 
 <?php include('headerdito.php') ?>
+
 <body>
 
 
@@ -11,47 +12,47 @@
 
 
 
-<section class="carsec1">
-<img src="../img/agentEdit.jpg" alt="">
-<div class="caright">
-<h1>Come Join The Fun!</h1>
+    <section class="carsec1">
+        <img src="../img/agentEdit.jpg" alt="">
+        <div class="caright">
+            <h1>Come Join The Fun!</h1>
 
-<p style="color: #777;">Datagen Facilities OPC is an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity or expression, pregnancy, age, national origin and disability status.</p>
-<p style="color: #777;">Email : hrdepartment.dgf@gmail.com</p>
+            <p style="color: #777;">Datagen Facilities OPC is an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity or expression, pregnancy, age, national origin and disability status.</p>
+            <p style="color: #777;">Email : hr@datagenf.com</p>
 
-<a class="btn btn-primary cbtn" style=" background-color: #dd8e33;
+            <a class="btn btn-primary cbtn" style=" background-color: #dd8e33;
   border-color: #dd8e33;
-  color: #ffffff;" href="mailto:hrdepartment.dgf@gmail.com" role="button">Apply Now!</a>
-</div>
+  color: #ffffff;" href="mailto:hr@datagenf.com" role="button">Apply Now!</a>
+        </div>
 
-</section>
+    </section>
 
-<div class="carTitle">
-    <h1 style="color: #777;">Careers We Offer!</h1>
-</div>
-
-
-
-<div class="masterCareerCard">
+    <div class="carTitle">
+        <h1 style="color: #777;">Careers We Offer!</h1>
+    </div>
 
 
 
-<?php
-
-include("../php/getCareer.php");
-
-?>
+    <div class="masterCareerCard">
 
 
 
+        <?php
 
-</div>
+        include("../php/getCareer.php");
+
+        ?>
 
 
 
 
+    </div>
 
-<!-- <section class="carsec2">
+
+
+
+
+    <!-- <section class="carsec2">
 <div class="leleft">
 
 
@@ -75,9 +76,9 @@ include("../php/getCareer.php");
 <div class="riright">
    <?php
 
-include("../php/getOddCareer.php");
+    include("../php/getOddCareer.php");
 
-?>
+    ?>
 
 </div>
 
@@ -88,6 +89,7 @@ include("../php/getOddCareer.php");
 </section> -->
 
 
-<?php include('footerdito.php') ?>
+    <?php include('footerdito.php') ?>
 </body>
+
 </html>
