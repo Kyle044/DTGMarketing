@@ -170,30 +170,39 @@
 		</div>
 	</div>
 </section> -->
+<div class="idPop ">
+	<section class="popPrivacyContainer">
+		<h3>Before you continue</h3>
+		<p>Datagen Facilities, OPC is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Datagenf. This Privacy Policy applies to our website, and its associated subdomains (collectively, our "Service"). By accessing or using our Service, you signify that you have read, understood and agreed to our collection, storage, use, and disclosures of your personal information as described in this Privacy Policy and our Terms of Service.</p>
 
-<section class="popPrivacyContainer ">
-	<h3>Before you continue</h3>
-	<p>Datagen Facilities, OPC is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Datagenf. This Privacy Policy applies to our website, and its associated subdomains (collectively, our "Service"). By accessing or using our Service, you signify that you have read, understood and agreed to our collection, storage, use, and disclosures of your personal information as described in this Privacy Policy and our Terms of Service.</p>
-
-	<div class="btnGrp">
-		<a class="btn btn-primary cbtn popAgree" style=" background-color: #dd8e33;
+		<div class="btnGrp">
+			<a class="btn btn-primary cbtn " style=" background-color: #dd8e33;
   	border-color: #dd8e33;
   	color: #ffffff; border-radius:3px;" href="pages/privacy.php" role="button">See more</a>
-		<a class="btn btn-primary cbtn popAgree" style=" background-color: #dd8e33;
+			<a class="btn btn-primary cbtn popAgree" style=" background-color: #dd8e33;
   	border-color: #dd8e33;
   	color: #ffffff; border-radius:3px;" href="#" role="button" id="popAgree">Agree</a>
-	</div>
-</section>
+		</div>
+	</section>
+</div>
+
 </div>
 <?php include('pages/footer.php') ?>
 <script>
 	//Pop Privacy Code..
 	$(document).ready(() => {
-		setTimeout(() => {
-			$(".popPrivacyContainer").addClass("popShow");
-		}, 1000);
+		if ($.cookie('test_status') != '1') {
+			setTimeout(() => {
+				$(".popPrivacyContainer").addClass("popShow");
+				$(".idPop").addClass("mPop");
+			}, 1000);
+		}
 		$('.popAgree').on('click', () => {
 			$(".popPrivacyContainer").removeClass("popShow");
+			$(".idPop").removeClass("mPop");
+			$.cookie('test_status', '1', {
+				expires: 60
+			});
 		});
 	});
 </script>
