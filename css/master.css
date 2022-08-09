@@ -1103,6 +1103,17 @@ h3 {
   align-items: center;
   transform: translateX(-2rem);
 }
+
+.mPop {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(119, 119, 119, 0.212);
+}
+
 @media (max-width: 1024px) {
   .carsec1 .caright {
     padding: 1rem 4rem;
