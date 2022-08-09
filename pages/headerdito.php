@@ -167,7 +167,7 @@
 													</a>
 													<ul class="dropdown-menu">
 														<li class="dropdown-submenu">
-															<a class="dropdown-item" href="articles.php">Articles</a>
+															<a class="dropdown-item" href="article.php">Articles</a>
 														</li>
 
 													</ul>
