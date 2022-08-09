@@ -106,7 +106,7 @@ if($result->num_rows > 0){
        <td>'.$row["usersEmail"].'</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="'.$row['usersId'].'" class="up upUser" >Update</a><a href="#" name ="'.$row['usersId'].'" class="del delUser" >Delete</a>
+          <a href="#" name ="'.$row['usersId'].'" class="btn btn-success" >Update</a>  <a href="#" name ="'.$row['usersId'].'" class="btn btn-danger" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -166,7 +166,7 @@ if ($result->num_rows > 0) {
        <td>'.$row["approach"].'</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="'.$row['id'].'" class="up upService" >Update</a><a href="#" name ="'.$row['id'].'" class="del delService" >Delete</a>
+          <a href="#" name ="'.$row['id'].'" class="btn btn-success" >Update</a> <a href="#" name ="'.$row['id'].'" class="btn btn-danger" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -355,7 +355,7 @@ if ($result->num_rows > 0) {
         <td>'.$row["description"].'</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="'.$row['id'].'" class="up upCareer" >Update</a><a href="#" name ="'.$row['id'].'" class="del delCareer" >Delete</a>
+          <a href="#" name ="'.$row['id'].'" class="btn btn-success" >Update</a> <a href="#" name ="'.$row['id'].'" class="btn btn-danger" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -579,7 +579,7 @@ if(mysqli_num_rows($resultData)>0){
        <td>'.$row["date_publish"].'</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="'.$row['id'].'" class="up upBlog" >Update</a><a href="#" name ="'.$row['id'].'" class="del delBlog" >Delete</a>
+          <a href="#" name ="'.$row['id'].'" class="btn btn-success" >Update</a> <a href="#" name ="'.$row['id'].'" class="btn btn-danger" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -770,7 +770,7 @@ if($result->num_rows > 0){
        <td>'.$row["date_publish"].'</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="'.$row['id'].'" class="up upArticle" >Update</a><a href="#" name ="'.$row['id'].'" class="del delArticle" >Delete</a>
+          <a href="#" name ="'.$row['id'].'" class="btn btn-success" >Update</a> <a href="#" name ="'.$row['id'].'" class="btn btn-danger" >Delete</a>
             </div>
             </td>
             </tr>';
