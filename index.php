@@ -110,7 +110,7 @@
 		</a>
 	</div>
 </div>
-<section class="section section-background section-center mt-0" style="background-image: url(img/patterns/swirl_pattern.png); margin-bottom:0;">
+<!-- <section class="section section-background section-center mt-0" style="background-image: url(img/patterns/swirl_pattern.png); margin-bottom:0;">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-10">
@@ -169,11 +169,11 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section class="popPrivacyContainer ">
 	<h3>Before you continue</h3>
-	<p>Datagen Facilities.OPC is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Datagenf This Privacy Policy applies to our <a href="https://datagenf.com/index.php" style="color:white;">website</a> , and its associated subdomains (collectively, our "Service") By accessing or using our Service, you signify that you have read understood and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our Terms of Service</p>
+	<p>Datagen Facilities, OPC is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Datagenf. This Privacy Policy applies to our website, and its associated subdomains (collectively, our "Service"). By accessing or using our Service, you signify that you have read, understood and agreed to our collection, storage, use, and disclosures of your personal information as described in this Privacy Policy and our Terms of Service.</p>
 
 	<div class="btnGrp">
 		<a class="btn btn-primary cbtn popAgree" style=" background-color: #dd8e33;
