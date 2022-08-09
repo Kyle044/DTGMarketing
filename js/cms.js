@@ -34,10 +34,10 @@ var galleryBtn = document.getElementById("galleryBtn");
 
 //Cards
 var dashCard = document.getElementById("regCard");
-var serviceCard = document.getElementById("servCard");
-var careerCard = document.getElementById("careerSide");
-var blogCard = document.getElementById("BlogsArticleSide");
-var galleryCard = document.getElementById("GallerySide");
+var serviceCard = document.getElementById("serviceCard");
+var careerCard = document.getElementById("careerCard");
+var blogCard = document.getElementById("blogCard");
+var galleryCard = document.getElementById("galleryCard");
 
 
 dashCard.style.display = "block";
@@ -48,23 +48,30 @@ galleryCard.style.display = "none";
 
 dashBtn.addEventListener("click", () => {
   SideBarButton(dashCard,serviceCard,careerCard,blogCard,galleryCard) 
+  
 });
 
 serviceBtn.addEventListener("click", () => {
-  SideBarButton(serviceCard,dashCard,careerCard,blogCard,galleryCard)  
+  // dashCard.style.display="none";
+  // serviceCard.style.display="block";
+ SideBarButton(serviceCard,dashCard,careerCard,blogCard,galleryCard)  
+  
 });
 
 
 careerBtn.addEventListener("click", () => {
-  SideBarButton(careerCard,dashCard,serviceCard,blogCard,galleryCard)  
+ SideBarButton(careerCard,dashCard,serviceCard,blogCard,galleryCard)  
+  
 });
 
 BaBtn.addEventListener("click", () => {
-  SideBarButton(blogCard,dashCard,serviceCard,careerCard,galleryCard)  
+  SideBarButton(blogCard,dashCard,serviceCard,careerCard,galleryCard) 
+  
 });
 
 galleryBtn.addEventListener("click", () => {
-  SideBarButton(galleryCard,dashCard,serviceCard,careerCard,blogCard,)  
+ SideBarButton(galleryCard,dashCard,serviceCard,careerCard,blogCard)  
+  
 });
 
 
