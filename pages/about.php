@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col team">
 
-                    <h3 class="heading-primary mt-5"><strong>Our Management Team</strong></h3>
+                    <h3 class="heading-primary mt-5 mngmt"><strong>Our Management Team</strong></h3>
 
                     <ul class="history">
                         <li class="appear-animation" data-appear-animation="fadeInUp">

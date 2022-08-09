@@ -1104,6 +1104,25 @@ h3 {
   transform: translateX(-2rem);
 }
 @media (max-width: 1024px) {
+  .carsec1 .caright {
+    padding: 1rem 4rem;
+    margin-top: 5rem;
+  }
+  .carsec1 .caright h1 {
+    text-align: justify;
+    margin: 0;
+    font-size: 41px;
+    transform: translateX(-1rem);
+    color: #dd8e33;
+  }
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: black;
+    line-height: 26px;
+  }
+
   .masterCareerCard .CarCard .CareerRight img {
     border-radius: 10px;
     width: 70vw;
@@ -1219,7 +1238,25 @@ h3 {
     margin: 0;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 768px) {
+  .carsec1 .caright h1 {
+    text-align: justify;
+    margin: 0;
+    font-size: 36px;
+    transform: translateX(-1rem);
+    color: #dd8e33;
+  }
+  .carsec1 .caright p {
+    text-align: justify;
+    width: 114%;
+    font-size: 16px;
+    margin-top: 1rem;
+    line-height: 1.9rem;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #dd8e33;
+    color: black;
+  }
   .privacyMaster {
     padding: 1rem 5rem;
     margin-top: 4rem !important;
@@ -1250,6 +1287,28 @@ h3 {
   }
   .privacyMaster .subContPrivacy .privacyLeft {
     width: 100%;
+  }
+  .popPrivacyContainer {
+    background-color: #2a2b2c;
+    color: #fff;
+    padding: 1rem 1rem;
+    position: fixed;
+    bottom: -25rem;
+    left: 0;
+    transition: 0.5s ease;
+  }
+  .popShow {
+    bottom: 0rem;
+  }
+  .leftSec2 p {
+    width: 83%;
+    text-align: auto;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  .ft-img {
+    max-width: 20%;
+    height: auto;
   }
 }
 
@@ -1311,7 +1370,6 @@ h3 {
 
     transform: translateX(-1rem);
     color: #dd8e33;
-    text-shadow: 3px 5px 2px #474747;
   }
   .carsec1 img {
     width: 100%;
@@ -1407,81 +1465,6 @@ h3 {
     height: 100%;
   }
 }
-@media (max-width: 481px) {
-
-  .leftSec2 p {
-    width: 85%;
-    text-align: auto;
-    font-size: 1.1rem;
-    text-align: justify;
-  }
-  .serviceTo {
-    padding: 1px 8px;
-    background-size: 100% 38rem;
-  }
-  .section2 div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3rm;
-    padding-bottom: 3rem;
-    margin-bottom: 1rem;
-  }
-  .carousel {
-    margin-top: 5rem;
-  }
-  .popPrivacyContainer {
-    background-color: #2a2b2c;
-    color: #fff;
-    padding: 2rem 1rem;
-    position: fixed;
-    bottom: -1rem;
-    left: 0;
-    transition: 0.5s ease;
-  }
-  .section2 {
-    display: flex;
-    margin-top: 6rem;
-    margin-bottom: 0rem;
-  }
-  .ft-img {
-    width: 18%;
-  }
-  .popShow {
-    bottom: -30rem;
-  }
-
-  .privacyMaster {
-    padding: 1rem 2rem;
-    margin-top: 4rem !important;
-  }
-
-  .privacyMaster h1 {
-    margin-bottom: 10px;
-  }
-  .subContPrivacy {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .privacyRight ul {
-    padding-left: 20px;
-  }
-  .privacyRight h3 {
-    margin-bottom: 13px;
-  }
-  .privacyLeft h3 {
-    margin-bottom: 13px;
-  }
-  .privacyLeft p {
-    text-align: justify;
-    font-size: 14px;
-  }
-  .headPrivacyP {
-    font-size: 16px !important;
-  }
-}
 
 @media (max-width: 466px) {
   .hdser h2 {
@@ -1525,7 +1508,133 @@ h3 {
   }
 }
 
+@media (max-width: 425px) {
+  .masterCareerCard .CarCard .CareerLeft ul {
+    width: 100%;
+    color: white;
+    padding-left: 20px;
+  }
+  .carsec1 .caright h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    transform: translateX(0rem);
+    color: #dd8e33;
+  }
+  .carsec1 .caright p {
+    text-align: justify;
+    width: 100%;
+    font-size: 19px;
+    margin-top: 1rem;
+    line-height: 25px;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #dd8e33;
+    color: black;
+  }
+  .popPrivacyContainer {
+    background-color: #2a2b2c;
+    color: #fff;
+    padding: 1rem 1rem;
+    position: fixed;
+    bottom: -25rem;
+    left: 0;
+    transition: 0.5s ease;
+  }
+  .popShow {
+    bottom: 0rem;
+  }
+  .leftSec2 p {
+    width: 83%;
+    text-align: auto;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  .ft-img {
+    max-width: 20%;
+    height: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .masterCareerCard .CarCard .CareerLeft ul {
+    width: 100%;
+    color: white;
+    padding-left: 18px;
+  }
+  .carsec1 .caright h1 {
+    font-size: 32px;
+    text-align: left;
+    margin: 0;
+    transform: translateX(0rem);
+    color: #dd8e33;
+  }
+  .carsec1 .caright p {
+    text-align: justify;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 1rem;
+    line-height: 26px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #dd8e33;
+    color: black;
+  }
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 0.89rem;
+    color: black;
+    line-height: 28px;
+  }
+  .popPrivacyContainer {
+    background-color: #2a2b2c;
+    color: #fff;
+    padding: 1rem 1rem;
+    position: fixed;
+    bottom: -25rem;
+    left: 0;
+    transition: 0.5s ease;
+  }
+  .popShow {
+    bottom: 0rem;
+  }
+  .leftSec2 p {
+    width: 83%;
+    text-align: auto;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  .ft-img {
+    max-width: 20%;
+    height: auto;
+  }
+}
+
 @media (max-width: 320px) {
+  .carsec1 .caright h1 {
+    font-size: 32px;
+    text-align: left;
+    margin: 0;
+    transform: translateX(0rem);
+    color: #dd8e33;
+  }
+  .carsec1 .caright p {
+    text-align: justify;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 1rem;
+    line-height: 26px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #dd8e33;
+    color: black;
+  }
+  .masterCareerCard .CarCard .CareerLeft ul li {
+    margin-bottom: 10px;
+    padding-right: 0px;
+    margin-left: 0;
+  }
   .serviceCard .serviceRight img {
     width: 14rem;
     height: auto;
@@ -1556,5 +1665,71 @@ h3 {
   }
   .privacyLeft p {
     text-align: justify;
+  }
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 0.89rem;
+    color: black;
+    line-height: 22px;
+  }
+  .section4 {
+    display: grid;
+    max-width: 1200px;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    align-content: center;
+    gap: 10px;
+    justify-content: center;
+    margin: auto;
+  }
+  .rightSec2 p {
+    width: 77%;
+    text-align: auto;
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+  .mngmt {
+    text-align: center;
+  }
+
+  .masterCareerCard .CarCard .CareerLeft ul {
+    width: 100%;
+    color: white;
+    padding-left: 13px;
+  }
+  .carsec1 .caright {
+    padding: 1rem 12px;
+    margin-top: 5rem;
+  }
+  .popPrivacyContainer {
+    background-color: #2a2b2c;
+    color: #fff;
+    padding: 1rem 1rem;
+    position: fixed;
+    bottom: -25rem;
+    left: 0;
+    transition: 0.5s ease;
+  }
+  .popShow {
+    bottom: 0rem;
+  }
+  .leftSec2 p {
+    width: 83%;
+    text-align: auto;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  .ft-img {
+    max-width: 20%;
+    height: auto;
+  }
+  .serviceTo {
+    margin-top: 5rem;
+    padding: 2px 1rem;
+    background-image: url(../img/banner_inner.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: auto 38rem;
   }
 }

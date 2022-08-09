@@ -79,7 +79,7 @@
 								<div class="header-logo">
 									<a href="index.php">
 										<img alt="datagenf" src="img/dtgLogo.png" id="navLogo" style="width: 19rem; 
-    height: auto;">
+    										height: auto;">
 									</a>
 								</div>
 							</div>
