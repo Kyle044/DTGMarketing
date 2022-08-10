@@ -852,7 +852,7 @@ function createGallery($conn, $title, $description, $date, $file)
                     $fileNameNew = uniqid('', true) . "." . $fileActualExt;
                     $fileDestination = '../uploads/' . $fileNameNew;
                     move_uploaded_file($fileTmpName, $fileDestination);
-                    $sql = 'INSERT INTO galleryPic (title,directory,size,gallery_fk) VALUES ("' . $fileNameNew . '","' . $fileDestination . '","' . $fileSize . '",' . $last_id . ')';
+                    $sql = 'INSERT INTO gallerypic (title,directory,size,gallery_fk) VALUES ("' . $fileNameNew . '","' . $fileDestination . '","' . $fileSize . '",' . $last_id . ')';
                     if ($conn->query($sql) === TRUE) {
                     } else {
                         echo "Error: " . $sql . "<br>" . $conn->error;

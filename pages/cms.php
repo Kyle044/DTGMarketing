@@ -74,7 +74,7 @@ if (!isset($_SESSION["usersId"])) {
                     </div>
                 </li>
 
-                <li id="serviceBtn" class="sideBtn">
+                <li id="serviceBtn" class="sideBtn" style="display:none;">
                     <div>
                         <p>Services&nbsp;<span><i class='fa fa-briefcase'></i></span></p>
                     </div>
@@ -418,7 +418,8 @@ if (!isset($_SESSION["usersId"])) {
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="">Description</label>
-                        <textarea class="form-control" name="description" id="" cols="30" rows="6"></textarea>
+
+                        <input class="form-control input-lg" type="text" name="description">
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="">Author</label>
@@ -457,7 +458,7 @@ if (!isset($_SESSION["usersId"])) {
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="">Description</label>
-                        <textarea class="form-control" name="description" id="" cols="30" rows="6"></textarea>
+                        <input class="form-control" type="text" name="description" id="">
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="">Date Published</label>
