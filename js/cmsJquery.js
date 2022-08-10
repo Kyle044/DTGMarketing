@@ -91,6 +91,12 @@ $(document).ready(() => {
     var position = tblRow.querySelectorAll("td")[1].innerText;
     var office = tblRow.querySelectorAll("td")[2].innerText;
     var email = tblRow.querySelectorAll("td")[3].innerText;
+
+    console.log("name : " + name);
+    console.log("position : " + position);
+    console.log("office : " + office);
+    console.log("email : " + email);
+
     $("#userForm").find("input[name=fullname]").val(name);
     $("#userForm").find("input[name=position]").val(position);
     $("#userForm").find("input[name=office]").val(office);
@@ -233,17 +239,15 @@ $(document).ready(() => {
     console.log(formData.get("qualification"));
     console.log(formData.get("responsibility"));
     console.log(file_data);
-    
+
     if (
       !formData.get("title") ||
       !formData.get("position") ||
-      !formData.get("description") ||      
+      !formData.get("description") ||
       !formData.get("qualification") ||
       !formData.get("responsibility") ||
       !file_data
-      
-    ) 
-    {
+    ) {
       alert("There is some missing fields");
     } else {
       if (e.target.name == "insert") {

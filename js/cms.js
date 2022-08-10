@@ -9,8 +9,6 @@ const options = {
 };
 const sideBtn = document.querySelectorAll(".sideBtn");
 
-
-
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
@@ -39,57 +37,61 @@ var careerCard = document.getElementById("careerCard");
 var blogCard = document.getElementById("blogCard");
 var galleryCard = document.getElementById("galleryCard");
 
-
 dashCard.style.display = "block";
-serviceCard.style.display ="none";
-careerCard.style.display ="none";
+serviceCard.style.display = "none";
+careerCard.style.display = "none";
 blogCard.style.display = "none";
 galleryCard.style.display = "none";
 
+// setTimeout(() => {
+//   dashCard.style.display = "block";
+//   serviceCard.style.display = "none";
+//   careerCard.style.display = "none";
+//   blogCard.style.display = "none";
+//   galleryCard.style.display = "none";
+// }, 2000);
+
 dashBtn.addEventListener("click", () => {
-  SideBarButton(dashCard,serviceCard,careerCard,blogCard,galleryCard) 
-  
+  SideBarButton(dashCard, serviceCard, careerCard, blogCard, galleryCard);
 });
 
 serviceBtn.addEventListener("click", () => {
   // dashCard.style.display="none";
   // serviceCard.style.display="block";
- SideBarButton(serviceCard,dashCard,careerCard,blogCard,galleryCard)  
-  
+  SideBarButton(serviceCard, dashCard, careerCard, blogCard, galleryCard);
 });
 
-
 careerBtn.addEventListener("click", () => {
- SideBarButton(careerCard,dashCard,serviceCard,blogCard,galleryCard)  
-  
+  SideBarButton(careerCard, dashCard, serviceCard, blogCard, galleryCard);
 });
 
 BaBtn.addEventListener("click", () => {
-  SideBarButton(blogCard,dashCard,serviceCard,careerCard,galleryCard) 
-  
+  SideBarButton(blogCard, dashCard, serviceCard, careerCard, galleryCard);
 });
 
 galleryBtn.addEventListener("click", () => {
- SideBarButton(galleryCard,dashCard,serviceCard,careerCard,blogCard)  
-  
+  SideBarButton(galleryCard, dashCard, serviceCard, careerCard, blogCard);
 });
 
-
-function SideBarButton (opencard, closecard2,closecard3,closecard4,closecard5) {
-  
-    this.opencard = opencard;    
-    this.closecard2 = closecard2;
-    this.closecard3 = closecard3;
-    this.closecard4 = closecard4;
-    this.closecard4 = closecard5;
-   if (opencard.style.display === "none") {
-    opencard.style.display = "block";    
+function SideBarButton(
+  opencard,
+  closecard2,
+  closecard3,
+  closecard4,
+  closecard5
+) {
+  this.opencard = opencard;
+  this.closecard2 = closecard2;
+  this.closecard3 = closecard3;
+  this.closecard4 = closecard4;
+  this.closecard4 = closecard5;
+  if (opencard.style.display === "none") {
+    opencard.style.display = "block";
     closecard2.style.display = "none";
     closecard3.style.display = "none";
     closecard4.style.display = "none";
-    closecard5.style.display = "none"
-   
+    closecard5.style.display = "none";
   } else {
-    // opencard.style.display = "none";    
+    // opencard.style.display = "none";
   }
 }
