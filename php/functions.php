@@ -101,12 +101,12 @@ if($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
          echo '<tr>
          <td>'.$row["usersName"].'</td>
-        <td>'.$row["usersPosition"].'</td>
+         <td>'.$row["usersPosition"].'</td>
           <td>'.$row["usersOffice"].'</td>
        <td>'.$row["usersEmail"].'</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="'.$row['usersId'].'" class="btn btn-success" >Update</a>  <a href="#" name ="'.$row['usersId'].'" class="btn btn-danger" >Delete</a>
+          <a href="#" name ="'.$row['usersId'].'" class="cmsbutton" >Update</a>  <a href="#" name ="'.$row['usersId'].'" class="cmsbutton cmsbutton2" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -166,7 +166,7 @@ if ($result->num_rows > 0) {
        <td>'.$row["approach"].'</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="'.$row['id'].'" class="btn btn-success" >Update</a> <a href="#" name ="'.$row['id'].'" class="btn btn-danger" >Delete</a>
+          <a href="#" name ="'.$row['id'].'" class="cmsbutton" >Update</a> <a href="#" name ="'.$row['id'].'" class="cmsbutton cmsbutton2" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -355,7 +355,7 @@ if ($result->num_rows > 0) {
         <td>'.$row["description"].'</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="'.$row['id'].'" class="btn btn-success" >Update</a> <a href="#" name ="'.$row['id'].'" class="btn btn-danger" >Delete</a>
+          <a href="#" name ="'.$row['id'].'" class="cmsbutton" >Update</a> <a href="#" name ="'.$row['id'].'" class="cmsbutton cmsbutton2" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -579,7 +579,7 @@ if(mysqli_num_rows($resultData)>0){
        <td>'.$row["date_publish"].'</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="'.$row['id'].'" class="btn btn-success" >Update</a> <a href="#" name ="'.$row['id'].'" class="btn btn-danger" >Delete</a>
+          <a href="#" name ="'.$row['id'].'" class="cmsbutton" >Update</a> <a href="#" name ="'.$row['id'].'" class="cmsbutton cmsbutton2" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -770,7 +770,7 @@ if($result->num_rows > 0){
        <td>'.$row["date_publish"].'</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="'.$row['id'].'" class="btn btn-success" >Update</a> <a href="#" name ="'.$row['id'].'" class="btn btn-danger" >Delete</a>
+          <a href="#" name ="'.$row['id'].'" class="cmsbutton" >Update</a> <a href="#" name ="'.$row['id'].'" class="cmsbutton cmsbutton2" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -934,7 +934,7 @@ if($result->num_rows > 0){
        
          <td>
         <div class="btnGrp">
-        <a href="#" name ="'.$row['id'].'" class="del delGallery">Delete</a>
+        <a href="#" name ="'.$row['id'].'" class="cmsbutton cmsbutton2">Delete</a>
             </div>
             </td>
             </tr>';
