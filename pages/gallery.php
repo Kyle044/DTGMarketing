@@ -25,17 +25,10 @@
     <?php
     include("../php/config.php");
     $sql = "SELECT * from gallery";
-    $stmt = mysqli_stmt_init($conn);
-    if (!mysqli_stmt_prepare($stmt, $sql)) {
-        echo "SQL Statement Failed...";
-        exit();
-    }
+    $result = $conn->query($sql);
 
-    mysqli_stmt_execute($stmt);
-    $resultData = mysqli_stmt_get_result($stmt);
-
-    if (mysqli_num_rows($resultData) > 0) {
-        while ($row = mysqli_fetch_array($resultData)) {
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
 
             echo '
     <div class="galleryContainer" style="transform:translateY(2rem)">
@@ -47,17 +40,10 @@
     
   ';
             echo '<div class="gallery">';
-            $sql1 = "SELECT * from gallerypic where gallery_fk=?";
-            $stmt1 = mysqli_stmt_init($conn);
-            if (!mysqli_stmt_prepare($stmt1, $sql1)) {
-                echo "SQL Statement Failed...";
-                exit();
-            }
-            mysqli_stmt_bind_param($stmt1, "i", $row['id']);
-            mysqli_stmt_execute($stmt1);
-            $resultData1 = mysqli_stmt_get_result($stmt1);
-            if (mysqli_num_rows($resultData1) > 0) {
-                while ($row1 = mysqli_fetch_array($resultData1)) {
+            $sql1 = 'SELECT * from gallerypic where gallery_fk= ' . $row['id'] . '';
+            $result1 = $conn->query($sql1);
+            if ($result1->num_rows > 0) {
+                while ($row1 = $result1->fetch_assoc()) {
 
                     echo ' 
     
@@ -67,11 +53,9 @@
                 }
             }
             echo ' </div></div>';
-
-            mysqli_stmt_close($stmt1);
         }
     }
-    mysqli_stmt_close($stmt);
+    $conn->close();
 
     ?>
 

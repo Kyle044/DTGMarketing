@@ -1565,8 +1565,53 @@ h3 {
     max-width: 20%;
     height: auto;
   }
-}
+  .serviceTo {
+    margin-top: 5rem;
+    padding: 2px 1rem;
+    background-image: url(../img/banner_inner.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: 131rem;
+  }
+  .rightSec2 p {
+    width: 83%;
+    text-align: justify;
+    text-align: auto;
+    font-size: 1.1rem;
+  }
+  .section2 div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 0.89rem;
+    color: black;
+    line-height: 21px;
+  }
+  .aboutUsmain .texthed {
+    height: 100%;
+    display: flex;
+    padding: 0rem 1.2rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .aboutUsmain img {
+    height: 100%;
+  }
+  .aboutUsmain {
+    height: 66vh;
+  }
+}
+@media (max-width: 381px) {
+}
 @media (max-width: 375px) {
   .masterCareerCard .CarCard .CareerLeft ul {
     width: 100%;
@@ -1620,9 +1665,183 @@ h3 {
     max-width: 20%;
     height: auto;
   }
+  .serviceTo {
+    margin-top: 5rem;
+    padding: 2px 1rem;
+    background-image: url(../img/banner_inner.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: 131rem;
+  }
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 0.89rem;
+    color: black;
+    line-height: 21px;
+  }
+  .aboutUsmain .texthed {
+    height: 100%;
+    display: flex;
+    padding: 0rem 1.2rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .aboutUsmain img {
+    height: 100%;
+  }
+  .aboutUsmain {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 371px) {
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 0.89rem;
+    color: black;
+    line-height: 21px;
+  }
+  .aboutUsmain .texthed {
+    height: 100%;
+    display: flex;
+    padding: 0rem 1.2rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .aboutUsmain img {
+    height: 100%;
+  }
+  .aboutUsmain {
+    height: 66vh;
+  }
 }
 
 @media (max-width: 320px) {
+  .carsec1 .caright h1 {
+    font-size: 32px;
+    text-align: left;
+    margin: 0;
+    transform: translateX(0rem);
+    color: #dd8e33;
+  }
+  .carsec1 .caright p {
+    text-align: justify;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 1rem;
+    line-height: 26px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #dd8e33;
+    color: black;
+  }
+  .masterCareerCard .CarCard .CareerLeft ul li {
+    margin-bottom: 10px;
+    padding-right: 0px;
+    margin-left: 0;
+  }
+  .serviceCard .serviceRight img {
+    width: 14rem;
+    height: auto;
+    border-radius: 15px;
+  }
+  .galleryContainer {
+    margin: 5rem 0rem;
+  }
+  .privacyMaster {
+    padding: 1rem 2rem;
+    margin-top: 4rem !important;
+  }
+  .privacyMaster h1 {
+    margin-bottom: 10px;
+  }
+  .subContPrivacy {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .privacyRight ul {
+    padding-left: 20px;
+  }
+  .privacyRight h3 {
+    margin-bottom: 13px;
+  }
+  .privacyLeft h3 {
+    margin-bottom: 13px;
+  }
+  .privacyLeft p {
+    text-align: justify;
+  }
+  .aboutUsmain .texthed p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 0.89rem;
+    color: black;
+    line-height: 22px;
+  }
+  .section4 {
+    display: grid;
+    max-width: 1200px;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    align-content: center;
+    gap: 10px;
+    justify-content: center;
+    margin: auto;
+  }
+  .rightSec2 p {
+    width: 77%;
+    text-align: auto;
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+  .mngmt {
+    text-align: center;
+  }
+
+  .masterCareerCard .CarCard .CareerLeft ul {
+    width: 100%;
+    color: white;
+    padding-left: 13px;
+  }
+  .carsec1 .caright {
+    padding: 1rem 12px;
+    margin-top: 5rem;
+  }
+  .popPrivacyContainer {
+    background-color: #2a2b2c;
+    color: #fff;
+    padding: 1rem 1rem;
+    position: fixed;
+    bottom: -25rem;
+    left: 0;
+    transition: 0.5s ease;
+  }
+  .popShow {
+    bottom: 0rem;
+  }
+  .leftSec2 p {
+    width: 83%;
+    text-align: auto;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  .ft-img {
+    max-width: 20%;
+    height: auto;
+  }
+  .serviceTo {
+    margin-top: 5rem;
+    padding: 2px 1rem;
+    background-image: url(../img/banner_inner.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: auto 38rem;
+  }
+}
+
+@media (max-width: 288px) {
   .carsec1 .caright h1 {
     font-size: 32px;
     text-align: left;

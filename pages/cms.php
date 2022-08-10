@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 session_start();
 require_once("../php/config.php");
@@ -8,10 +9,10 @@ if (!isset($_SESSION["usersId"])) {
 }
 ?>
 
-<script></script>
 
 
-<!DOCTYPE html>
+
+
 <html lang="en">
 
 <head>
@@ -334,44 +335,19 @@ if (!isset($_SESSION["usersId"])) {
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="">Qualification</label>
-                        <input class="form-control input-lg" type="text" name="qualification">
+
+                        <textarea class="form-control" name="qualification" id="career" cols="30" rows="6">
+                                </textarea>
                     </div>
-                    <!-- <div class="form-group">
-                                <label class="control-label" for="">Qualification 2</label>
-                                <input class="form-control input-lg" type="text" name="Q2">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Qualification 3</label>
-                                <input class="form-control input-lg"  type="text" name="Q3">    
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Qualification 4</label>
-                                <input class="form-control input-lg" type="text" name="Q4">    
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Qualification 5</label>
-                                <input class="form-control input-lg" type="text" name="Q5">    
-                            </div> -->
+
                     <div class="form-group">
                         <label class="control-label" for="">Responsibility</label>
-                        <input class="form-control input-lg" type="text" name="responsibility">
+                        <textarea class="form-control" name="responsibility" id="career" cols="30" rows="6">
+
+     </textarea>
+
                     </div>
-                    <!-- <div class="form-group">
-                                <label class="control-label" for="">Responsibility 2</label>
-                                <input class="form-control input-lg" type="text" name="R2">                                            
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Responsibility 3</label>
-                                <input class="form-control input-lg" type="text" name="R3">    
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Responsibility 4</label>
-                                <input class="form-control input-lg" type="text" name="R4">    
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Responsibility 5</label>
-                                <input class="form-control input-lg" type="text" name="R5">    
-                            </div> -->
+
                     <label class="control-label" for="">Upload Image</label>
                     <div class="form-group">
                         <input class="form-control input-xl" type="file" name="file" id="careerPic">
@@ -505,6 +481,19 @@ if (!isset($_SESSION["usersId"])) {
 
 <script>
     $(document).ready(function() {
+        tinymce.init({
+            selector: 'textarea', // change this value according to your HTML
+            plugins: [
+                'advlist autolink lists '
+            ],
+            toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
+            menu: {
+                edit: {
+                    title: 'Edit',
+                    items: 'undo, redo, selectall'
+                }
+            }
+        });
         $('#userTbl').DataTable({
             // scrollY: '50vh',
             // scrollX: '80vw',
