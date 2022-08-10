@@ -186,7 +186,7 @@ header("location: ./login.php");
 
 				</tbody>
 				</table>
-				<button class="cmsAddbutton"data-toggle="modal" data-target="#ModalLoginForm"><span><i class="glyphicon glyphicon-user"></i> Add User</button>
+				<a href="#openModal-reg"><button class="cmsAddbutton"><span><i class="glyphicon glyphicon-user"></i> Add User</button></a>
 			</div>                    
 		</div>
         <div class="contentDiv" id="serviceCard">
@@ -208,7 +208,7 @@ header("location: ./login.php");
 					
 					</tbody>                        
 				</table>
-				<button class="cmsAddbutton"data-toggle="modal" data-target="#serviceForm"><i class="glyphicon glyphicon-cog"></i> Add Service</button>                    
+				<a href="#openModal-serv"><button class="cmsAddbutton"><i class="glyphicon glyphicon-cog"></i> Add Service</button></a>                    
 			</div>
 		</div>
         <div class="contentDiv" id="careerCard">
@@ -226,7 +226,7 @@ header("location: ./login.php");
 					<tbody id="autoCareer">                            
 					</tbody>                                 
 				</table>  
-				<button class="cmsAddbutton"data-toggle="modal" data-target="#careerForm"><i class="glyphicon glyphicon-folder-open"></i> Add Career</button>                   
+				<a href="#openModal-career"><button class="cmsAddbutton"><i class="glyphicon glyphicon-folder-open"></i> Add Career</button></a>
 			</div>                    
 		</div>
 		<div class="contentDiv" id="blogCard">
@@ -245,7 +245,7 @@ header("location: ./login.php");
 					<tbody id="autoArticle">                                
 					</tbody>
 				</table> 
-				<button class="cmsAddbutton"data-toggle="modal" data-target="#articleForm"><i class="fa fa-pencil-square"></i> Add Article</button>    
+				<a href="#openModal-blog"><button class="cmsAddbutton"><i class="fa fa-pencil-square"></i> Add Article</button></a>
 			</div>                    
 		</div>
 		<div class="contentDiv" id="galleryCard">
@@ -263,7 +263,7 @@ header("location: ./login.php");
 					<tbody id="autoGallery">                                             
 					</tbody>
 				</table> 
-				<button class="cmsAddbutton"data-toggle="modal" data-target="#galleryForm"><i class="fa fa-image"></i> Add Gallery</button>  
+				<a href="#openModal-gallery"><button class="cmsAddbutton"><i class="fa fa-image"></i> Add Gallery</button></a>
 			</div>                    
 		</div>
         <p class="copyright">
@@ -327,7 +327,7 @@ header("location: ./login.php");
     </body>
     <!--- MODALS -->
     <!-- Modal User Registration  -->
-    <!-- <div id="ModalLoginForm" class="modal fade">
+    <!-- <div id="ModalLoginForm" class="modal fade" style="display:none;">
             <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -387,14 +387,77 @@ header("location: ./login.php");
                 </div>  
             </div>
     </div> -->
-    <!-- Modal Service Addition  -->
-    <!-- <div id="ServiceForm" class="modal fade " >
-            <div class="modal-dialog modal-dialog-centered modal-sm"  role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title"id="userFormTitle">Add Service</h1>
+    <!-- Modal User Registration  -->
+    <div id="openModal-reg" class="modalDialog">
+            <div>
+            <a href="#close" title="Close" class="close">X</a>
+                <div>
+                    <div >
+                        <h1 id="userFormTitle">User Registration</h1>
                     </div>
-                    <div class="modal-body">                             
+                    <div>                           
+                        
+                        <form role="form" id="userForm" name="insert" method="POST" action="">
+                            <input type="hidden" name="_token" value="">
+                            <div class="form-group">
+                                <label class="control-label">Fullname</label>
+                                <div>
+                                    <input type="text" class="form-control input-sm" name="fullname" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Position</label>
+                                <div>
+                                    <input type="text"class="form-control input-sm" name="position" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Office</label>
+                                <div>
+                                    <input type="text" class="form-control input-sm" name="office" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">E-Mail Address</label>
+                                <div>
+                                    <input type="email" class="form-control input-sm" name="email" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Password</label>
+                                <div>
+                                    <input type="password" class="form-control input-sm" name="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Confirm Password</label>
+                                <div>
+                                    <input type="password" class="form-control input-sm" name="cpassword">                                          
+                                    <input type="hidden" name="id">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <button type="submit" class="cmsbutton">
+                                        Register
+                                    </button>
+                                    <button type="button" id="insertUserBtn" >Add</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+    </div>
+    <!-- Modal Service Addition  -->
+    <div id="openModal-serv" class="modalDialog">
+            <div>
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <div>
+                        <h1 id="userFormTitle">Add Service</h1>
+                    </div>
+                    <div>                             
                         <form role="form"action="" id="serviceForm" method="POST" enctype="multipart/form-data" name="insert">
                             <div class="form-group">
                                 <label class="control-label"for="">Title</label>
@@ -423,7 +486,7 @@ header("location: ./login.php");
                                 <input type="hidden" name="id" >
                             </div>
                             <div class="form-group">
-                                <button type="submit"class="btn btn-success">Submit</button>
+                                <button type="submit"class="cmsbutton">Submit</button>
                                 <button type="button"id="insertServiceBtn">Add Service</button>    
                             </div>                                   
                         </form>
@@ -431,15 +494,16 @@ header("location: ./login.php");
                 </div>  
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Modal Career Addition -->
-    <!-- <div id="careerForm" class="modal fade " >
-            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
+    <div id="openModal-career" class="modalDialog">
+            <div>
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <div>
                         <h3 id="careerFormTitle">Add Career</h3>
                     </div>
-                    <div class="modal-body">
+                    <div>
                         <form role="form" action="" id="careerForm" method="POST" enctype="multipart/form-data" name="insert">
                             <div class=form-group>
                                 <label class="control-label" for="">Title</label>
@@ -470,7 +534,7 @@ header("location: ./login.php");
                                 <input type="hidden" name="id">    
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button type="submit" class="cmsbutton">Submit</button>
                                 <button type="button" id="insertCareerBtn" >Add</button>    
                             </div>                           
                                                                     
@@ -478,15 +542,16 @@ header("location: ./login.php");
                     </div>
                 </div>
             </div>
-    </div>                         -->
+    </div>                        
     <!-- Modal Blog Addition -->
-    <!-- <div id="blogForm"class="modal fade">                   
-        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
+    <div id="openModal-blog"class="modalDialog">                   
+        <div>
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <div>
                     <h3 id="blogFormTitle">Add Blog</h3>
                 </div>
-                <div class="modal-body">
+                <div>
                     <form action="" id ="blogForm" method="POST" name="insert">
                     <div class="form-group">
                     <label class="control-label" for="">Title</label>
@@ -510,7 +575,7 @@ header("location: ./login.php");
                         <input type="hidden" name="id">
                     </div>
                     <div class="form-group">
-                        <button type="submit"class="btn btn-success">Submit</button>
+                        <button type="submit"class="cmsbutton">Submit</button>
                         <button type="button" id="insertBlogBtn">Add Blog</button>
                     </div>
                     
@@ -518,9 +583,9 @@ header("location: ./login.php");
                 </div>
             </div>
         </div>                    
-    </div> -->
+    </div>
     <!-- Modal Article Addition -->
-    <!-- <div id="articleForm" class="modal fade">
+    <!-- <div id="articleForm" class="modal fade"style="display:none;">
         <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -558,39 +623,84 @@ header("location: ./login.php");
             </div>
         </div>
     </div> -->
+    
     <!-- Modal Gallery Addition -->
-    <!-- <div id="galleryForm" class="modal fade">
-            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 id="galleryFormTitle">Add Gallery</h3>
-                    </div>
-                    <div class="modal-body">
-                        <form action="" id="galleryForm" name="insert" method="POST">
-                            <div class="form-group">
-                                <label class="control-label" for="">Title</label>
-                                <input class="form-control input-lg" type="text" name="title">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Description</label>
-                                <textarea class="form-control"name="description" id="" cols="30" rows="6"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Date Published</label>
-                                <input class="form-control input-lg" type="date" name="date">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Upload Picture</label>
-                                <input class="form-control input=lg"type="file" name="file" id="galleryPic" multiple="multiple">
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-success">Submit</button>
-                                <button type="button" id="insertGalleryBtn">Add Post</button>
-                            </div>
-                        </form>
-                    </div>
+    <div id="openModal-gallery" class="modalDialog">
+        <div>
+            <div>
+            <a href="#close" title="Close" class="close">X</a>
+                <div>
+                    <h3 id="galleryFormTitle">Add Gallery</h3>
+                </div>
+                <div>
+                    <form action="" id="galleryForm" name="insert" method="POST">
+                        <div class="form-group">
+                            <label class="control-label" for="">Title</label>
+                            <input class="form-control input-lg" type="text" name="title">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="">Description</label>
+                            <textarea class="form-control"name="description" id="" cols="30" rows="6"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="">Date Published</label>
+                            <input class="form-control input-lg" type="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="">Upload Picture</label>
+                            <input class="form-control input=lg"type="file" name="file" id="galleryPic" multiple="multiple">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="cmsbutton">Submit</button>
+                            <button type="button" id="insertGalleryBtn">Add Post</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>   -->
+    </div>
+
+    <!-- <div id="openModal-about" class="modalDialog">
+      <div>
+         <a href="#close" title="Close" class="close">X</a>
+         
+         <h1 id="userFormTitle">User Registration</h1>
+         <div class="modalContent">
+                <form role="form" id="userForm" name="insert" method="POST" action="">
+                <div class="modalLabelContainer">
+                    <input type="hidden" name="_token" value="">            
+                    <label >Fullname</label>                
+                    <input type="text" class="form-control input-sm" name="fullname" value="">
+                </div>
+                <div class="modalLabelContainer">
+                    <label >Position</label>                
+                    <input type="text"class="form-control input-sm" name="position" value="">
+                </div>
+                <div class="modalLabelContainer">
+                    <label >Office</label>                
+                    <input type="text" class="form-control input-sm" name="office" value="">
+                </div>
+                <div class="modalLabelContainer">
+                    <label >E-Mail Address</label>                
+                    <input type="email" class="form-control input-sm" name="email" value="">
+                </div>
+                <div class="modalLabelContainer">
+                    <label >Password</label>                
+                    <input type="password" class="form-control input-sm" name="password">
+                </div>
+                <div class="modalLabelContainer">
+                    <label >Confirm Password</label>                
+                    <input type="password" class="form-control input-sm" name="cpassword">                                          
+                    <input type="hidden" name="id">
+                </div>
+                <div class="modalLabelContainer">
+                    <button type="submit" class="cmsbutton">Register</button>
+                    <button type="hidden" id="insertUserBtn" >Add</button>
+                </div>
+            
+                </form>
+            </div>        
+       </div>
+   </div> -->
+      
 </html>
