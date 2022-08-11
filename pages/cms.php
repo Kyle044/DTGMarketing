@@ -659,48 +659,5 @@ header("location: ./login.php");
                 </div>  
         </div>      
     </div>
-
-    <!-- <div id="openModal-about" class="modalDialog">
-      <div>
-         <a href="#close" title="Close" class="close">X</a>
-         
-         <h1 id="userFormTitle">User Registration</h1>
-         <div class="modalContent">
-                <form role="form" id="userForm" name="insert" method="POST" action="">
-                <div class="modalLabelContainer">
-                    <input type="hidden" name="_token" value="">            
-                    <label >Fullname</label>                
-                    <input type="text" class="form-control input-sm" name="fullname" value="">
-                </div>
-                <div class="modalLabelContainer">
-                    <label >Position</label>                
-                    <input type="text"class="form-control input-sm" name="position" value="">
-                </div>
-                <div class="modalLabelContainer">
-                    <label >Office</label>                
-                    <input type="text" class="form-control input-sm" name="office" value="">
-                </div>
-                <div class="modalLabelContainer">
-                    <label >E-Mail Address</label>                
-                    <input type="email" class="form-control input-sm" name="email" value="">
-                </div>
-                <div class="modalLabelContainer">
-                    <label >Password</label>                
-                    <input type="password" class="form-control input-sm" name="password">
-                </div>
-                <div class="modalLabelContainer">
-                    <label >Confirm Password</label>                
-                    <input type="password" class="form-control input-sm" name="cpassword">                                          
-                    <input type="hidden" name="id">
-                </div>
-                <div class="modalLabelContainer">
-                    <button type="submit" class="cmsbutton">Register</button>
-                    <button type="hidden" id="insertUserBtn" >Add</button>
-                </div>
-            
-                </form>
-            </div>        
-       </div>
-   </div> -->
       
 </html>
