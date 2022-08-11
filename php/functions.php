@@ -104,7 +104,7 @@ function getUsers($conn)
        <td>' . $row["usersEmail"] . '</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="' . $row['usersId'] . '" class="btn btn-success up upUser" data-toggle="modal" data-target="#ModalLoginForm" >Update</a>  <a href="#" name ="' . $row['usersId'] . '" class="del delUser btn btn-danger" >Delete</a>
+          <a href="#openModal-reg" name ="' . $row['usersId'] . '" class="cmsbutton upUser" >Update</a><a href="#" name ="' . $row['usersId'] . '" class="cmsbutton cmsbutton2 delUser" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -154,7 +154,7 @@ function getService($conn)
     $sql = "SELECT * FROM service ;";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-
+        echo "<table><tr><th>ID</th><th>Name</th></tr>";
         // output data of each row
         while ($row = $result->fetch_assoc()) {
             echo '<tr>
@@ -166,7 +166,7 @@ function getService($conn)
        <td>' . $row["approach"] . '</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="' . $row['id'] . '"  data-toggle="modal" data-target="#serviceForm" class="btn btn-success up upService" >Update</a> <a href="#" name ="' . $row['id'] . '" class="btn btn-danger del delService" >Delete</a>
+          <a href="#" name ="' . $row['id'] . '" class="cmsbutton upService" >Update</a><a href="#" name ="' . $row['id'] . '" class="cmsbutton cmsbutton2 delService" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -349,7 +349,7 @@ function getCareer($conn)
         <td>' . $row["description"] . '</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="' . $row['id'] . '" class="btn btn-success up upCareer" data-toggle="modal" data-target="#careerForm" >Update</a> <a href="#" name ="' . $row['id'] . '" class="btn btn-danger del delCareer" >Delete</a>
+          <a href="#openModal-career" name ="' . $row['id'] . '" class="cmsbutton upCareer" >Update</a><a href="#" name ="' . $row['id'] . '" class="cmsbutton cmsbutton2 delCareer" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -412,7 +412,7 @@ function createCareer($conn, $title, $position, $description, $file, $qualificat
 }
 
 
-function updateCareer($conn, $title, $position, $description, $file, $id, $q1, $q2, $q3, $q4, $q5, $r1, $r2, $r3, $r4, $r5)
+function updateCareer($conn, $title, $position, $description, $file, $id, $qualification, $responsibility)
 {
     $sql1 = "SELECT * FROM career WHERE id = ?;";
     $stmt1 = mysqli_stmt_init($conn);
@@ -441,8 +441,7 @@ function updateCareer($conn, $title, $position, $description, $file, $id, $q1, $
                     $fk = getFileId($conn, $fileNameNew, $fileDestination, $fileSize);
 
                     $sql = "UPDATE career SET title='" . $title . "', position='" . $position . "',description='" . $description . "'
-    ,file_fk='" . $fk . "' , Q1='" . $q1 . "',Q2='" . $q2 . "',Q3='" . $q3 . "',Q4='" . $q4 . "',Q5='" . $q5 . "',R1='" . $r1 . "',R2='" . $r2 . "'
-    ,R3='" . $r3 . "',R4='" . $r4 . "',R5='" . $r5 . "' WHERE id='" . $id . "'";
+    ,file_fk='" . $fk . "' ,qualification = '" . $qualification . "', responsibility = '" . $responsibility . "' WHERE id='" . $id . "'";
                     $stmt = $conn->query($sql);
                     echo "Career Was Successfully Updated!";
                 } else {
@@ -552,7 +551,7 @@ function getBlog($conn)
        <td>' . $row["date_publish"] . '</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="' . $row['id'] . '" class="btn btn-success" >Update</a> <a href="#" name ="' . $row['id'] . '" class="btn btn-danger" >Delete</a>
+          <a href="#" name ="' . $row['id'] . '" class="cmsbutton upBlog" >Update</a><a href="#" name ="' . $row['id'] . '" class="cmsbutton cmsbutton2 delBlog" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -732,7 +731,7 @@ function getArticle($conn)
        <td>' . $row["date_publish"] . '</td>
          <td>
         <div class="btnGrp">
-          <a href="#" name ="' . $row['id'] . '" class="btn btn-success up upArticle" data-toggle="modal" data-target="#articleForm" >Update</a> <a href="#" name ="' . $row['id'] . '" class="btn btn-danger del delArticle" >Delete</a>
+          <a href="#openModal-blog" name ="' . $row['id'] . '" class="cmsbutton  upArticle" >Update</a><a href="#" name ="' . $row['id'] . '" class="cmsbutton cmsbutton2 delArticle" >Delete</a>
             </div>
             </td>
             </tr>';
@@ -762,9 +761,7 @@ function getFrontArticle($conn)
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             echo '<div class="ar2Container">
-
     <h1>' . $row['title'] . '</h1>
-
 <div class="ar2ComboPic">
     <p>
 ' . $row['description'] . '
@@ -887,7 +884,7 @@ function getGallery($conn)
        
          <td>
         <div class="btnGrp">
-        <a href="#" name ="' . $row['id'] . '" class="del delGallery">Delete</a>
+        <a href="#" name ="' . $row['id'] . '" class="cmsbutton cmsbutton2 delGallery">Delete</a>
             </div>
             </td>
             </tr>';

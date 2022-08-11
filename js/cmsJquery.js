@@ -123,7 +123,7 @@ $(document).ready(() => {
         },
         cache: false,
         success: function (res) {
-          alert(res.msg);
+          alert(res);
         }
       });
     } else {
@@ -259,7 +259,7 @@ $(document).ready(() => {
           data: formData,
           cache: false,
           success: function (res) {
-            console.log(res);
+            alert(res);
             $("#careerForm")
               .find("input[type=text], textarea,input[type=file]")
               .val("");
