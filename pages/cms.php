@@ -391,7 +391,7 @@ header("location: ./login.php");
     <div id="openModal-reg" class="modalDialog">
             <div>
             <a href="#close" title="Close" class="close">X</a>
-                <div>
+                <div class="modalContent">
                     <div >
                         <h1 id="userFormTitle">User Registration</h1>
                     </div>
@@ -399,50 +399,48 @@ header("location: ./login.php");
                         
                         <form role="form" id="userForm" name="insert" method="POST" action="">
                             <input type="hidden" name="_token" value="">
-                            <div class="form-group">
+                            <div class="modalLabelContainer">
                                 <label class="control-label">Fullname</label>
                                 <div>
-                                    <input type="text" class="form-control input-sm" name="fullname" value="">
+                                    <input type="text"  name="fullname" value="">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="modalLabelContainer">
                                 <label class="control-label">Position</label>
                                 <div>
-                                    <input type="text"class="form-control input-sm" name="position" value="">
+                                    <input type="text" name="position" value="">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="modalLabelContainer">
                                 <label class="control-label">Office</label>
                                 <div>
-                                    <input type="text" class="form-control input-sm" name="office" value="">
+                                    <input type="text"  name="office" value="">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="modalLabelContainer">
                                 <label class="control-label">E-Mail Address</label>
                                 <div>
-                                    <input type="email" class="form-control input-sm" name="email" value="">
+                                    <input type="email"  name="email" value="">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="modalLabelContainer">
                                 <label class="control-label">Password</label>
                                 <div>
-                                    <input type="password" class="form-control input-sm" name="password">
+                                    <input type="password"  name="password">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="modalLabelContainer">
                                 <label class="control-label">Confirm Password</label>
                                 <div>
-                                    <input type="password" class="form-control input-sm" name="cpassword">                                          
+                                    <input type="password"  name="cpassword">                                          
                                     <input type="hidden" name="id">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div>
-                                    <button type="submit" class="cmsbutton">
-                                        Register
-                                    </button>
-                                    <button type="button" id="insertUserBtn" >Add</button>
-                                </div>
+                            <div class="modalLabelContainer">
+                                
+                                <button type="submit" class="cmsmodalbutton">Register</button>
+                                <button type="button" id="insertUserBtn" >Add</button>
+                                
                             </div>
                         </form>
                     </div>
@@ -450,138 +448,139 @@ header("location: ./login.php");
             </div>
     </div>
     <!-- Modal Service Addition  -->
-    <div id="openModal-serv" class="modalDialog">
-            <div>
+    <div id="openModal-serv" class="modalDialog">            
+        <div>        
+            <a href="#close" title="Close" class="close">X</a>
+            <div class="modalContent">
                 <div>
-                    <a href="#close" title="Close" class="close">X</a>
-                    <div>
-                        <h1 id="userFormTitle">Add Service</h1>
-                    </div>
-                    <div>                             
-                        <form role="form"action="" id="serviceForm" method="POST" enctype="multipart/form-data" name="insert">
-                            <div class="form-group">
-                                <label class="control-label"for="">Title</label>
-                                <input type="text" class="form-control input-lg" name="title">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label"for="">Description</label>
-                                <input type="text" class="form-control input-lg" name="description">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label"for="">In Depth Description</label>
-                                
-                                <textarea class="form-control" name="detail_desc"id="" cols="30" rows="6"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label"for="">Approach</label>
-                                <input type="text" class="form-control input-lg" name="approach">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label"for="">Benefits</label>
-                                <input type="text" class="form-control input-lg" name="benefits">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label"for="">Upload Image</label>
-                                <input type="file" class="form-control input-xl" name="file" id="servicePic">
-                                <input type="hidden" name="id" >
-                            </div>
-                            <div class="form-group">
-                                <button type="submit"class="cmsbutton">Submit</button>
-                                <button type="button"id="insertServiceBtn">Add Service</button>    
-                            </div>                                   
-                        </form>
-                    </div>
-                </div>  
-            </div>
-        </div>
+                    <h1 id="userFormTitle">Add Service</h1>
+                </div>
+                <div>                             
+                    <form role="form"action="" id="serviceForm" method="POST" enctype="multipart/form-data" name="insert">
+                        <div class="modalLabelContainer">
+                            <label class="control-label"for="">Title</label>
+                            <input type="text"  name="title">
+                        </div>
+                        <div class="modalLabelContainer">
+                            <label class="control-label"for="">Description</label>
+                            <input type="text"  name="description">
+                        </div>
+                        <div class="modalLabelContainer">
+                            <label class="control-label"for="">In Depth Description</label>
+                            
+                            <textarea name="detail_desc"id="" cols="30" rows="6" style="resize: none;"></textarea>
+                        </div>
+                        <div class="modalLabelContainer">
+                            <label class="control-label"for="">Approach</label>
+                            <input type="text"  name="approach">
+                        </div>
+                        <div class="modalLabelContainer">
+                            <label class="control-label"for="">Benefits</label>
+                            <input type="text"  name="benefits">
+                        </div>
+                        <div class="modalLabelContainer">
+                            <label class="control-label"for="">Upload Image</label>
+                            <input type="file"  name="file" id="servicePic">
+                            <input type="hidden" name="id" >
+                        </div>
+                        <div class="modalLabelContainer">
+                            <button type="submit"class="cmsmodalbutton">Submit</button>
+                            <button type="button"id="insertServiceBtn">Add Service</button>    
+                        </div>                                   
+                    </form>
+                </div>
+            </div>          
+        </div>          
     </div>
     <!-- Modal Career Addition -->
     <div id="openModal-career" class="modalDialog">
             <div>
-                <div>
+                
                     <a href="#close" title="Close" class="close">X</a>
-                    <div>
-                        <h3 id="careerFormTitle">Add Career</h3>
+                    <div class="modalContent">
+                        <div>
+                            <h3 id="careerFormTitle">Add Career</h3>
+                        </div>
+                        <div>
+                            <form role="form" action="" id="careerForm" method="POST" enctype="multipart/form-data" name="insert">
+                                <div class="modalLabelContainer">
+                                    <label class="control-label" for="">Title</label>
+                                    <input type="text" name="title">
+                                </div>
+                                <div class="modalLabelContainer">
+                                    <label class="control-label" for="">Position</label>
+                                    <input type="text" name="position"> 
+                                </div>                                        
+                                <div class="modalLabelContainer">
+                                    <label class="control-label" for="">Description</label>
+                                    <textarea  name="description" id="" cols="30" rows="6" style="resize: none;">
+                                    </textarea>
+                                </div>
+                                <div class="modalLabelContainer">
+                                    <label class="control-label" for="">Qualification</label>
+                                    <input type="text" name="qualification">
+                                </div>
+                                
+                                <div class="modalLabelContainer">
+                                    <label class="control-label" for="">Responsibility</label>
+                                    <input type="text" name="responsibility">    
+                                </div>
+                                
+                                <label class="control-label" for="">Upload Image</label>
+                                <div class="modalLabelContainer">                                        
+                                    <input type="file" name="file" id="careerPic">
+                                    <input type="hidden" name="id">    
+                                </div>
+                                <div class="modalLabelContainer">
+                                    <button type="submit" class="cmsmodalbutton">Submit</button>
+                                    <button type="button" id="insertCareerBtn" >Add</button>    
+                                </div>                           
+                                                                        
+                            </form>
+                        </div>
                     </div>
-                    <div>
-                        <form role="form" action="" id="careerForm" method="POST" enctype="multipart/form-data" name="insert">
-                            <div class=form-group>
-                                <label class="control-label" for="">Title</label>
-                                <input class="form-control input-lg" type="text" name="title">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Position</label>
-                                <input class="form-control input-lg" type="text" name="position"> 
-                            </div>                                        
-                            <div class="form-group">
-                                <label class="control-label" for="">Description</label>
-                                <textarea class="form-control" name="description" id="" cols="30" rows="6">
-                                </textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="">Qualification</label>
-                                <input class="form-control input-lg" type="text" name="qualification">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="control-label" for="">Responsibility</label>
-                                <input class="form-control input-lg" type="text" name="responsibility">    
-                            </div>
-                            
-                            <label class="control-label" for="">Upload Image</label>
-                            <div class="form-group">                                        
-                                <input class="form-control input-xl" type="file" name="file" id="careerPic">
-                                <input type="hidden" name="id">    
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="cmsbutton">Submit</button>
-                                <button type="button" id="insertCareerBtn" >Add</button>    
-                            </div>                           
-                                                                    
-                        </form>
-                    </div>
-                </div>
+                
             </div>
     </div>                        
     <!-- Modal Blog Addition -->
     <div id="openModal-blog"class="modalDialog">                   
-        <div>
-            <div>
-                <a href="#close" title="Close" class="close">X</a>
-                <div>
-                    <h3 id="blogFormTitle">Add Blog</h3>
-                </div>
-                <div>
-                    <form action="" id ="blogForm" method="POST" name="insert">
-                    <div class="form-group">
-                    <label class="control-label" for="">Title</label>
-                    <input class="form-control input-lg"type="text" name="title">
+        <div>            
+            <a href="#close" title="Close" class="close">X</a>
+                <div class="modalContent">
+                    <div>
+                        <h3 id="blogFormTitle">Add Blog</h3>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label" for="">Description</label>
-                        <textarea class="form-control" name="description" id="" cols="30" rows="6"></textarea>
+                    <div>
+                        <form action="" id ="blogForm" method="POST" name="insert">
+                        <div class="modalLabelContainer">
+                        <label class="control-label" for="">Title</label>
+                        <input type="text" name="title">
+                        </div>
+                        <div class="modalLabelContainer">
+                            <label class="control-label" for="">Description</label>
+                            <textarea name="description" id="" cols="30" rows="6" style="resize: none;"></textarea>
+                        </div>
+                        <div class="modalLabelContainer">
+                            <label class="control-label" for="">Author</label>
+                            <input type="text" name="author">
+                        </div>
+                        <div class="modalLabelContainer">
+                            <label class="control-label" for="">Date Published</label>
+                            <input type="date" name="date">
+                        </div>
+                        <div class="modalLabelContainer">
+                            <label class="control-label" for="">Picture Upload</label>
+                            <input type="file" name="file" id="blogPic" >
+                            <input type="hidden" name="id">
+                        </div>
+                        <div class="modalLabelContainer">
+                            <button type="submit"class="cmsmodalbutton">Submit</button>
+                            <button type="button" id="insertBlogBtn">Add Blog</button>
+                        </div>
+                        
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label" for="">Author</label>
-                        <input class="form-control input-lg" type="text" name="author">
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="">Date Published</label>
-                        <input class="form-control input-lg" type="date" name="date">
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="">Picture Upload</label>
-                        <input class="form-control input-lg" type="file" name="file" id="blogPic">
-                        <input type="hidden" name="id">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit"class="cmsbutton">Submit</button>
-                        <button type="button" id="insertBlogBtn">Add Blog</button>
-                    </div>
-                    
-                    </form>
-                </div>
-            </div>
+                </div>           
         </div>                    
     </div>
     <!-- Modal Article Addition -->
@@ -627,37 +626,38 @@ header("location: ./login.php");
     <!-- Modal Gallery Addition -->
     <div id="openModal-gallery" class="modalDialog">
         <div>
-            <div>
+            
             <a href="#close" title="Close" class="close">X</a>
-                <div>
-                    <h3 id="galleryFormTitle">Add Gallery</h3>
-                </div>
-                <div>
-                    <form action="" id="galleryForm" name="insert" method="POST">
-                        <div class="form-group">
-                            <label class="control-label" for="">Title</label>
-                            <input class="form-control input-lg" type="text" name="title">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label" for="">Description</label>
-                            <textarea class="form-control"name="description" id="" cols="30" rows="6"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label" for="">Date Published</label>
-                            <input class="form-control input-lg" type="date" name="date">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label" for="">Upload Picture</label>
-                            <input class="form-control input=lg"type="file" name="file" id="galleryPic" multiple="multiple">
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="cmsbutton">Submit</button>
-                            <button type="button" id="insertGalleryBtn">Add Post</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+                <div class="modalContent"></div>
+                    <div>
+                        <h3 id="galleryFormTitle">Add Gallery</h3>
+                    </div>
+                    <div>
+                        <form action="" id="galleryForm" name="insert" method="POST">
+                            <div class="modalLabelContainer">
+                                <label class="control-label" for="">Title</label>
+                                <input  type="text" name="title">
+                            </div>
+                            <div class="modalLabelContainer">
+                                <label class="control-label" for="">Description</label>
+                                <textarea name="description" id="" cols="30" rows="6" style="resize: none;"></textarea>
+                            </div>
+                            <div class="modalLabelContainer">
+                                <label class="control-label" for="">Date Published</label>
+                                <input  type="date" name="date">
+                            </div>
+                            <div class="modalLabelContainer">
+                                <label class="control-label" for="">Upload Picture</label>
+                                <input type="file" name="file" id="galleryPic" multiple="multiple">
+                            </div>
+                            <div class="modalLabelContainer">
+                                <button type="submit" class="cmsmodalbutton">Submit</button>
+                                <button type="button" id="insertGalleryBtn">Add Post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+        </div>      
     </div>
 
     <!-- <div id="openModal-about" class="modalDialog">

@@ -438,9 +438,21 @@ body.shrink .tooltip {
 .cmsbutton2 {
   background-color: #f44336;
 }
-
+.cmsmodalbutton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 0.4em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 .modalDialog {
+  text-align: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -494,10 +506,20 @@ body.shrink .tooltip {
 
 .modalContent
 {
+  
   padding: 0.5em;
   width: 100%;
-  
-  
+}
+.modalLabelContainer
+{
+  margin: 7px 2px;
+  max-width: 100%;
+}
+input[type=text],input[type=email],input[type=password],input[type=date],input[type=file],textarea {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
 
