@@ -65,7 +65,7 @@ if (!isset($_SESSION["usersId"])) {
                         <span class="link hide">Dashboard</span>
                     </a>
                 </li>
-                <li id="serviceBtn" class="tooltip-element" data-tooltip="1" style="display:none;">
+                <!-- <li id="serviceBtn" class="tooltip-element" data-tooltip="1" style="display:none;">
                     <a href="#" data-active="1">
                         <div class="icon">
                             <i class='bx bx-briefcase'></i>
@@ -73,9 +73,9 @@ if (!isset($_SESSION["usersId"])) {
                         </div>
                         <span class="link hide">Services</span>
                     </a>
-                </li>
-                <li id="careerBtn" class="tooltip-element" data-tooltip="2">
-                    <a href="#" data-active="2">
+                </li> -->
+                <li id="careerBtn" class="tooltip-element" data-tooltip="1">
+                    <a href="#" data-active="1">
                         <div class="icon">
                             <i class='bx bx-folder-open'></i>
                             <i class='bx bxs-folder-open'></i>
@@ -83,8 +83,8 @@ if (!isset($_SESSION["usersId"])) {
                         <span class="link hide">Career</span>
                     </a>
                 </li>
-                <li id="BaBtn" class="tooltip-element" data-tooltip="3">
-                    <a href="#" data-active="3">
+                <li id="BaBtn" class="tooltip-element" data-tooltip="2">
+                    <a href="#" data-active="2">
                         <div class="icon">
                             <i class='bx bx-pencil'></i>
                             <i class='bx bxs-pencil'></i>
@@ -92,8 +92,8 @@ if (!isset($_SESSION["usersId"])) {
                         <span class="link hide">Articles</span>
                     </a>
                 </li>
-                <li id="galleryBtn" class="tooltip-element" data-tooltip="4">
-                    <a href="#" data-active="4">
+                <li id="galleryBtn" class="tooltip-element" data-tooltip="3">
+                    <a href="#" data-active="3">
                         <div class="icon">
                             <i class='bx bx-images'></i>
                             <i class='bx bx-images'></i>
@@ -102,8 +102,7 @@ if (!isset($_SESSION["usersId"])) {
                     </a>
                 </li>
                 <div class="tooltip">
-                    <span>Dashboard</span>
-                    <span>Services</span>
+                    <span>Dashboard</span>                    
                     <span>Career</span>
                     <span>Articles</span>
                     <span>Gallery</span>
@@ -190,7 +189,7 @@ if (!isset($_SESSION["usersId"])) {
                 <a href="#openModal-reg"><button class="cmsAddbutton"><span><i class="glyphicon glyphicon-user"></i> Add User</button></a>
             </div>
         </div>
-        <div class="contentDiv" id="serviceCard">
+        <!-- <div class="contentDiv" id="serviceCard">
             <div class="table-responsive">
                 <h3>List of Services</h3>
                 <table id="serviceTbl" class="table">
@@ -211,7 +210,7 @@ if (!isset($_SESSION["usersId"])) {
                 </table>
                 <a href="#openModal-serv"><button class="cmsAddbutton"><i class="glyphicon glyphicon-cog"></i> Add Service</button></a>
             </div>
-        </div>
+        </div> -->
         <div class="contentDiv" id="careerCard">
             <div class="table-responsive">
                 <h3>List of Career's</h3>
@@ -252,6 +251,25 @@ if (!isset($_SESSION["usersId"])) {
         <div class="contentDiv" id="galleryCard">
             <div class="table-responsive">
                 <h3>List Post's</h3>
+                <table id="galleryTbl" class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="autoGallery">
+                    </tbody>
+                </table>
+                <a href="#openModal-gallery"><button class="cmsAddbutton"><i class="fa fa-image"></i> Add Gallery</button></a>    
+            </div>
+        </div>
+        
+        <!-- <div class="contentDiv" id="galleryCard">
+            <div class="table-responsive">
+                <h3>List Post's</h3>
                 <table id="userTbl" class="table">
                     <thead>
                         <tr>
@@ -266,7 +284,8 @@ if (!isset($_SESSION["usersId"])) {
                 </table>
                 <a href="#openModal-gallery"><button class="cmsAddbutton"><i class="fa fa-image"></i> Add Gallery</button></a>
             </div>
-        </div>
+        </div> -->
+
         <p class="copyright">
             &copy; 2022 - <span>DatagenFacilities</span> All Rights Reserved.
         </p>
@@ -290,25 +309,21 @@ if (!isset($_SESSION["usersId"])) {
                 // paging: false,
 
             });
-            $('#serviceTbl').DataTable({
-                // scrollY: '50vh',
-                // scrollX: '80vw',
-                // scrollCollapse: true,
-                // paging: false,
-            });
+            
             $('#careerTbl').DataTable({
                 // scrollY: '50vh',
                 // scrollX: '80vw',
                 // scrollCollapse: true,
                 // paging: false,
             });
-            $('#blogTbl').DataTable({
+            
+            $('#articleTbl').DataTable({
                 // scrollY: '50vh',
                 // scrollX: '80vw',
                 // scrollCollapse: true,
                 // paging: false,
             });
-            $('#articleTbl').DataTable({
+            $('#galleryTbl').DataTable({
                 // scrollY: '50vh',
                 // scrollX: '80vw',
                 // scrollCollapse: true,
@@ -456,7 +471,7 @@ if (!isset($_SESSION["usersId"])) {
                     <div class="modalLabelContainer">
 
                         <button type="submit" class="cmsmodalbutton">Register</button>
-                        <button type="button" id="insertUserBtn">Add</button>
+                        <button type="button" class="cmsmodalbutton" id="insertUserBtn">Add</button>
 
                     </div>
                 </form>
@@ -502,7 +517,7 @@ if (!isset($_SESSION["usersId"])) {
                     </div>
                     <div class="modalLabelContainer">
                         <button type="submit" class="cmsmodalbutton">Submit</button>
-                        <button type="button" id="insertServiceBtn">Add Service</button>
+                        <button type="button" class="cmsmodalbutton" id="insertServiceBtn">Add Service</button>
                     </div>
                 </form>
             </div>
@@ -533,16 +548,16 @@ if (!isset($_SESSION["usersId"])) {
                         <textarea name="description" id="" cols="30" rows="6" style="resize: none;">
                                     </textarea>
                     </div>
-                    <div class="modalLabelContainer">
+                    <div class="modalLabelContainer"style="height:wrap-content;">
                         <label class="control-label" for="">Qualification</label>
                         <textarea type="text" name="qualification" class="tinymce">
 
                         </textarea>
                     </div>
 
-                    <div class="modalLabelContainer">
+                    <div class="modalLabelContainer"style="min-height:100%;">
                         <label class="control-label" for="">Responsibility</label>
-                        <textarea type="text" name="responsibility" class="tinymce">
+                        <textarea type="text" name="responsibility" class="tinymce" >
 
                         </textarea>
                     </div>
@@ -554,7 +569,7 @@ if (!isset($_SESSION["usersId"])) {
                     </div>
                     <div class="modalLabelContainer">
                         <button type="submit" class="cmsmodalbutton">Submit</button>
-                        <button type="button" id="insertCareerBtn">Add</button>
+                        <button type="button" class="cmsmodalbutton" id="insertCareerBtn">Add</button>
                     </div>
 
                 </form>
@@ -637,7 +652,7 @@ if (!isset($_SESSION["usersId"])) {
                     </div>
                     <div class="modalLabelContainer">
                         <button type="submit" class="cmsmodalbutton">Submit</button>
-                        <button type="button" id="insertArticleBtn">Add Article</button>
+                        <button type="button" class="cmsmodalbutton" id="insertArticleBtn">Add Article</button>
                     </div>
                 </form>
             </div>
@@ -674,7 +689,7 @@ if (!isset($_SESSION["usersId"])) {
                 </div>
                 <div class="modalLabelContainer">
                     <button type="submit" class="cmsmodalbutton">Submit</button>
-                    <button type="button" id="insertGalleryBtn">Add Post</button>
+                    <button type="button" class="cmsmodalbutton" id="insertGalleryBtn">Add Post</button>
                 </div>
             </form>
         </div>
