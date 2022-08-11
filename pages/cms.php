@@ -316,13 +316,14 @@ if (!isset($_SESSION["usersId"])) {
                 // scrollCollapse: true,
                 // paging: false,
             });
-            $('#blogTbl').DataTable({
+            
+            $('#articleTbl').DataTable({
                 // scrollY: '50vh',
                 // scrollX: '80vw',
                 // scrollCollapse: true,
                 // paging: false,
             });
-            $('#articleTbl').DataTable({
+            $('#galleryTbl').DataTable({
                 // scrollY: '50vh',
                 // scrollX: '80vw',
                 // scrollCollapse: true,
@@ -547,16 +548,16 @@ if (!isset($_SESSION["usersId"])) {
                         <textarea name="description" id="" cols="30" rows="6" style="resize: none;">
                                     </textarea>
                     </div>
-                    <div class="modalLabelContainer">
+                    <div class="modalLabelContainer"style="height:wrap-content;">
                         <label class="control-label" for="">Qualification</label>
                         <textarea type="text" name="qualification" class="tinymce">
 
                         </textarea>
                     </div>
 
-                    <div class="modalLabelContainer">
+                    <div class="modalLabelContainer"style="min-height:100%;">
                         <label class="control-label" for="">Responsibility</label>
-                        <textarea type="text" name="responsibility" class="tinymce">
+                        <textarea type="text" name="responsibility" class="tinymce" >
 
                         </textarea>
                     </div>
